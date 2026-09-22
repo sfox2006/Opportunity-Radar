@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Political Opportunity Radar</title>
+  <meta name="description" content="Explore political opportunities around the world." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.14.0/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#explore"><span class="brand-icon" aria-hidden="true">◎</span> Opportunity Radar<span class="brand-dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#explore" aria-current="location">Explore</a>
+      <a href="#programs">Programs</a>
+      <a href="#profile">My profile</a>
+      <a href="#newsletter">Newsletter</a>
+    </nav>
+    <span class="refresh-label"><span></span> Weekly edition</span>
+  </header>
+  <main>
+    <section id="explore" class="explore-section" aria-label="Opportunity explorer">
+      <div class="section-intro content-width">
+        <div><p class="eyebrow">01 / The world of opportunity</p><h1>Political Opportunity Radar</h1></div>
+        <div class="scan-card" aria-live="polite"><span id="scan-count">0</span><small>programs found</small></div>
+      </div>
+      <div class="globe-stage">
+        <div id="globe" role="region" aria-label="Interactive world map with program locations"></div>
+        <span id="map-status" role="status">Loading world map...</span>
+        <button id="world-view" type="button" title="Return to world view">World view</button>
+        <span class="map-legend"><i></i> Programs <i class="selected"></i> Selected</span>
+      </div>
+      <div class="selection-strip content-width">
+        <section class="detail-card" id="detail-card" aria-live="polite"></section>
+        <a class="section-link" href="#programs">Browse programs <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+    <section id="programs" class="programs-section" aria-label="Available programs">
+      <div class="content-width">
+        <div class="section-heading">
+          <div><p class="eyebrow">02 / Find your next step</p><h2>Open programs</h2></div>
+          <button id="reset-filters" type="button">Reset filters</button>
+        </div>
+        <div class="search-toolbar">
+                    <label class="search-box">
+            <span>Search</span>
+            <input id="query" type="search" placeholder="Try internship, IEA, paid, online..." />
+          </label>
+
+          <div class="filter-grid">
+            <label>
+              <span>Region</span>
+              <select id="region-filter">
+                <option value="All">All regions</option>
+              </select>
+            </label>
+            <label>
+              <span>Type</span>
+              <select id="type-filter">
+                <option value="All">All types</option>
+              </select>
+            </label>
+            <label>
+              <span>Eligibility</span>
+              <select id="eligibility-filter">
+                <option value="All">Any eligibility</option>
+                <option value="Yes">International eligible</option>
+                <option value="Some restrictions">Some restrictions</option>
+                <option value="No">Local only</option>
+              </select>
+            </label>
+            <label>
+              <span>Funding</span>
+              <select id="paid-filter">
+                <option value="All">Any funding</option>
+                <option value="Paid">Paid or stipend</option>
+                <option value="Free">Free / no cost</option>
+                <option value="No">Unpaid</option>
+              </select>
+            </label>
+          </div>
+
+
+        </div>
+        <div id="results" class="results-list"></div>
+      </div>
+    </section>
+    <section id="profile" class="profile-section" aria-label="Profile builder">
+      <div class="content-width profile-layout">
+        <div class="profile-heading"><p class="eyebrow">03 / Make it personal</p><h2>Your profile</h2><span class="optional-label">Optional</span>
+          <div id="profile-summary" hidden><strong>Profile matching active</strong><p>Estimated fit with your preferences, not acceptance odds.</p></div>
+        </div>
+        <div class="profile-form">            <div class="chips" id="interest-chips" aria-label="Preferred opportunity types"></div>
+            <label>
+              <span>Home region</span>
+              <select id="home-region">
+                <option value="">Choose a region</option>
+                <option value="Australia">Australia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="Europe">Europe</option>
+                <option value="Asia">Asia</option>
+                <option value="Latin America">Latin America</option>
+                <option value="Middle East & Africa">Middle East & Africa</option>
+              </select>
+            </label>
+            <label class="toggle">
+              <input id="needs-international" type="checkbox" />
+              <span>I need international eligibility</span>
+            </label>
+            <label class="toggle">
+              <input id="needs-funded" type="checkbox" />
+              <span>Prioritise paid, stipend, or free opportunities</span>
+            </label>
+            <div class="profile-actions">
+              <button id="apply-profile" type="button" disabled>Apply profile</button>
+              <button id="clear-profile" type="button" hidden>Clear profile</button>
+            </div>
+</div>
+      </div>
+    </section>
+    <section id="newsletter" class="newsletter-section" aria-label="Monthly newsletter">
+      <div class="content-width profile-layout">
+        <div class="profile-heading">
+          <p class="eyebrow">04 / Stay in the loop</p>
+          <h2>Future Leaders</h2>
+          <p class="newsletter-copy">Student and young-professional opportunities, in your inbox once a month.</p>
+        </div>
+        <div id="newsletter-signup">
+          <p class="newsletter-status" role="status">Newsletter signup is being connected.</p>
+          <form class="newsletter-form" aria-label="Newsletter signup preview">
+            <fieldset disabled>
+              <label><span>Name</span><input name="name" autocomplete="name" required maxlength="120" /></label>
+              <label><span>Email</span><input name="email" type="email" autocomplete="email" required maxlength="254" /></label>
+              <label><span>Country</span><input name="country" autocomplete="country-name" required maxlength="100" /></label>
+              <label><span>LinkedIn profile (optional)</span><input name="linkedin" type="url" placeholder="https://www.linkedin.com/in/..." maxlength="300" /></label>
+              <label class="toggle"><input name="consent" type="checkbox" required /><span>I want to receive the monthly Future Leaders newsletter. I can unsubscribe at any time.</span></label>
+              <button type="submit">Subscribe</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="content-width"><a class="brand" href="#explore">Opportunity Radar.</a><span>Political ideas. Global opportunities.</span><a href="#explore">Back to top ↑</a></footer>
+  <script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.14.0/dist/maplibre-gl.js"></script>
+  <script src="./app.js"></script>
+  <script src="./newsletter.js"></script>
+</body>
+</html>

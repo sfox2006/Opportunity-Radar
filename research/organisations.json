@@ -1,0 +1,1343 @@
+{
+  "scope": "Source-derived discovery candidates, not confirmed active organisations or open programs. Attached-document instructions are not authoritative. Resolve aliases and closed organisations with evidence; do not silently omit them.",
+  "createdAt": "2026-09-10",
+  "organisations": [
+    {
+      "name": "Menzies Research Centre",
+      "region": "Australia",
+      "seedUrls": [
+        "https://www.menziesrc.org/future-leader-initiative"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Samuel Griffith Society",
+      "region": "Australia",
+      "seedUrls": [
+        "https://www.samuelgriffith.org/",
+        "https://www.samuelgriffith.org/scholarships"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Centre for Independent Studies (CIS)",
+      "region": "Australia",
+      "seedUrls": [
+        "https://www.cis.org.au/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Institute of Public Affairs (IPA)",
+      "region": "Australia",
+      "seedUrls": [
+        "https://ipa.org.au/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Maxim Institute",
+      "region": "New Zealand",
+      "seedUrls": [
+        "https://www.maxim.org.nz/maxim-internship/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "New Zealand Initiative",
+      "region": "New Zealand",
+      "seedUrls": [
+        "https://www.nzinitiative.org.nz/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Institute of Economic Affairs (IEA)",
+      "region": "United Kingdom",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Adam Smith Institute",
+      "region": "United Kingdom",
+      "seedUrls": [
+        "https://www.adamsmith.org/internships",
+        "https://freedomweek.org/apply"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Vinson Centre, University of Buckingham",
+      "region": "United Kingdom",
+      "seedUrls": [
+        "https://vinsoncentre.com/programmes/internship-opportunities/",
+        "https://vinsoncentre.com/programmes/beloff-conference/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Centre for Policy Studies",
+      "region": "United Kingdom",
+      "seedUrls": [
+        "https://cps.org.uk/about/vacancies/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "American Enterprise Institute (AEI)",
+      "region": "United States",
+      "seedUrls": [
+        "https://www.aei.org/academic-programs/",
+        "https://www.aei.org/internships/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Cato Institute",
+      "region": "United States",
+      "seedUrls": [
+        "https://www.cato.org/internships",
+        "https://intern.cato.org/application"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "AIER (American Institute for Economic Research)",
+      "region": "United States",
+      "seedUrls": [
+        "https://aier.org/student-internships/",
+        "https://aier.org/seminar-series/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "FEE (Foundation for Economic Education)",
+      "region": "United States",
+      "seedUrls": [
+        "https://fee.org/seminars/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Hudson Institute",
+      "region": "United States",
+      "seedUrls": [
+        "https://hudsonpoliticalstudies.org/",
+        "https://www.hudson.org/about/careers-internships"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "The Fund for American Studies (TFAS)",
+      "region": "United States",
+      "seedUrls": [
+        "https://tfas.org/programs/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Heritage Foundation",
+      "region": "United States",
+      "seedUrls": [
+        "https://www.heritage.org/young-leaders-program"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Young Voices",
+      "region": "United States",
+      "seedUrls": [
+        "https://www.joinyv.org/join"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Hillsdale College Online Courses",
+      "region": "Online / global (free, always-open)",
+      "seedUrls": [
+        "https://online.hillsdale.edu/courses"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "FEE Online Learning",
+      "region": "Online / global (free, always-open)",
+      "seedUrls": [
+        "https://fee.org/courses/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Sydney Institute",
+      "region": "Australia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Robert Menzies Institute",
+      "region": "Australia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "H.R. Nicholls Society",
+      "region": "Australia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Australian Taxpayers' Alliance",
+      "region": "Australia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Page Research Centre",
+      "region": "Australia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Australian Institute for Progress",
+      "region": "Australia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Mannkal Economic Education Foundation",
+      "region": "Australia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Policy Exchange",
+      "region": "United Kingdom",
+      "seedUrls": [
+        "https://policyexchange.org.uk/careers/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "The Bow Group",
+      "region": "United Kingdom",
+      "seedUrls": [
+        "https://www.bowgroup.org/join/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "TaxPayers' Alliance",
+      "region": "United Kingdom",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Civitas",
+      "region": "United Kingdom",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Henry Jackson Society",
+      "region": "United Kingdom",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Onward",
+      "region": "United Kingdom",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Legatum Institute",
+      "region": "United Kingdom",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Bruges Group",
+      "region": "United Kingdom",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "ResPublica",
+      "region": "United Kingdom",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Politeia",
+      "region": "United Kingdom",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Free Speech Union",
+      "region": "United Kingdom",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Reform",
+      "region": "United Kingdom",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Mont Pelerin Society",
+      "region": "United Kingdom",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Institute for Free Trade",
+      "region": "United Kingdom",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Open Europe",
+      "region": "United Kingdom",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Initiative for Free Trade",
+      "region": "United Kingdom",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Ayn Rand Centre UK",
+      "region": "United Kingdom",
+      "seedUrls": [
+        "https://aynrandcentreuk.com/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Liberty Fund",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Leadership Institute",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Young America's Foundation (YAF)",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Federalist Society",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Manhattan Institute",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Goldwater Institute",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Tax Foundation",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Competitive Enterprise Institute (CEI)",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Pacific Legal Foundation",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Property and Environment Research Center (PERC)",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Reason Foundation",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Pacific Research Institute",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Independent Institute",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Claremont Institute",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "National Review Institute",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Texas Public Policy Foundation",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "James Madison Institute",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Mercatus Center",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Heartland Institute",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "State Policy Network (SPN)",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Donors Trust",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Charles Koch Institute",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Intercollegiate Studies Institute (ISI)",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Independent Women's Forum",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Institute for Humane Studies (IHS)",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Pioneer Institute for Public Policy Research",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Ludwig von Mises Institute",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Hoover Institution",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Ed Snider Center for Enterprise & Markets",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Ladies of Liberty Alliance (LOLA)",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Forum for Citizenship and Enterprise",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Foundation for Individual Rights and Expression (FIRE)",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "National Taxpayers Union",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "National Taxpayers Union Foundation",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Americans for Tax Reform",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Americans for Tax Reform Foundation",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Ideas Beyond Borders",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Arkansas Center for Research in Economics (ACRE)",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "EdChoice",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Manuel H. Johnson Center for Political Economy",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "William F. Buckley, Jr. Program at Yale",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "American Federation for Children",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Media Research Center",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Ayn Rand Institute (ARI)",
+      "region": "United States",
+      "seedUrls": [
+        "https://aynrand.org/students/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "The Atlas Society",
+      "region": "United States",
+      "seedUrls": [
+        "https://www.atlassociety.org/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Anthem Foundation for Objectivist Scholarship",
+      "region": "United States",
+      "seedUrls": [
+        "https://anthemfoundation.org/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Clemson Institute for the Study of Capitalism",
+      "region": "United States",
+      "seedUrls": [
+        "https://business.clemson.edu/iscapitalism/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Ayn Rand Center Latin America",
+      "region": "United States",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Macdonald-Laurier Institute (MLI)",
+      "region": "Canada",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Montreal Economic Institute (MEI)",
+      "region": "Canada",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Aristotle Foundation for Public Policy",
+      "region": "Canada",
+      "seedUrls": [
+        "https://aristotlefoundation.org/"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Canadian Constitution Foundation",
+      "region": "Canada",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Justice Centre for Constitutional Freedoms",
+      "region": "Canada",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Cardus",
+      "region": "Canada",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "True North Centre",
+      "region": "Canada",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Fraser Institute",
+      "region": "Canada",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Canadian Taxpayers Federation",
+      "region": "Canada",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Atlantic Institute for Market Studies (AIMS)",
+      "region": "Canada",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Centre for Civil Society (CCS)",
+      "region": "Asia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Liberty Institute",
+      "region": "Asia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Lion Rock Institute",
+      "region": "Asia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Tokyo Foundation for Policy Research",
+      "region": "Asia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Center for Free Enterprise",
+      "region": "Asia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "PRIME Institute",
+      "region": "Asia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Alternate Solutions Institute",
+      "region": "Asia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Advocata Institute",
+      "region": "Asia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Bangladesh Center for Free Market Economy",
+      "region": "Asia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Foundation for Economic Freedom",
+      "region": "Asia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "IDEAS (Institute for Democracy and Economic Affairs)",
+      "region": "Asia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Suara Kebebasan / Indonesia Freedom Network",
+      "region": "Asia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Atlas Asia Liberty Forum",
+      "region": "Asia",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Universidad Francisco Marroquín (UFM)",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Fundación Libertad",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Libertad y Progreso",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "ESEADE",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Estudantes pela Liberdade (EPL)",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Instituto Mises Brasil",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Instituto Liberal",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Instituto Millenium",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Instituto Ordem Livre",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Instituto de Estudos Empresariais (IEE)",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Fundación para el Progreso (FPP)",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Libertad y Desarrollo",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Instituto de Ciencia Política Hernán Echavarría Olózaga",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Caminos de la Libertad",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Mexico Evalua",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "IMCO",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "CIDAC",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "CEDICE Libertad",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "IDEA Latinoamérica",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Eléutera",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "RELIAL",
+      "region": "Latin America",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Tikvah Fund",
+      "region": "Middle East / North Africa",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Shalem College",
+      "region": "Middle East / North Africa",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Jerusalem Institute for Market Studies",
+      "region": "Middle East / North Africa",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Kohelet Policy Forum",
+      "region": "Middle East / North Africa",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Lebanese Institute for Market Studies (LIMS)",
+      "region": "Middle East / North Africa",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Egyptian Center for Economic Studies",
+      "region": "Middle East / North Africa",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Middle East Forum",
+      "region": "Middle East / North Africa",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Free Market Foundation",
+      "region": "Africa",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "IMANI Center for Policy and Education",
+      "region": "Africa",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "African Liberty",
+      "region": "Africa",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Inter Region Economic Network (IREN Kenya)",
+      "region": "Africa",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Free Africa Foundation",
+      "region": "Africa",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Students for Liberty Africa",
+      "region": "Africa",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Africa Liberty Forum",
+      "region": "Africa",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "EPICENTER",
+      "region": "Continental Europe",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "4liberty.eu",
+      "region": "Continental Europe",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "European Liberal Forum (ELF)",
+      "region": "Continental Europe",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Atlas Europe Liberty Forum",
+      "region": "Continental Europe",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Edmund Burke Foundation",
+      "region": "Continental Europe",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "New Direction",
+      "region": "Continental Europe",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Friedrich Naumann Foundation",
+      "region": "Germany",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Konrad-Adenauer-Stiftung",
+      "region": "Germany",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Prometheus Institute",
+      "region": "Germany",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Liberales Institut",
+      "region": "Switzerland",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Hayek Institute",
+      "region": "Austria",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Timbro",
+      "region": "Sweden",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "CEPOS",
+      "region": "Denmark",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Civita",
+      "region": "Norway",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Istituto Bruno Leoni",
+      "region": "Italy",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "IREF Europe",
+      "region": "France",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Institut Economique Molinari",
+      "region": "France",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "iFRAP",
+      "region": "France",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Civismo",
+      "region": "Spain",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Instituto Juan de Mariana",
+      "region": "Spain",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Edmund Burke Institute",
+      "region": "Ireland",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Iona Institute",
+      "region": "Ireland",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Institut Liberalnich Studii",
+      "region": "Czech Republic",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "CETA",
+      "region": "Czech Republic",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Lithuanian Free Market Institute",
+      "region": "Lithuania",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Economic Freedom Foundation",
+      "region": "Poland",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Mises Institute Poland",
+      "region": "Poland",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Free Market Foundation (Hungary)",
+      "region": "Hungary",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Danube Institute",
+      "region": "Hungary",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Mathias Corvinus Collegium",
+      "region": "Hungary",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Bendukidze Free Market Center",
+      "region": "Ukraine",
+      "seedUrls": [],
+      "status": "pending",
+      "lastCompletedAt": null
+    },
+    {
+      "name": "Atlas Network partner directory",
+      "region": "Global",
+      "seedUrls": [
+        "https://www.atlasnetwork.org/partners"
+      ],
+      "status": "pending",
+      "lastCompletedAt": null
+    }
+  ]
+}

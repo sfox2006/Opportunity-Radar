@@ -1,0 +1,1521 @@
+[
+  {
+    "index": 0,
+    "name": "Menzies Research Centre",
+    "region": "Australia",
+    "base": "https://menziesrc.org/",
+    "seedUrls": [
+      "https://www.menziesrc.org/future-leader-initiative"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 1,
+    "name": "Samuel Griffith Society",
+    "region": "Australia",
+    "base": "https://samuelgriffith.org/",
+    "seedUrls": [
+      "https://www.samuelgriffith.org/",
+      "https://www.samuelgriffith.org/scholarships"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 2,
+    "name": "Centre for Independent Studies (CIS)",
+    "region": "Australia",
+    "base": "https://cis.org.au/",
+    "seedUrls": [
+      "https://www.cis.org.au/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 3,
+    "name": "Institute of Public Affairs (IPA)",
+    "region": "Australia",
+    "base": "https://ipa.org.au/",
+    "seedUrls": [
+      "https://ipa.org.au/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 4,
+    "name": "Maxim Institute",
+    "region": "New Zealand",
+    "base": "https://maxim.org.nz/",
+    "seedUrls": [
+      "https://www.maxim.org.nz/maxim-internship/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 5,
+    "name": "New Zealand Initiative",
+    "region": "New Zealand",
+    "base": "https://nzinitiative.org.nz/",
+    "seedUrls": [
+      "https://www.nzinitiative.org.nz/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 6,
+    "name": "Institute of Economic Affairs (IEA)",
+    "region": "United Kingdom",
+    "base": "https://iea.org.uk/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 7,
+    "name": "Adam Smith Institute",
+    "region": "United Kingdom",
+    "base": "https://adamsmith.org/",
+    "seedUrls": [
+      "https://www.adamsmith.org/internships",
+      "https://freedomweek.org/apply"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 8,
+    "name": "Vinson Centre, University of Buckingham",
+    "region": "United Kingdom",
+    "base": "https://vinsoncentre.com/",
+    "seedUrls": [
+      "https://vinsoncentre.com/programmes/internship-opportunities/",
+      "https://vinsoncentre.com/programmes/beloff-conference/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 9,
+    "name": "Centre for Policy Studies",
+    "region": "United Kingdom",
+    "base": "https://cps.org.uk/",
+    "seedUrls": [
+      "https://cps.org.uk/about/vacancies/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 10,
+    "name": "American Enterprise Institute (AEI)",
+    "region": "United States",
+    "base": "https://aei.org/",
+    "seedUrls": [
+      "https://www.aei.org/academic-programs/",
+      "https://www.aei.org/internships/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 11,
+    "name": "Cato Institute",
+    "region": "United States",
+    "base": "https://cato.org/",
+    "seedUrls": [
+      "https://www.cato.org/internships",
+      "https://intern.cato.org/application"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 12,
+    "name": "AIER (American Institute for Economic Research)",
+    "region": "United States",
+    "base": "https://aier.org/",
+    "seedUrls": [
+      "https://aier.org/student-internships/",
+      "https://aier.org/seminar-series/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 13,
+    "name": "FEE (Foundation for Economic Education)",
+    "region": "United States",
+    "base": "https://fee.org/",
+    "seedUrls": [
+      "https://fee.org/seminars/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 14,
+    "name": "Hudson Institute",
+    "region": "United States",
+    "base": "https://hudson.org/",
+    "seedUrls": [
+      "https://hudsonpoliticalstudies.org/",
+      "https://www.hudson.org/about/careers-internships"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 15,
+    "name": "The Fund for American Studies (TFAS)",
+    "region": "United States",
+    "base": "https://tfas.org/",
+    "seedUrls": [
+      "https://tfas.org/programs/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 16,
+    "name": "Heritage Foundation",
+    "region": "United States",
+    "base": "https://heritage.org/",
+    "seedUrls": [
+      "https://www.heritage.org/young-leaders-program"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 17,
+    "name": "Young Voices",
+    "region": "United States",
+    "base": "https://joinyv.org/",
+    "seedUrls": [
+      "https://www.joinyv.org/join"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 18,
+    "name": "Hillsdale College Online Courses",
+    "region": "Online / global (free, always-open)",
+    "base": "https://online.hillsdale.edu/",
+    "seedUrls": [
+      "https://online.hillsdale.edu/courses"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 19,
+    "name": "FEE Online Learning",
+    "region": "Online / global (free, always-open)",
+    "base": "https://fee.org/",
+    "seedUrls": [
+      "https://fee.org/courses/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 20,
+    "name": "Sydney Institute",
+    "region": "Australia",
+    "base": "https://thesydneyinstitute.com.au/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 21,
+    "name": "Robert Menzies Institute",
+    "region": "Australia",
+    "base": "https://robertmenziesinstitute.org.au/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 22,
+    "name": "H.R. Nicholls Society",
+    "region": "Australia",
+    "base": "https://hrnicholls.com.au/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 23,
+    "name": "Australian Taxpayers' Alliance",
+    "region": "Australia",
+    "base": "https://taxpayers.org.au/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 24,
+    "name": "Page Research Centre",
+    "region": "Australia",
+    "base": "https://page.org.au/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 25,
+    "name": "Australian Institute for Progress",
+    "region": "Australia",
+    "base": "https://aip.asn.au/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 26,
+    "name": "Mannkal Economic Education Foundation",
+    "region": "Australia",
+    "base": "https://mannkal.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 27,
+    "name": "Policy Exchange",
+    "region": "United Kingdom",
+    "base": "https://policyexchange.org.uk/",
+    "seedUrls": [
+      "https://policyexchange.org.uk/careers/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 28,
+    "name": "The Bow Group",
+    "region": "United Kingdom",
+    "base": "https://bowgroup.org/",
+    "seedUrls": [
+      "https://www.bowgroup.org/join/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 29,
+    "name": "TaxPayers' Alliance",
+    "region": "United Kingdom",
+    "base": "https://taxpayersalliance.com/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 30,
+    "name": "Civitas",
+    "region": "United Kingdom",
+    "base": "https://civitas.org.uk/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 31,
+    "name": "Henry Jackson Society",
+    "region": "United Kingdom",
+    "base": "https://henryjacksonsociety.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 32,
+    "name": "Onward",
+    "region": "United Kingdom",
+    "base": "https://ukonward.com/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 33,
+    "name": "Legatum Institute",
+    "region": "United Kingdom",
+    "base": "https://prosperity.com/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 34,
+    "name": "Bruges Group",
+    "region": "United Kingdom",
+    "base": "https://brugesgroup.com/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 35,
+    "name": "ResPublica",
+    "region": "United Kingdom",
+    "base": "https://respublica.org.uk/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 36,
+    "name": "Politeia",
+    "region": "United Kingdom",
+    "base": "https://politeia.co.uk/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 37,
+    "name": "Free Speech Union",
+    "region": "United Kingdom",
+    "base": "https://freespeechunion.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 38,
+    "name": "Reform",
+    "region": "United Kingdom",
+    "base": "https://reform.uk/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 39,
+    "name": "Mont Pelerin Society",
+    "region": "United Kingdom",
+    "base": "https://montpelerin.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 40,
+    "name": "Institute for Free Trade",
+    "region": "United Kingdom",
+    "base": "https://ifreetrade.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 41,
+    "name": "Open Europe",
+    "region": "United Kingdom",
+    "base": "https://openeurope.org.uk/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 42,
+    "name": "Initiative for Free Trade",
+    "region": "United Kingdom",
+    "base": "https://ifreetrade.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 43,
+    "name": "Ayn Rand Centre UK",
+    "region": "United Kingdom",
+    "base": "https://aynrandglobal.org/",
+    "seedUrls": [
+      "https://aynrandcentreuk.com/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 44,
+    "name": "Liberty Fund",
+    "region": "United States",
+    "base": "https://libertyfund.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 45,
+    "name": "Leadership Institute",
+    "region": "United States",
+    "base": "https://leadershipinstitute.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 46,
+    "name": "Young America's Foundation (YAF)",
+    "region": "United States",
+    "base": "https://yaf.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 47,
+    "name": "Federalist Society",
+    "region": "United States",
+    "base": "https://fedsoc.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 48,
+    "name": "Manhattan Institute",
+    "region": "United States",
+    "base": "https://manhattan.institute/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 49,
+    "name": "Goldwater Institute",
+    "region": "United States",
+    "base": "https://goldwaterinstitute.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 50,
+    "name": "Tax Foundation",
+    "region": "United States",
+    "base": "https://taxfoundation.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 51,
+    "name": "Competitive Enterprise Institute (CEI)",
+    "region": "United States",
+    "base": "https://cei.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 52,
+    "name": "Pacific Legal Foundation",
+    "region": "United States",
+    "base": "https://pacificlegal.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 53,
+    "name": "Property and Environment Research Center (PERC)",
+    "region": "United States",
+    "base": "https://perc.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 54,
+    "name": "Reason Foundation",
+    "region": "United States",
+    "base": "https://reason.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 55,
+    "name": "Pacific Research Institute",
+    "region": "United States",
+    "base": "https://pacificresearch.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 56,
+    "name": "Independent Institute",
+    "region": "United States",
+    "base": "https://independent.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 57,
+    "name": "Claremont Institute",
+    "region": "United States",
+    "base": "https://claremont.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 58,
+    "name": "National Review Institute",
+    "region": "United States",
+    "base": "https://nrinstitute.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 59,
+    "name": "Texas Public Policy Foundation",
+    "region": "United States",
+    "base": "https://texaspolicy.com/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 60,
+    "name": "James Madison Institute",
+    "region": "United States",
+    "base": "https://jamesmadison.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 61,
+    "name": "Mercatus Center",
+    "region": "United States",
+    "base": "https://mercatus.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 62,
+    "name": "Heartland Institute",
+    "region": "United States",
+    "base": "https://heartland.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 63,
+    "name": "State Policy Network (SPN)",
+    "region": "United States",
+    "base": "https://spn.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 64,
+    "name": "Donors Trust",
+    "region": "United States",
+    "base": "https://donorstrust.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 65,
+    "name": "Charles Koch Institute",
+    "region": "United States",
+    "base": "https://standtogetherfellowships.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 66,
+    "name": "Intercollegiate Studies Institute (ISI)",
+    "region": "United States",
+    "base": "https://isi.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 67,
+    "name": "Independent Women's Forum",
+    "region": "United States",
+    "base": "https://independentwomen.com/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 68,
+    "name": "Institute for Humane Studies (IHS)",
+    "region": "United States",
+    "base": "https://theihs.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 69,
+    "name": "Pioneer Institute for Public Policy Research",
+    "region": "United States",
+    "base": "https://pioneerinstitute.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 70,
+    "name": "Ludwig von Mises Institute",
+    "region": "United States",
+    "base": "https://mises.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 71,
+    "name": "Hoover Institution",
+    "region": "United States",
+    "base": "https://hoover.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 72,
+    "name": "Ed Snider Center for Enterprise & Markets",
+    "region": "United States",
+    "base": "https://rhsmith.umd.edu/centers-initiatives/snider-center/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 73,
+    "name": "Ladies of Liberty Alliance (LOLA)",
+    "region": "United States",
+    "base": "https://ladiesofliberty.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 74,
+    "name": "Forum for Citizenship and Enterprise",
+    "region": "United States",
+    "base": "https://northwood.edu/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 75,
+    "name": "Foundation for Individual Rights and Expression (FIRE)",
+    "region": "United States",
+    "base": "https://fire.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 76,
+    "name": "National Taxpayers Union",
+    "region": "United States",
+    "base": "https://ntu.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 77,
+    "name": "National Taxpayers Union Foundation",
+    "region": "United States",
+    "base": "https://ntu.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 78,
+    "name": "Americans for Tax Reform",
+    "region": "United States",
+    "base": "https://atr.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 79,
+    "name": "Americans for Tax Reform Foundation",
+    "region": "United States",
+    "base": "https://atr.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 80,
+    "name": "Ideas Beyond Borders",
+    "region": "United States",
+    "base": "https://ideasbeyondborders.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 81,
+    "name": "Arkansas Center for Research in Economics (ACRE)",
+    "region": "United States",
+    "base": "https://uca.edu/acre/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 82,
+    "name": "EdChoice",
+    "region": "United States",
+    "base": "https://edchoice.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 83,
+    "name": "Manuel H. Johnson Center for Political Economy",
+    "region": "United States",
+    "base": "https://troy.edu/academics/colleges-schools/business/johnson-center/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 84,
+    "name": "William F. Buckley, Jr. Program at Yale",
+    "region": "United States",
+    "base": "https://buckleyinstitute.com/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 85,
+    "name": "American Federation for Children",
+    "region": "United States",
+    "base": "https://federationforchildren.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 86,
+    "name": "Media Research Center",
+    "region": "United States",
+    "base": "https://mrc.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 87,
+    "name": "Ayn Rand Institute (ARI)",
+    "region": "United States",
+    "base": "https://aynrand.org/",
+    "seedUrls": [
+      "https://aynrand.org/students/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 88,
+    "name": "The Atlas Society",
+    "region": "United States",
+    "base": "https://atlassociety.org/",
+    "seedUrls": [
+      "https://www.atlassociety.org/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 89,
+    "name": "Anthem Foundation for Objectivist Scholarship",
+    "region": "United States",
+    "base": "https://anthemfoundation.org/",
+    "seedUrls": [
+      "https://anthemfoundation.org/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 90,
+    "name": "Clemson Institute for the Study of Capitalism",
+    "region": "United States",
+    "base": "https://clemson.edu/centers-institutes/capitalism/",
+    "seedUrls": [
+      "https://business.clemson.edu/iscapitalism/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 91,
+    "name": "Ayn Rand Center Latin America",
+    "region": "United States",
+    "base": "https://aynrandlatam.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 92,
+    "name": "Macdonald-Laurier Institute (MLI)",
+    "region": "Canada",
+    "base": "https://macdonaldlaurier.ca/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 93,
+    "name": "Montreal Economic Institute (MEI)",
+    "region": "Canada",
+    "base": "https://iedm.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 94,
+    "name": "Aristotle Foundation for Public Policy",
+    "region": "Canada",
+    "base": "https://aristotlefoundation.org/",
+    "seedUrls": [
+      "https://aristotlefoundation.org/"
+    ],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 95,
+    "name": "Canadian Constitution Foundation",
+    "region": "Canada",
+    "base": "https://theccf.ca/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 96,
+    "name": "Justice Centre for Constitutional Freedoms",
+    "region": "Canada",
+    "base": "https://jccf.ca/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 97,
+    "name": "Cardus",
+    "region": "Canada",
+    "base": "https://cardus.ca/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 98,
+    "name": "True North Centre",
+    "region": "Canada",
+    "base": "https://tnc.news/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 99,
+    "name": "Fraser Institute",
+    "region": "Canada",
+    "base": "https://fraserinstitute.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 100,
+    "name": "Canadian Taxpayers Federation",
+    "region": "Canada",
+    "base": "https://taxpayer.com/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 101,
+    "name": "Atlantic Institute for Market Studies (AIMS)",
+    "region": "Canada",
+    "base": "https://aims.ca/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 102,
+    "name": "Centre for Civil Society (CCS)",
+    "region": "Asia",
+    "base": "https://ccs.in/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 103,
+    "name": "Liberty Institute",
+    "region": "Asia",
+    "base": "https://www.libertyindia.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 104,
+    "name": "Lion Rock Institute",
+    "region": "Asia",
+    "base": "https://lionrockinstitute.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 105,
+    "name": "Tokyo Foundation for Policy Research",
+    "region": "Asia",
+    "base": "https://tokyofoundation.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 106,
+    "name": "Center for Free Enterprise",
+    "region": "Asia",
+    "base": "https://cfe.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 107,
+    "name": "PRIME Institute",
+    "region": "Asia",
+    "base": "https://primeinstitute.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 108,
+    "name": "Alternate Solutions Institute",
+    "region": "Asia",
+    "base": "https://asinstitute.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 109,
+    "name": "Advocata Institute",
+    "region": "Asia",
+    "base": "https://advocata.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 110,
+    "name": "Bangladesh Center for Free Market Economy",
+    "region": "Asia",
+    "base": null,
+    "seedUrls": [],
+    "status": "identity_unresolved"
+  },
+  {
+    "index": 111,
+    "name": "Foundation for Economic Freedom",
+    "region": "Asia",
+    "base": "https://fef.org.ph/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 112,
+    "name": "IDEAS (Institute for Democracy and Economic Affairs)",
+    "region": "Asia",
+    "base": "https://ideas.org.my/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 113,
+    "name": "Suara Kebebasan / Indonesia Freedom Network",
+    "region": "Asia",
+    "base": "https://suarakebebasan.id/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 114,
+    "name": "Atlas Asia Liberty Forum",
+    "region": "Asia",
+    "base": "https://atlasnetwork.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 115,
+    "name": "Universidad Francisco Marroquín (UFM)",
+    "region": "Latin America",
+    "base": "https://ufm.edu/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 116,
+    "name": "Fundación Libertad",
+    "region": "Latin America",
+    "base": "https://libertad.org.ar/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 117,
+    "name": "Libertad y Progreso",
+    "region": "Latin America",
+    "base": "https://libertadyprogreso.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 118,
+    "name": "ESEADE",
+    "region": "Latin America",
+    "base": "https://eseade.edu.ar/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 119,
+    "name": "Estudantes pela Liberdade (EPL)",
+    "region": "Latin America",
+    "base": "https://studentsforliberty.org/brazil/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 120,
+    "name": "Instituto Mises Brasil",
+    "region": "Latin America",
+    "base": "https://mises.org.br/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 121,
+    "name": "Instituto Liberal",
+    "region": "Latin America",
+    "base": "https://institutoliberal.org.br/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 122,
+    "name": "Instituto Millenium",
+    "region": "Latin America",
+    "base": "https://institutomillenium.org.br/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 123,
+    "name": "Instituto Ordem Livre",
+    "region": "Latin America",
+    "base": "https://ordemlivre.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 124,
+    "name": "Instituto de Estudos Empresariais (IEE)",
+    "region": "Latin America",
+    "base": "https://iee.com.br/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 125,
+    "name": "Fundación para el Progreso (FPP)",
+    "region": "Latin America",
+    "base": "https://fppchile.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 126,
+    "name": "Libertad y Desarrollo",
+    "region": "Latin America",
+    "base": "https://lyd.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 127,
+    "name": "Instituto de Ciencia Política Hernán Echavarría Olózaga",
+    "region": "Latin America",
+    "base": "https://icpcolombia.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 128,
+    "name": "Caminos de la Libertad",
+    "region": "Latin America",
+    "base": "https://www.centroricardobsalinaspliego.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 129,
+    "name": "Mexico Evalua",
+    "region": "Latin America",
+    "base": "https://mexicoevalua.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 130,
+    "name": "IMCO",
+    "region": "Latin America",
+    "base": "https://imco.org.mx/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 131,
+    "name": "CIDAC",
+    "region": "Latin America",
+    "base": "https://cidac.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 132,
+    "name": "CEDICE Libertad",
+    "region": "Latin America",
+    "base": "https://cedice.org.ve/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 133,
+    "name": "IDEA Latinoamérica",
+    "region": "Latin America",
+    "base": null,
+    "seedUrls": [],
+    "status": "identity_unresolved"
+  },
+  {
+    "index": 134,
+    "name": "Eléutera",
+    "region": "Latin America",
+    "base": "https://eleutera.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 135,
+    "name": "RELIAL",
+    "region": "Latin America",
+    "base": "https://relial.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 136,
+    "name": "Tikvah Fund",
+    "region": "Middle East / North Africa",
+    "base": "https://tikvah.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 137,
+    "name": "Shalem College",
+    "region": "Middle East / North Africa",
+    "base": "https://shalem.ac.il/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 138,
+    "name": "Jerusalem Institute for Market Studies",
+    "region": "Middle East / North Africa",
+    "base": "https://jims-israel.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 139,
+    "name": "Kohelet Policy Forum",
+    "region": "Middle East / North Africa",
+    "base": "https://kohelet.org.il/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 140,
+    "name": "Lebanese Institute for Market Studies (LIMS)",
+    "region": "Middle East / North Africa",
+    "base": "https://limslb.com/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 141,
+    "name": "Egyptian Center for Economic Studies",
+    "region": "Middle East / North Africa",
+    "base": "https://eces.org.eg/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 142,
+    "name": "Middle East Forum",
+    "region": "Middle East / North Africa",
+    "base": "https://meforum.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 143,
+    "name": "Free Market Foundation",
+    "region": "Africa",
+    "base": "https://freemarketfoundation.com/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 144,
+    "name": "IMANI Center for Policy and Education",
+    "region": "Africa",
+    "base": "https://imaniafrica.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 145,
+    "name": "African Liberty",
+    "region": "Africa",
+    "base": "https://africanliberty.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 146,
+    "name": "Inter Region Economic Network (IREN Kenya)",
+    "region": "Africa",
+    "base": "https://irenkenya.or.ke/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 147,
+    "name": "Free Africa Foundation",
+    "region": "Africa",
+    "base": "https://www.freeafrica.org/",
+    "seedUrls": [],
+    "status": "identity_unresolved"
+  },
+  {
+    "index": 148,
+    "name": "Students for Liberty Africa",
+    "region": "Africa",
+    "base": "https://studentsforliberty.org/africa/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 149,
+    "name": "Africa Liberty Forum",
+    "region": "Africa",
+    "base": "https://atlasnetwork.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 150,
+    "name": "EPICENTER",
+    "region": "Continental Europe",
+    "base": "https://epicenternetwork.eu/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 151,
+    "name": "4liberty.eu",
+    "region": "Continental Europe",
+    "base": "https://4liberty.eu/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 152,
+    "name": "European Liberal Forum (ELF)",
+    "region": "Continental Europe",
+    "base": "https://liberalforum.eu/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 153,
+    "name": "Atlas Europe Liberty Forum",
+    "region": "Continental Europe",
+    "base": "https://atlasnetwork.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 154,
+    "name": "Edmund Burke Foundation",
+    "region": "Continental Europe",
+    "base": "https://burkefoundation.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 155,
+    "name": "New Direction",
+    "region": "Continental Europe",
+    "base": "https://newdirection.online/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 156,
+    "name": "Friedrich Naumann Foundation",
+    "region": "Germany",
+    "base": "https://freiheit.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 157,
+    "name": "Konrad-Adenauer-Stiftung",
+    "region": "Germany",
+    "base": "https://kas.de/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 158,
+    "name": "Prometheus Institute",
+    "region": "Germany",
+    "base": "https://prometheusinstitut.de/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 159,
+    "name": "Liberales Institut",
+    "region": "Switzerland",
+    "base": "https://libinst.ch/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 160,
+    "name": "Hayek Institute",
+    "region": "Austria",
+    "base": "https://hayek-institut.at/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 161,
+    "name": "Timbro",
+    "region": "Sweden",
+    "base": "https://timbro.se/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 162,
+    "name": "CEPOS",
+    "region": "Denmark",
+    "base": "https://cepos.dk/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 163,
+    "name": "Civita",
+    "region": "Norway",
+    "base": "https://civita.no/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 164,
+    "name": "Istituto Bruno Leoni",
+    "region": "Italy",
+    "base": "https://brunoleoni.it/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 165,
+    "name": "IREF Europe",
+    "region": "France",
+    "base": "https://irefeurope.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 166,
+    "name": "Institut Economique Molinari",
+    "region": "France",
+    "base": "https://institutmolinari.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 167,
+    "name": "iFRAP",
+    "region": "France",
+    "base": "https://ifrap.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 168,
+    "name": "Civismo",
+    "region": "Spain",
+    "base": "https://civismo.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 169,
+    "name": "Instituto Juan de Mariana",
+    "region": "Spain",
+    "base": "https://juandemariana.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 170,
+    "name": "Edmund Burke Institute",
+    "region": "Ireland",
+    "base": "https://edmundburkeinstitute.ie/",
+    "seedUrls": [],
+    "status": "identity_unresolved"
+  },
+  {
+    "index": 171,
+    "name": "Iona Institute",
+    "region": "Ireland",
+    "base": "https://ionainstitute.ie/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 172,
+    "name": "Institut Liberalnich Studii",
+    "region": "Czech Republic",
+    "base": "https://inlist.cz/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 173,
+    "name": "CETA",
+    "region": "Czech Republic",
+    "base": "https://eceta.cz/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 174,
+    "name": "Lithuanian Free Market Institute",
+    "region": "Lithuania",
+    "base": "https://llri.lt/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 175,
+    "name": "Economic Freedom Foundation",
+    "region": "Poland",
+    "base": "https://wolnagospodarka.pl/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 176,
+    "name": "Mises Institute Poland",
+    "region": "Poland",
+    "base": "https://mises.pl/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 177,
+    "name": "Free Market Foundation (Hungary)",
+    "region": "Hungary",
+    "base": "https://szabadpiacalapitvany.hu/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 178,
+    "name": "Danube Institute",
+    "region": "Hungary",
+    "base": "https://danubeinstitute.hu/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 179,
+    "name": "Mathias Corvinus Collegium",
+    "region": "Hungary",
+    "base": "https://mcc.hu/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 180,
+    "name": "Bendukidze Free Market Center",
+    "region": "Ukraine",
+    "base": "https://bendukidze.org/",
+    "seedUrls": [],
+    "status": "domain_candidate"
+  },
+  {
+    "index": 181,
+    "name": "Atlas Network partner directory",
+    "region": "Global",
+    "base": "https://atlasnetwork.org/partners/",
+    "seedUrls": [
+      "https://www.atlasnetwork.org/partners"
+    ],
+    "status": "domain_candidate"
+  }
+]
