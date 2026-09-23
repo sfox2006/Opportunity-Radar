@@ -1,5 +1,9 @@
 # Political Opportunity Radar
 
+This repository is an independent copy of `sfox2006/Opportunity-Radar` for further
+development. Tests run on updates to `main`; website deployment is disabled by
+default. The existing live website remains in the original repository.
+
 A static opportunity explorer with a labelled interactive globe, zoom-dependent
 clusters, searchable programme cards, optional profile matching and newsletter signup.
 
@@ -23,7 +27,8 @@ node --test *.test.cjs newsletter-google/*.test.cjs
 python -m unittest discover -s agents -p test_control.py -v
 ```
 
-In GitHub Settings > Pages, select GitHub Actions as the publishing source.
+To publish this copy separately, select GitHub Actions in Settings > Pages and set
+the repository Actions variable `ENABLE_PAGES` to `true`, then run the workflow.
 Only `dist/` is uploaded as the Pages website, never private agent databases or
 Google response data. The repository itself is public; keep credentials and
 subscriber records out of all commits.

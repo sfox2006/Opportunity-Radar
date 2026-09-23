@@ -31,6 +31,7 @@ jobs:
       - name: Check research controls
         run: python -m unittest discover -s agents -p test_control.py -v
   deploy:
+    if: vars.ENABLE_PAGES == 'true'
     needs: test
     runs-on: ubuntu-latest
     permissions:
