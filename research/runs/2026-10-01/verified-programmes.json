@@ -1,4 +1,4 @@
-const opportunities = [
+[
   {
     "orgIndex": 15,
     "id": "tfas-washington-2027",
@@ -20,8 +20,7 @@ const opportunities = [
     "application": "Use Apply Now on the programme page to open the Spring 2027 application. Early and priority deadlines have passed; decisions are still made on a rolling basis. Confirm credit transfer with your university.",
     "url": "https://semester.connect.dcinternships.org/",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 14,
@@ -44,8 +43,7 @@ const opportunities = [
     "application": "Use Apply Now on the programme page; the application portal requires an account. Admissions are rolling.",
     "url": "https://hudsonpoliticalstudies.org/policy/5BC60zDKIwHJwPNvxxGJpG",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 71,
@@ -67,8 +65,7 @@ const opportunities = [
     "application": "Submit CV, cover letter, recent scholarly work, a research plan of up to two pages and three recommendation letters through the official portal.",
     "url": "https://www.hoover.org/hoover-fellows-program",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 65,
@@ -90,8 +87,7 @@ const opportunities = [
     "application": "Apply to suitable roles in the linked partner portal, complete short answers and both selection processes. Existing partner employees must also apply.",
     "url": "https://standtogetherfellowships.org/koch-associate-program/",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 17,
@@ -113,8 +109,7 @@ const opportunities = [
     "application": "Submit a resume, draft opinion article and two-minute introductory video through the official form.",
     "url": "https://www.joinyv.org/join",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 50,
@@ -137,8 +132,7 @@ const opportunities = [
     "application": "Upload a single PDF containing your resume and cover letter. Partner and KIP interviews are required.",
     "url": "https://jobs.lever.co/standtogether/c87ec9fd-f427-40d1-848d-13cea614dffa",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 52,
@@ -161,8 +155,7 @@ const opportunities = [
     "application": "Upload resume, cover letter, writing sample and semester timetable together as one PDF.",
     "url": "https://jobs.lever.co/standtogether/e4dd1d3c-79a0-435d-87b3-eac542b4c2b5",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 70,
@@ -185,8 +178,7 @@ const opportunities = [
     "application": "Application form, transcript, student ID, two academic references, writing sample, research proposal and visiting-scholar agreement. The linked form is titled 2026; confirm it is the 2027 fellowship on the official page.",
     "url": "https://mises.org/events/research-fellowship-residence-2027",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 16,
@@ -209,8 +201,7 @@ const opportunities = [
     "application": "Apply to the Spring 2027 vacancy through Heritage's linked recruitment portal.",
     "url": "https://www.heritage.org/young-leaders-program",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 112,
@@ -232,8 +223,7 @@ const opportunities = [
     "application": "Email CV, cover letter, transcript, English writing sample and availability to hiring@ideas.org.my.",
     "url": "https://www.ideas.org.my/work-with-us/internship-programme/",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 150,
@@ -255,8 +245,7 @@ const opportunities = [
     "application": "Use the application form linked from the official careers page.",
     "url": "https://www.epicenternetwork.eu/career/",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 54,
@@ -279,8 +268,7 @@ const opportunities = [
     "application": "Cover letter, resume and 2-3 published writing samples in one PDF. Submit through Reason's application portal.",
     "url": "https://reason.org/internships/journalism/",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 54,
@@ -303,8 +291,7 @@ const opportunities = [
     "application": "Cover letter specifying policy interests, resume and 2-3 writing samples in one PDF. Submit through Reason's application portal.",
     "url": "https://reason.org/internships/policy/",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 54,
@@ -327,8 +314,7 @@ const opportunities = [
     "application": "Cover letter and resume in one PDF. Submit through Reason's application portal.",
     "url": "https://reason.org/internships/marketing/",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 54,
@@ -351,8 +337,7 @@ const opportunities = [
     "application": "Cover letter and resume in one PDF. Submit through Reason's application portal.",
     "url": "https://reason.org/internships/video-production/",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 142,
@@ -375,8 +360,7 @@ const opportunities = [
     "application": "Email cover letter and resume to internship@meforum.org; virtual interview follows.",
     "url": "https://www.meforum.org/about/opportunities",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 102,
@@ -399,8 +383,7 @@ const opportunities = [
     "application": "Submit CV and details through the linked application form.",
     "url": "https://ccs.in/call-applications-education-policy-intern",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 102,
@@ -423,8 +406,7 @@ const opportunities = [
     "application": "Email CV and relevant writing sample to jeevika@ccs.in, using the subject specified on the vacancy page.",
     "url": "https://ccs.in/legal-internship-opportunity-policy-research-outreach-livelihood-vertical",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 102,
@@ -447,8 +429,7 @@ const opportunities = [
     "application": "Apply through the form linked on the vacancy page.",
     "url": "https://ccs.in/research-intern-street-vending-programmes",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 45,
@@ -471,8 +452,7 @@ const opportunities = [
     "application": "Use the Spring 2027 application linked on the programme page.",
     "url": "https://leadershipinstitute.org/internship-program/",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 18,
@@ -494,8 +474,7 @@ const opportunities = [
     "application": "Create an account on the official online-learning site and choose a course.",
     "url": "https://online.hillsdale.edu/",
     "status": "on-demand",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 46,
@@ -517,8 +496,7 @@ const opportunities = [
     "application": "Submit the official form with cover letter, resume, headshot, two or three writing samples and reference information.",
     "url": "https://yaf.org/national-journalism-center/",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 59,
@@ -540,8 +518,7 @@ const opportunities = [
     "application": "Select a 2027 semester and department in the official application; submit resume, cover letter, optional work sample and requested short answers.",
     "url": "https://www.texaspolicy.com/about/careers/internship-program",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 88,
@@ -563,8 +540,7 @@ const opportunities = [
     "application": "Use the scholarship application linked on the event page. No closing date is stated. Confirm what the award covers, including registration, before buying travel.",
     "url": "https://www.atlassociety.org/galts-gulch-2027",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 6,
@@ -587,8 +563,7 @@ const opportunities = [
     "application": "Apply through the official form linked from the programme page. Address the cover letter to Samuel Cruickshank.",
     "url": "https://iea.org.uk/students/iea-internship",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -611,8 +586,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2663/spring-intern%3a-media-relations/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -635,8 +609,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2664/spring-intern%3a-coalitions/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -659,8 +632,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2665/spring-intern%3a-free-initiative/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -683,8 +655,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2666/spring-intern%3a-editing-services/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -707,8 +678,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2667/spring-intern%3a-academic-programs/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -731,8 +701,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2668/spring-intern%3a-communications-and-marketing-systems/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -755,8 +724,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2669/spring-intern%3a-development/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -779,8 +747,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2670/spring-intern%3a-economic-policy/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -803,8 +770,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2671/spring-intern%3a-economic-innovation-and-editing/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -827,8 +793,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2672/spring-intern%3a-events/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -851,8 +816,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2673/spring-intern%3a-office-of-the-president/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -875,8 +839,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2674/spring-intern%3a-asian-securities/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -899,8 +862,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2675/spring-intern%3a-asian-economics/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -923,8 +885,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2676/spring-intern%3a-critical-threats-project-%e2%80%93-africa/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -947,8 +908,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2677/spring-intern%3a-critical-threats-project---communications-and-operations/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -971,8 +931,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2678/spring-intern%3a-critical-threats-project---iran-and-middle-east/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -995,8 +954,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2679/spring-intern%3a-demographics-and-political-economy/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1019,8 +977,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2680/spring-intern%3a-military-strategy-and-us-defense-budge/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1043,8 +1000,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2681/spring-intern%3a-us-foreign-policy-and-communications/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1067,8 +1023,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2682/spring-intern%3a-national-security-strategy%2c-pentagon-budgeting%2c-and-the-us-defense-industrial-base/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1091,8 +1046,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2683/spring-intern%3a-coalition-defense-of-taiwan/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1115,8 +1069,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2684/spring-intern%3a-asian-security-and-technology/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1139,8 +1092,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2685/spring-intern%3a-survey-center-on-american-life/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1163,8 +1115,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2686/spring-intern%3a-american-history-and-culture/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1187,8 +1138,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2687/spring-intern%3a-center-for-the-future-of-the-american-university/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1211,8 +1161,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2688/spring-intern%3a-congressional-studies/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1235,8 +1184,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2689/spring-intern%3a-center-on-opportunity-and-social-mobility/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1259,8 +1207,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2690/spring-intern%3a-cosm%2c-vocation%2c-career%2c-and-work/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1283,8 +1230,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2691/spring-intern%3a-center-for-technology%2c-science%2c-and-energy-%e2%80%93-science-policy/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1307,8 +1253,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2692/spring-intern%3a-center-for-technology%2c-science%2c-and-energy-%e2%80%93-technology-policy/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1331,8 +1276,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2693/spring-intern%3a-housing-center/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1355,8 +1299,7 @@ const opportunities = [
     "application": "Apply on this role's official listing. Applications are accepted on a rolling basis until the internship is filled.",
     "url": "https://internships-aei.icims.com/jobs/2694/spring-intern%3a-energy-and-climate-policy/job",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 10,
@@ -1379,8 +1322,7 @@ const opportunities = [
     "application": "Submit a transcript, CV and a 500-600 word statement through the programme page.",
     "url": "https://www.aei.org/academic-programs/whp/",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 11,
@@ -1403,8 +1345,7 @@ const opportunities = [
     "application": "Apply through the official internships page. The spring 2027 application must be completed by the published deadline. Finalists are notified by 13 November 2026, with a decision by 18 December 2026.",
     "url": "https://www.cato.org/internships",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 12,
@@ -1427,8 +1368,7 @@ const opportunities = [
     "application": "Apply through the official student internships page. Selected candidates are contacted for an interview after the deadline.",
     "url": "https://aier.org/student-internships/",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 12,
@@ -1451,8 +1391,7 @@ const opportunities = [
     "application": "Apply through the official graduate fellowships page. Selected candidates are contacted for an interview within two weeks of the due date.",
     "url": "https://aier.org/graduate-fellowships/",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 12,
@@ -1475,8 +1414,7 @@ const opportunities = [
     "application": "Apply through the official visiting research fellowships page at least six weeks before the proposed start.",
     "url": "https://aier.org/visiting-research-fellowships/",
     "status": "rolling",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 14,
@@ -1498,8 +1436,7 @@ const opportunities = [
     "application": "Apply through the linked Hudson internships board. Five fall 2026 research internships were listed, and pay is not stated. Confirm that a place is still open before you apply.",
     "url": "https://www.hudson.org/about/careers-internships",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 15,
@@ -1522,8 +1459,7 @@ const opportunities = [
     "application": "Apply through the programme page. The page does not print the deadline years; confirm them on the official page.",
     "url": "https://www.dcinternships.org/",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   },
   {
     "orgIndex": 15,
@@ -1546,500 +1482,6 @@ const opportunities = [
     "application": "Apply to the Summer 2027 Business and Government Relations track first. The Tisdale essays are offered after enrolment. There is no separate Tisdale deadline.",
     "url": "https://www.dcinternships.org/costs-scholarships",
     "status": "open",
-    "reviewedAt": "2026-10-01",
-    "source": "Official source reviewed 11 Sep 2026"
+    "reviewedAt": "2026-10-01"
   }
-];
-
-const typeOrder = ["Internship", "Conference", "Fellowship", "Essay competition", "Online course", "Seminar", "Scholarship"];
-
-const state = {
-  query: "",
-  region: "All",
-  type: "All",
-  eligibility: "All",
-  paid: "All",
-  profile: null,
-  homeRegion: "",
-  needsInternational: false,
-  needsFunded: false,
-  interests: new Set(),
-  selectedId: opportunities[0].id,
-  mapReady: false
-};
-
-const els = {
-  canvas: document.getElementById("globe"),
-  query: document.getElementById("query"),
-  regionFilter: document.getElementById("region-filter"),
-  typeFilter: document.getElementById("type-filter"),
-  eligibilityFilter: document.getElementById("eligibility-filter"),
-  paidFilter: document.getElementById("paid-filter"),
-  homeRegion: document.getElementById("home-region"),
-  needsInternational: document.getElementById("needs-international"),
-  needsFunded: document.getElementById("needs-funded"),
-  interestChips: document.getElementById("interest-chips"),
-  detail: document.getElementById("detail-card"),
-  results: document.getElementById("results"),
-  scanCount: document.getElementById("scan-count"),
-  reset: document.getElementById("reset-filters")
-};
-
-let map;
-let popup;
-const markerLayers = [];
-
-function separateDots(points, gap = 23) {
-  const placed = [];
-  return points.map(point => {
-    let x = point.x, y = point.y;
-    for (let step = 0; placed.some(other => Math.hypot(x - other.x, y - other.y) < gap); step++) {
-      const radius = gap * Math.sqrt(step + 1);
-      const angle = step * 2.399963229728653;
-      x = point.x + Math.cos(angle) * radius;
-      y = point.y + Math.sin(angle) * radius;
-    }
-    placed.push({ x, y });
-    return [x - point.x, y - point.y];
-  });
-}
-
-function layoutDots() {
-  if (!state.mapReady) return;
-  // Keep geographic positions at overview zooms; separate co-located pins only up close.
-  if (map.getZoom() < 10) {
-    markerLayers.forEach(id => map.setPaintProperty(id, "circle-translate", [0, 0]));
-    return;
-  }
-  const items = filteredItems().filter(item => markerLayers.includes("pin-" + item.id))
-    .sort((a, b) => a.id.localeCompare(b.id));
-  const offsets = separateDots(items.map(item => map.project([item.lon, item.lat])));
-  items.forEach((item, index) => map.setPaintProperty("pin-" + item.id, "circle-translate", offsets[index]));
-}
-
-function unique(key) {
-  return [...new Set(opportunities.map((item) => item[key]))].sort();
-}
-
-function fillSelect(select, values) {
-  values.forEach((value) => {
-    const option = document.createElement("option");
-    option.value = value;
-    option.textContent = value;
-    select.appendChild(option);
-  });
-}
-
-function matchScore(item) {
-  if (!state.profile) return null;
-  const profile = state.profile;
-  let score = 30;
-  if (profile.interests.has(item.type)) score += 22;
-  if (item.region === profile.homeRegion || item.country === profile.homeRegion) score += 18;
-  if (profile.needsInternational && item.eligibility !== "No") score += 14;
-  if (!profile.needsInternational) score += 6;
-  if (profile.needsFunded && /Paid|stipend|Free|Scholarship|Prize/i.test(item.paid)) score += 14;
-  if (/Rolling|Applications open|Apply early/i.test(item.deadline)) score += 6;
-  return Math.min(score, 99);
-}
-
-function passesFilters(item) {
-  const haystack = `${item.country} ${item.region} ${item.organisation} ${item.program} ${item.type} ${item.deadline} ${item.paid} ${item.description} ${item.location} ${item.eligibilityDetails} ${item.application}`.toLowerCase();
-  const paidPass =
-    state.paid === "All" ||
-    (state.paid === "Paid" && /Paid|stipend|Scholarship|Prize/i.test(item.paid)) ||
-    (state.paid === "Free" && /Free/i.test(item.paid)) ||
-    (state.paid === "No" && item.paid === "No");
-  return (
-    (!state.query || haystack.includes(state.query.toLowerCase())) &&
-    (state.region === "All" || item.region === state.region) &&
-    (state.type === "All" || item.type === state.type) &&
-    (state.eligibility === "All" || item.eligibility === state.eligibility) &&
-    paidPass
-  );
-}
-
-function filteredItems() {
-  const items = opportunities.filter(passesFilters);
-  if (!state.profile) return items;
-  return items
-    .map((item) => ({ ...item, score: matchScore(item) }))
-    .sort((a, b) => b.score - a.score || typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type));
-}
-
-function syncMap() {
-  const items = filteredItems();
-  els.scanCount.textContent = items.length;
-  if (!state.mapReady) return;
-  map.getSource("programs").setData({
-    type: "FeatureCollection",
-    features: items.filter(item => item.mapped !== false && item.region !== "Online" && item.country !== "Global").map(item => ({
-      type: "Feature",
-      geometry: { type: "Point", coordinates: [item.lon, item.lat] },
-      properties: { id: item.id, selected: item.id === state.selectedId }
-    }))
-  });
-  layoutDots();
-}
-
-function focusProgram(item) {
-  state.selectedId = item.id;
-  popup?.remove();
-  render();
-  document.getElementById("explore")?.scrollIntoView({ behavior: "smooth", block: "start" });
-  if (map && item.mapped !== false && item.region !== "Online" && item.country !== "Global") {
-    map.flyTo({ center: [item.lon, item.lat], zoom: 10, duration: 1400 });
-  }
-}
-
-function showOpportunityCard(item) {
-  state.selectedId = item.id;
-  popup?.remove();
-  render();
-  const card = document.getElementById("opportunity-" + item.id);
-  if (!card) return;
-  card.focus({ preventScroll: true });
-  card.scrollIntoView({
-    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
-    block: "center"
-  });
-}
-
-function initMap() {
-  const status = document.getElementById("map-status");
-  try {
-    map = new maplibregl.Map({
-      container: "globe",
-      style: "https://tiles.openfreemap.org/styles/liberty",
-      center: [25, 20],
-      zoom: window.innerWidth < 720 ? 0.7 : 1.5,
-      minZoom: -0.7,
-      maxZoom: 16,
-      cooperativeGestures: true,
-      attributionControl: { compact: true },
-      canvasContextAttributes: { preserveDrawingBuffer: true }
-    });
-    map.addControl(new maplibregl.NavigationControl({ showCompass: true }), "top-right");
-    map.addControl(new maplibregl.ScaleControl({ maxWidth: 100 }), "bottom-left");
-    map.on("style.load", () => {
-      map.setProjection({ type: "globe" });
-      for (const layer of map.getStyle().layers) {
-        if (layer.type === "symbol" && layer.layout?.["text-field"]) {
-          map.setLayoutProperty(layer.id, "text-field", ["coalesce", ["get", "name:en"], ["get", "name:latin"], ["get", "name"]]);
-          map.setLayoutProperty(layer.id, "text-letter-spacing", 0);
-          map.setLayoutProperty(layer.id, "text-allow-overlap", false);
-          map.setLayoutProperty(layer.id, "text-ignore-placement", false);
-        }
-      }
-      map.addSource("programs", {
-        type: "geojson", cluster: true, clusterRadius: 50, clusterMaxZoom: 9,
-        data: { type: "FeatureCollection", features: [] }
-      });
-      map.addLayer({
-        id: "program-clusters", type: "circle", source: "programs",
-        filter: ["has", "point_count"],
-        paint: {
-          "circle-radius": ["step", ["get", "point_count"], 18, 10, 23, 30, 28],
-          "circle-color": "#008ba1", "circle-stroke-color": "#ffffff", "circle-stroke-width": 2
-        }
-      });
-      map.addLayer({
-        id: "program-cluster-count", type: "symbol", source: "programs",
-        filter: ["has", "point_count"],
-        layout: { "text-field": ["get", "point_count_abbreviated"], "text-size": 13,
-          "text-font": ["Noto Sans Bold"], "text-allow-overlap": true },
-        paint: { "text-color": "#ffffff" }
-      });
-      map.on("mouseenter", "program-clusters", () => { map.getCanvas().style.cursor = "pointer"; });
-      map.on("mouseleave", "program-clusters", () => { map.getCanvas().style.cursor = ""; });
-      map.on("click", "program-clusters", async event => {
-        const feature = event.features?.[0];
-        if (!feature) return;
-        const source = map.getSource("programs");
-        try {
-          const zoom = await source.getClusterExpansionZoom(feature.properties.cluster_id);
-          map.easeTo({ center: feature.geometry.coordinates, zoom: Math.min(zoom, 10),
-            duration: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 650 });
-        } catch { /* A filter change may replace the cluster while its zoom is resolving. */ }
-      });
-      opportunities.filter(item => item.mapped !== false && item.region !== "Online" && item.country !== "Global").forEach(item => {
-      const layerId = "pin-" + item.id;
-      markerLayers.push(layerId);
-      map.addLayer({
-        id: layerId, type: "circle", source: "programs",
-        filter: ["all", ["!", ["has", "point_count"]], ["==", ["get", "id"], item.id]],
-        paint: {
-          "circle-radius": ["case", ["get", "selected"], 8, 6],
-          "circle-color": ["case", ["get", "selected"], "#d41484", "#008ba1"],
-          "circle-translate-anchor": "viewport",
-          "circle-stroke-color": "#ffffff", "circle-stroke-width": 2
-        }
-      });
-      map.on("mouseenter", layerId, () => { map.getCanvas().style.cursor = "pointer"; });
-      map.on("mouseleave", layerId, () => { map.getCanvas().style.cursor = ""; });
-      map.on("click", layerId, () => showOpportunityCard(item));
-      });
-      state.mapReady = true;
-      syncMap();
-    });
-    map.on("move", layoutDots);
-    map.on("resize", layoutDots);
-    map.on("idle", () => { status.hidden = true; });
-    map.on("error", () => {
-      status.textContent = "Map connection interrupted. Reload to try again.";
-      status.hidden = false;
-    });
-    document.getElementById("world-view").addEventListener("click", () => {
-      popup?.remove();
-      map.flyTo({ center: [25, 20], zoom: window.innerWidth < 720 ? 0.7 : 1.5, bearing: 0, pitch: 0, duration: 1000 });
-    });
-    new ResizeObserver(() => map.resize()).observe(els.canvas);
-  } catch (error) {
-    status.textContent = "Map could not load. Reload to try again.";
-  }
-}
-
-function renderChips() {
-  els.interestChips.innerHTML = "";
-  typeOrder.forEach((type) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = `chip ${state.interests.has(type) ? "active" : ""}`;
-    button.textContent = type;
-    button.addEventListener("click", () => {
-      if (state.interests.has(type)) state.interests.delete(type);
-      else state.interests.add(type);
-      render();
-    });
-    els.interestChips.appendChild(button);
-  });
-}
-
-function renderDetail() {
-  const item = opportunities.find((candidate) => candidate.id === state.selectedId);
-  if (!item) return;
-  const score = matchScore(item);
-  els.detail.innerHTML = `
-    <p class="eyebrow">${item.source}</p>
-    <h2>${item.organisation}</h2>
-    <p><strong>${item.program}</strong></p>
-    <div class="detail-meta">
-      <span class="pill">${item.country}</span>
-      <span class="pill">${item.type}</span>
-      <span class="pill">${item.deadline}</span>
-      ${score === null ? "" : `<span class="pill">${score}% profile fit</span>`}
-    </div>
-    <p>${item.description}</p>
-  `;
-}
-
-function renderResults() {
-  const items = filteredItems();
-  els.results.innerHTML = "";
-  if (!items.length) {
-    els.results.innerHTML = `<article class="result"><h3>No matches yet</h3><p>Try broadening the region, type, or funding filters.</p></article>`;
-    return;
-  }
-  items.forEach((item) => {
-    const card = document.createElement("article");
-    card.className = `result ${item.id === state.selectedId ? "active" : ""}`;
-    card.id = "opportunity-" + item.id;
-    card.tabIndex = 0;
-    card.innerHTML = `
-      <div class="detail-meta">
-        <span class="pill">${item.country}</span>
-        <span class="pill">${item.type}</span>
-      </div>
-      <h3>${item.organisation} - ${item.program}</h3>
-      <p>${item.description}</p>
-      <dl class="opportunity-facts">
-        <div><dt>Location</dt><dd>${item.location}</dd></div>
-        <div><dt>Duration</dt><dd>${item.duration}</dd></div>
-        <div><dt>Funding / cost</dt><dd>${item.fundingDetails || item.paid}</dd></div>
-        <div><dt>Deadline / status</dt><dd>${item.deadline}</dd></div>
-      </dl>
-      <div class="application-detail"><h4>Who can apply</h4><p>${item.eligibilityDetails}</p></div>
-      <div class="application-detail"><h4>Application details</h4><p>${item.application}</p></div>
-      <div class="opportunity-actions"><a href="${item.url}" target="_blank" rel="noopener noreferrer">Official programme details</a><small>Source reviewed 11 Sep 2026</small></div>
-      ${state.profile ? `<div class="score">
-        <span>${item.score}% profile fit</span>
-        <div class="score-bar" aria-hidden="true"><span style="width:${item.score}%"></span></div>
-      </div>` : ""}
-    `;
-    const select = () => {
-      focusProgram(item);
-    };
-    card.addEventListener("click", (event) => {
-      if (!event.target.closest("a, button, summary, input")) select();
-    });
-    card.addEventListener("keydown", (event) => {
-      if (event.target !== card) return;
-      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); select(); }
-    });
-    els.results.appendChild(card);
-  });
-}
-
-function render() {
-  document.getElementById("profile-summary").hidden = !state.profile;
-  document.getElementById("clear-profile").hidden = !state.profile;
-  document.getElementById("apply-profile").disabled = !(els.homeRegion.value || state.interests.size || els.needsInternational.checked || els.needsFunded.checked);
-  document.getElementById("apply-profile").textContent = state.profile ? "Update profile" : "Apply profile";
-  renderChips();
-  renderDetail();
-  renderResults();
-  syncMap();
-}
-
-function applyProfile() {
-  if (!(els.homeRegion.value || state.interests.size || els.needsInternational.checked || els.needsFunded.checked)) return;
-  state.profile = {
-    homeRegion: els.homeRegion.value,
-    interests: new Set(state.interests),
-    needsInternational: els.needsInternational.checked,
-    needsFunded: els.needsFunded.checked
-  };
-  render();
-}
-
-function clearProfile() {
-  state.profile = null;
-  state.interests.clear();
-  els.homeRegion.value = "";
-  els.needsInternational.checked = false;
-  els.needsFunded.checked = false;
-  updateState();
-}
-
-function updateState() {
-  state.query = els.query.value.trim();
-  state.region = els.regionFilter.value;
-  state.type = els.typeFilter.value;
-  state.eligibility = els.eligibilityFilter.value;
-  state.paid = els.paidFilter.value;
-  state.homeRegion = els.homeRegion.value;
-  state.needsInternational = els.needsInternational.checked;
-  state.needsFunded = els.needsFunded.checked;
-  render();
-}
-
-function resetFilters() {
-  els.query.value = "";
-  els.regionFilter.value = "All";
-  els.typeFilter.value = "All";
-  els.eligibilityFilter.value = "All";
-  els.paidFilter.value = "All";
-  updateState();
-}
-
-function registerWebMcpTools() {
-  const context = document.modelContext;
-  if (!context?.registerTool) return;
-  const reportError = (error) => console.warn("WebMCP registration failed", error);
-  const lifecycle = new AbortController();
-  const filterSchema = {
-    type: "object",
-    properties: {
-      query: { type: "string" },
-      region: { type: "string" },
-      type: { type: "string" },
-      eligibility: { type: "string" },
-      paid: { type: "string" }
-    },
-    additionalProperties: false
-  };
-  const profileSchema = {
-    type: "object",
-    properties: {
-      homeRegion: { type: "string" },
-      interests: { type: "array", items: { type: "string" } },
-      needsInternational: { type: "boolean" },
-      needsFunded: { type: "boolean" }
-    },
-    additionalProperties: false
-  };
-  const safeSet = (select, value) => {
-    if (!value) return;
-    const option = [...select.options].find((candidate) => candidate.value === value);
-    if (option) select.value = value;
-  };
-
-  try {
-    void Promise.resolve(
-      context.registerTool(
-        {
-          name: "filter_opportunities",
-          title: "Filter opportunities",
-          description: "Apply opportunity filters and return the current ranked result list.",
-          inputSchema: filterSchema,
-          annotations: { readOnlyHint: false, untrustedContentHint: false },
-          execute(input = {}) {
-            if (typeof input.query === "string") els.query.value = input.query;
-            safeSet(els.regionFilter, input.region);
-            safeSet(els.typeFilter, input.type);
-            safeSet(els.eligibilityFilter, input.eligibility);
-            safeSet(els.paidFilter, input.paid);
-            updateState();
-            return { count: filteredItems().length, results: filteredItems().slice(0, 8).map(({ organisation, program, country, type, score }) => ({ organisation, program, country, type, ...(score == null ? {} : { score }) })) };
-          }
-        },
-        { signal: lifecycle.signal }
-      )
-    ).catch(reportError);
-    void Promise.resolve(
-      context.registerTool(
-        {
-          name: "set_profile_match",
-          title: "Set profile match",
-          description: "Apply profile preferences explicitly supplied by the user and return matching opportunities. Do not infer or invent a profile.",
-          inputSchema: profileSchema,
-          annotations: { readOnlyHint: false, untrustedContentHint: false },
-          execute(input = {}) {
-            if (!Object.keys(input).some(key => ["homeRegion", "interests", "needsInternational", "needsFunded"].includes(key))) return { error: "Provide profile preferences first." };
-            safeSet(els.homeRegion, input.homeRegion);
-            if (Array.isArray(input.interests)) {
-              state.interests = new Set(input.interests.filter((item) => typeOrder.includes(item)));
-            }
-            if (typeof input.needsInternational === "boolean") els.needsInternational.checked = input.needsInternational;
-            if (typeof input.needsFunded === "boolean") els.needsFunded.checked = input.needsFunded;
-            updateState();
-            applyProfile();
-            return { topMatches: filteredItems().slice(0, 5).map(({ organisation, program, country, score }) => ({ organisation, program, country, score })) };
-          }
-        },
-        { signal: lifecycle.signal }
-      )
-    ).catch(reportError);
-  } catch (error) {
-    reportError(error);
-  }
-}
-
-fillSelect(els.regionFilter, unique("region"));
-fillSelect(els.typeFilter, typeOrder);
-
-[els.query, els.regionFilter, els.typeFilter, els.eligibilityFilter, els.paidFilter, els.homeRegion, els.needsInternational, els.needsFunded].forEach((el) => {
-  el.addEventListener("input", updateState);
-  el.addEventListener("change", updateState);
-});
-
-els.reset.addEventListener("click", resetFilters);
-document.getElementById("apply-profile").addEventListener("click", applyProfile);
-document.getElementById("clear-profile").addEventListener("click", clearProfile);
-
-if (typeof IntersectionObserver !== "undefined") {
-  const sections = new IntersectionObserver(entries => {
-    for (const entry of entries) {
-      if (!entry.isIntersecting) continue;
-      document.querySelectorAll("nav a").forEach(link => {
-        if (link.getAttribute("href") === "#" + entry.target.id) link.setAttribute("aria-current", "location");
-        else link.removeAttribute("aria-current");
-      });
-    }
-  }, { rootMargin: "-15% 0px -65% 0px" });
-  document.querySelectorAll("main > section").forEach(section => sections.observe(section));
-}
-
-render();
-initMap();
-registerWebMcpTools();
+]
