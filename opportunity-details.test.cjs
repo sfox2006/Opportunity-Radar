@@ -6,7 +6,7 @@ const context = vm.createContext({});
 vm.runInContext(code.slice(0, code.indexOf('const state =')), context);
 const items = vm.runInContext('opportunities', context);
 const supportedTypes = vm.runInContext('typeOrder', context);
-assert.equal(items.length, 75);
+assert.equal(items.length, 81);
 for (const item of items) {
   assert.ok(supportedTypes.includes(item.type), `${item.id}: unsupported filter type ${item.type}`);
   for (const key of ['description', 'location', 'duration', 'paid', 'deadline', 'eligibilityDetails', 'application', 'url']) {
@@ -70,4 +70,53 @@ for (const id of [
   assert.equal(items.some(item => item.id === id), false, id);
 }
 assert.match(code, /Source reviewed 11 Sep 2026/);
-console.log('PASS: 75 reviewed records, official HTTPS sources, status fields and independent link controls.');
+const manning = byId('manning-foundation-student-essay-contest-2026');
+assert.equal(manning.type, 'Essay competition');
+assert.equal(manning.region, 'Online');
+assert.match(manning.deadline, /Midnight, Sunday 8 November 2026 \(time zone not stated\)/);
+assert.match(`${manning.description} ${manning.eligibilityDetails}`, /Canadian undergraduates/i);
+assert.match(`${manning.description} ${manning.eligibilityDetails}`, /not an internship/i);
+assert.match(`${manning.paid} ${manning.fundingDetails}`, /\$7,000 in prizes/);
+assert.equal(manning.url, 'https://manningfoundation.org/4th-annual-morgan-trottier-student-essay-contest/');
+const piensa = byId('fundacion-piensa-jovenes-lideres-2026');
+assert.match(`${piensa.description} ${piensa.fundingDetails}`, /recognition award/i);
+assert.match(`${piensa.description} ${piensa.fundingDetails} ${piensa.paid}`, /no prize money|no money awarded/i);
+assert.match(`${piensa.description} ${piensa.eligibilityDetails}`, /18-35/);
+assert.match(`${piensa.description} ${piensa.eligibilityDetails}`, /Valpara[ií]so/);
+assert.match(`${piensa.description} ${piensa.eligibilityDetails}`, /Spanish/);
+assert.match(piensa.deadline, /23:59, Friday 30 October 2026 \(Chile time implied; time zone not stated\)/);
+assert.equal(piensa.url, 'https://jovenesliderespiensa.cl/');
+assert.match(piensa.application, /https:\/\/docs\.google\.com\/forms\/d\/e\/1FAIpQLSediVYK3-CZngcu0QNnN3BTAFcvySatmS6EP0nFvGiDPGCG3w\/viewform/);
+const ifese = byId('ifese-studentenpresentaties-2027');
+assert.equal(ifese.deadline, 'Closing date unclear on the official page, apply early.');
+assert.equal(/1 May 2027|May 2027|mei 2027|donderdag/i.test(JSON.stringify(ifese)), false);
+assert.match(`${ifese.description} ${ifese.eligibilityDetails}`, /Dutch-language/);
+assert.match(`${ifese.description} ${ifese.eligibilityDetails}`, /[Bb]achelor/);
+assert.match(`${ifese.description} ${ifese.eligibilityDetails}`, /five places/);
+assert.match(`${ifese.description} ${ifese.eligibilityDetails}`, /first come, first served/);
+assert.match(ifese.application, /jens\.vanmieghem@ifese\.be/);
+assert.equal(ifese.mapped, false);
+assert.equal(ifese.url, 'https://www.ifese.be/studenten/studentenpresentaties/');
+const hayek = byId('hayek-gesellschaft-juniorenkreis-wissenschaft-potsdam-2026');
+assert.equal(hayek.type, 'Seminar');
+assert.match(`${hayek.program} ${hayek.description}`, /academic weekend/i);
+assert.match(`${hayek.description} ${hayek.eligibilityDetails}`, /not an internship/i);
+assert.match(`${hayek.description} ${hayek.duration} ${hayek.deadline}`, /Friday 6 to Sunday 8 November 2026/);
+assert.match(`${hayek.eligibilityDetails} ${hayek.description}`, /18-35/);
+assert.match(`${hayek.eligibilityDetails} ${hayek.description}`, /German/);
+assert.match(`${hayek.deadline} ${hayek.application}`, /[Nn]o fixed deadline/);
+assert.match(hayek.application, /KF_Israel\[at\]gmx\.de/);
+assert.equal(hayek.url, 'https://hayek.de/veranstaltungen/juniorenkreis-wissenschaft-kapital-produktion-und-kapitalismus/');
+const insm = byId('iw-koeln-insm-studentischer-mitarbeiter-volkswirtschaft');
+const koeln = byId('iw-koeln-student-finanz-immobilienmaerkte');
+for (const job of [insm, koeln]) {
+  assert.match(`${job.program} ${job.description} ${job.eligibilityDetails}`, /[Ss]tudent job \(Werkstudent/);
+  assert.match(`${job.description} ${job.eligibilityDetails}`, /not an internship/i);
+  assert.match(`${job.description} ${job.eligibilityDetails}`, /German/);
+  assert.match(job.deadline, /Rolling until filled/);
+}
+assert.match(koeln.deadline, /Starts 1 October 2026 and may already be filled/);
+assert.equal(/already be filled/.test(insm.deadline), false);
+assert.equal(insm.url, 'https://k60828.coveto.de/job-studentischer-mitarbeiter-volkswirtschaft-wirtschaftspolitik-m-w-d-berlin-1173.html');
+assert.equal(koeln.url, 'https://k60828.coveto.de/job-studentischer-mitarbeiter-m-w-d-mit-dem-schwerpunkt-finanz-und-immobilienmaerkte-koeln-1174.html');
+console.log('PASS: 81 reviewed records, official HTTPS sources, status fields and independent link controls.');
