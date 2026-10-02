@@ -6,7 +6,7 @@ const context = vm.createContext({});
 vm.runInContext(code.slice(0, code.indexOf('const state =')), context);
 const items = vm.runInContext('opportunities', context);
 const supportedTypes = vm.runInContext('typeOrder', context);
-assert.equal(items.length, 87);
+assert.equal(items.length, 91);
 for (const item of items) {
   assert.ok(supportedTypes.includes(item.type), `${item.id}: unsupported filter type ${item.type}`);
   for (const key of ['description', 'location', 'duration', 'paid', 'deadline', 'eligibilityDetails', 'application', 'url']) {
@@ -235,4 +235,72 @@ assert.match(ocpa.application, /Matt@OCPAthink\.org/);
 assert.equal(ocpa.url, 'https://www.fearsfellowship.com/a-3-lightbox.html');
 assert.equal(ocpa.source, 'Official source reviewed 11 Sep 2026');
 assert.equal(/2023|Copyright|planned for OKC and Tulsa/i.test(JSON.stringify(ocpa)), false);
-console.log('PASS: 87 reviewed records, official HTTPS sources, status fields and independent link controls.');
+const aeasp = byId('aeasp-summer-2027');
+assert.equal(aeasp.type, 'Fellowship');
+assert.equal(aeasp.region, 'United States');
+assert.equal(aeasp.eligibility, 'Some restrictions');
+assert.equal(aeasp.lat, 38.9072);
+assert.equal(aeasp.lon, -77.0369);
+assert.match(aeasp.paid, /stipend/i);
+assert.equal(/free/i.test(aeasp.paid), false);
+assert.match(`${aeasp.description} ${aeasp.eligibilityDetails}`, /open to all ethnicities/i);
+assert.match(`${aeasp.description} ${aeasp.eligibilityDetails}`, /regardless of ethnicity/i);
+assert.match(`${aeasp.description} ${aeasp.eligibilityDetails}`, /full 8 weeks free/i);
+assert.match(`${aeasp.description} ${aeasp.paid} ${aeasp.fundingDetails}`, /\$3,250/);
+assert.match(`${aeasp.description} ${aeasp.eligibilityDetails} ${aeasp.fundingDetails}`, /US citizens and permanent residents/);
+assert.match(`${aeasp.description} ${aeasp.eligibilityDetails} ${aeasp.fundingDetails}`, /about \$25,000/);
+assert.match(`${aeasp.description} ${aeasp.location}`, /Washington, DC/);
+assert.match(`${aeasp.deadline} ${aeasp.application}`, /Sunday 31 January 2027/);
+assert.match(`${aeasp.deadline} ${aeasp.application}`, /no time or time zone stated/);
+assert.match(aeasp.application, /aeasp@american\.edu/);
+assert.equal(aeasp.url, 'https://www.aeaweb.org/about-aea/committees/aeasp');
+assert.equal(aeasp.source, 'Official source reviewed 11 Sep 2026');
+const partnership = byId('partnership-public-service-internship-spring-2027');
+assert.equal(partnership.type, 'Internship');
+assert.equal(partnership.lat, 38.9072);
+assert.equal(partnership.lon, -77.0369);
+assert.match(partnership.paid, /Paid/);
+assert.match(`${partnership.paid} ${partnership.fundingDetails}`, /\$2,000 per month/);
+assert.match(`${partnership.description} ${partnership.eligibilityDetails}`, /[Uu]ndergraduates, graduate students and recent graduates/);
+assert.match(`${partnership.deadline} ${partnership.description} ${partnership.application}`, /Monday 19 October 2026/);
+assert.match(`${partnership.deadline} ${partnership.description} ${partnership.application}`, /page prints no year/);
+assert.match(`${partnership.deadline} ${partnership.description} ${partnership.application}`, /2026 year is inferred from the weekday and the Spring 2027 section/);
+assert.match(`${partnership.description} ${partnership.application}`, /[Nn]o email is printed/);
+assert.match(`${partnership.description} ${partnership.application}`, /\(202\) 775-9111/);
+assert.equal(partnership.url, 'https://ourpublicservice.org/about/work-with-us/partnership-internship-program');
+const siepr = byId('siepr-predoctoral-fellows-2027');
+assert.equal(siepr.type, 'Fellowship');
+assert.equal(siepr.lat, 37.4275);
+assert.equal(siepr.lon, -122.1697);
+assert.match(`${siepr.paid} ${siepr.description}`, /[Pp]aid predoctoral/);
+assert.match(`${siepr.description} ${siepr.location}`, /Stanford, California/);
+assert.match(`${siepr.description} ${siepr.location}`, /not Washington, DC/);
+assert.match(siepr.description, /2-year full-time Stanford staff job/);
+assert.match(`${siepr.description} ${siepr.eligibilityDetails}`, /bachelor's degree is needed by the 6 July 2027 start/);
+assert.match(siepr.duration, /Up to 2 years/);
+assert.match(`${siepr.description} ${siepr.eligibilityDetails}`, /US work authorisation|authorisation to work in the United States/);
+assert.match(`${siepr.deadline} ${siepr.description} ${siepr.application}`, /Thursday 8 October 2026 for full consideration/);
+assert.equal(siepr.url, 'https://siepr.stanford.edu/programs/siepr-predoctoral-research-fellows-program/apply-siepr-predoctoral-research-fellows');
+const kip = byId('stand-together-koch-internship-spring-2027');
+assert.equal(kip.type, 'Internship');
+assert.equal(kip.status, 'rolling');
+assert.equal(kip.lat, 38.8816);
+assert.equal(kip.lon, -77.091);
+assert.match(kip.paid, /[Ss]tipend/);
+assert.match(`${kip.paid} ${kip.fundingDetails} ${kip.description}`, /\$7,500/);
+assert.match(`${kip.paid} ${kip.fundingDetails} ${kip.description}`, /\$5,500/);
+assert.match(`${kip.description} ${kip.eligibilityDetails}`, /[Cc]urrent students only/);
+assert.match(`${kip.deadline} ${kip.description} ${kip.application}`, /[Rr]olling through December 2026/);
+assert.match(`${kip.deadline} ${kip.description} ${kip.application}`, /apply and accept a partner offer/);
+assert.equal(kip.url, 'https://standtogetherfellowships.org/koch-internship-program/');
+for (const id of [
+  'cbcf-pathways-csuite-summer-2027',
+  'chci-congressional-internship-summer-2027',
+  'chci-public-policy-fellowship-2027-28',
+  'apaics-office-internship-spring-2027',
+  'apaics-congressional-internship-summer-2027'
+]) {
+  assert.equal(items.some(item => item.id === id), false, id);
+}
+assert.equal(items.some(item => item.id === 'hudson-policy-oct2026'), true);
+console.log('PASS: 91 reviewed records, official HTTPS sources, status fields and independent link controls.');
