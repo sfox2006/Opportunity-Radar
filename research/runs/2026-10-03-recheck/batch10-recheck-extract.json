@@ -1,0 +1,114 @@
+{
+ "recheck1Batch11": {
+  "checkedAtUtc": "2026-10-03T22:10:00Z",
+  "backup": "backups/verified.pre-recheck1.json",
+  "items": {
+   "cei": {
+    "current_page": "https://cei.org/about/internships/",
+    "superseded": "https://cei.org/careers/internships/ (= canonical cei.org/internships/, modified 2025-07-22)",
+    "inPersonOnly": true,
+    "deadline": "Tue 15 Dec 2026 (year inferred)",
+    "pay": "$500/week, in-person only",
+    "cardChange": true
+   },
+   "cato": {
+    "springDue": "Sun 25 Oct 2026 11:59 pm ET",
+    "pay": "$17.50/hr",
+    "summer": "opens Jan 11 2027, due Mon 15 Feb 2027",
+    "fall": "opens May 28 2027, due Sun 27 Jun 2027",
+    "rolling": false,
+    "cardChange": false
+   },
+   "reason": {
+    "pay": "$20/hr all four roles",
+    "spring": "Fri 20 Nov 2026",
+    "summer": "Fri 5 Mar 2027",
+    "virtual": "Policy and Marketing only",
+    "cardChange": true
+   },
+   "atlas": {
+    "pay": "$15/hr",
+    "delivery": "in person or hybrid",
+    "optCpt": true,
+    "spring": "Thu 31 Dec 2026 (year inferred)",
+    "cardChange": true
+   },
+   "standtogether": {
+    "cardChange": true
+   },
+   "marketsSociety": {
+    "registrationLink": true,
+    "fee": "not stated on live pages",
+    "hotelDeadline": "Fri 9 Oct 2026",
+    "cardChange": true
+   },
+   "hudson": {
+    "requiredListNumber": null,
+    "id": "hudson-political-studies-summer-fellowship-2027",
+    "organisation": "Hudson Institute Political Studies",
+    "program": "Summer Fellowship 2027 (Washington DC, two sessions, free, $3,000 stipend)",
+    "sourceUrl": "https://hudsonpoliticalstudies.org/fellowship/apply",
+    "applicationUrl": "/application/fellowship?series=2027 (link seen in the page HTML; NOT opened)",
+    "checkedAtUtc": "2026-10-03T22:10:00Z",
+    "outcome": "unclear",
+    "status": "unclear",
+    "evidenceExcerpt": "Page text (read 3 Oct 2026, 5:55 PM ET): \"Our 2027 application will open on October 1st.\" (shown twice) and, below it, a green \"Apply for 2027\" button linking to /application/fellowship?series=2027; the Apply hub (hudsonpoliticalstudies.org/apply) lists \"2027 Application\" with no \"closed\" wording. hudson.org/about/careers-internships also still says \"Applications for summer 2027 will open on October 1.\" Timeline: \"The Early Decision Deadline is January 9th, 2027 11:59 p.m. EST. The Regular Decision Deadline has been extended to March 16th, 2027 11:59 p.m. EST.\" Early decision decisions by March 2; acceptance binding. \"All students participate free of charge, reside in complimentary housing in Washington, D.C., and receive a stipend of $3,000.\" Sessions: \"Session I: May 24 - July 5; Session II: June 28 - August 7\" (no year printed; 2027 fits the weekdays). Eligible: \"Undergraduate students (of any class year) and recent graduates (up to one year post-graduation)\"; 18+; international students welcome (FAQ). Materials: resume, personal statement (1,000 words), writing sample (15 pages), letter of recommendation, headshot.",
+    "sourceDateOrCycle": "Page copyright 2026; text is not updated after 1 Oct (stale \"will open\"); the \"extended\" wording on the regular deadline looks carried over from an earlier cycle",
+    "deadline": "Early Decision Sat 9 Jan 2027, 11:59 p.m. EST; Regular Decision Tue 16 Mar 2027, 11:59 p.m. EST (weekdays verified); ED decisions Tue 2 Mar 2027",
+    "audience": "Undergraduates (any year) and recent graduates up to one year out",
+    "eligibility": "18+ before the start; international students welcome; full-time, no other work during the fellowship",
+    "funding": "Free programme, complimentary DC housing, $3,000 stipend",
+    "duration": "Two sessions: May 24 - Jul 5 or Jun 28 - Aug 7 (about 6 weeks)",
+    "deliveryMode": "in person",
+    "location": "Washington, DC",
+    "contactEmailFound": "amcbreen@hudson.org (Ayla McBreen)",
+    "fitForSam": {
+     "rating": "strong",
+     "reason": "Free, housed, $3,000 stipend, open to any undergraduate class year; political theory focus rather than economics."
+    },
+    "publishableNow": false,
+    "notes": "Is it open? Probably yes (Apply for 2027 button plus \"2027 Application\" on the Apply hub), but not confirmed: the page text still says \"will open on October 1st\" and I did not open the application form. Cannot be called verified-open until Hudson updates the text or Sam is happy to rely on the live button. Card wording if used: \"2027 applications open (apply link live as of 3 Oct 2026; page text not yet updated). Early Decision Sat 9 Jan 2027; Regular Tue 16 Mar 2027.\"",
+    "ideologyTag": "neutral",
+    "ideologyConfidence": "low",
+    "ideologyNote": "Hudson Institute tagged separately in the PR #9 audit; not re-tagged here.",
+    "fetchMethod": "curl (robots.txt returns 404 = none); page text only, form not opened"
+   }
+  }
+ },
+ "cei": [
+  {
+   "requiredListNumber": 14,
+   "id": "cei-internships-spring-2027",
+   "organisation": "Competitive Enterprise Institute (CEI)",
+   "program": "Internships - Spring semester (policy, marketing, philanthropy; also KIP route)",
+   "sourceUrl": "https://cei.org/careers/internships/",
+   "applicationUrl": "Application route not opened",
+   "checkedAtUtc": "2026-10-03T21:55:00Z",
+   "outcome": "open",
+   "status": "open",
+   "evidenceExcerpt": "\"CEI offers three internship semesters each year; fall, spring, and summer. ... Fall Semester: applications due by August 15th; Spring Semester: Approximately January - April; applications for a spring internship are due December 15th; Summer: due by April 15th.\" \"CEI offers a $500 per week stipend for students who are employed by the organization.\" \"Applicants to CEI are strongly encouraged to apply through the Koch Internship Program (KIP)... or send their resume as a PDF to [coordinator].\" Contact: Matthew Adams, Internship Coordinator.",
+   "sourceDateOrCycle": "Standing semester pattern; no year printed (page (c) 2026)",
+   "deadline": "Spring 2027 internship: Tue 15 Dec 2026 (year inferred; weekday checked for 2026). Summer 2027 deadline pattern Apr 15.",
+   "audience": "Students and recent graduates",
+   "eligibility": "Strong research/writing; preference for DC presence; hybrid/remote may be considered",
+   "funding": "$500 per week stipend (KIP stipend additional if via KIP)",
+   "duration": "Jan-Apr (approx.)",
+   "deliveryMode": "in person (DC preferred) / hybrid",
+   "location": "Washington, DC",
+   "contactEmailFound": "interns@cei.org (also matthew.adams@cei.org), decoded from page",
+   "fitForSam": {
+    "rating": "strong",
+    "reason": "Paid DC regulatory/economics policy internship open to students."
+   },
+   "publishableNow": true,
+   "notes": "Publishable with flag: the deadline year is not printed (inferred 2026 from the Fall Aug 15 date having just passed and the spring pattern).",
+   "fetchMethod": "curl (robots-aware)",
+   "ideologyTag": "on-brief",
+   "ideologyEvidenceUrl": "https://cei.org/careers/internships/",
+   "ideologyQuote": "...the opportunity to learn about and promote the principles of limited government, free enterprise, and individual liberty.",
+   "ideologyConfidence": "high",
+   "ideologyNote": "",
+   "ideologySource": "new in batch 11"
+  }
+ ]
+}
