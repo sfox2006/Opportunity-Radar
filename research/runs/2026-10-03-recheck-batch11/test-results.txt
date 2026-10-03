@@ -1,0 +1,30 @@
+# Batch 11 conferences test results — 3 October 2026
+
+Commands (python3; `python` is not installed):
+
+```
+node --test *.test.cjs newsletter-google/*.test.cjs
+python3 -m unittest discover -s agents -p test_control.py -v
+```
+
+## Before
+
+Run on `cursor/oct-2026-batch10-recheck-8e32` before this batch was written into `dist/app.js`.
+
+- Node: 8 tests, 8 pass, 0 fail. `opportunity-details.test.cjs` reported 97 reviewed records.
+- Python: 13 tests, OK.
+
+## After
+
+Run after syncing the 107-programme list.
+
+- Node: 8 tests, 8 pass, 0 fail. `opportunity-details.test.cjs` reported 107 reviewed records.
+- Python: 13 tests, OK.
+
+Newsletter tests were run and were not modified.
+
+Headless Chrome rendered `dist/index.html`: 107 programme articles, scan count 107, and all 11 conference cards from this batch were in the list. The visible label remained "Source reviewed 11 Sep 2026".
+
+The Conference filter returns 12 cards (the previous two plus these 10). The free filter keeps the four ISI retreats and Cato University Winter, and does not keep Cato University on Campus San Diego. The paid-or-stipend filter keeps San Diego because the card says "$100 travel stipend".
+
+`dist/app.js` does not parse deadlines for sorting or expiry. Sorting the 107 deadlines with `Date.parse` does not throw. Non-date deadlines stay in the list. No data-side workaround was required.

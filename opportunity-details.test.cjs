@@ -6,7 +6,7 @@ const context = vm.createContext({});
 vm.runInContext(code.slice(0, code.indexOf('const state =')), context);
 const items = vm.runInContext('opportunities', context);
 const supportedTypes = vm.runInContext('typeOrder', context);
-assert.equal(items.length, 97);
+assert.equal(items.length, 107);
 for (const item of items) {
   assert.ok(supportedTypes.includes(item.type), `${item.id}: unsupported filter type ${item.type}`);
   for (const key of ['description', 'location', 'duration', 'paid', 'deadline', 'eligibilityDetails', 'application', 'url']) {
@@ -447,4 +447,96 @@ assert.equal(cei.url, 'https://cei.org/about/internships/');
 assert.equal(cei.reviewedAt, '2026-10-03');
 assert.equal(cei.source, 'Official source reviewed 11 Sep 2026');
 assert.equal(items.some(item => item.id === 'hudson-summer-fellowship-2027'), false);
-console.log('PASS: 97 reviewed records, official HTTPS sources, status fields and independent link controls.');
+assert.equal(items.filter(item => item.type === 'Conference').length, 12);
+const batch11 = [
+  'li-yls-reagan-library-2026-10',
+  'acton-academic-conference-2026',
+  'isi-retreat-george-fox-2026',
+  'isi-retreat-san-francisco-2026',
+  'isi-retreat-south-carolina-2026',
+  'isi-retreat-toledo-2026',
+  'cato-university-on-campus-san-diego-2026',
+  'li-yls-cozumel-cruise-2026-11',
+  'cato-university-winter-2027',
+  'mises-libertarian-scholars-conference-2027'
+];
+for (const id of batch11) {
+  const card = byId(id);
+  assert.equal(card.type, 'Conference', id);
+  assert.equal(card.status, 'open', id);
+  assert.equal(card.region, 'United States', id);
+  assert.equal(card.reviewedAt, '2026-10-03', id);
+  assert.equal(card.source, 'Official source reviewed 11 Sep 2026', id);
+  assert.equal(card.eligibility, 'Some restrictions', id);
+}
+const yls = byId('li-yls-reagan-library-2026-10');
+assert.match(yls.duration, /Sat 10 - Sun 11 Oct 2026/);
+assert.match(yls.deadline, /No deadline printed; event Sat 10 Oct 2026/);
+assert.match(`${yls.deadline} ${yls.description} ${yls.application}`, /[Rr]egister soon/);
+assert.match(`${yls.fundingDetails} ${yls.eligibilityDetails} ${yls.description}`, /first-time YLS/);
+assert.match(yls.application, /ctomaine@leadershipinstitute\.org/);
+assert.equal(yls.url, 'https://leadershipinstitute.org/event/701VL00000wfLezYAE');
+const actonConf = byId('acton-academic-conference-2026');
+assert.match(actonConf.duration, /Fri 16 Oct 2026/);
+assert.match(actonConf.deadline, /No deadline printed; event Fri 16 Oct 2026/);
+assert.match(actonConf.paid, /\$25/);
+assert.match(actonConf.application, /lstrobel@acton\.org/);
+assert.equal(/July 14|14 July/.test(JSON.stringify(actonConf)), false);
+for (const id of ['isi-retreat-george-fox-2026', 'isi-retreat-san-francisco-2026', 'isi-retreat-south-carolina-2026', 'isi-retreat-toledo-2026']) {
+  const retreat = byId(id);
+  assert.match(retreat.paid, /Free/);
+  assert.match(`${retreat.paid} ${retreat.fundingDetails} ${retreat.description}`, /\$250/);
+  assert.match(`${retreat.fundingDetails} ${retreat.description}`, /about 20/);
+  assert.match(`${retreat.eligibilityDetails} ${retreat.description}`, /[Uu]ndergraduates only/);
+  assert.match(`${retreat.deadline} ${retreat.description} ${retreat.application}`, /year inferred/);
+}
+assert.match(byId('isi-retreat-george-fox-2026').duration, /Fri 30 Oct - Sun 1 Nov 2026/);
+assert.match(byId('isi-retreat-george-fox-2026').application, /amckinnon@isi\.org/);
+assert.match(byId('isi-retreat-george-fox-2026').eligibilityDetails, /Pacific Northwest/);
+assert.match(byId('isi-retreat-san-francisco-2026').duration, /Fri 13 - Sun 15 Nov 2026/);
+assert.match(byId('isi-retreat-san-francisco-2026').eligibilityDetails, /Western region/);
+assert.match(byId('isi-retreat-south-carolina-2026').application, /ataylor@isi\.org/);
+assert.match(byId('isi-retreat-south-carolina-2026').eligibilityDetails, /Southeast/);
+assert.match(byId('isi-retreat-toledo-2026').application, /pvanheyningen@isi\.org/);
+assert.match(byId('isi-retreat-toledo-2026').eligibilityDetails, /Midwest/);
+const catoSd = byId('cato-university-on-campus-san-diego-2026');
+assert.equal(catoSd.paid, 'No fee stated; meals included; $100 travel stipend on completion');
+assert.equal(/free/i.test(JSON.stringify(catoSd)), false);
+assert.match(catoSd.duration, /Sat 14 Nov 2026/);
+assert.match(catoSd.deadline, /Fri 30 Oct 2026, 5:00 PM EDT/);
+assert.match(catoSd.application, /events@cato\.org/);
+const cruise = byId('li-yls-cozumel-cruise-2026-11');
+assert.match(cruise.duration, /Thu 5 Nov/);
+assert.match(cruise.deadline, /No deadline printed; departs Thu 5 Nov 2026/);
+assert.match(`${cruise.eligibilityDetails} ${cruise.description}`, /18\+/);
+assert.match(`${cruise.eligibilityDetails} ${cruise.description}`, /passport/i);
+assert.match(`${cruise.fundingDetails} ${cruise.eligibilityDetails} ${cruise.description}`, /Travel to New Orleans is not covered/);
+assert.equal(cruise.lat, 29.9511);
+assert.equal(cruise.lon, -90.0715);
+const catoWinter = byId('cato-university-winter-2027');
+assert.equal(catoWinter.deadline, 'No deadline printed; treat as rolling, check page');
+assert.match(catoWinter.duration, /Thu 4 - Sat 6 Feb 2027/);
+assert.match(`${catoWinter.paid} ${catoWinter.fundingDetails}`, /\$500/);
+assert.match(catoWinter.eligibilityDetails, /US-based applicants only/);
+assert.match(`${catoWinter.description} ${catoWinter.application}`, /not from this page/);
+assert.equal(/early bird/i.test(JSON.stringify(catoWinter)), false);
+const misesConf = byId('mises-libertarian-scholars-conference-2027');
+assert.match(misesConf.duration, /Thu 18 Mar 2027/);
+assert.match(`${misesConf.duration} ${misesConf.description} ${misesConf.application}`, /page body says 2026/);
+assert.match(`${misesConf.duration} ${misesConf.description} ${misesConf.application}`, /header and the weekday indicate 2027/);
+assert.match(`${misesConf.fundingDetails} ${misesConf.eligibilityDetails} ${misesConf.application}`, /not read and are unconfirmed/);
+assert.match(misesConf.paid, /\$99/);
+assert.match(misesConf.application, /felicia@mises\.org/);
+const gulch = byId('atlas-society-gulch-2027');
+assert.equal(gulch.type, 'Conference');
+assert.match(gulch.duration, /Thu 3 - Sat 5 Jun 2027/);
+assert.match(gulch.deadline, /Mon 1 Feb 2027/);
+assert.match(gulch.deadline, /year inferred/);
+assert.match(gulch.deadline, /Scholarship deadline not printed/);
+assert.match(`${gulch.paid} ${gulch.description}`, /\$1,250/);
+assert.match(`${gulch.paid} ${gulch.description}`, /\$1,500/);
+assert.match(`${gulch.fundingDetails} ${gulch.description} ${gulch.application}`, /whether the ticket is waived is not stated/);
+assert.match(`${gulch.description} ${gulch.application}`, /galtsgulch@atlassociety\.org/);
+assert.equal(gulch.url, 'https://www.atlassociety.org/galts-gulch-2027');
+assert.equal(items.filter(item => item.url === gulch.url).length, 1);
+console.log('PASS: 107 reviewed records, official HTTPS sources, status fields and independent link controls.');
