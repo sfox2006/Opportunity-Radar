@@ -7,23 +7,30 @@
   <meta name="description" content="Explore political opportunities around the world." />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.14.0/dist/maplibre-gl.css" />
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./journal.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#explore"><span class="brand-icon" aria-hidden="true">◎</span> Opportunity Radar<span class="brand-dot">.</span></a>
+    <a class="brand" href="#explore">Opportunity Radar</a>
     <nav aria-label="Main navigation">
       <a href="#explore" aria-current="location">Explore</a>
       <a href="#programs">Programs</a>
       <a href="#profile">My profile</a>
       <a href="#newsletter">Newsletter</a>
     </nav>
-    <span class="refresh-label"><span></span> Weekly edition</span>
+    <span class="refresh-label">The opportunity journal</span>
   </header>
   <main>
     <section id="explore" class="explore-section" aria-label="Opportunity explorer">
       <div class="section-intro content-width">
-        <div><p class="eyebrow">01 / The world of opportunity</p><h1>Political Opportunity Radar</h1></div>
-        <div class="scan-card" aria-live="polite"><span id="scan-count">0</span><small>programs found</small></div>
+        <div><h1>Political opportunities, mapped.</h1></div>
+        <div class="intro-copy">
+          <p>Internships, fellowships and seminars at think tanks and policy institutes worldwide.</p>
+          <div class="scan-card" aria-live="polite"><span id="scan-count">0</span><small>programs found</small></div>
+        </div>
       </div>
       <div class="globe-stage">
         <div id="globe" role="region" aria-label="Interactive world map with program locations"></div>
@@ -83,6 +90,7 @@
 
 
         </div>
+        <div class="list-head" aria-hidden="true"><span>Program</span><span>Organisation</span><span>Type</span><span>Location</span><span>Reviewed</span></div>
         <div id="results" class="results-list"></div>
       </div>
     </section>
