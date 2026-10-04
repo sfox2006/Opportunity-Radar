@@ -36,6 +36,8 @@ evaluate('els.homeRegion.value = "Australia"; state.interests.add("Internship");
 noScores();
 evaluate("applyProfile()");
 assert.equal(evaluate("typeof matchScore(opportunities[0])"), "number");
+assert.equal(evaluate("els.detail.innerHTML.includes('% profile fit')"), false);
+evaluate("state.selectedId = opportunities[0].id; render()");
 assert.equal(evaluate("els.detail.innerHTML.includes('% profile fit')"), true);
 const saved = evaluate("matchScore(opportunities[0])");
 evaluate('els.homeRegion.value = "Canada"; state.interests.clear(); updateState()');

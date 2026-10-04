@@ -36,6 +36,8 @@ h1 { font-size: 76px; line-height: 1.02; font-weight: 500; text-wrap: balance; }
 .map-legend { left: 32px; font-size: 15px; font-style: italic; }
 .map-legend i { background: var(--green); }
 .map-legend i.selected { background: var(--gold); }
+#legend-selected { display: inline-flex; align-items: center; gap: 8px; }
+#legend-selected i.selected { margin-left: 0; }
 .selection-strip { border-top: 1px solid var(--line); padding-block: 24px; }
 .detail-card h2 { font-size: 19px; font-weight: 600; }
 .detail-card > p { font-size: 17px; }
@@ -104,6 +106,9 @@ footer .brand { font-size: 18px; }
 footer > span, footer > a:last-child { font-size: 16px; }
 footer > span { font-style: italic; }
 summary:focus-visible { outline: 2px solid var(--green); outline-offset: -2px; }
+.opening-soon-section { padding-top: 0; }
+.opening-intro { max-width: 720px; margin: 0 0 18px; color: #3d3f37; font-size: 18px; line-height: 1.5; }
+.opening-empty { margin: 0; padding: 22px 14px; border-bottom: 1px solid var(--line); color: #3d3f37; font-size: 18px; line-height: 1.55; }
 .maplibregl-popup-content { background: var(--paper); border: 1px solid var(--line); box-shadow: none; }
 @media (max-width: 1000px) {
   h1 { font-size: 58px; }
