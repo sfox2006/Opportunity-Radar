@@ -1,0 +1,277 @@
+{
+  "note": "Nine reviewer-verified records from 2 October 2026. Only publishedIds were added to the public site (count 91). heldOut lists the five records that were not added, and why. reviewerRecords is the extract as supplied.",
+  "publishedIds": [
+    "aeasp-summer-2027",
+    "partnership-public-service-internship-spring-2027",
+    "siepr-predoctoral-fellows-2027",
+    "stand-together-koch-internship-spring-2027"
+  ],
+  "heldOut": [
+    {
+      "id": "cbcf-pathways-csuite-summer-2027",
+      "organisation": "Congressional Black Caucus Foundation (CBCF)",
+      "program": "Pathways to the C-Suite Internship Program, Summer 2027",
+      "reason": "Held out of the public site. Sam Fox limited the site to right-of-centre / free-market / conservative / classical-liberal organisations. This programme was reviewer-verified and was not added."
+    },
+    {
+      "id": "chci-congressional-internship-summer-2027",
+      "organisation": "Congressional Hispanic Caucus Institute (CHCI)",
+      "program": "Congressional Internship Program, Summer 2027 (Fall 2027 due 1 Mar 2027)",
+      "reason": "Held out of the public site. Sam Fox limited the site to right-of-centre / free-market / conservative / classical-liberal organisations. This programme was reviewer-verified and was not added."
+    },
+    {
+      "id": "chci-public-policy-fellowship-2027-28",
+      "organisation": "Congressional Hispanic Caucus Institute (CHCI)",
+      "program": "Public Policy Fellowship Program 2027-2028",
+      "reason": "Held out of the public site. Sam Fox limited the site to right-of-centre / free-market / conservative / classical-liberal organisations. This programme was reviewer-verified and was not added."
+    },
+    {
+      "id": "apaics-office-internship-spring-2027",
+      "organisation": "Asian Pacific American Institute for Congressional Studies (APAICS)",
+      "program": "Office Internship, Spring 2027",
+      "reason": "Held out of the public site. Sam Fox limited the site to right-of-centre / free-market / conservative / classical-liberal organisations. This programme was reviewer-verified and was not added."
+    },
+    {
+      "id": "apaics-congressional-internship-summer-2027",
+      "organisation": "Asian Pacific American Institute for Congressional Studies (APAICS)",
+      "program": "Congressional Internship, Summer 2027 (Fall 2027 deadline TBD)",
+      "reason": "Held out of the public site. Sam Fox limited the site to right-of-centre / free-market / conservative / classical-liberal organisations. This programme was reviewer-verified and was not added."
+    }
+  ],
+  "reviewerRecords": [
+    {
+      "id": "aeasp-summer-2027",
+      "organisation": "American Economic Association (hosted by American University)",
+      "program": "AEA Summer Training and Scholarship Program 2027",
+      "sourceUrl": "https://www.aeaweb.org/about-aea/committees/aeasp",
+      "applicationUrl": "Online application portal (not opened)",
+      "checkedAtUtc": "2026-10-02T13:30:00Z",
+      "outcome": "verified",
+      "evidenceExcerpt": "Dates: May 31 - July 23, 2027. Application Deadline: January 31, 2027. The application portal for the 2027 AEA Summer Program is now open. ... Email aeasp@american.edu. (FAQ) Everyone is eligible to apply regardless of ethnicity ... no other classes, part-time jobs, or other commitments are allowed.",
+      "sourceDateOrCycle": "2027 programme; page copyright 2026; portal 'now open'",
+      "deadline": "Sun 31 Jan 2027 (weekday verified; time and timezone not stated); acceptances early March 2027",
+      "status": "open",
+      "audience": "Undergraduates and recent graduates (also BA/MA holders) planning an economics PhD",
+      "eligibility": "Designed for students who would bring greater diversity to the profession, but everyone may apply regardless of ethnicity; no economics PhD; ideally GPA 3.0+ and calculus, statistics and microeconomics taken; interested in a doctoral degree. International students may apply.",
+      "funding": "US citizens and permanent residents receive a $3,250 stipend; tuition, housing and books covered. International students get no stipend and pay about $25,000 themselves (FAQ).",
+      "duration": "8 weeks, Mon 31 May - Fri 23 Jul 2027 (weekdays verified); full-time, no other classes, jobs or commitments",
+      "deliveryMode": "in person",
+      "country": "United States",
+      "location": "Washington, DC (American University)",
+      "contactEmailFound": "aeasp@american.edu",
+      "questionsForOutreach": [
+        "Is a research-experienced applicant still a good fit for the programme?"
+      ],
+      "notes": "FIT: broad. Economics PhD pipeline in DC, fully funded for US citizens/PRs. Diversity-oriented but explicitly open to all. Needs the full 8 weeks free. Application portal not opened.",
+      "explorerAgreement": "Searcher Explorer batch 2026-10-02: agrees"
+    },
+    {
+      "id": "partnership-public-service-internship-spring-2027",
+      "organisation": "Partnership for Public Service",
+      "program": "Partnership Internship Program, Spring 2027",
+      "sourceUrl": "https://ourpublicservice.org/about/work-with-us/partnership-internship-program",
+      "applicationUrl": "'Apply' link below the position descriptions (portal not opened)",
+      "checkedAtUtc": "2026-10-02T13:30:00Z",
+      "outcome": "verified",
+      "evidenceExcerpt": "Spring 2027: Jan. 19 to May 14. Applications Open: September 15. Priority Application Deadline: October 19. Notification: Mid-to late November. ... Full-time interns at 40 hours a week will receive $2,000 per month. ... Application open (per role).",
+      "sourceDateOrCycle": "Spring 2027 term; page modified 15 Sep 2026 (metadata) and the roles say 'Application open'",
+      "deadline": "Priority deadline Mon 19 Oct 2026 (the page prints 'October 19' with no year; the Spring 2027 section, the 15 Sep opening and the 2026 page modification date place it in 2026; weekday Mon is consistent). Applications may stay open after the priority date.",
+      "status": "open",
+      "audience": "Undergraduates, graduate students and recent graduates",
+      "eligibility": "Commitment to public service; students from any school nationwide",
+      "funding": "$2,000 per month full-time (40 h/week), pro-rated part-time",
+      "duration": "Tue 19 Jan - Fri 14 May 2027 (weekdays verified)",
+      "deliveryMode": "hybrid (DC-based; in office at least 2 days a week, Wednesday required)",
+      "country": "United States",
+      "location": "Washington, DC",
+      "contactEmailFound": "No email on the page; phone (202) 775-9111",
+      "questionsForOutreach": [
+        "Is there a named contact for internship questions?"
+      ],
+      "notes": "FIT: broad-moderate. Paid DC internship; roles are communications, fundraising, HR, leadership programmes, public policy and stakeholder engagement, and workforce programmes. None is economics research. Year inferred from context, so flagged.",
+      "explorerAgreement": "Searcher Explorer batch 2026-10-02: agrees"
+    },
+    {
+      "id": "siepr-predoctoral-fellows-2027",
+      "organisation": "Stanford Institute for Economic Policy Research (SIEPR)",
+      "program": "SIEPR Predoctoral Research Fellows Program (start 6 Jul 2027)",
+      "sourceUrl": "https://siepr.stanford.edu/programs/siepr-predoctoral-research-fellows-program/apply-siepr-predoctoral-research-fellows",
+      "applicationUrl": "Stanford Careers website (not opened)",
+      "checkedAtUtc": "2026-10-02T13:30:00Z",
+      "outcome": "verified",
+      "evidenceExcerpt": "On Thursday September 24, 2026, SIEPR will begin accepting a new round of applications for positions that will begin on July 6, 2027. For full-consideration, applications ... must be received through the Stanford Careers website by Thursday, October 8, 2026. ... Bachelor's degree must be obtained prior to your start date. ... legal authorization to work in the United States ... not eligible for H-1B visa sponsorship.",
+      "sourceDateOrCycle": "2027 start; round opened Thu 24 Sep 2026",
+      "deadline": "Thu 8 Oct 2026 for full consideration (weekday verified; time and timezone not stated)",
+      "status": "open",
+      "audience": "Post-baccalaureate individuals heading to economics PhDs and policy careers",
+      "eligibility": "Bachelor's by 6 Jul 2027 (later start at supervisor's discretion); legal US work authorisation (J-1 sponsorship possible, OPT accepted, no H-1B). Programming experience varies by project; choose projects.",
+      "funding": "Full-time Stanford staff position; tuition for up to 5 units per academic year",
+      "duration": "Up to 2 years from 6 Jul 2027",
+      "deliveryMode": "on-site / hybrid",
+      "country": "United States",
+      "location": "Stanford, California",
+      "contactEmailFound": "siepr-fellowships@stanford.edu",
+      "questionsForOutreach": [
+        "Does a student graduating in spring/summer 2027 qualify?"
+      ],
+      "notes": "FIT: broad for an economics researcher who will have a bachelor's by July 2027, but it is in California, not DC, and the deadline is in 6 days. Page robots has crawl-delay 30 (respected). Careers portal not opened.",
+      "explorerAgreement": "Searcher Explorer batch 2026-10-02: agrees"
+    },
+    {
+      "id": "stand-together-koch-internship-spring-2027",
+      "organisation": "Stand Together Fellowships",
+      "program": "Koch Internship Program (KIP) Spring 2027 (also Summer 2027)",
+      "sourceUrl": "https://standtogetherfellowships.org/koch-internship-program/",
+      "applicationUrl": "Partner roles on a Lever job board (not opened)",
+      "checkedAtUtc": "2026-10-02T13:30:00Z",
+      "outcome": "verified",
+      "evidenceExcerpt": "Spring 2027: January 28 - April 8, 2027; summit February 4-5, 2027; Rolling admissions through December, 2026. Applicants must both apply and accept an internship offer from a KIP partner organization no later than December. Summer 2027: May 27 - August 5, 2027; rolling through March 2027. Stipend $7,500 (32+ h/week) or $5,500 (about 24 h/week).",
+      "sourceDateOrCycle": "Spring 2027 and Summer 2027 cycles (dates printed)",
+      "deadline": "Rolling through December 2026 for Spring 2027 (day not stated); rolling through March 2027 for Summer 2027. Apply AND accept a partner offer by then.",
+      "status": "open",
+      "audience": "Current students",
+      "eligibility": "Current students; a partner-organisation internship offer plus a Stand Together interview are required for admission",
+      "funding": "Stipend $7,500 full-time or $5,500 part-time",
+      "duration": "Spring: Thu 28 Jan - Thu 8 Apr 2027; Summer: Thu 27 May - Thu 5 Aug 2027 (weekdays verified); six online Thursday sessions plus a two-day summit in Arlington, VA",
+      "deliveryMode": "hybrid / varies by partner (remote and in-person roles)",
+      "country": "United States",
+      "location": "Partner organisations (DC area and elsewhere); summit in Arlington, VA",
+      "contactEmailFound": "admissions@standtogether.org",
+      "questionsForOutreach": [
+        "Which partner roles are economics research roles, and can they be done in DC?"
+      ],
+      "notes": "FIT: broad. Paid, programme-backed internships at partner policy groups (Cato, IHS and others), many research roles; Sam must be a current student. Libertarian-network programme. No day-level deadline, so apply early. Partner postings and portal not opened.",
+      "explorerAgreement": "Searcher Explorer batch 2026-10-02: agrees"
+    },
+    {
+      "id": "chci-congressional-internship-summer-2027",
+      "organisation": "Congressional Hispanic Caucus Institute (CHCI)",
+      "program": "Congressional Internship Program, Summer 2027 (Fall 2027 due 1 Mar 2027)",
+      "sourceUrl": "https://chci.org/programs/congressional-internship-program/",
+      "applicationUrl": "Apply link on page (portal not opened)",
+      "checkedAtUtc": "2026-10-02T13:30:00Z",
+      "outcome": "verified",
+      "evidenceExcerpt": "Summer 2027: May 19 - July 30, 2027 (10 weeks). 2027 Congressional Internship applications are due at 11:59 pm Eastern Time: Summer 2027 Internship Deadline: December 1, 2026; Fall 2027 Internship Deadline: March 1, 2027. Great Pay: $5,400 (Fall), $4,776 (Summer).",
+      "sourceDateOrCycle": "2027 cycle (dates printed on the programme and FAQ)",
+      "deadline": "Tue 1 Dec 2026, 11:59 pm ET (weekday verified); Fall 2027: Mon 1 Mar 2027",
+      "status": "open",
+      "audience": "Undergraduates enrolled full time (spring 2027 graduates may apply)",
+      "eligibility": "Full-time enrolment in Spring 2027; US citizens, lawful permanent residents, asylees or others authorised to work (F-1/M-1 students not eligible; DACA recipients with valid authorisation can apply); GPA 3.0+ preferred. No Hispanic-heritage requirement is stated but the programme is Latino-community-focused.",
+      "funding": "Paid $4,776 (summer); round-trip travel, furnished housing, health insurance, $100/month Metro",
+      "duration": "Wed 19 May - Fri 30 Jul 2027 (weekdays verified), 32+ hours/week",
+      "deliveryMode": "in person",
+      "country": "United States",
+      "location": "Washington, DC (congressional offices)",
+      "contactEmailFound": "apply@chci.org; programs@chci.org",
+      "questionsForOutreach": [
+        "Does the programme welcome applicants without Latino heritage who are committed to the community?"
+      ],
+      "notes": "FIT: broad-moderate. Paid congressional placement with housing, but policy placement not economics research; work authorisation required; a community-service and Latino-leadership emphasis. Robots crawl-delay 10 respected.",
+      "explorerAgreement": "Searcher Explorer batch 2026-10-02: agrees"
+    },
+    {
+      "id": "chci-public-policy-fellowship-2027-28",
+      "organisation": "Congressional Hispanic Caucus Institute (CHCI)",
+      "program": "Public Policy Fellowship Program 2027-2028",
+      "sourceUrl": "https://chci.org/programs/public-policy-fellowship-program/",
+      "applicationUrl": "Apply link on page (portal not opened)",
+      "checkedAtUtc": "2026-10-02T13:30:00Z",
+      "outcome": "verified",
+      "evidenceExcerpt": "The 2027-2028 Public Policy Fellowship Program application is due at 11:59 pm Eastern Time on December 1, 2026. Program Dates: August 18, 2027 - May 19, 2028. gross stipend of $34,200 over nine months.",
+      "sourceDateOrCycle": "2027-28 cycle",
+      "deadline": "Tue 1 Dec 2026, 11:59 pm ET (weekday verified)",
+      "status": "open",
+      "audience": "Recent college graduates (bachelor's conferred between May 2024 and August 2027)",
+      "eligibility": "Bachelor's within three years of the start; US citizens, LPRs, asylees or authorised to work (no F-1/M-1); not enrolling in graduate study concurrently; GPA 3.0+ preferred; three-stage selection.",
+      "funding": "$34,200 gross stipend over nine months; travel subsidy; medical, dental and vision insurance; $200/month Metro",
+      "duration": "Wed 18 Aug 2027 - Fri 19 May 2028 (weekdays verified); 32+ hours/week",
+      "deliveryMode": "in person",
+      "country": "United States",
+      "location": "Washington, DC",
+      "contactEmailFound": "apply@chci.org; programs@chci.org",
+      "questionsForOutreach": [
+        "Is there any heritage requirement?"
+      ],
+      "notes": "FIT: moderate, post-graduation. Fits a 2027 graduate not heading straight to a graduate programme; Latino-community emphasis (page says 'talented young Latinos and individuals deeply committed to advancing the Latino community'); issue-brief requirement.",
+      "explorerAgreement": "Searcher Explorer batch 2026-10-02: agrees"
+    },
+    {
+      "id": "apaics-office-internship-spring-2027",
+      "organisation": "Asian Pacific American Institute for Congressional Studies (APAICS)",
+      "program": "Office Internship, Spring 2027",
+      "sourceUrl": "https://www.apaics.org/apaics-office-internship",
+      "applicationUrl": "Email resume and cover letter to apaics@apaics.org (not sent)",
+      "checkedAtUtc": "2026-10-02T13:30:00Z",
+      "outcome": "verified",
+      "evidenceExcerpt": "Spring 2027 Applications Open! ... Spring 2027 Program Dates: January 25 - May 28, 2027. Work 10-20 hours per week. ... interns will receive a stipend. Deadline is November 23, 2026. ... All Interns MUST be located in the DC area and able to work for APAICS' annual Heritage Month events from May 1-28, 2027.",
+      "sourceDateOrCycle": "Spring 2027 (explicit); the body also mentions a 'Fall 2026 term' with two slots, which is stale wording",
+      "deadline": "Mon 23 Nov 2026 (weekday verified; no time or timezone stated)",
+      "status": "open",
+      "audience": "Current undergraduates (the page also says students and recent graduates of all levels and backgrounds are encouraged)",
+      "eligibility": "Currently enrolled undergraduate at an accredited institution; DC-area residence; understanding of AA & NH/PI issues; anyone committed to public service is welcome",
+      "funding": "Stipend (amount not stated); college credit available",
+      "duration": "Mon 25 Jan - Fri 28 May 2027 (weekdays verified); 10-20 hours/week",
+      "deliveryMode": "in person",
+      "country": "United States",
+      "location": "Washington, DC",
+      "contactEmailFound": "apaics@apaics.org (applications and questions)",
+      "questionsForOutreach": [
+        "What is the stipend amount?"
+      ],
+      "notes": "FIT: broad-moderate. Part-time, DC-area, stipended and open to all backgrounds, but the work is event, communications and candidate-research support in a community-focused organisation, not economics research. Fall 2026 wording is stale; the Spring 2027 dates and deadline are explicit.",
+      "explorerAgreement": "Searcher Explorer batch 2026-10-02: agrees"
+    },
+    {
+      "id": "apaics-congressional-internship-summer-2027",
+      "organisation": "Asian Pacific American Institute for Congressional Studies (APAICS)",
+      "program": "Congressional Internship, Summer 2027 (Fall 2027 deadline TBD)",
+      "sourceUrl": "https://www.apaics.org/congressional-internship",
+      "applicationUrl": "Application link on page (not opened)",
+      "checkedAtUtc": "2026-10-02T13:30:00Z",
+      "outcome": "verified",
+      "evidenceExcerpt": "The Congressional Internship is designed for undergraduate students ... This paid, eight or ten week-long program places interns in congressional offices ... 2027 Summer Program Dates: June 7, 2027 - July 30, 2027 Orientation: June 2 - 3, 2027 Application Deadline: December 18, 2026 at 11:59 PM ET. 2027 Fall: Sep 13 - Nov 19, 2027, Deadline: TBD.",
+      "sourceDateOrCycle": "2027 cycle",
+      "deadline": "Fri 18 Dec 2026, 11:59 pm ET (weekday verified)",
+      "status": "open",
+      "audience": "Undergraduate students",
+      "eligibility": "Eligibility details not shown in the text I could read; recommenders submit letters by the deadline. Citizenship and heritage requirements not visible.",
+      "funding": "Paid (amount not stated)",
+      "duration": "Mon 7 Jun - Fri 30 Jul 2027 (weekdays verified); orientation Wed 2 - Thu 3 Jun 2027",
+      "deliveryMode": "in person",
+      "country": "United States",
+      "location": "Washington, DC (congressional offices)",
+      "contactEmailFound": "programs@apaics.org",
+      "questionsForOutreach": [
+        "What are the eligibility rules and the pay?"
+      ],
+      "notes": "FIT: moderate. Paid congressional placement for undergraduates, community-focused organisation; eligibility not fully readable. Treat as publishable with this flag.",
+      "explorerAgreement": "Searcher Explorer batch 2026-10-02: agrees"
+    },
+    {
+      "id": "cbcf-pathways-csuite-summer-2027",
+      "organisation": "Congressional Black Caucus Foundation (CBCF)",
+      "program": "Pathways to the C-Suite Internship Program, Summer 2027",
+      "sourceUrl": "https://www.cbcfinc.org/programs/internships/",
+      "applicationUrl": "https://cbcfinc.academicworks.com/opportunities/2989 (portal, not opened)",
+      "checkedAtUtc": "2026-10-02T13:30:00Z",
+      "outcome": "verified",
+      "evidenceExcerpt": "Portal listing (cached): 'Applications for the Summer 2027 CBCF Internship Program open September 1, 2026 and close November 30, 2026, at 11:59 p.m. ET.' Award $3,000. Two-step process (general application then track application): 1 video response, 1 essay, 2 letters of recommendation. Programme page: Pathways terms include Summer [9 weeks / May-August]; GPA 3.0+; US citizen or work permit.",
+      "sourceDateOrCycle": "Summer 2027 cycle (open 1 Sep 2026)",
+      "deadline": "Mon 30 Nov 2026, 11:59 pm ET (weekday verified)",
+      "status": "open",
+      "audience": "Currently or recently enrolled college students (rising seniors and recent graduates per the Spring text)",
+      "eligibility": "US citizen or work permit; full-time enrolled; GPA 3.0+; familiarity with the legislative process; no ethnicity requirement printed; CBC-focused application content.",
+      "funding": "$3,000 award, housing and stipend",
+      "duration": "9 weeks, May-August 2027",
+      "deliveryMode": "in person",
+      "country": "United States",
+      "location": "Washington, DC",
+      "contactEmailFound": "info@cbcfinc.org",
+      "questionsForOutreach": [
+        "Is any ethnicity or community requirement applied to Pathways?"
+      ],
+      "notes": "FIT: narrow-moderate (same flags as the Spring track). Dates come from the official CBCF application portal (cbcfinc.academicworks.com) as shown in search-engine cached snippets and in the Searcher's read; I did not open the portal. The programme page I read (cbcfinc.org) prints no dates.",
+      "explorerAgreement": "Searcher Explorer batch 2026-10-02: agrees"
+    }
+  ]
+}

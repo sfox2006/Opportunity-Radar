@@ -1,0 +1,24 @@
+# Batch 9 test results — 3 October 2026
+
+Commands (python3; `python` is not installed):
+
+```
+node --test *.test.cjs newsletter-google/*.test.cjs
+python3 -m unittest discover -s agents -p test_control.py -v
+```
+
+## Before
+
+Run on `cursor/oct-2026-batch8-verified-programmes-829c` before this batch was written into `dist/app.js`.
+
+- Node: 8 tests, 8 pass, 0 fail. `opportunity-details.test.cjs` reported 93 reviewed records.
+- Python: 13 tests, OK.
+
+## After
+
+Run after syncing the 96-programme list.
+
+- Node: 8 tests, 8 pass, 0 fail. `opportunity-details.test.cjs` reported 96 reviewed records.
+- Python: 13 tests, OK.
+
+Newsletter tests were run and were not modified.

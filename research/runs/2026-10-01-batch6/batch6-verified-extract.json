@@ -1,0 +1,54 @@
+[
+ {
+  "id": "john-jay-fellows-spring-2027",
+  "organisation": "John Jay Institute for Faith, Society and Law",
+  "program": "John Jay Fellows Program, Spring 2027 term (semester-long residency, Langhorne PA)",
+  "sourceUrl": "https://www.johnjayfellows.com/academic-calendar",
+  "applicationUrl": "https://www.johnjayfellows.com/john-jay-start-your-application (not opened)",
+  "checkedAtUtc": "2026-10-02T00:00:00Z",
+  "outcome": "verified",
+  "evidenceExcerpt": "Spring 2027 Term: Applications are now open. Application Deadline: November 1, 2026. Residency Dates: January 8 - April 24, 2027. Commissioning: April 24, 2027. [FAQ] Criteria for selection are based upon demonstrated Christian commitment and leadership potential. ... have completed college ... 3.0 or better",
+  "sourceDateOrCycle": "Spring 2027 term (dates printed in the page text; page itself carries no publication date)",
+  "deadline": "Sun 1 Nov 2026 (weekday verified; no time or timezone stated, US Eastern implied)",
+  "status": "open",
+  "audience": "Recent college graduates and young professionals (not current students)",
+  "eligibility": "Completed college, GPA 3.0+, demonstrated Christian commitment and leadership potential; non-US citizens must be able to receive the stipend or have a sponsoring organisation; class of twelve",
+  "funding": "Tuition free, free housing, $875 monthly stipend for four months; the externship afterwards is not paid unless the host pays",
+  "duration": "Residency Fri 8 Jan - Sat 24 Apr 2027 (weekdays verified), about four months, five three-week block courses Mon-Thu",
+  "deliveryMode": "In person, live-in residency",
+  "country": "United States",
+  "location": "Langhorne, Pennsylvania (Fairview Manor)",
+  "contactEmailFound": "admin@johnjayinstitute.org (footer of johnjayfellows.com; tel (215) 987-3000)",
+  "questionsForOutreach": [
+   "Can applicants who graduate in spring 2027 apply for a later term, and is the application a rolling review before 1 Nov?"
+  ],
+  "notes": "FIT FLAGS: explicitly CHRISTIAN programme (Christian commitment is a selection criterion; daily group prayer, living in Christian community); for recent graduates / young professionals, not current students; four-month live-in residency in Pennsylvania; interdisciplinary theology, philosophy, politics and law curriculum. Sam to decide. johnjayinstitute.org robots check failed (TLS error), so only johnjayfellows.com was read (its robots.txt allows the pages used). Application form not opened.",
+  "explorerAgreement": "Searcher lead: agrees"
+ },
+ {
+  "id": "ocpa-fears-fellowship-okc-2027",
+  "organisation": "Oklahoma Council of Public Affairs (OCPA)",
+  "program": "J. Rufus Fears Fellowship, Oklahoma City 2027 cohort (five Saturday sessions)",
+  "sourceUrl": "https://www.fearsfellowship.com/a-3-lightbox.html",
+  "applicationUrl": "https://www.fearsfellowship.com/ ('Request an application' form with cohort choice Tulsa (2026) / OKC (2027); not submitted)",
+  "checkedAtUtc": "2026-10-02T00:00:00Z",
+  "outcome": "verified",
+  "evidenceExcerpt": "Oklahoma City 2027: 9:30 am - 1:00 pm - 1/23/27, 2/6, 2/20, 3/6, 3/20. Application deadline: December 18, 2026. [home] Young leaders 18-35, both professionals and students, are encouraged to apply. A limited number of fellowships are available.",
+  "sourceDateOrCycle": "OKC 2027 cohort (explicit 2026-27 dates in the schedule text); home page intro still says 'cohorts are planned for OKC and Tulsa in 2026' and the footer reads 'Copyright 2023' (stale template text)",
+  "deadline": "Fri 18 Dec 2026 (weekday verified; no time or timezone stated, Central implied)",
+  "status": "open",
+  "audience": "Young leaders aged 18-35, professionals and students",
+  "eligibility": "Competitive, limited places; college credit available for select students via Matt Oberdick",
+  "funding": "Not stated (no fee mentioned on the pages I read)",
+  "duration": "Five sessions: Sat 23 Jan, 6 Feb, 20 Feb, 6 Mar, 20 Mar 2027 (all Saturdays, verified), 9:30 am-1:00 pm",
+  "deliveryMode": "In person",
+  "country": "United States",
+  "location": "Oklahoma City, OK",
+  "contactEmailFound": "Matt@OCPAthink.org (Matt Oberdick, named on the home page)",
+  "questionsForOutreach": [
+   "Is there any cost or travel support, and is a rolling decision made before the 18 Dec deadline?"
+  ],
+  "notes": "Dated current evidence: the schedule page states the OKC 2027 sessions and the 18 Dec 2026 deadline, and the request form offers 'OKC (2027)'. The 2023 footer and the 'planned in 2026' sentence are stale boilerplate (flagged, not relied on). Tulsa 2026 (deadline Fri 4 Sep 2026) is closed. FIT FLAGS: GEOGRAPHY - five in-person Saturday sessions in Oklahoma City; reading/lecture seminar; apply by request form only.",
+  "explorerAgreement": "Searcher lead: agrees"
+ }
+]

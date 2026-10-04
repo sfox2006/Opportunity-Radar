@@ -1,0 +1,80 @@
+{
+  "note": "Two reviewer-verified records from 2 October 2026. Both publishedIds were added to the public site (count 93). Nothing in this extract was held out. An unofficial email address that is not on an official page was omitted from these copies.",
+  "publishedIds": [
+    "afpi-spring-2027-internships",
+    "tpif-fellowship-2027"
+  ],
+  "heldOut": [],
+  "reviewerRecords": [
+    {
+      "id": "afpi-spring-2027-internships",
+      "organisation": "America First Policy Institute",
+      "program": "Internships for Spring 2027 - Washington, DC (Policy incl. Trade & Economics, Communications, Development, Digital, Events, Government Affairs, America 250 Civics Education Coalition, Operations)",
+      "sourceUrl": "https://americafirstpolicy.com/careers/internships-for-spring-2027-washington-dc/",
+      "applicationUrl": "AFPI careers application (not opened)",
+      "checkedAtUtc": "2026-10-02T13:45:00Z",
+      "outcome": "verified",
+      "evidenceExcerpt": "\"This is a full-time, in-person internship. Interns will receive a monthly stipend ... availability for the spring term (January-April). The formal application window is August 21st through October 30th. Applicants will be interviewed on a rolling basis.\" \"Please submit a cover letter, resume, and a writing sample.\" Posted September 22, 2026.",
+      "sourceDateOrCycle": "Posted 22 Sep 2026 (structured data datePublished 2026-09-22); the window text prints no year, but the \"Spring 2027\" title and the 22 Sep 2026 posting date fix it to 2026",
+      "deadline": "Fri 30 Oct 2026 (weekday verified; rolling interviews, so earlier is better)",
+      "status": "open",
+      "audience": "Students and recent graduates (no further eligibility stated)",
+      "eligibility": "Cover letter, resume, writing sample; pick top 2-3 departments; full-time in person Jan-Apr 2027; no citizenship rule printed",
+      "funding": "Monthly stipend (amount not stated)",
+      "duration": "Spring term, January-April 2027",
+      "deliveryMode": "in person",
+      "country": "United States",
+      "location": "Washington, DC",
+      "contactEmailFound": "Not printed on the posting (application form only); no contact email on the careers page",
+      "questionsForOutreach": [
+        "Stipend amount and any contact address for internship questions"
+      ],
+      "notes": "Year question resolved: the posting is dated 22 Sep 2026 and titled Spring 2027, so the window is 21 Aug - 30 Oct 2026. On-brief (America First / free enterprise).",
+      "explorerAgreement": "",
+      "fitForSam": {
+        "rating": "strong",
+        "reason": "Right-of-centre, DC, stipend; Policy intern track includes Trade & Economics."
+      },
+      "publishableNow": true,
+      "ideologyTag": "on-brief",
+      "ideologyEvidenceUrl": "https://americafirstpolicy.com/about",
+      "ideologyQuote": "We exist to advance policies that put the American people first, guided by liberty, free enterprise, and the primacy of American workers, families, and communities.",
+      "ideologyConfidence": "high",
+      "ideologyNote": "Self-described non-partisan 501(c)(3), but mission is conservative / America First."
+    },
+    {
+      "id": "tpif-fellowship-2027",
+      "organisation": "Public Interest Fellowship",
+      "program": "The Public Interest Fellowship (TPIF): two-year full-time paid placement fellowship with host organisations",
+      "sourceUrl": "https://publicinterestfellowship.org/programs/the-public-interest-fellowship-tpif/",
+      "applicationUrl": "Online application (not opened)",
+      "checkedAtUtc": "2026-10-02T13:45:00Z",
+      "outcome": "verified",
+      "evidenceExcerpt": "\"Recent college graduates or young professionals with up to five years of relevant work experience.\" \"Applications for TPIF's 2026 full-time fellowship cohort will be open through December 16, 2026. Applications for TPIF's stipend fellowship will open in March 2027.\" \"The full-time program offers paid, full-time employment ... two professional rotations, each lasting approximately nine to twelve months.\"",
+      "sourceDateOrCycle": "Programme page last-modified 2026-10-02 (structured data dateModified)",
+      "deadline": "Wed 16 Dec 2026 (weekday verified; time not stated); the page calls it the \"2026\" cohort although the deadline is Dec 2026",
+      "status": "open",
+      "audience": "Recent college graduates and young professionals (up to 5 years experience)",
+      "eligibility": "Up to five years of relevant work experience; full-time program in Washington DC or New York",
+      "funding": "Paid full-time employment with host organisations (stipend track opens March 2027 for people already employed)",
+      "duration": "Two years",
+      "deliveryMode": "in person",
+      "country": "United States",
+      "location": "Washington, DC or New York, NY",
+      "contactEmailFound": "No email on the page (contact form on /contact/, staff contact named Nani Beraha). The Searcher's [address omitted: not on an official page] was not found on the official pages.",
+      "questionsForOutreach": [],
+      "notes": "The page says \"2026 full-time fellowship cohort ... open through December 16, 2026\"; cohort-year wording is odd (likely the cohort that starts after the Dec 2026 deadline). On-brief.",
+      "explorerAgreement": "",
+      "fitForSam": {
+        "rating": "strong",
+        "reason": "Paid, right-of-centre, DC/NY; fits a graduating senior or recent graduate."
+      },
+      "publishableNow": true,
+      "ideologyTag": "on-brief",
+      "ideologyEvidenceUrl": "https://publicinterestfellowship.org/about/",
+      "ideologyQuote": "The ideal fellow is a young professional committed to preserving liberty, upholding free markets, defending constitutionalism, promoting a robust civil society, and fostering United States leadership abroad.",
+      "ideologyConfidence": "high",
+      "ideologyNote": ""
+    }
+  ]
+}
