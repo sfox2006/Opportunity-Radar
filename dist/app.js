@@ -1463,6 +1463,7 @@ function showOpportunityCard(item) {
   render();
   const card = document.getElementById("opportunity-" + item.id);
   if (!card) return;
+  card.querySelector("details").open = true;
   card.focus({ preventScroll: true });
   card.scrollIntoView({
     behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
@@ -1489,6 +1490,9 @@ function initMap() {
     map.on("style.load", () => {
       map.setProjection({ type: "globe" });
       for (const layer of map.getStyle().layers) {
+        if (layer.type === "background") map.setPaintProperty(layer.id, "background-color", "#f5f1e8");
+        if (layer.type === "fill") map.setPaintProperty(layer.id, "fill-color", /water/i.test(layer.id) ? "#e4dccb" : "#f5f1e8");
+        if (layer.type === "line" && /boundary|border/i.test(layer.id)) map.setPaintProperty(layer.id, "line-color", "#b8a98c");
         if (layer.type === "symbol" && layer.layout?.["text-field"]) {
           map.setLayoutProperty(layer.id, "text-field", ["coalesce", ["get", "name:en"], ["get", "name:latin"], ["get", "name"]]);
           map.setLayoutProperty(layer.id, "text-letter-spacing", 0);
@@ -1505,7 +1509,7 @@ function initMap() {
         filter: ["has", "point_count"],
         paint: {
           "circle-radius": ["step", ["get", "point_count"], 18, 10, 23, 30, 28],
-          "circle-color": "#008ba1", "circle-stroke-color": "#ffffff", "circle-stroke-width": 2
+          "circle-color": "#1f3d2b", "circle-stroke-color": "#f5f1e8", "circle-stroke-width": 2
         }
       });
       map.addLayer({
@@ -1535,9 +1539,9 @@ function initMap() {
         filter: ["all", ["!", ["has", "point_count"]], ["==", ["get", "id"], item.id]],
         paint: {
           "circle-radius": ["case", ["get", "selected"], 8, 6],
-          "circle-color": ["case", ["get", "selected"], "#d41484", "#008ba1"],
+          "circle-color": ["case", ["get", "selected"], "#b8925f", "#1f3d2b"],
           "circle-translate-anchor": "viewport",
-          "circle-stroke-color": "#ffffff", "circle-stroke-width": 2
+          "circle-stroke-color": "#f5f1e8", "circle-stroke-width": 2
         }
       });
       map.on("mouseenter", layerId, () => { map.getCanvas().style.cursor = "pointer"; });
@@ -1611,11 +1615,15 @@ function renderResults() {
     card.id = "opportunity-" + item.id;
     card.tabIndex = 0;
     card.innerHTML = `
-      <div class="detail-meta">
-        <span class="pill">${item.country}</span>
+      <details class="program-disclosure">
+      <summary class="program-row">
+        <h3>${item.program}</h3>
+        <span class="row-organisation">${item.organisation}</span>
         <span class="pill">${item.type}</span>
-      </div>
-      <h3>${item.organisation} - ${item.program}</h3>
+        <span class="row-location">${item.country}</span>
+        <span class="row-reviewed">${item.source.replace(/^Official source reviewed /, "")}</span>
+      </summary>
+      <div class="program-body">
       <p>${item.description}</p>
       <dl class="opportunity-facts">
         <div><dt>Location</dt><dd>${item.location}</dd></div>
@@ -1625,7 +1633,9 @@ function renderResults() {
       </dl>
       <div class="application-detail"><h4>Who can apply</h4><p>${item.eligibilityDetails}</p></div>
       <div class="application-detail"><h4>Application details</h4><p>${item.application}</p></div>
-      <div class="opportunity-actions"><a href="${item.url}" target="_blank" rel="noopener noreferrer">Official programme details</a><small>Source reviewed 11 Sep 2026</small></div>
+      <div class="opportunity-actions"><a href="${item.url}" target="_blank" rel="noopener noreferrer">Official programme details</a><button class="locate-program" type="button">View on globe</button><small>${item.source}</small></div>
+      </div>
+      </details>
       ${state.profile ? `<div class="score">
         <span>${item.score}% profile fit</span>
         <div class="score-bar" aria-hidden="true"><span style="width:${item.score}%"></span></div>
@@ -1635,6 +1645,7 @@ function renderResults() {
       focusProgram(item);
     };
     card.addEventListener("click", (event) => {
+      if (event.target.closest(".locate-program")) select();
       if (!event.target.closest("a, button, summary, input")) select();
     });
     card.addEventListener("keydown", (event) => {
