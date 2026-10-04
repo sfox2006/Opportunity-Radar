@@ -1,0 +1,311 @@
+[
+ {
+  "idx": 502,
+  "id": "li-yls-reagan-library-2026-10",
+  "organisation": "Leadership Institute",
+  "program": "Youth Leadership School (YLS), Ronald Reagan Presidential Library",
+  "sourceUrl": "https://leadershipinstitute.org/event/701VL00000wfLezYAE",
+  "eventDates": "Sat 10 - Sun 11 Oct 2026 (page header 7:00 AM-6:00 PM PDT); agenda spans arrival Fri 9 Oct to departure Mon 12 Oct (not a conflict)",
+  "deadline": "No registration deadline printed; event is 7 days away (Sat 10 Oct 2026)",
+  "location": "Ronald Reagan Presidential Library, 40 Presidential Dr, Simi Valley, CA",
+  "cost": "Registration $750",
+  "funding": "Full scholarships (flight, lodging, meals, materials) for a select number of students; FIRST-TIME YLS students only; choose \"scholarship registration\"",
+  "eligibility": "Students (age/class rule not stated on this page); scholarship only for first-time YLS attendees",
+  "contactEmailFound": [
+   "ctomaine@leadershipinstitute.org"
+  ],
+  "status": "open",
+  "notes": "Contact Carly Tomaine. Page last-modified not used. Publish with \"register now, 7 days left\" caveat; scholarship availability may be exhausted.",
+  "siteFields": {
+   "type": "Conference",
+   "duration": "2 days (Sat-Sun; travel Fri-Mon)",
+   "deadline": "No deadline printed; event Sat 10 Oct 2026",
+   "paid": "Paid: $750 registration; scholarship option",
+   "fundingDetails": "Select full scholarships (flight, lodging, meals, materials) for first-time YLS students",
+   "location": "Simi Valley, CA (Reagan Library)",
+   "eligibilityDetails": "Students; scholarship for first-time YLS attendees only; age rule not stated"
+  },
+  "checkedAtUtc": "2026-10-03T22:10:00Z"
+ },
+ {
+  "idx": 488,
+  "id": "acton-academic-conference-2026",
+  "organisation": "Acton Institute",
+  "program": "Sixth Annual Academic Conference",
+  "sourceUrl": "https://www.acton.org/event/2026/07/14/acton-institute-sixth-annual-academic-conference",
+  "eventDates": "Fri 16 Oct 2026 (one day)",
+  "deadline": "No registration deadline printed (event Fri 16 Oct 2026)",
+  "location": "Grand Rapids, MI 49503",
+  "cost": "$25 registration ($20/person for groups of 5+)",
+  "funding": "None stated",
+  "eligibility": "Not stated on page (academic conference; no student rule)",
+  "contactEmailFound": [
+   "lstrobel@acton.org"
+  ],
+  "status": "open",
+  "notes": "Contact Luke Strobel. \"Register Here\" link not opened. HTTP Last-Modified is a live-render header only, not used as dating evidence.",
+  "siteFields": {
+   "type": "Conference",
+   "duration": "1 day",
+   "deadline": "No deadline printed; event Fri 16 Oct 2026",
+   "paid": "Paid: $25 ($20 each for groups of 5+)",
+   "fundingDetails": "None stated",
+   "location": "Grand Rapids, MI",
+   "eligibilityDetails": "Not stated; academic conference open via registration"
+  },
+  "checkedAtUtc": "2026-10-03T22:10:00Z"
+ },
+ {
+  "idx": 480,
+  "id": "isi-retreat-george-fox-2026",
+  "organisation": "Intercollegiate Studies Institute (ISI)",
+  "program": "Intercollegiate Retreat: George Fox University",
+  "sourceUrl": "https://isi.org/event/intercollegiate-retreat-george-fox-university/",
+  "eventDates": "Fri 30 Oct - Sun 1 Nov 2026",
+  "deadline": "Fri 16 Oct 2026 (page: \"Friday, October 16th\"; year inferred)",
+  "location": "George Fox University, Newberg, OR",
+  "cost": "Free: travel and lodging covered",
+  "funding": "$250 stipend on completion; ~20 selected undergraduates; Pacific Northwest preference",
+  "eligibility": "Undergraduate students only (\"reserved for undergraduate students\"); Pacific Northwest preference (preference)",
+  "contactEmailFound": [
+   "amckinnon@isi.org"
+  ],
+  "status": "open",
+  "notes": "Closing date prints no year (2026 inferred; weekday verified). Application form not opened.",
+  "siteFields": {
+   "type": "Conference",
+   "duration": "3 days (Fri-Sun)",
+   "deadline": "Fri 16 Oct 2026 (page: \"Friday, October 16th\"; year inferred)",
+   "paid": "Free; travel and lodging covered; $250 stipend",
+   "fundingDetails": "Travel and lodging covered; $250 stipend on completion; about 20 participants",
+   "location": "George Fox University, Newberg, OR",
+   "eligibilityDetails": "Undergraduates only; Pacific Northwest preference"
+  },
+  "checkedAtUtc": "2026-10-03T22:10:00Z"
+ },
+ {
+  "idx": 481,
+  "id": "isi-retreat-san-francisco-2026",
+  "organisation": "Intercollegiate Studies Institute (ISI)",
+  "program": "Intercollegiate Retreat: San Francisco",
+  "sourceUrl": "https://isi.org/event/intercollegiate-retreat-san-francisco/",
+  "eventDates": "Fri 13 - Sun 15 Nov 2026",
+  "deadline": "Fri 23 Oct 2026 (page: \"Friday Oct 23rd\"; year inferred)",
+  "location": "San Francisco, CA",
+  "cost": "Free: travel and lodging covered",
+  "funding": "$250 stipend on completion; ~20 selected undergraduates; Western region preference; reindustrialization/localism theme",
+  "eligibility": "Undergraduate students only (\"reserved for undergraduate students\"); Western region preference; reindustrialization/localism theme (preference)",
+  "contactEmailFound": [
+   "amckinnon@isi.org"
+  ],
+  "status": "open",
+  "notes": "Closing date prints no year (2026 inferred; weekday verified). Application form not opened.",
+  "siteFields": {
+   "type": "Conference",
+   "duration": "3 days (Fri-Sun)",
+   "deadline": "Fri 23 Oct 2026 (page: \"Friday Oct 23rd\"; year inferred)",
+   "paid": "Free; travel and lodging covered; $250 stipend",
+   "fundingDetails": "Travel and lodging covered; $250 stipend on completion; about 20 participants",
+   "location": "San Francisco, CA",
+   "eligibilityDetails": "Undergraduates only; Western region preference; reindustrialization/localism theme"
+  },
+  "checkedAtUtc": "2026-10-03T22:10:00Z"
+ },
+ {
+  "idx": 482,
+  "id": "isi-retreat-south-carolina-2026",
+  "organisation": "Intercollegiate Studies Institute (ISI)",
+  "program": "Intercollegiate Retreat: University of South Carolina",
+  "sourceUrl": "https://isi.org/event/intercollegiate-retreat-university-of-south-carolina/",
+  "eventDates": "Fri 13 - Sun 15 Nov 2026",
+  "deadline": "Fri 23 Oct 2026 (page: \"Friday Oct 23\"; year inferred)",
+  "location": "University of South Carolina, Columbia, SC",
+  "cost": "Free: travel and lodging covered",
+  "funding": "$250 stipend on completion; ~20 selected undergraduates; Southeast preference; Adam Smith / classical liberalism theme",
+  "eligibility": "Undergraduate students only (\"reserved for undergraduate students\"); Southeast preference; Adam Smith / classical liberalism theme (preference)",
+  "contactEmailFound": [
+   "ataylor@isi.org"
+  ],
+  "status": "open",
+  "notes": "Closing date prints no year (2026 inferred; weekday verified). Application form not opened.",
+  "siteFields": {
+   "type": "Conference",
+   "duration": "3 days (Fri-Sun)",
+   "deadline": "Fri 23 Oct 2026 (page: \"Friday Oct 23\"; year inferred)",
+   "paid": "Free; travel and lodging covered; $250 stipend",
+   "fundingDetails": "Travel and lodging covered; $250 stipend on completion; about 20 participants",
+   "location": "University of South Carolina, Columbia, SC",
+   "eligibilityDetails": "Undergraduates only; Southeast preference; Adam Smith / classical liberalism theme"
+  },
+  "checkedAtUtc": "2026-10-03T22:10:00Z"
+ },
+ {
+  "idx": 483,
+  "id": "isi-retreat-toledo-2026",
+  "organisation": "Intercollegiate Studies Institute (ISI)",
+  "program": "Intercollegiate Retreat: University of Toledo",
+  "sourceUrl": "https://isi.org/event/intercollegiate-retreat-university-of-toledo/",
+  "eventDates": "Fri 13 - Sun 15 Nov 2026",
+  "deadline": "Fri 23 Oct 2026 (page: \"Friday Oct 23\"; year inferred)",
+  "location": "University of Toledo, Toledo, OH",
+  "cost": "Free: travel and lodging covered",
+  "funding": "$250 stipend on completion; ~20 selected undergraduates; Midwest preference; early American economy theme",
+  "eligibility": "Undergraduate students only (\"reserved for undergraduate students\"); Midwest preference; early American economy theme (preference)",
+  "contactEmailFound": [
+   "pvanheyningen@isi.org"
+  ],
+  "status": "open",
+  "notes": "Closing date prints no year (2026 inferred; weekday verified). Application form not opened.",
+  "siteFields": {
+   "type": "Conference",
+   "duration": "3 days (Fri-Sun)",
+   "deadline": "Fri 23 Oct 2026 (page: \"Friday Oct 23\"; year inferred)",
+   "paid": "Free; travel and lodging covered; $250 stipend",
+   "fundingDetails": "Travel and lodging covered; $250 stipend on completion; about 20 participants",
+   "location": "University of Toledo, Toledo, OH",
+   "eligibilityDetails": "Undergraduates only; Midwest preference; early American economy theme"
+  },
+  "checkedAtUtc": "2026-10-03T22:10:00Z"
+ },
+ {
+  "idx": 496,
+  "id": "cato-university-on-campus-san-diego-2026",
+  "organisation": "Cato Institute",
+  "program": "Cato University on Campus: San Diego",
+  "sourceUrl": "https://www.cato.org/events/cato-university-campus-san-diego",
+  "eventDates": "Sat 14 Nov 2026, 8:30 AM-5:00 PM PST",
+  "deadline": "Fri 30 Oct 2026, 5:00 PM EDT (page: \"Applications will close on Friday, October 30, 2026 at 5:00 pm EDT\"); rolling notification",
+  "location": "University of San Diego, Nexus Theater, 5998 Alcala Park Way, San Diego, CA",
+  "cost": "No fee stated (breakfast, lunch, closing reception included)",
+  "funding": "$100 travel stipend on completion",
+  "eligibility": "College and graduate students (regional series)",
+  "contactEmailFound": [
+   "events@cato.org"
+  ],
+  "status": "open",
+  "notes": "curl got HTTP 403 from cato.org (not bypassed); page read via WebFetch (public page, disclosed fallback). Application form not opened.",
+  "siteFields": {
+   "type": "Conference",
+   "duration": "1 day",
+   "deadline": "Fri 30 Oct 2026, 5:00 PM EDT",
+   "paid": "No fee stated; meals included; $100 travel stipend on completion",
+   "fundingDetails": "$100 stipend after attending; meals provided",
+   "location": "San Diego, CA (University of San Diego)",
+   "eligibilityDetails": "College and graduate students; apply online"
+  },
+  "checkedAtUtc": "2026-10-03T22:10:00Z"
+ },
+ {
+  "idx": 503,
+  "id": "li-yls-cozumel-cruise-2026-11",
+  "organisation": "Leadership Institute",
+  "program": "Youth Leadership School (YLS) Cozumel cruise",
+  "sourceUrl": "https://leadershipinstitute.org/event/701VL00000hOaJLYA0",
+  "eventDates": "Thu 5 Nov 7:30 AM CST - Mon 9 Nov 2026 8:00 AM CST (5-day cruise)",
+  "deadline": "No deadline printed (event Thu 5 Nov 2026)",
+  "location": "Departs Carnival Cruise Terminal, New Orleans, LA (cruise to Cozumel, Mexico)",
+  "cost": "Registration $850",
+  "funding": "Limited full cruise scholarships (\"Scholarship Attendee\"): cruise fare, lodging, meals",
+  "eligibility": "18+; valid US passport (or original birth certificate with seal plus photo ID; not expiring within 6 months); credit card for onboard purchases",
+  "contactEmailFound": [
+   "ctomaine@leadershipinstitute.org"
+  ],
+  "status": "open",
+  "notes": "Same contact as 502. Travel to New Orleans not covered.",
+  "siteFields": {
+   "type": "Conference",
+   "duration": "5 days (Thu-Mon)",
+   "deadline": "No deadline printed; departs Thu 5 Nov 2026",
+   "paid": "Paid: $850; limited full scholarships",
+   "fundingDetails": "Limited full cruise scholarships (fare, lodging, meals)",
+   "location": "New Orleans, LA (cruise departure) to Cozumel, Mexico",
+   "eligibilityDetails": "18+; US passport or birth certificate + photo ID; scholarship selected"
+  },
+  "checkedAtUtc": "2026-10-03T22:10:00Z"
+ },
+ {
+  "idx": 497,
+  "id": "cato-university-winter-2027",
+  "organisation": "Cato Institute",
+  "program": "Cato University 2027: Winter Term",
+  "sourceUrl": "https://www.cato.org/student-programs/cato-university-2027-winter-term",
+  "eventDates": "Thu 4 - Sat 6 Feb 2027",
+  "deadline": "Application deadline not stated on page",
+  "location": "Cato Institute, 1000 Massachusetts Ave NW, Washington, DC",
+  "cost": "Free: room and board included, 20+ hours of programming",
+  "funding": "$500 travel stipend on completion",
+  "eligibility": "US-based applicants only (students)",
+  "contactEmailFound": [
+   "events@cato.org"
+  ],
+  "status": "open",
+  "notes": "Read via WebFetch (cato.org curl 403 not bypassed). Contact events@cato.org taken from sibling Cato page (496), not this page. No deadline printed - publish as \"rolling / check page\".",
+  "siteFields": {
+   "type": "Conference",
+   "duration": "3 days (Thu-Sat)",
+   "deadline": "Not stated on page",
+   "paid": "Free; $500 travel stipend on completion",
+   "fundingDetails": "Room and board included; $500 stipend",
+   "location": "Washington, DC",
+   "eligibilityDetails": "US-based applicants only"
+  },
+  "checkedAtUtc": "2026-10-03T22:10:00Z"
+ },
+ {
+  "idx": 485,
+  "id": "mises-libertarian-scholars-conference-2027",
+  "organisation": "Mises Institute",
+  "program": "Libertarian Scholars Conference 2027",
+  "sourceUrl": "https://mises.org/events/libertarian-scholars-conference-2027",
+  "eventDates": "Thu 18 Mar 2027 (one day; header says 2027, body typo says \"March 18, 2026\")",
+  "deadline": "No registration deadline printed",
+  "location": "Mises Institute, Auburn, AL (hotel reception at Auburn University Hotel)",
+  "cost": "Registration $99",
+  "funding": "\"Students, apply here!\" link (terms not read); paper proposals welcome (abstracts max 250 words)",
+  "eligibility": "Scholars and students; students apply via link",
+  "contactEmailFound": [
+   "felicia@mises.org"
+  ],
+  "status": "open",
+  "notes": "HEADER/BODY CONFLICT: body typo year 2026; Thu 18 Mar 2027 is a Thursday so 2027 is right (18 Mar 2026 was also a Wed).",
+  "siteFields": {
+   "type": "Conference",
+   "duration": "1 day",
+   "deadline": "No deadline printed; event Thu 18 Mar 2027",
+   "paid": "Paid: $99 registration",
+   "fundingDetails": "Student application link; paper proposals welcome",
+   "location": "Auburn, AL",
+   "eligibilityDetails": "Scholars and students; student route via application link"
+  },
+  "checkedAtUtc": "2026-10-03T22:10:00Z"
+ },
+ {
+  "idx": 500,
+  "id": "atlas-society-galts-gulch-2027",
+  "organisation": "The Atlas Society",
+  "program": "Galt's Gulch 2027 (5th annual) with student and young-adult scholarships",
+  "sourceUrl": "https://www.atlassociety.org/galts-gulch-2027",
+  "eventDates": "Thu 3 - Sat 5 Jun 2027 (page: \"New Orleans, June 3-5, 2027\")",
+  "deadline": "Early-bird ticket price expires Feb 1 (year not printed: Mon 1 Feb 2027 inferred); scholarship deadline not printed",
+  "location": "New Orleans, LA (hotel via \"Accommodations\" tab not captured)",
+  "cost": "Conference ticket $1,250 early bird (expires Feb 1), then $1,500",
+  "funding": "Student and Young Adult attendees 18 to 35 eligible for travel and lodging scholarships (apply via on-page HubSpot form, not opened)",
+  "eligibility": "Open ticketed conference; scholarship for attendees aged 18-35",
+  "contactEmailFound": [
+   "galtsgulch@atlassociety.org",
+   "clara@atlassociety.org"
+  ],
+  "status": "open",
+  "notes": "Searcher said already a card. Last-Modified Thu 1 Oct 2026 is metadata only, not used. clara@atlassociety.org also appears in page source.",
+  "siteFields": {
+   "type": "Conference",
+   "duration": "3 days (Thu-Sat)",
+   "deadline": "Early bird to Feb 1 (2027 inferred); scholarship deadline not printed",
+   "paid": "Paid ticket $1,250 early / $1,500; scholarships for 18-35",
+   "fundingDetails": "Travel and lodging scholarships for attendees aged 18 to 35; whether the ticket is waived is not stated",
+   "location": "New Orleans, LA",
+   "eligibilityDetails": "Open to adults; scholarship ages 18 to 35"
+  },
+  "checkedAtUtc": "2026-10-03T22:10:00Z"
+ }
+]
