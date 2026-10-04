@@ -1318,6 +1318,89 @@ const opportunities = [
 
 const typeOrder = ["Internship", "Conference", "Fellowship", "Essay competition", "Online course", "Seminar", "Scholarship"];
 
+// Not-yet-open programmes. Add a record only with opensOn: "YYYY-MM-DD" taken from an official source.
+const openingSoon = [];
+const openStatuses = new Set(["open", "rolling", "on-demand"]);
+
+function parseIsoDate(value) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value || "");
+  if (!match) return null;
+  const year = Number(match[1]);
+  const month = Number(match[2]);
+  const day = Number(match[3]);
+  const date = new Date(year, month - 1, day);
+  if (date.getFullYear() !== year || date.getMonth() !== month - 1 || date.getDate() !== day) return null;
+  date.setHours(0, 0, 0, 0);
+  return date;
+}
+
+function addCalendarMonths(date, months) {
+  const monthIndex = date.getMonth() + months;
+  const last = new Date(date.getFullYear(), monthIndex + 1, 0).getDate();
+  return new Date(date.getFullYear(), monthIndex, Math.min(date.getDate(), last));
+}
+
+function isOpeningSoon(item, today = new Date()) {
+  if (!item || openStatuses.has(item.status)) return false;
+  const opens = parseIsoDate(item.opensOn);
+  if (!opens || !(today instanceof Date) || Number.isNaN(today.getTime())) return false;
+  const start = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  const end = addCalendarMonths(start, 3);
+  return opens.getTime() >= start.getTime() && opens.getTime() <= end.getTime();
+}
+
+function programmesOpeningSoon(today = new Date(), records = openingSoon) {
+  const openIds = new Set(opportunities.map((item) => item.id));
+  return records
+    .filter((item) => item && item.id && !openIds.has(item.id) && isOpeningSoon(item, today))
+    .sort((a, b) => String(a.opensOn).localeCompare(String(b.opensOn))
+      || String(a.organisation || "").localeCompare(String(b.organisation || ""))
+      || String(a.program || "").localeCompare(String(b.program || "")));
+}
+
+function formatOpeningDate(value) {
+  const date = parseIsoDate(value);
+  if (!date) return "";
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+}
+
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+}
+
+function openingSoonRow(item) {
+  const opens = formatOpeningDate(item.opensOn);
+  const url = typeof item.url === "string" && item.url.startsWith("https://") ? item.url : "";
+  return `<article class="result">
+    <details class="program-disclosure">
+    <summary class="program-row">
+      <h3>${escapeHtml(item.program)}</h3>
+      <span class="row-organisation">${escapeHtml(item.organisation)}</span>
+      <span class="pill">${escapeHtml(item.type || "")}</span>
+      <span class="row-location">${escapeHtml(item.country || "")}</span>
+      <span class="row-reviewed">Opens ${escapeHtml(opens)}</span>
+    </summary>
+    <div class="program-body">
+      ${item.description ? `<p>${escapeHtml(item.description)}</p>` : ""}
+      <dl class="opportunity-facts">
+        <div><dt>Applications open</dt><dd>${escapeHtml(opens)}</dd></div>
+        ${item.location ? `<div><dt>Location</dt><dd>${escapeHtml(item.location)}</dd></div>` : ""}
+        ${item.deadline ? `<div><dt>Deadline / status</dt><dd>${escapeHtml(item.deadline)}</dd></div>` : ""}
+      </dl>
+      ${url ? `<div class="opportunity-actions"><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Official programme details</a></div>` : ""}
+    </div>
+    </details>
+  </article>`;
+}
+
+function openingSoonMarkup(items) {
+  if (!items.length) {
+    return `<p class="opening-empty">None of the reviewed programmes have a confirmed application opening in the next three months.</p>`;
+  }
+  return items.map(openingSoonRow).join("");
+}
+
 const state = {
   query: "",
   region: "All",
@@ -1329,7 +1412,7 @@ const state = {
   needsInternational: false,
   needsFunded: false,
   interests: new Set(),
-  selectedId: opportunities[0].id,
+  selectedId: null,
   mapReady: false
 };
 
@@ -1345,6 +1428,10 @@ const els = {
   needsFunded: document.getElementById("needs-funded"),
   interestChips: document.getElementById("interest-chips"),
   detail: document.getElementById("detail-card"),
+  selectionStrip: document.getElementById("selection-strip"),
+  legendSelected: document.getElementById("legend-selected"),
+  openingSoonHead: document.getElementById("opening-soon-head"),
+  openingSoonList: document.getElementById("opening-soon-list"),
   results: document.getElementById("results"),
   scanCount: document.getElementById("scan-count"),
   reset: document.getElementById("reset-filters")
@@ -1585,8 +1672,14 @@ function renderChips() {
 }
 
 function renderDetail() {
-  const item = opportunities.find((candidate) => candidate.id === state.selectedId);
-  if (!item) return;
+  const item = state.selectedId ? opportunities.find((candidate) => candidate.id === state.selectedId) : null;
+  if (els.legendSelected) els.legendSelected.hidden = !item;
+  if (!item) {
+    if (els.selectionStrip) els.selectionStrip.hidden = true;
+    els.detail.innerHTML = "";
+    return;
+  }
+  if (els.selectionStrip) els.selectionStrip.hidden = false;
   const score = matchScore(item);
   els.detail.innerHTML = `
     <p class="eyebrow">${item.source}</p>
@@ -1656,6 +1749,12 @@ function renderResults() {
   });
 }
 
+function renderOpeningSoon() {
+  const items = programmesOpeningSoon();
+  if (els.openingSoonHead) els.openingSoonHead.hidden = items.length === 0;
+  if (els.openingSoonList) els.openingSoonList.innerHTML = openingSoonMarkup(items);
+}
+
 function render() {
   document.getElementById("profile-summary").hidden = !state.profile;
   document.getElementById("clear-profile").hidden = !state.profile;
@@ -1664,6 +1763,7 @@ function render() {
   renderChips();
   renderDetail();
   renderResults();
+  renderOpeningSoon();
   syncMap();
 }
 

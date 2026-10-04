@@ -18,6 +18,7 @@
     <nav aria-label="Main navigation">
       <a href="#explore" aria-current="location">Explore</a>
       <a href="#programs">Programs</a>
+      <a href="#opening-soon">Opening soon</a>
       <a href="#profile">My profile</a>
       <a href="#newsletter">Newsletter</a>
     </nav>
@@ -36,9 +37,9 @@
         <div id="globe" role="region" aria-label="Interactive world map with program locations"></div>
         <span id="map-status" role="status">Loading world map...</span>
         <button id="world-view" type="button" title="Return to world view">World view</button>
-        <span class="map-legend"><i></i> Programs <i class="selected"></i> Selected</span>
+        <span class="map-legend"><i></i> Programs <span id="legend-selected" hidden><i class="selected"></i> Selected</span></span>
       </div>
-      <div class="selection-strip content-width">
+      <div class="selection-strip content-width" id="selection-strip" hidden>
         <section class="detail-card" id="detail-card" aria-live="polite"></section>
         <a class="section-link" href="#programs">Browse programs <span aria-hidden="true">↓</span></a>
       </div>
@@ -92,6 +93,16 @@
         </div>
         <div class="list-head" aria-hidden="true"><span>Program</span><span>Organisation</span><span>Type</span><span>Location</span><span>Reviewed</span></div>
         <div id="results" class="results-list"></div>
+      </div>
+    </section>
+    <section id="opening-soon" class="programs-section opening-soon-section" aria-label="Opening soon">
+      <div class="content-width">
+        <div class="section-heading">
+          <div><p class="eyebrow">Upcoming</p><h2>Opening soon</h2></div>
+        </div>
+        <p class="opening-intro">These programmes are not open yet. A programme is listed only when an official source states the day applications open, and that day falls within the next three months.</p>
+        <div id="opening-soon-head" class="list-head" aria-hidden="true" hidden><span>Program</span><span>Organisation</span><span>Type</span><span>Location</span><span>Opens</span></div>
+        <div id="opening-soon-list" class="results-list"></div>
       </div>
     </section>
     <section id="profile" class="profile-section" aria-label="Profile builder">
