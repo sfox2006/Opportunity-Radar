@@ -1,6 +1,6 @@
 # Open now and opening soon — 4 October 2026
 
-Public open programmes: 128 (107 already listed on the Open now / Opening tabs branch, 22 added, 1 removed).
+Public open programmes: 131 (107 already listed on the Open now / Opening tabs branch, 25 added, 1 removed).
 Opening-soon programmes: 3. Removed from the public site: 1 (`heritage-young-leaders`).
 
 The reviewer payload was checked 4 October 2026. `batch-extract.json` keeps that payload. Published open cards are the 22 `open` records. Published opening cards are 3 of the 4 `opening` records. `verified-programmes.json` is the full Open now list in the site data shape, without the public source line. `opening-soon.json` is the Opening list.
@@ -33,6 +33,9 @@ Checked date on the new cards only: `reviewedAt` `2026-10-04`.
 - `mei-liberty-leadership-seminar-2027`
 - `isi-collegiate-network-internship-2027`
 - `hillsdale-in-dc-internship`
+- `libertas-institute-research-internship`
+- `independence-institute-kip-spring-2027`
+- `independent-institute-learning-to-lead-internships`
 
 ## Added to Opening in the next 3 months
 

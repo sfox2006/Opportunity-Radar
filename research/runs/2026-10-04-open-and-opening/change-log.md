@@ -1,6 +1,6 @@
 # Change log — 4 October 2026
 
-Public open programmes: 128 (107 already listed, 22 added, 1 removed).
+Public open programmes: 131 (107 already listed, 25 added, 1 removed).
 Opening-soon programmes: 3.
 Removed from the public site: `heritage-young-leaders`.
 
@@ -32,6 +32,9 @@ Removed from the public site: `heritage-young-leaders`.
 | `mei-liberty-leadership-seminar-2027` | Montreal Economic Institute (MEI) | Liberty & Leadership Seminar 2027 (with paid internships) | open |
 | `isi-collegiate-network-internship-2027` | Intercollegiate Studies Institute - Collegiate Network | Journalism internship (summer 2027, 10 weeks) and fellowship (1 year) | open |
 | `hillsdale-in-dc-internship` | Hillsdale College - Hillsdale in D.C. (Kirby Center) | Intern for Hillsdale in D.C. (full-time, paid) | open |
+| `libertas-institute-research-internship` | Libertas Institute (Utah) | Research Internship (fall, winter, summer; paid or unpaid) | rolling |
+| `independence-institute-kip-spring-2027` | Independence Institute (Denver, CO) | Koch Internship Program Spring 2027 host posting (Development Intern; Fiscal Policy Intern also posted) | rolling |
+| `independent-institute-learning-to-lead-internships` | Independent Institute (Oakland, CA) | Learning to Lead Internships (winter/spring, summer, fall) | open |
 
 ## Opening
 
@@ -52,3 +55,13 @@ Claremont's 2027 deadline, dates and terms are not published. The card shows 202
 `atlantic-council-ygp-spring-2027`. Opens 2026-10-19. Apply by Sun 8 Nov 2026, 11:59 pm ET. Neutral organisation. Not published.
 
 Also not published: anything opening after 4 January 2027, anything dated only by month, and neutral organisations such as FIRE, Becket, FPRI and the Boston Fed.
+
+## Follow-up, still checked 4 October 2026
+
+Three more on-brief cards were appended. `martin-center-internship-next-semester` was already on the open list and was left as published.
+
+- `libertas-institute-research-internship` — rolling. No deadline printed. Paid or unpaid.
+- `independence-institute-kip-spring-2027` — rolling through December 2026 (KIP). Development Intern posting; a Fiscal Policy Intern is also posted. The exact deadline is on the posting.
+- `independent-institute-learning-to-lead-internships` — open. The winter/spring deadline Thu 1 Oct 2026 has passed, and the page says late applications are considered while positions remain. Summer deadline Thu 1 Apr 2027 (year inferred). Apply by email to internships@independent.org.
+
+Lehi / Salt Lake, Denver and Oakland are not already marked in `dist/app.js`, so these three cards are unpinned (`mapped: false`). No new coordinates were added.

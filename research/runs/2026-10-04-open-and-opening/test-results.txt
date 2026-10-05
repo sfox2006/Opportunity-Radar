@@ -24,3 +24,10 @@ Run after appending the 22 open cards, removing the Heritage spring card, and ad
 - Python: 13 tests, OK.
 
 Newsletter tests were run and were not modified.
+
+## Follow-up (three more open cards)
+
+Same commands, after appending Libertas, Independence Institute and Independent Institute. Open now count in tests: 131. Martin Center card still present.
+
+- Node: 9 tests, 9 pass, 0 fail. `opportunity-details.test.cjs` reported 131 reviewed records.
+- Python: 13 tests, OK.
