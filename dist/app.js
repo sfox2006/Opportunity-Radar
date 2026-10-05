@@ -2556,6 +2556,16 @@ function isOpeningSoon(item, today = new Date()) {
   return opens.getTime() >= start.getTime() && opens.getTime() <= end.getTime();
 }
 
+// Same pin rule as the open catalogue: coordinates are required, and online, global, or explicitly unmapped programmes stay off the globe.
+function isPinned(item) {
+  return !!item
+    && item.mapped !== false
+    && item.region !== "Online"
+    && item.country !== "Global"
+    && Number.isFinite(item.lat)
+    && Number.isFinite(item.lon);
+}
+
 function programmesOpeningSoon(today = new Date(), records = openingSoon) {
   const openIds = new Set(opportunities.map((item) => item.id));
   return records
@@ -2579,23 +2589,25 @@ function escapeHtml(value) {
 function openingSoonRow(item) {
   const opens = formatOpeningDate(item.opensOn);
   const url = typeof item.url === "string" && item.url.startsWith("https://") ? item.url : "";
-  return `<article class="result">
+  const pinned = isPinned(item);
+  const active = item.id === state.selectedId ? " active" : "";
+  return `<article class="result${active}" id="opportunity-${escapeHtml(item.id)}" tabindex="0">
     <details class="program-disclosure">
     <summary class="program-row">
       <h3>${escapeHtml(item.program)}</h3>
       <span class="row-organisation">${escapeHtml(item.organisation)}</span>
       <span class="pill">${escapeHtml(item.type || "")}</span>
       <span class="row-location">${escapeHtml(item.country || "")}</span>
-      <span class="row-reviewed">Opens ${escapeHtml(opens)}</span>
+      <span class="row-reviewed opens-date">Opens ${escapeHtml(opens)}</span>
     </summary>
     <div class="program-body">
       ${item.description ? `<p>${escapeHtml(item.description)}</p>` : ""}
       <dl class="opportunity-facts">
-        <div><dt>Applications open</dt><dd>${escapeHtml(opens)}</dd></div>
+        <div><dt>Applications open</dt><dd>Opens ${escapeHtml(opens)}</dd></div>
         ${item.location ? `<div><dt>Location</dt><dd>${escapeHtml(item.location)}</dd></div>` : ""}
         ${item.deadline ? `<div><dt>Deadline / status</dt><dd>${escapeHtml(item.deadline)}</dd></div>` : ""}
       </dl>
-      ${url ? `<div class="opportunity-actions"><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Official programme details</a></div>` : ""}
+      ${url || pinned ? `<div class="opportunity-actions">${url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Official programme details</a>` : ""}${pinned ? `<button class="locate-program" type="button">View on globe</button>` : ""}</div>` : ""}
     </div>
     </details>
   </article>`;
@@ -2603,7 +2615,7 @@ function openingSoonRow(item) {
 
 function openingSoonMarkup(items) {
   if (!items.length) {
-    return `<p class="opening-empty">None of the reviewed programmes have a confirmed application opening in the next three months.</p>`;
+    return `<p class="opening-empty">No reviewed programmes have a confirmed opening date in the next three months right now.</p>`;
   }
   return items.map(openingSoonRow).join("");
 }
@@ -2620,7 +2632,8 @@ const state = {
   needsFunded: false,
   interests: new Set(),
   selectedId: null,
-  mapReady: false
+  mapReady: false,
+  catalog: "open"
 };
 
 const els = {
@@ -2639,6 +2652,12 @@ const els = {
   legendSelected: document.getElementById("legend-selected"),
   openingSoonHead: document.getElementById("opening-soon-head"),
   openingSoonList: document.getElementById("opening-soon-list"),
+  tabOpen: document.getElementById("tab-open"),
+  tabOpening: document.getElementById("tab-opening"),
+  panelOpen: document.getElementById("panel-open"),
+  panelOpening: document.getElementById("panel-opening"),
+  openCount: document.getElementById("open-count"),
+  openingCount: document.getElementById("opening-count"),
   results: document.getElementById("results"),
   scanCount: document.getElementById("scan-count"),
   reset: document.getElementById("reset-filters")
@@ -2647,6 +2666,7 @@ const els = {
 let map;
 let popup;
 const markerLayers = [];
+let mapMarkers = [];
 
 function separateDots(points, gap = 23) {
   const placed = [];
@@ -2670,7 +2690,8 @@ function layoutDots() {
     markerLayers.forEach(id => map.setPaintProperty(id, "circle-translate", [0, 0]));
     return;
   }
-  const items = filteredItems().filter(item => markerLayers.includes("pin-" + item.id))
+  const sourceItems = state.catalog === "opening" ? filteredOpeningSoon() : filteredItems();
+  const items = sourceItems.filter(item => markerLayers.includes("pin-" + item.id))
     .sort((a, b) => a.id.localeCompare(b.id));
   const offsets = separateDots(items.map(item => map.project([item.lon, item.lat])));
   items.forEach((item, index) => map.setPaintProperty("pin-" + item.id, "circle-translate", offsets[index]));
@@ -2718,26 +2739,45 @@ function passesFilters(item) {
   );
 }
 
-function filteredItems() {
-  const items = opportunities.filter(passesFilters);
+function filteredCatalog(records) {
+  const items = records.filter(passesFilters);
   if (!state.profile) return items;
   return items
     .map((item) => ({ ...item, score: matchScore(item) }))
     .sort((a, b) => b.score - a.score || typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type));
 }
 
-function syncMap() {
-  const items = filteredItems();
-  els.scanCount.textContent = items.length;
-  if (!state.mapReady) return;
-  map.getSource("programs").setData({
+function filteredItems() {
+  return filteredCatalog(opportunities);
+}
+
+function filteredOpeningSoon() {
+  return filteredCatalog(programmesOpeningSoon());
+}
+
+function activeProgrammes() {
+  return state.catalog === "opening" ? filteredOpeningSoon() : filteredItems();
+}
+
+function mapFeaturesFor(items) {
+  return {
     type: "FeatureCollection",
-    features: items.filter(item => item.mapped !== false && item.region !== "Online" && item.country !== "Global").map(item => ({
+    features: items.filter(isPinned).map(item => ({
       type: "Feature",
       geometry: { type: "Point", coordinates: [item.lon, item.lat] },
       properties: { id: item.id, selected: item.id === state.selectedId }
     }))
-  });
+  };
+}
+
+function syncMap() {
+  const items = activeProgrammes();
+  els.scanCount.textContent = items.length;
+  const data = mapFeaturesFor(items);
+  mapMarkers = data.features.map(feature => feature.properties.id);
+  if (!state.mapReady) return;
+  map.getSource("programs").setData(data);
+  items.filter(isPinned).forEach(addProgramPin);
   layoutDots();
 }
 
@@ -2746,9 +2786,28 @@ function focusProgram(item) {
   popup?.remove();
   render();
   document.getElementById("explore")?.scrollIntoView({ behavior: "smooth", block: "start" });
-  if (map && item.mapped !== false && item.region !== "Online" && item.country !== "Global") {
+  if (map && isPinned(item)) {
     map.flyTo({ center: [item.lon, item.lat], zoom: 10, duration: 1400 });
   }
+}
+
+function addProgramPin(item) {
+  const layerId = "pin-" + item.id;
+  if (markerLayers.includes(layerId)) return;
+  markerLayers.push(layerId);
+  map.addLayer({
+    id: layerId, type: "circle", source: "programs",
+    filter: ["all", ["!", ["has", "point_count"]], ["==", ["get", "id"], item.id]],
+    paint: {
+      "circle-radius": ["case", ["get", "selected"], 8, 6],
+      "circle-color": ["case", ["get", "selected"], "#b8925f", "#1f3d2b"],
+      "circle-translate-anchor": "viewport",
+      "circle-stroke-color": "#f5f1e8", "circle-stroke-width": 2
+    }
+  });
+  map.on("mouseenter", layerId, () => { map.getCanvas().style.cursor = "pointer"; });
+  map.on("mouseleave", layerId, () => { map.getCanvas().style.cursor = ""; });
+  map.on("click", layerId, () => showOpportunityCard(item));
 }
 
 function showOpportunityCard(item) {
@@ -2825,23 +2884,8 @@ function initMap() {
             duration: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 650 });
         } catch { /* A filter change may replace the cluster while its zoom is resolving. */ }
       });
-      opportunities.filter(item => item.mapped !== false && item.region !== "Online" && item.country !== "Global").forEach(item => {
-      const layerId = "pin-" + item.id;
-      markerLayers.push(layerId);
-      map.addLayer({
-        id: layerId, type: "circle", source: "programs",
-        filter: ["all", ["!", ["has", "point_count"]], ["==", ["get", "id"], item.id]],
-        paint: {
-          "circle-radius": ["case", ["get", "selected"], 8, 6],
-          "circle-color": ["case", ["get", "selected"], "#b8925f", "#1f3d2b"],
-          "circle-translate-anchor": "viewport",
-          "circle-stroke-color": "#f5f1e8", "circle-stroke-width": 2
-        }
-      });
-      map.on("mouseenter", layerId, () => { map.getCanvas().style.cursor = "pointer"; });
-      map.on("mouseleave", layerId, () => { map.getCanvas().style.cursor = ""; });
-      map.on("click", layerId, () => showOpportunityCard(item));
-      });
+      opportunities.filter(isPinned).forEach(addProgramPin);
+      programmesOpeningSoon().filter(isPinned).forEach(addProgramPin);
       state.mapReady = true;
       syncMap();
     });
@@ -2878,13 +2922,23 @@ function renderChips() {
   });
 }
 
+function programmeById(id) {
+  if (!id) return null;
+  return opportunities.find((candidate) => candidate.id === id)
+    || programmesOpeningSoon().find((candidate) => candidate.id === id)
+    || null;
+}
+
 function renderDetail() {
-  const item = state.selectedId ? opportunities.find((candidate) => candidate.id === state.selectedId) : null;
+  let item = programmeById(state.selectedId);
   if (els.legendSelected) els.legendSelected.hidden = !item;
   if (!item) {
     if (els.selectionStrip) els.selectionStrip.hidden = true;
     els.detail.innerHTML = "";
     return;
+  }
+  if (!item.source || item.deadline == null) {
+    item = { ...item, source: item.source || "", deadline: item.deadline || "" };
   }
   if (els.selectionStrip) els.selectionStrip.hidden = false;
   const score = matchScore(item);
@@ -2896,6 +2950,7 @@ function renderDetail() {
       <span class="pill">${item.country}</span>
       <span class="pill">${item.type}</span>
       <span class="pill">${item.deadline}</span>
+      ${item.opensOn ? `<span class="pill">Opens ${formatOpeningDate(item.opensOn)}</span>` : ""}
       ${score === null ? "" : `<span class="pill">${score}% profile fit</span>`}
     </div>
     <p>${item.description}</p>
@@ -2941,25 +2996,86 @@ function renderResults() {
         <div class="score-bar" aria-hidden="true"><span style="width:${item.score}%"></span></div>
       </div>` : ""}
     `;
-    const select = () => {
-      focusProgram(item);
-    };
-    card.addEventListener("click", (event) => {
-      if (event.target.closest(".locate-program")) select();
-      if (!event.target.closest("a, button, summary, input")) select();
-    });
-    card.addEventListener("keydown", (event) => {
-      if (event.target !== card) return;
-      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); select(); }
-    });
+    bindProgramCard(card, item);
     els.results.appendChild(card);
   });
 }
 
+function bindProgramCard(card, item) {
+  const select = () => {
+    focusProgram(item);
+  };
+  card.addEventListener("click", (event) => {
+    if (event.target.closest(".locate-program")) select();
+    if (!event.target.closest("a, button, summary, input")) select();
+  });
+  card.addEventListener("keydown", (event) => {
+    if (event.target !== card) return;
+    if (event.key === "Enter" || event.key === " ") { event.preventDefault(); select(); }
+  });
+}
+
+function bindOpeningCards(items) {
+  items.forEach((item) => {
+    const card = document.getElementById("opportunity-" + item.id);
+    if (!card || typeof card.addEventListener !== "function") return;
+    bindProgramCard(card, item);
+  });
+}
+
 function renderOpeningSoon() {
-  const items = programmesOpeningSoon();
+  const inWindow = programmesOpeningSoon();
+  const items = inWindow.length ? filteredOpeningSoon() : [];
   if (els.openingSoonHead) els.openingSoonHead.hidden = items.length === 0;
-  if (els.openingSoonList) els.openingSoonList.innerHTML = openingSoonMarkup(items);
+  if (!els.openingSoonList) return;
+  if (!items.length) {
+    els.openingSoonList.innerHTML = inWindow.length
+      ? `<article class="result"><h3>No matches yet</h3><p>Try broadening the region, type, or funding filters.</p></article>`
+      : openingSoonMarkup([]);
+    return;
+  }
+  els.openingSoonList.innerHTML = openingSoonMarkup(items);
+  bindOpeningCards(items);
+}
+
+function renderTabs() {
+  const opening = state.catalog === "opening";
+  [[els.tabOpen, els.panelOpen, !opening], [els.tabOpening, els.panelOpening, opening]].forEach(([tab, panel, selected]) => {
+    if (tab) {
+      const value = selected ? "true" : "false";
+      if (typeof tab.setAttribute === "function") tab.setAttribute("aria-selected", value);
+      tab.ariaSelected = value;
+      tab.tabIndex = selected ? 0 : -1;
+    }
+    if (panel) panel.hidden = !selected;
+  });
+  if (els.openCount) els.openCount.textContent = String(filteredItems().length);
+  if (els.openingCount) els.openingCount.textContent = String(filteredOpeningSoon().length);
+}
+
+function selectCatalog(catalog) {
+  const next = catalog === "opening" ? "opening" : "open";
+  if (state.catalog === next) return;
+  state.catalog = next;
+  const visible = new Set(activeProgrammes().map((item) => item.id));
+  if (state.selectedId && !visible.has(state.selectedId)) state.selectedId = null;
+  render();
+}
+
+function onCatalogTabKeydown(event) {
+  const tabs = [els.tabOpen, els.tabOpening].filter(Boolean);
+  const index = tabs.indexOf(event.currentTarget);
+  if (index < 0) return;
+  let nextIndex = index;
+  if (event.key === "ArrowRight" || event.key === "ArrowDown") nextIndex = (index + 1) % tabs.length;
+  else if (event.key === "ArrowLeft" || event.key === "ArrowUp") nextIndex = (index - 1 + tabs.length) % tabs.length;
+  else if (event.key === "Home") nextIndex = 0;
+  else if (event.key === "End") nextIndex = tabs.length - 1;
+  else return;
+  event.preventDefault();
+  const next = tabs[nextIndex];
+  selectCatalog(next === els.tabOpening ? "opening" : "open");
+  if (typeof next.focus === "function") next.focus();
 }
 
 function render() {
@@ -2969,6 +3085,7 @@ function render() {
   document.getElementById("apply-profile").textContent = state.profile ? "Update profile" : "Apply profile";
   renderChips();
   renderDetail();
+  renderTabs();
   renderResults();
   renderOpeningSoon();
   syncMap();
@@ -3107,6 +3224,10 @@ fillSelect(els.typeFilter, typeOrder);
 });
 
 els.reset.addEventListener("click", resetFilters);
+[els.tabOpen, els.tabOpening].forEach((tab) => {
+  tab.addEventListener("click", () => selectCatalog(tab === els.tabOpening ? "opening" : "open"));
+  tab.addEventListener("keydown", onCatalogTabKeydown);
+});
 document.getElementById("apply-profile").addEventListener("click", applyProfile);
 document.getElementById("clear-profile").addEventListener("click", clearProfile);
 
