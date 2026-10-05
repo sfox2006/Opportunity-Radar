@@ -6,7 +6,7 @@ const context = vm.createContext({});
 vm.runInContext(code.slice(0, code.indexOf('const state =')), context);
 const items = vm.runInContext('opportunities', context);
 const supportedTypes = vm.runInContext('typeOrder', context);
-assert.equal(items.length, 125);
+assert.equal(items.length, 126);
 assert.equal(items.some(item => item.id === 'martin-center-internship-next-semester'), true);
 for (const [id, status, deadline] of [
   ['libertas-institute-research-internship', 'rolling', 'Rolling (no deadline printed); apply by email with cover letter, resume and one writing sample'],
@@ -614,4 +614,30 @@ assert.match(scnc.deadline, /Thu 15 Oct 2026/);
 assert.match(scnc.duration, /Sat 31 Oct 2026/);
 assert.match(`${scnc.paid} ${scnc.fundingDetails}`, /INR 3,000/);
 assert.match(scnc.location, /New Delhi/);
-console.log('PASS: 125 reviewed records, official HTTPS sources, status fields and independent link controls.');
+const harwood = byId('aier-harwood-visiting-fellowships');
+assert.equal(harwood.organisation, 'American Institute for Economic Research');
+assert.equal(harwood.type, 'Fellowship');
+assert.equal(harwood.status, 'rolling');
+assert.equal(harwood.url, 'https://aier.org/visiting-research-fellowships/');
+assert.match(harwood.deadline, /Summer 2027: 15 January 2027/);
+assert.match(harwood.deadline, /open year-round/);
+assert.match(harwood.deadline, /season the applicant chooses/);
+assert.match(harwood.eligibilityDetails, /Early-career researchers are very welcome/);
+assert.match(harwood.eligibilityDetails, /Advanced PhD students are accepted only in exceptional cases/);
+assert.match(harwood.description, /fairly open-ended/);
+assert.match(harwood.description, /live on campus in Great Barrington for most of the fellowship/);
+assert.match(harwood.description, /two 45-minute research presentations/);
+assert.match(`${harwood.paid} ${harwood.fundingDetails}`, /US\$350/);
+assert.match(`${harwood.paid} ${harwood.fundingDetails}`, /accommodation/i);
+assert.match(`${harwood.paid} ${harwood.fundingDetails}`, /travel/);
+assert.match(harwood.fundingDetails, /still current/);
+assert.equal(sourceLabel(harwood), 'Official source reviewed 5 Oct 2026');
+assert.equal(
+  items.filter(item => item.reviewedAt === '2026-10-05').map(item => item.id).join('|'),
+  'aier-harwood-visiting-fellowships'
+);
+const shortTerm = byId('aier-short-term-visiting-fellowships');
+assert.match(shortTerm.program, /Short-term Visiting Research Fellowships/);
+assert.match(shortTerm.deadline, /at least six weeks/);
+assert.equal(items.filter(item => item.id.startsWith('aier-')).length, 3);
+console.log('PASS: 126 reviewed records, official HTTPS sources, status fields and independent link controls.');
