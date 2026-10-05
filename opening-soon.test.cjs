@@ -34,9 +34,9 @@ assert.match(evaluate("els.openingSoonList.innerHTML"), /None of the reviewed pr
 assert.equal(evaluate("els.openingSoonList.innerHTML.includes('program-row')"), false);
 assert.equal(evaluate("els.openingSoonHead.hidden"), true);
 
-assert.equal(evaluate("opportunities.length"), 107);
-assert.equal(evaluate("filteredItems().length"), 107);
-assert.equal(Number(evaluate("els.scanCount.textContent")), 107);
+assert.equal(evaluate("opportunities.length"), 108);
+assert.equal(evaluate("filteredItems().length"), 108);
+assert.equal(Number(evaluate("els.scanCount.textContent")), 108);
 assert.equal(evaluate("opportunities.some(item => item.opensOn)"), false);
 assert.equal(evaluate("opportunities[0].id"), "tfas-washington-2027");
 assert.equal(evaluate("opportunities[0].program"), "TFAS Washington Fellowship - Spring 2027");
@@ -77,7 +77,7 @@ assert.match(markup, /Example Fellowship/);
 assert.match(markup, /Opens 15 Nov 2026/);
 assert.match(markup, /https:\/\/example\.org\/fellowship/);
 assert.equal(markup.includes("View on globe"), false);
-assert.equal(evaluate("opportunities.length"), 107);
+assert.equal(evaluate("opportunities.length"), 108);
 assert.equal(evaluate("filteredItems().some(item => item.id === 'example-opening')"), false);
 
 evaluate("state.selectedId = 'tfas-washington-2027'; render()");
@@ -85,6 +85,6 @@ assert.equal(evaluate("els.selectionStrip.hidden"), false);
 assert.equal(evaluate("els.legendSelected.hidden"), false);
 assert.match(evaluate("els.detail.innerHTML"), /TFAS Washington Fellowship - Spring 2027/);
 assert.match(evaluate("els.detail.innerHTML"), /The Fund for American Studies/);
-assert.equal(Number(evaluate("els.scanCount.textContent")), 107);
+assert.equal(Number(evaluate("els.scanCount.textContent")), 108);
 
 console.log("PASS: no default selection; opening-soon window is inclusive for three calendar months and excludes the open catalogue.");
