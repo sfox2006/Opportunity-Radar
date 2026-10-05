@@ -77,7 +77,7 @@ Two on-brief cards were appended to `dist/app.js`. `research/sync_verified.cjs` 
 
 ## Batch 18, 5 October 2026
 
-Public open programmes: 130. Opening-soon programmes: 3.
+Public open programmes: 131. Opening-soon programmes: 3. The Harwood card is the one already on main.
 
 `research/sync_verified.cjs` was not used. Reviewed 5 Oct 2026. Not added: NRI Buckley, Bow Group, Heritage Fall 2027, Steamboat, NRI Rhodes, Heartland, NTU, Pioneer, Henry Jackson Society.
 
