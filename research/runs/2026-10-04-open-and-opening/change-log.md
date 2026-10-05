@@ -75,25 +75,9 @@ Two on-brief cards were appended to `dist/app.js`. `research/sync_verified.cjs` 
 - `hudson-political-studies-summer-fellowship-2027` — open. Early Decision Sat 9 Jan 2027 11:59 p.m. EST; Regular Tue 16 Mar 2027 11:59 p.m. EST (extended). Applications opened Thu 1 Oct 2026.
 - `hertog-humanities-winter-2027` — open. Deadline Mon 16 Nov 2026. No further description or contact for this id was in the research records.
 
-## Harwood, 5 October 2026
-
-Public open programmes: 128. Opening-soon programmes: 3.
-
-`aier-harwood-visiting-fellowships` was not on the live list. It was a private unconfirmed record in `research/runs/2026-10-01/verified.json`. It is now on Open now. `research/sync_verified.cjs` was not used.
-
-- Deadline: Fri 15 Jan 2027 for Summer 2027.
-- Status: open. Applications are accepted year-round and count toward the chosen season if they arrive before that season's deadline.
-- Eligibility: early-career researchers are welcome; advanced PhD students only in exceptional cases. Undergraduates and early-stage MA students should apply to the AIER student internship instead.
-- Format: residency on campus in Great Barrington, MA for most of the fellowship, plus two 45-minute research presentations.
-- Funding: a $350/week stipend, accommodation and travel assistance, all confirmed as still current.
-- Link: https://aier.org/visiting-research-fellowships/
-- Ideology: on-brief in the research note only. Live cards have no ideology field.
-
-Source note: the Summer 2027 date and the year-round rule were confirmed by AIER (Jason Sorens) on 5 Oct 2026. The email address stays in the 1 Oct research note and is not on the site.
-
 ## Batch 18, 5 October 2026
 
-Public open programmes: 131. Opening-soon programmes: 3.
+Public open programmes: 130. Opening-soon programmes: 3.
 
 `research/sync_verified.cjs` was not used. Reviewed 5 Oct 2026. Not added: NRI Buckley, Bow Group, Heritage Fall 2027, Steamboat, NRI Rhodes, Heartland, NTU, Pioneer, Henry Jackson Society.
 
