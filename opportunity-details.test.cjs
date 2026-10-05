@@ -6,7 +6,7 @@ const context = vm.createContext({});
 vm.runInContext(code.slice(0, code.indexOf('const state =')), context);
 const items = vm.runInContext('opportunities', context);
 const supportedTypes = vm.runInContext('typeOrder', context);
-assert.equal(items.length, 107);
+assert.equal(items.length, 108);
 for (const item of items) {
   assert.ok(supportedTypes.includes(item.type), `${item.id}: unsupported filter type ${item.type}`);
   for (const key of ['description', 'location', 'duration', 'paid', 'deadline', 'eligibilityDetails', 'application', 'url']) {
@@ -541,4 +541,25 @@ assert.match(`${gulch.fundingDetails} ${gulch.description} ${gulch.application}`
 assert.match(`${gulch.description} ${gulch.application}`, /galtsgulch@atlassociety\.org/);
 assert.equal(gulch.url, 'https://www.atlassociety.org/galts-gulch-2027');
 assert.equal(items.filter(item => item.url === gulch.url).length, 1);
-console.log('PASS: 107 reviewed records, official HTTPS sources, status fields and independent link controls.');
+const harwood = byId('aier-harwood-visiting-fellowships');
+assert.equal(harwood.organisation, 'American Institute for Economic Research');
+assert.equal(harwood.type, 'Fellowship');
+assert.equal(harwood.status, 'rolling');
+assert.equal(harwood.url, 'https://aier.org/visiting-research-fellowships/');
+assert.match(harwood.deadline, /Summer 2027: 15 January 2027/);
+assert.match(harwood.deadline, /open year-round/);
+assert.match(harwood.deadline, /season the applicant chooses/);
+assert.match(harwood.eligibilityDetails, /Early-career researchers are very welcome/);
+assert.match(harwood.eligibilityDetails, /Advanced PhD students are accepted only in exceptional cases/);
+assert.match(harwood.description, /fairly open-ended/);
+assert.match(harwood.description, /live on campus in Great Barrington for most of the fellowship/);
+assert.match(harwood.description, /two 45-minute research presentations/);
+assert.match(`${harwood.paid} ${harwood.fundingDetails}`, /US\$350/);
+assert.match(`${harwood.paid} ${harwood.fundingDetails}`, /accommodation/i);
+assert.match(`${harwood.paid} ${harwood.fundingDetails}`, /travel/);
+assert.match(harwood.fundingDetails, /still current/);
+const shortTerm = byId('aier-short-term-visiting-fellowships');
+assert.match(shortTerm.program, /Short-term Visiting Research Fellowships/);
+assert.match(shortTerm.deadline, /at least six weeks/);
+assert.equal(items.filter(item => item.id.startsWith('aier-')).length, 4);
+console.log('PASS: 108 reviewed records, official HTTPS sources, status fields and independent link controls.');
