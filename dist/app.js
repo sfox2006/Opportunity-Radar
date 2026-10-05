@@ -2997,6 +2997,30 @@ const opportunities = [
     "status": "open",
     "reviewedAt": "2026-10-05",
     "source": "Official source reviewed 11 Sep 2026"
+  },
+  {
+    "orgIndex": 12,
+    "id": "aier-harwood-visiting-fellowships",
+    "organisation": "American Institute for Economic Research",
+    "program": "Harwood Visiting Research Fellowships",
+    "country": "United States",
+    "region": "United States",
+    "lat": 42.1959,
+    "lon": -73.3625,
+    "type": "Fellowship",
+    "deadline": "Fri 15 Jan 2027 for Summer 2027. Applications are accepted year-round and count toward the chosen season if they arrive before that season's deadline.",
+    "paid": "$350/week stipend; accommodation and travel assistance",
+    "fundingDetails": "$350/week stipend, accommodation and travel assistance, all confirmed as still current.",
+    "eligibility": "Some restrictions",
+    "duration": "10-12 weeks (the page's deadlines heading also says 6-12 weeks)",
+    "location": "Great Barrington, Massachusetts; on campus for most of the fellowship",
+    "description": "A residential Harwood visiting research fellowship at AIER. Fellows live on campus in Great Barrington, Massachusetts for most of the fellowship and give two 45-minute research presentations. Applications are accepted year-round. The Summer 2027 deadline is Fri 15 Jan 2027.",
+    "eligibilityDetails": "Early-career researchers are welcome. Advanced PhD students are accepted only in exceptional cases. Undergraduates and early-stage MA students should apply to the AIER student internship instead.",
+    "application": "Apply through the official visiting research fellowships page. The Summer 2027 date and the year-round rule were confirmed by AIER (Jason Sorens) on 5 Oct 2026.",
+    "url": "https://aier.org/visiting-research-fellowships/",
+    "status": "open",
+    "reviewedAt": "2026-10-05",
+    "source": "Official source reviewed 11 Sep 2026"
   }
 ];
 

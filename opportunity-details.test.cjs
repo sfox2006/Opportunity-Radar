@@ -6,7 +6,7 @@ const context = vm.createContext({});
 vm.runInContext(code.slice(0, code.indexOf('const state =')), context);
 const items = vm.runInContext('opportunities', context);
 const supportedTypes = vm.runInContext('typeOrder', context);
-assert.equal(items.length, 127);
+assert.equal(items.length, 128);
 assert.equal(items.some(item => item.id === 'martin-center-internship-next-semester'), true);
 for (const [id, status, deadline] of [
   ['libertas-institute-research-internship', 'rolling', 'Rolling (no deadline printed); apply by email with cover letter, resume and one writing sample'],
@@ -120,7 +120,7 @@ assert.equal(hudson.program, "Policy Certificate: Israel's Place in the American
 assert.equal(hudson.status, 'rolling');
 assert.equal(hudson.reviewedAt, '2026-10-01');
 assert.equal(hudson.url, 'https://hudsonpoliticalstudies.org/policy/5BC60zDKIwHJwPNvxxGJpG');
-const batch17 = ['hudson-political-studies-summer-fellowship-2027', 'hertog-humanities-winter-2027'];
+const batch17 = ['hudson-political-studies-summer-fellowship-2027', 'hertog-humanities-winter-2027', 'aier-harwood-visiting-fellowships'];
 assert.equal(
   items.filter(item => item.reviewedAt === '2026-10-05').map(item => item.id).sort().join('|'),
   batch17.slice().sort().join('|')
@@ -658,6 +658,27 @@ assert.equal(hertog.region, 'Online');
 assert.equal(hertog.deadline, 'Mon 16 Nov 2026');
 assert.equal(hertog.url, 'https://hertogfoundation.org/programs/humanities');
 assert.match(hertog.location, /Zoom/);
+const harwood = byId('aier-harwood-visiting-fellowships');
+assert.equal(harwood.organisation, 'American Institute for Economic Research');
+assert.equal(harwood.program, 'Harwood Visiting Research Fellowships');
+assert.equal(harwood.type, 'Fellowship');
+assert.equal(harwood.status, 'open');
+assert.equal(harwood.reviewedAt, '2026-10-05');
+assert.equal(harwood.url, 'https://aier.org/visiting-research-fellowships/');
+assert.equal(harwood.lat, 42.1959);
+assert.equal(harwood.lon, -73.3625);
+assert.equal(harwood.deadline, "Fri 15 Jan 2027 for Summer 2027. Applications are accepted year-round and count toward the chosen season if they arrive before that season's deadline.");
+assert.equal(harwood.paid, '$350/week stipend; accommodation and travel assistance');
+assert.equal(harwood.fundingDetails, '$350/week stipend, accommodation and travel assistance, all confirmed as still current.');
+assert.match(harwood.eligibilityDetails, /[Ee]arly-career researchers are welcome/);
+assert.match(harwood.eligibilityDetails, /[Aa]dvanced PhD students are accepted only in exceptional cases/);
+assert.match(harwood.eligibilityDetails, /[Uu]ndergraduates and early-stage MA students should apply to the AIER student internship/);
+assert.match(`${harwood.description} ${harwood.location}`, /on campus/);
+assert.match(`${harwood.description} ${harwood.location}`, /Great Barrington/);
+assert.match(harwood.description, /two 45-minute research presentations/);
+assert.match(harwood.application, /confirmed by AIER \(Jason Sorens\) on 5 Oct 2026/);
+assert.equal(/jason\.sorens@aier\.org/i.test(JSON.stringify(harwood)), false);
+assert.equal(sourceLabel(harwood), 'Official source reviewed 5 Oct 2026');
 for (const id of [
   'mannkal-scholarship-program-2027',
   'menzies-future-leader-initiative',
@@ -668,4 +689,4 @@ for (const id of [
 ]) {
   assert.equal(items.some(item => item.id === id), false, id);
 }
-console.log('PASS: 127 reviewed records, official HTTPS sources, status fields and independent link controls.');
+console.log('PASS: 128 reviewed records, official HTTPS sources, status fields and independent link controls.');

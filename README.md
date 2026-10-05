@@ -28,9 +28,9 @@ Only `dist/` is uploaded as the Pages website, never private agent databases or
 Google response data. The repository itself is public; keep credentials and
 subscriber records out of all commits.
 
-Public open programmes: 127. Opening in the next 3 months: 3.
+Public open programmes: 128. Opening in the next 3 months: 3.
 
-Added 5 October 2026: `hudson-political-studies-summer-fellowship-2027`, `hertog-humanities-winter-2027`.
+Added 5 October 2026: `hudson-political-studies-summer-fellowship-2027`, `hertog-humanities-winter-2027`, `aier-harwood-visiting-fellowships`.
 
 ## Held off the live Open now list (5 October 2026)
 
