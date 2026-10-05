@@ -1,6 +1,6 @@
 # Open now and opening soon — 4 October 2026
 
-Public open programmes: 127 after the 5 October 2026 audit corrections and the batch 17 additions (131 on this branch, then 9 removed and 3 added, then 2 added).
+Public open programmes: 128 after the 5 October 2026 audit corrections, the batch 17 additions, and the Harwood card from main (131 on this branch, then 9 removed and 3 added, then 2 added, then 1 added).
 Opening-soon programmes: 3. Removed from the public site in the original batch: 1 (`heritage-young-leaders`).
 
 ## Batch 17, 5 October 2026
