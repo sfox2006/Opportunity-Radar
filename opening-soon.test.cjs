@@ -2,6 +2,16 @@ const { readFileSync } = require("node:fs");
 const vm = require("node:vm");
 const assert = require("node:assert/strict");
 
+const RealDate = Date;
+function FixedDate(...args) {
+  if (args.length === 0) return new RealDate(2026, 9, 4, 12, 0, 0, 0);
+  return new RealDate(...args);
+}
+FixedDate.prototype = RealDate.prototype;
+FixedDate.now = () => new RealDate(2026, 9, 4, 12, 0, 0, 0).getTime();
+FixedDate.parse = RealDate.parse;
+FixedDate.UTC = RealDate.UTC;
+
 const elements = new Map();
 const element = () => ({
   value: "", checked: false, hidden: false, innerHTML: "", textContent: "",
@@ -9,6 +19,7 @@ const element = () => ({
 });
 const context = vm.createContext({
   console,
+  Date: FixedDate,
   document: {
     getElementById(id) {
       if (!elements.has(id)) elements.set(id, element());
@@ -37,19 +48,80 @@ assert.equal(evaluate("els.panelOpening.hidden"), true);
 assert.equal(evaluate("els.selectionStrip.hidden"), true);
 assert.equal(evaluate("els.detail.innerHTML"), "");
 assert.equal(evaluate("els.legendSelected.hidden"), true);
-assert.match(evaluate("els.openingSoonList.innerHTML"), /No reviewed programmes have a confirmed opening date in the next three months right now\./);
-assert.equal(evaluate("els.openingSoonList.innerHTML.includes('program-row')"), false);
-assert.equal(evaluate("els.openingSoonHead.hidden"), true);
-assert.equal(Number(evaluate("els.openCount.textContent")), 107);
-assert.equal(Number(evaluate("els.openingCount.textContent")), 0);
 
-assert.equal(evaluate("opportunities.length"), 107);
-assert.equal(evaluate("filteredItems().length"), 107);
-assert.equal(Number(evaluate("els.scanCount.textContent")), 107);
+const OPEN_COUNT = 131;
+const openingIds = [
+  "centrum-for-rattvisa-sommarnotarie-2027",
+  "yaf-njc-summer-2027",
+  "claremont-publius-fellowship-2027"
+];
+assert.equal(Number(evaluate("els.openCount.textContent")), OPEN_COUNT);
+assert.equal(Number(evaluate("els.openingCount.textContent")), 3);
+assert.equal(evaluate("els.openingSoonHead.hidden"), false);
+assert.equal(evaluate("opportunities.length"), OPEN_COUNT);
+assert.equal(evaluate("filteredItems().length"), OPEN_COUNT);
+assert.equal(Number(evaluate("els.scanCount.textContent")), OPEN_COUNT);
 assert.equal(evaluate("opportunities.some(item => item.opensOn)"), false);
 assert.equal(evaluate("opportunities[0].id"), "tfas-washington-2027");
 assert.equal(evaluate("opportunities[0].program"), "TFAS Washington Fellowship - Spring 2027");
-assert.equal(evaluate("programmesOpeningSoon(new Date(2026, 9, 4)).length"), 0);
+assert.equal(evaluate("opportunities.some(item => item.id === 'heritage-young-leaders')"), false);
+assert.equal(evaluate("opportunities.some(item => item.id === 'heritage-young-leaders-summer-2027')"), true);
+assert.equal(evaluate("opportunities.some(item => item.id === 'atlantic-council-ygp-spring-2027')"), false);
+assert.equal(evaluate("openingSoon.some(item => item.id === 'atlantic-council-ygp-spring-2027')"), false);
+assert.equal(evaluate("programmesOpeningSoon(new Date(2026, 9, 4)).map(item => item.id).join(',')"), openingIds.join(","));
+assert.equal(evaluate("openingSoon.length"), 3);
+assert.equal(
+  evaluate("openingSoon.map(item => item.id + ' ' + item.opensOn).sort().join('|')"),
+  [
+    "centrum-for-rattvisa-sommarnotarie-2027 2026-11-01",
+    "claremont-publius-fellowship-2027 2026-12-01",
+    "yaf-njc-summer-2027 2026-11-01"
+  ].sort().join("|")
+);
+assert.equal(evaluate("openingSoon.every(item => parseIsoDate(item.opensOn))"), true);
+assert.equal(evaluate(`
+  const today = new Date(2026, 9, 4);
+  const end = addCalendarMonths(new Date(today.getFullYear(), today.getMonth(), today.getDate()), 3);
+  programmesOpeningSoon(today).every(item => {
+    const opens = parseIsoDate(item.opensOn);
+    return opens.getTime() >= today.getTime() && opens.getTime() <= end.getTime();
+  })
+`), true);
+assert.equal(evaluate("new Set([...opportunities, ...openingSoon].map(item => item.id)).size"), OPEN_COUNT + 3);
+assert.equal(
+  evaluate("programmesOpeningSoon(new Date(2026, 10, 2)).map(item => item.id).join(',')"),
+  "claremont-publius-fellowship-2027"
+);
+assert.equal(evaluate("programmesOpeningSoon(new Date(2026, 11, 2)).map(item => item.id).join(',')"), "");
+for (const id of openingIds) {
+  assert.equal(evaluate(`opportunities.some(item => item.id === ${JSON.stringify(id)})`), false, id);
+}
+const liveOpening = evaluate("els.openingSoonList.innerHTML");
+assert.match(liveOpening, /Summer 2027 \(12-week paid placement\)/);
+assert.match(liveOpening, /Sommarnotarie 2027/);
+assert.match(liveOpening, /Publius Fellowship 2027/);
+assert.match(liveOpening, /Opens 1 Nov 2026/);
+assert.match(liveOpening, /Opens 1 Dec 2026/);
+assert.equal(liveOpening.includes("Atlantic Council"), false);
+assert.equal(liveOpening.includes("Young Global Professionals"), false);
+assert.equal(evaluate("mapMarkers.includes('yaf-njc-summer-2027')"), false);
+assert.equal(evaluate("mapMarkers.includes('centrum-for-rattvisa-sommarnotarie-2027')"), false);
+assert.equal(evaluate("mapMarkers.includes('tfas-washington-2027')"), true);
+evaluate("selectCatalog('opening');");
+assert.equal(evaluate("state.catalog"), "opening");
+assert.equal(evaluate("els.panelOpen.hidden"), true);
+assert.equal(evaluate("els.panelOpening.hidden"), false);
+assert.equal(
+  evaluate("mapMarkers.slice().sort().join(',')"),
+  "centrum-for-rattvisa-sommarnotarie-2027,yaf-njc-summer-2027"
+);
+assert.equal(evaluate("mapMarkers.includes('tfas-washington-2027')"), false);
+assert.equal(evaluate("mapMarkers.includes('claremont-publius-fellowship-2027')"), false);
+assert.equal(Number(evaluate("els.scanCount.textContent")), 3);
+evaluate("selectCatalog('open'); openingSoon.splice(0, openingSoon.length); render();");
+assert.equal(evaluate("state.catalog"), "open");
+assert.equal(evaluate("openingSoon.length"), 0);
+assert.match(evaluate("els.openingSoonList.innerHTML"), /No reviewed programmes have a confirmed opening date in the next three months right now\./);
 
 assert.equal(evaluate("isOpeningSoon({ id: 'today', opensOn: '2026-10-04' }, new Date(2026, 9, 4))"), true);
 assert.equal(evaluate("isOpeningSoon({ id: 'end', opensOn: '2027-01-04' }, new Date(2026, 9, 4))"), true);
@@ -86,7 +158,7 @@ assert.match(markup, /Example Fellowship/);
 assert.match(markup, /Opens 15 Nov 2026/);
 assert.match(markup, /https:\/\/example\.org\/fellowship/);
 assert.equal(markup.includes("View on globe"), false);
-assert.equal(evaluate("opportunities.length"), 107);
+assert.equal(evaluate("opportunities.length"), 131);
 assert.equal(evaluate("filteredItems().some(item => item.id === 'example-opening')"), false);
 
 evaluate("state.selectedId = 'tfas-washington-2027'; render()");
@@ -94,11 +166,10 @@ assert.equal(evaluate("els.selectionStrip.hidden"), false);
 assert.equal(evaluate("els.legendSelected.hidden"), false);
 assert.match(evaluate("els.detail.innerHTML"), /TFAS Washington Fellowship - Spring 2027/);
 assert.match(evaluate("els.detail.innerHTML"), /The Fund for American Studies/);
-assert.equal(Number(evaluate("els.scanCount.textContent")), 107);
+assert.equal(Number(evaluate("els.scanCount.textContent")), 131);
 
 function isoOffset(days) {
-  const date = new Date();
-  date.setHours(12, 0, 0, 0);
+  const date = new RealDate(2026, 9, 4, 12, 0, 0, 0);
   date.setDate(date.getDate() + days);
   const month = String(date.getMonth() + 1).padStart(2, "0");
   const day = String(date.getDate()).padStart(2, "0");
@@ -149,20 +220,19 @@ const later = {
   url: "https://example.org/far-fellowship",
   description: "Opens outside the three-month window."
 };
-assert.match(readFileSync("dist/app.js", "utf8"), /const openingSoon = \[\];/);
 assert.equal(evaluate(`isOpeningSoon(${JSON.stringify(soon)}, new Date())`), true);
 assert.equal(evaluate(`isOpeningSoon(${JSON.stringify(later)}, new Date())`), false);
 evaluate(`openingSoon.push(${JSON.stringify(soon)}, ${JSON.stringify(unpinned)}, ${JSON.stringify(later)}); render();`);
 assert.equal(evaluate("state.catalog"), "open");
-assert.equal(evaluate("opportunities.length"), 107);
+assert.equal(evaluate("opportunities.length"), 131);
 assert.equal(evaluate("filteredItems().some(item => item.id.startsWith('test-opening'))"), false);
 assert.equal(evaluate("mapMarkers.includes('test-opening-30')"), false);
 assert.equal(evaluate("mapMarkers.includes('test-opening-200')"), false);
 assert.equal(evaluate("mapMarkers.includes('test-opening-30-unpinned')"), false);
 assert.equal(evaluate("mapMarkers.includes('tfas-washington-2027')"), true);
-assert.equal(Number(evaluate("els.openCount.textContent")), 107);
+assert.equal(Number(evaluate("els.openCount.textContent")), 131);
 assert.equal(Number(evaluate("els.openingCount.textContent")), 2);
-assert.equal(Number(evaluate("els.scanCount.textContent")), 107);
+assert.equal(Number(evaluate("els.scanCount.textContent")), 131);
 assert.equal(evaluate("els.panelOpening.hidden"), true);
 
 evaluate("state.selectedId = 'tfas-washington-2027'; selectCatalog('opening');");
@@ -186,7 +256,7 @@ assert.match(openingList, /View on globe/);
 assert.equal((openingList.match(/View on globe/g) || []).length, 1);
 assert.equal(evaluate("mapMarkers.join(',')"), "test-opening-30");
 assert.equal(evaluate("mapFeaturesFor(activeProgrammes()).features[0].geometry.coordinates.join(',')"), "-0.1278,51.5074");
-assert.equal(Number(evaluate("els.openCount.textContent")), 107);
+assert.equal(Number(evaluate("els.openCount.textContent")), 131);
 assert.equal(Number(evaluate("els.openingCount.textContent")), 2);
 assert.equal(Number(evaluate("els.scanCount.textContent")), 2);
 assert.equal(evaluate("activeProgrammes().some(item => item.id === 'test-opening-200')"), false);
@@ -227,7 +297,7 @@ assert.equal(evaluate("mapMarkers.includes('test-opening-30')"), false);
 assert.equal(evaluate("mapMarkers.includes('test-opening-200')"), false);
 assert.equal(evaluate("map.sourceData.at(-1).features.some(feature => feature.properties.id === 'test-opening-30')"), false);
 assert.equal(evaluate("map.sourceData.at(-1).features.some(feature => feature.properties.id === 'tfas-washington-2027')"), true);
-assert.equal(Number(evaluate("els.scanCount.textContent")), 107);
+assert.equal(Number(evaluate("els.scanCount.textContent")), 131);
 
 evaluate("onCatalogTabKeydown({ key: 'ArrowRight', currentTarget: els.tabOpen, preventDefault() {} });");
 assert.equal(evaluate("state.catalog"), "opening");
@@ -247,7 +317,7 @@ assert.equal(Number(evaluate("els.scanCount.textContent")), 0);
 evaluate("resetFilters();");
 assert.equal(evaluate("state.catalog"), "opening");
 assert.equal(Number(evaluate("els.openingCount.textContent")), 2);
-assert.equal(Number(evaluate("els.openCount.textContent")), 107);
+assert.equal(Number(evaluate("els.openCount.textContent")), 131);
 evaluate("onCatalogTabKeydown({ key: 'Home', currentTarget: els.tabOpening, preventDefault() {} });");
 assert.equal(evaluate("state.catalog"), "open");
 evaluate("onCatalogTabKeydown({ key: 'End', currentTarget: els.tabOpen, preventDefault() {} });");

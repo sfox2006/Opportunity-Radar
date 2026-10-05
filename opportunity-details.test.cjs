@@ -6,7 +6,21 @@ const context = vm.createContext({});
 vm.runInContext(code.slice(0, code.indexOf('const state =')), context);
 const items = vm.runInContext('opportunities', context);
 const supportedTypes = vm.runInContext('typeOrder', context);
-assert.equal(items.length, 107);
+assert.equal(items.length, 131);
+assert.equal(items.some(item => item.id === 'martin-center-internship-next-semester'), true);
+for (const [id, status, deadline] of [
+  ['libertas-institute-research-internship', 'rolling', 'Rolling (no deadline printed); apply by email with cover letter, resume and one writing sample'],
+  ['independence-institute-kip-spring-2027', 'rolling', 'Rolling through December 2026 (KIP); see posting for exact deadline'],
+  ['independent-institute-learning-to-lead-internships', 'open', 'Winter/Spring deadline Thu 1 Oct 2026 has passed, but the page says late applications are considered while positions remain; Summer deadline Thu 1 Apr 2027 (year inferred)']
+]) {
+  const added = items.find(item => item.id === id);
+  assert.ok(added, id);
+  assert.equal(added.status, status);
+  assert.equal(added.type, 'Internship');
+  assert.equal(added.deadline, deadline);
+  assert.equal(added.reviewedAt, '2026-10-04');
+  assert.equal(added.mapped, false);
+}
 for (const item of items) {
   assert.ok(supportedTypes.includes(item.type), `${item.id}: unsupported filter type ${item.type}`);
   for (const key of ['description', 'location', 'duration', 'paid', 'deadline', 'eligibilityDetails', 'application', 'url']) {
@@ -541,4 +555,4 @@ assert.match(`${gulch.fundingDetails} ${gulch.description} ${gulch.application}`
 assert.match(`${gulch.description} ${gulch.application}`, /galtsgulch@atlassociety\.org/);
 assert.equal(gulch.url, 'https://www.atlassociety.org/galts-gulch-2027');
 assert.equal(items.filter(item => item.url === gulch.url).length, 1);
-console.log('PASS: 107 reviewed records, official HTTPS sources, status fields and independent link controls.');
+console.log('PASS: 131 reviewed records, official HTTPS sources, status fields and independent link controls.');
