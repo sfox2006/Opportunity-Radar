@@ -3085,8 +3085,9 @@ function isOpeningSoon(item, today = new Date()) {
   return opens.getTime() >= start.getTime() && opens.getTime() <= end.getTime();
 }
 
-// 4 Oct 2026 cards carry reviewedAt. Older cards keep the 11 Sep 2026 source line.
+// 4 and 5 Oct 2026 cards carry reviewedAt. Older cards keep the 11 Sep 2026 source line.
 function sourceLabel(item) {
+  if (item && item.reviewedAt === "2026-10-05") return "Official source reviewed 5 Oct 2026";
   if (item && item.reviewedAt === "2026-10-04") return "Official source reviewed 4 Oct 2026";
   if (item && item.source) return item.source;
   return "Official source reviewed 11 Sep 2026";
