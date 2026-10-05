@@ -1,0 +1,26 @@
+# 4 October 2026 open and opening batch — test results
+
+Commands (`python` is not installed; `python3` is):
+
+```
+node --test *.test.cjs newsletter-google/*.test.cjs
+python3 -m unittest discover -s agents -p test_control.py -v
+```
+
+Backup of `dist/app.js` before edits: `/tmp/opportunity-radar-dist-app.js.2026-10-04.bak` (outside the git repo).
+
+## Before
+
+Run on `cursor/open-and-upcoming-tabs-7cb3` before this batch was written into `dist/app.js`.
+
+- Node: 9 tests, 9 pass, 0 fail. `opportunity-details.test.cjs` reported 107 reviewed records. `opening-soon.test.cjs` reported an empty Opening list.
+- Python: 13 tests, OK.
+
+## After
+
+Run after appending the 22 open cards, removing the Heritage spring card, and adding the 3 opening cards.
+
+- Node: 9 tests, 9 pass, 0 fail. `opportunity-details.test.cjs` reported 128 reviewed records.
+- Python: 13 tests, OK.
+
+Newsletter tests were run and were not modified.

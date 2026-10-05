@@ -6,7 +6,7 @@ const context = vm.createContext({});
 vm.runInContext(code.slice(0, code.indexOf('const state =')), context);
 const items = vm.runInContext('opportunities', context);
 const supportedTypes = vm.runInContext('typeOrder', context);
-assert.equal(items.length, 107);
+assert.equal(items.length, 128);
 for (const item of items) {
   assert.ok(supportedTypes.includes(item.type), `${item.id}: unsupported filter type ${item.type}`);
   for (const key of ['description', 'location', 'duration', 'paid', 'deadline', 'eligibilityDetails', 'application', 'url']) {
@@ -541,4 +541,4 @@ assert.match(`${gulch.fundingDetails} ${gulch.description} ${gulch.application}`
 assert.match(`${gulch.description} ${gulch.application}`, /galtsgulch@atlassociety\.org/);
 assert.equal(gulch.url, 'https://www.atlassociety.org/galts-gulch-2027');
 assert.equal(items.filter(item => item.url === gulch.url).length, 1);
-console.log('PASS: 107 reviewed records, official HTTPS sources, status fields and independent link controls.');
+console.log('PASS: 128 reviewed records, official HTTPS sources, status fields and independent link controls.');
