@@ -28,6 +28,32 @@ Only `dist/` is uploaded as the Pages website, never private agent databases or
 Google response data. The repository itself is public; keep credentials and
 subscriber records out of all commits.
 
+## Held off the live Open now list (5 October 2026)
+
+These ids were taken off the site. The records are still in
+`research/runs/2026-10-04-open-and-opening/verified-programmes.json` so they can be restored:
+
+- `hudson-internship-program-fall-2026` — stale; the Fall 2026 term is already running
+- `iw-koeln-student-finanz-immobilienmaerkte` — stale; the 1 October 2026 start has passed
+- `texas-scorecard-fellowship-spring-2027` — fit hold
+- `ij-fall-2026-legal-intensive` — fit hold (law students)
+- `ij-semester-clerkship-spring-2027` — fit hold (law students)
+- `yal-law-clerk-spring-2027` — fit hold (law preferred)
+- `aier-graduate-fellowships-spring-2027` — fit hold (graduate fellowship)
+- `ppia-junior-summer-institute-2027` — fit hold (off-brief)
+- `siepr-predoctoral-fellows-2027` — fit hold (post-baccalaureate PhD-prep role; closes Thu 8 Oct 2026)
+
+Neutral-tagged cards that stay on the live list: `hudson-policy-oct2026`, `bpc-spring-2027-internships`, `tax-foundation-spring-2027`, `volcker-nextgen-summer-policy-academy-2027`, `ifese-studentenpresentaties-2027`, `aeasp-summer-2027`, `partnership-public-service-internship-spring-2027`.
+
+## Opening tab: move these into Open by hand
+
+A card whose `opensOn` date has passed leaves the Opening tab. It does not appear under Open now until its status is flipped. Do not forget these moves:
+
+- On Sun 1 Nov 2026 move `yaf-njc-summer-2027` and `centrum-for-rattvisa-sommarnotarie-2027` into Open.
+- On Tue 1 Dec 2026 move `claremont-publius-fellowship-2027` into Open.
+
+`node research/check_opening_due.cjs` prints those ids and exits with an error when any Opening card has an `opensOn` of today or earlier.
+
 ## Important status
 
 This is a hosting migration, not a fresh programme verification. Imported listings

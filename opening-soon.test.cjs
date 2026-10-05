@@ -49,7 +49,7 @@ assert.equal(evaluate("els.selectionStrip.hidden"), true);
 assert.equal(evaluate("els.detail.innerHTML"), "");
 assert.equal(evaluate("els.legendSelected.hidden"), true);
 
-const OPEN_COUNT = 131;
+const OPEN_COUNT = 125;
 const openingIds = [
   "centrum-for-rattvisa-sommarnotarie-2027",
   "yaf-njc-summer-2027",
@@ -64,6 +64,25 @@ assert.equal(Number(evaluate("els.scanCount.textContent")), OPEN_COUNT);
 assert.equal(evaluate("opportunities.some(item => item.opensOn)"), false);
 assert.equal(evaluate("opportunities[0].id"), "tfas-washington-2027");
 assert.equal(evaluate("opportunities[0].program"), "TFAS Washington Fellowship - Spring 2027");
+assert.equal(
+  evaluate("opportunities.filter(isClosingSoon).map(item => item.id).sort().join(',')"),
+  [
+    "acton-academic-conference-2026",
+    "ccs-scnc-2026",
+    "centrum-for-rattvisa-praktik-var-2027",
+    "iness-ekonomicky-base-camp-2026",
+    "isi-retreat-george-fox-2026",
+    "li-yls-reagan-library-2026-10",
+    "mercatus-markets-society-conference-2026",
+    "tfas-dc-academic-internship-summer-2027"
+  ].join(",")
+);
+assert.match(
+  evaluate("closingSoonBadge(opportunities.find(item => item.id === 'iness-ekonomicky-base-camp-2026'))"),
+  /class="closing-soon">Closing soon</
+);
+assert.equal(evaluate("isClosingSoon(opportunities.find(item => item.id === 'partnership-public-service-internship-spring-2027'))"), false);
+assert.equal(evaluate("isClosingSoon(opportunities.find(item => item.id === 'iness-ekonomicky-base-camp-2026'), new Date(2026, 9, 6))"), false);
 assert.equal(evaluate("opportunities.some(item => item.id === 'heritage-young-leaders')"), false);
 assert.equal(evaluate("opportunities.some(item => item.id === 'heritage-young-leaders-summer-2027')"), true);
 assert.equal(evaluate("opportunities.some(item => item.id === 'atlantic-council-ygp-spring-2027')"), false);
@@ -158,7 +177,7 @@ assert.match(markup, /Example Fellowship/);
 assert.match(markup, /Opens 15 Nov 2026/);
 assert.match(markup, /https:\/\/example\.org\/fellowship/);
 assert.equal(markup.includes("View on globe"), false);
-assert.equal(evaluate("opportunities.length"), 131);
+assert.equal(evaluate("opportunities.length"), OPEN_COUNT);
 assert.equal(evaluate("filteredItems().some(item => item.id === 'example-opening')"), false);
 
 evaluate("state.selectedId = 'tfas-washington-2027'; render()");
@@ -166,7 +185,7 @@ assert.equal(evaluate("els.selectionStrip.hidden"), false);
 assert.equal(evaluate("els.legendSelected.hidden"), false);
 assert.match(evaluate("els.detail.innerHTML"), /TFAS Washington Fellowship - Spring 2027/);
 assert.match(evaluate("els.detail.innerHTML"), /The Fund for American Studies/);
-assert.equal(Number(evaluate("els.scanCount.textContent")), 131);
+assert.equal(Number(evaluate("els.scanCount.textContent")), OPEN_COUNT);
 
 function isoOffset(days) {
   const date = new RealDate(2026, 9, 4, 12, 0, 0, 0);
@@ -224,15 +243,15 @@ assert.equal(evaluate(`isOpeningSoon(${JSON.stringify(soon)}, new Date())`), tru
 assert.equal(evaluate(`isOpeningSoon(${JSON.stringify(later)}, new Date())`), false);
 evaluate(`openingSoon.push(${JSON.stringify(soon)}, ${JSON.stringify(unpinned)}, ${JSON.stringify(later)}); render();`);
 assert.equal(evaluate("state.catalog"), "open");
-assert.equal(evaluate("opportunities.length"), 131);
+assert.equal(evaluate("opportunities.length"), OPEN_COUNT);
 assert.equal(evaluate("filteredItems().some(item => item.id.startsWith('test-opening'))"), false);
 assert.equal(evaluate("mapMarkers.includes('test-opening-30')"), false);
 assert.equal(evaluate("mapMarkers.includes('test-opening-200')"), false);
 assert.equal(evaluate("mapMarkers.includes('test-opening-30-unpinned')"), false);
 assert.equal(evaluate("mapMarkers.includes('tfas-washington-2027')"), true);
-assert.equal(Number(evaluate("els.openCount.textContent")), 131);
+assert.equal(Number(evaluate("els.openCount.textContent")), OPEN_COUNT);
 assert.equal(Number(evaluate("els.openingCount.textContent")), 2);
-assert.equal(Number(evaluate("els.scanCount.textContent")), 131);
+assert.equal(Number(evaluate("els.scanCount.textContent")), OPEN_COUNT);
 assert.equal(evaluate("els.panelOpening.hidden"), true);
 
 evaluate("state.selectedId = 'tfas-washington-2027'; selectCatalog('opening');");
@@ -256,7 +275,7 @@ assert.match(openingList, /View on globe/);
 assert.equal((openingList.match(/View on globe/g) || []).length, 1);
 assert.equal(evaluate("mapMarkers.join(',')"), "test-opening-30");
 assert.equal(evaluate("mapFeaturesFor(activeProgrammes()).features[0].geometry.coordinates.join(',')"), "-0.1278,51.5074");
-assert.equal(Number(evaluate("els.openCount.textContent")), 131);
+assert.equal(Number(evaluate("els.openCount.textContent")), OPEN_COUNT);
 assert.equal(Number(evaluate("els.openingCount.textContent")), 2);
 assert.equal(Number(evaluate("els.scanCount.textContent")), 2);
 assert.equal(evaluate("activeProgrammes().some(item => item.id === 'test-opening-200')"), false);
@@ -297,7 +316,7 @@ assert.equal(evaluate("mapMarkers.includes('test-opening-30')"), false);
 assert.equal(evaluate("mapMarkers.includes('test-opening-200')"), false);
 assert.equal(evaluate("map.sourceData.at(-1).features.some(feature => feature.properties.id === 'test-opening-30')"), false);
 assert.equal(evaluate("map.sourceData.at(-1).features.some(feature => feature.properties.id === 'tfas-washington-2027')"), true);
-assert.equal(Number(evaluate("els.scanCount.textContent")), 131);
+assert.equal(Number(evaluate("els.scanCount.textContent")), OPEN_COUNT);
 
 evaluate("onCatalogTabKeydown({ key: 'ArrowRight', currentTarget: els.tabOpen, preventDefault() {} });");
 assert.equal(evaluate("state.catalog"), "opening");
@@ -317,7 +336,7 @@ assert.equal(Number(evaluate("els.scanCount.textContent")), 0);
 evaluate("resetFilters();");
 assert.equal(evaluate("state.catalog"), "opening");
 assert.equal(Number(evaluate("els.openingCount.textContent")), 2);
-assert.equal(Number(evaluate("els.openCount.textContent")), 131);
+assert.equal(Number(evaluate("els.openCount.textContent")), OPEN_COUNT);
 evaluate("onCatalogTabKeydown({ key: 'Home', currentTarget: els.tabOpening, preventDefault() {} });");
 assert.equal(evaluate("state.catalog"), "open");
 evaluate("onCatalogTabKeydown({ key: 'End', currentTarget: els.tabOpen, preventDefault() {} });");

@@ -1,7 +1,25 @@
 # Open now and opening soon — 4 October 2026
 
-Public open programmes: 131 (107 already listed on the Open now / Opening tabs branch, 25 added, 1 removed).
-Opening-soon programmes: 3. Removed from the public site: 1 (`heritage-young-leaders`).
+Public open programmes: 125 after the 5 October 2026 audit corrections (131 on this branch, then 9 removed and 3 added).
+Opening-soon programmes: 3. Removed from the public site in the original batch: 1 (`heritage-young-leaders`).
+
+## Audit corrections, 5 October 2026
+
+Removed from the live site. The records below stay in `verified-programmes.json` in this folder so they can be restored:
+
+- `hudson-internship-program-fall-2026`
+- `iw-koeln-student-finanz-immobilienmaerkte`
+- `texas-scorecard-fellowship-spring-2027`
+- `ij-fall-2026-legal-intensive`
+- `ij-semester-clerkship-spring-2027`
+- `yal-law-clerk-spring-2027`
+- `aier-graduate-fellowships-spring-2027`
+- `ppia-junior-summer-institute-2027`
+- `siepr-predoctoral-fellows-2027`
+
+Added: `koch-internship-program-summer-2027`, `prometheus-praktikum`, `ccs-scnc-2026`.
+
+On Sun 1 Nov 2026 move `yaf-njc-summer-2027` and `centrum-for-rattvisa-sommarnotarie-2027` into Open. On Tue 1 Dec 2026 move `claremont-publius-fellowship-2027` into Open. `node research/check_opening_due.cjs` prints when an `opensOn` date is today or in the past.
 
 The reviewer payload was checked 4 October 2026. `batch-extract.json` keeps that payload. Published open cards are the 22 `open` records. Published opening cards are 3 of the 4 `opening` records. `verified-programmes.json` is the full Open now list in the site data shape, without the public source line. `opening-soon.json` is the Opening list.
 
