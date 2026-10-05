@@ -49,7 +49,7 @@ assert.equal(evaluate("els.selectionStrip.hidden"), true);
 assert.equal(evaluate("els.detail.innerHTML"), "");
 assert.equal(evaluate("els.legendSelected.hidden"), true);
 
-const OPEN_COUNT = 125;
+const OPEN_COUNT = 127;
 const openingIds = [
   "centrum-for-rattvisa-sommarnotarie-2027",
   "yaf-njc-summer-2027",

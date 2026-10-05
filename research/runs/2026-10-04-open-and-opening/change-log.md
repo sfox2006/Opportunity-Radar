@@ -65,3 +65,12 @@ Three more on-brief cards were appended. `martin-center-internship-next-semester
 - `independent-institute-learning-to-lead-internships` — open. The winter/spring deadline Thu 1 Oct 2026 has passed, and the page says late applications are considered while positions remain. Summer deadline Thu 1 Apr 2027 (year inferred). Apply by email to internships@independent.org.
 
 Lehi / Salt Lake, Denver and Oakland are not already marked in `dist/app.js`, so these three cards are unpinned (`mapped: false`). No new coordinates were added.
+
+## Batch 17, 5 October 2026
+
+Public open programmes: 127. Opening-soon programmes: 3.
+
+Two on-brief cards were appended to `dist/app.js`. `research/sync_verified.cjs` was not used. `hudson-policy-oct2026` was not edited.
+
+- `hudson-political-studies-summer-fellowship-2027` — open. Early Decision Sat 9 Jan 2027 11:59 p.m. EST; Regular Tue 16 Mar 2027 11:59 p.m. EST (extended). Applications opened Thu 1 Oct 2026.
+- `hertog-humanities-winter-2027` — open. Deadline Mon 16 Nov 2026. No further description or contact for this id was in the research records.
