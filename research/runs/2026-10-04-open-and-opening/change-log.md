@@ -90,3 +90,15 @@ Public open programmes: 128. Opening-soon programmes: 3.
 - Ideology: on-brief in the research note only. Live cards have no ideology field.
 
 Source note: the Summer 2027 date and the year-round rule were confirmed by AIER (Jason Sorens) on 5 Oct 2026. The email address stays in the 1 Oct research note and is not on the site.
+
+## Batch 18, 5 October 2026
+
+Public open programmes: 131. Opening-soon programmes: 3.
+
+`research/sync_verified.cjs` was not used. Reviewed 5 Oct 2026. Not added: NRI Buckley, Bow Group, Heritage Fall 2027, Steamboat, NRI Rhodes, Heartland, NTU, Pioneer, Henry Jackson Society.
+
+- `young-voices-contributor-spring-2027` — replaces `young-voices`. Open. Deadline Mon 30 Nov 2026, 11:59 pm ET. Ages 18-35. Remote, three months. Pay not stated.
+- `heritage-young-leaders-spring-2027` — re-added. Rolling hiring, no fixed deadline. The 4 Oct 2026 deadline is gone. Mon 11 Jan to Fri 9 Apr 2027. $18.50/hr.
+- `heritage-young-leaders-summer-2027` — updated. Open. Deadline Sun 31 Jan 2027. Mon 10 May to Fri 6 Aug 2027. $18.50/hr.
+- `goldwater-ronald-reagan-fellowship` — added. Rolling. Encouraged by Mon 30 Nov 2026 (Spring), Wed 31 Mar 2027 (Summer), Tue 30 Jun 2027 (Fall). Phoenix, Arizona. Not pinned.
+- `mrc-internships-spring-2027` — added. Open. Deadline Mon 21 Dec 2026. $14/hr. In office in Washington, DC or Northern Virginia. Not pinned.

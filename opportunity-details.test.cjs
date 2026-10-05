@@ -6,7 +6,7 @@ const context = vm.createContext({});
 vm.runInContext(code.slice(0, code.indexOf('const state =')), context);
 const items = vm.runInContext('opportunities', context);
 const supportedTypes = vm.runInContext('typeOrder', context);
-assert.equal(items.length, 128);
+assert.equal(items.length, 131);
 assert.equal(items.some(item => item.id === 'martin-center-internship-next-semester'), true);
 for (const [id, status, deadline] of [
   ['libertas-institute-research-internship', 'rolling', 'Rolling (no deadline printed); apply by email with cover letter, resume and one writing sample'],
@@ -97,7 +97,7 @@ assert.ok(items.every((item) => item.source === "Official source reviewed 11 Sep
 const sourceLabel = vm.runInContext('sourceLabel', context);
 const octoberReviewed = [
   'iea-media-internship', 'vinson-hayek-internships', 'liberales-institut-liberty-summer-school-2027',
-  'heritage-young-leaders-summer-2027', 'capital-research-center-internships', 'alec-internship-program',
+  'capital-research-center-internships', 'alec-internship-program',
   'beacon-center-tn-internships', 'moving-picture-institute-hollywood-career-launch',
   'martin-center-internship-next-semester', 'sfl-global-performance-department-intern',
   'frc-internship-spring-2027', 'frc-internship-summer-2027', 'american-moment-fellowship-summer-2027',
@@ -121,14 +121,23 @@ assert.equal(hudson.status, 'rolling');
 assert.equal(hudson.reviewedAt, '2026-10-01');
 assert.equal(hudson.url, 'https://hudsonpoliticalstudies.org/policy/5BC60zDKIwHJwPNvxxGJpG');
 const batch17 = ['hudson-political-studies-summer-fellowship-2027', 'hertog-humanities-winter-2027', 'aier-harwood-visiting-fellowships'];
+const batch18 = [
+  'young-voices-contributor-spring-2027',
+  'heritage-young-leaders-spring-2027',
+  'heritage-young-leaders-summer-2027',
+  'goldwater-ronald-reagan-fellowship',
+  'mrc-internships-spring-2027'
+];
 assert.equal(
   items.filter(item => item.reviewedAt === '2026-10-05').map(item => item.id).sort().join('|'),
-  batch17.slice().sort().join('|')
+  batch17.concat(batch18).slice().sort().join('|')
 );
-for (const id of batch17) {
+for (const id of batch17.concat(batch18)) {
   assert.equal(sourceLabel(byId(id)), 'Official source reviewed 5 Oct 2026', id);
-  assert.equal(byId(id).status, 'open', id);
   assert.equal(byId(id).source, 'Official source reviewed 11 Sep 2026', id);
+}
+for (const id of batch17) {
+  assert.equal(byId(id).status, 'open', id);
 }
 assert.equal(sourceLabel(byId('mercatus-markets-society-conference-2026')), 'Official source reviewed 11 Sep 2026');
 const openingCards = vm.runInContext('openingSoon', context);
@@ -689,4 +698,64 @@ for (const id of [
 ]) {
   assert.equal(items.some(item => item.id === id), false, id);
 }
-console.log('PASS: 128 reviewed records, official HTTPS sources, status fields and independent link controls.');
+const youngVoices = byId('young-voices-contributor-spring-2027');
+assert.equal(items.some(item => item.id === 'young-voices'), false);
+assert.equal(youngVoices.organisation, 'Young Voices');
+assert.equal(youngVoices.program, 'Contributor Program - Spring 2027');
+assert.equal(youngVoices.status, 'open');
+assert.equal(youngVoices.reviewedAt, '2026-10-05');
+assert.equal(youngVoices.region, 'Online');
+assert.equal(youngVoices.deadline, 'Mon 30 Nov 2026, 11:59 pm ET');
+assert.equal(youngVoices.url, 'https://www.joinyv.org/join');
+assert.match(youngVoices.application, /https:\/\/www\.tfaforms\.com\/4874619/);
+assert.match(`${youngVoices.description} ${youngVoices.duration}`, /[Tt]hree months/);
+assert.match(`${youngVoices.description} ${youngVoices.eligibilityDetails}`, /18-35/);
+assert.match(`${youngVoices.description} ${youngVoices.eligibilityDetails}`, /United States/);
+assert.match(youngVoices.application, /op-ed draft/);
+assert.match(youngVoices.application, /2-minute intro video/);
+assert.equal(youngVoices.paid, 'Not stated');
+const heritageSpring = byId('heritage-young-leaders-spring-2027');
+assert.equal(items.some(item => item.id === 'heritage-young-leaders'), false);
+assert.equal(heritageSpring.status, 'rolling');
+assert.equal(heritageSpring.reviewedAt, '2026-10-05');
+assert.equal(heritageSpring.deadline, 'Rolling hiring. No fixed deadline.');
+assert.equal(/4 Oct(?:ober)? 2026/.test(JSON.stringify(heritageSpring)), false);
+assert.match(heritageSpring.duration, /Mon 11 Jan to Fri 9 Apr 2027/);
+assert.match(`${heritageSpring.paid} ${heritageSpring.fundingDetails}`, /\$18\.50\/hr/);
+assert.equal(heritageSpring.url, 'https://www.heritage.org/young-leaders-program');
+const heritageSummer = byId('heritage-young-leaders-summer-2027');
+assert.equal(heritageSummer.status, 'open');
+assert.equal(heritageSummer.reviewedAt, '2026-10-05');
+assert.equal(heritageSummer.deadline, 'Sun 31 Jan 2027');
+assert.match(heritageSummer.duration, /Mon 10 May to Fri 6 Aug 2027/);
+assert.match(`${heritageSummer.paid} ${heritageSummer.fundingDetails}`, /\$18\.50\/hr/);
+assert.equal(/Fall 2027/.test(JSON.stringify(heritageSummer)), false);
+assert.equal(heritageSummer.url, 'https://www.heritage.org/young-leaders-program');
+const goldwater = byId('goldwater-ronald-reagan-fellowship');
+assert.equal(goldwater.status, 'rolling');
+assert.equal(goldwater.reviewedAt, '2026-10-05');
+assert.equal(goldwater.mapped, false);
+assert.match(goldwater.location, /Phoenix/);
+assert.match(goldwater.deadline, /Mon 30 Nov 2026/);
+assert.match(goldwater.deadline, /Wed 31 Mar 2027/);
+assert.match(goldwater.deadline, /Tue 30 Jun 2027/);
+assert.equal(goldwater.url, 'https://www.goldwaterinstitute.org/clerkships-and-internships/');
+const mrc = byId('mrc-internships-spring-2027');
+assert.equal(mrc.status, 'open');
+assert.equal(mrc.reviewedAt, '2026-10-05');
+assert.equal(mrc.deadline, 'Mon 21 Dec 2026');
+assert.match(`${mrc.paid} ${mrc.fundingDetails}`, /\$14\/hr/);
+assert.match(mrc.location, /in office/i);
+assert.match(mrc.location, /Northern Virginia/);
+assert.equal(mrc.url, 'https://www.mrc.org/internships');
+for (const id of [
+  'nri-buckley-journalism-fellowship',
+  'heritage-young-leaders-fall-2027',
+  'steamboat-fellowship',
+  'nri-rhodes',
+  'heartland-internship',
+  'bow-group'
+]) {
+  assert.equal(items.some(item => item.id === id), false, id);
+}
+console.log('PASS: 131 reviewed records, official HTTPS sources, status fields and independent link controls.');

@@ -1,6 +1,6 @@
 # Open now and opening soon — 4 October 2026
 
-Public open programmes: 128 after the 5 October 2026 audit corrections, the batch 17 additions, and the Harwood card (131 on this branch, then 9 removed and 3 added, then 2 added, then 1 added).
+Public open programmes: 131 after the Harwood card and Batch 18 (128, then 3 added).
 Opening-soon programmes: 3. Removed from the public site in the original batch: 1 (`heritage-young-leaders`).
 
 ## Batch 17, 5 October 2026
@@ -10,6 +10,16 @@ Added to Open now. `research/sync_verified.cjs` was not used. It would replace t
 - `hudson-political-studies-summer-fellowship-2027` — open fellowship. Early Decision Sat 9 Jan 2027 11:59 p.m. EST; Regular Tue 16 Mar 2027 11:59 p.m. EST (extended). Applications opened Thu 1 Oct 2026. `hudson-policy-oct2026` was not edited.
 - `hertog-humanities-winter-2027` — open. Deadline Mon 16 Nov 2026. Online Zoom seminars. No description or contact for this id was in the research records, so those fields stay "Not stated" except the programme title and deadline.
 - `aier-harwood-visiting-fellowships` — open. Fri 15 Jan 2027 for Summer 2027. Applications are accepted year-round and count toward the chosen season if they arrive before that season's deadline. Early-career researchers are welcome; advanced PhD students only in exceptional cases. Undergraduates and early-stage MA students should apply to the AIER student internship instead. Residency on campus in Great Barrington, MA for most of the fellowship, plus two 45-minute research presentations. $350/week stipend, accommodation and travel assistance, confirmed as still current. The Summer 2027 date and the year-round rule were confirmed by AIER (Jason Sorens) on 5 Oct 2026. On-brief in the research note only; the live card has no ideology field.
+
+## Batch 18, 5 October 2026
+
+- `young-voices-contributor-spring-2027` replaces `young-voices`. Open. Mon 30 Nov 2026, 11:59 pm ET.
+- `heritage-young-leaders-spring-2027` is back, with rolling hiring and no 4 Oct 2026 deadline.
+- `heritage-young-leaders-summer-2027` stays open, deadline Sun 31 Jan 2027.
+- `goldwater-ronald-reagan-fellowship` is rolling, in Phoenix.
+- `mrc-internships-spring-2027` is open, deadline Mon 21 Dec 2026.
+
+Not added: NRI Buckley, Bow Group, Heritage Fall 2027, Steamboat, NRI Rhodes, Heartland, NTU, Pioneer, and the Henry Jackson Society.
 
 Not added: Mannkal, Menzies, Maxim, FIRE, CIS expressions of interest, and the already-listed Liberales, ALEC, Capital Research Center, Independent Institute, James Madison Institute, Mises University, MEI, and ISI Collegiate Network cards.
 
