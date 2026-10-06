@@ -77,6 +77,12 @@ input::placeholder { color: #6d6b62; }
 .program-row > span { overflow-wrap: anywhere; }
 .row-organisation, .row-location { font-size: 17px; color: #4f544c; }
 .program-row .pill { justify-self: start; padding: 5px 10px; }
+.closing-soon {
+  display: inline-block; margin-left: 8px; padding: 2px 8px; border-radius: 4px;
+  background: #f4e1c1; color: #6a3b12; font-size: 12px; font-weight: 600;
+  line-height: 1.4; vertical-align: middle; letter-spacing: 0.01em;
+}
+.detail-meta .closing-soon { margin-left: 0; }
 .row-reviewed { text-align: right; font-size: 15px; line-height: 1.4; color: var(--muted); }
 .program-body { padding: 28px; max-width: 980px; }
 .result p { font-size: 18px; line-height: 1.6; color: #3d3f37; }
@@ -106,16 +112,42 @@ footer .brand { font-size: 18px; }
 footer > span, footer > a:last-child { font-size: 16px; }
 footer > span { font-style: italic; }
 summary:focus-visible { outline: 2px solid var(--green); outline-offset: -2px; }
-.opening-soon-section { padding-top: 0; }
-.opening-intro { max-width: 720px; margin: 0 0 18px; color: #3d3f37; font-size: 18px; line-height: 1.5; }
+.catalog-tabs {
+  display: flex; align-items: stretch; gap: 28px;
+  margin: 22px 0 8px; border-bottom: 1px solid var(--line);
+}
+.catalog-tabs [role="tab"] {
+  flex: 1 1 0; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  min-height: 52px; margin: 0; padding: 12px 2px 14px;
+  border: 0; border-bottom: 3px solid transparent; background: transparent;
+  color: var(--muted); font-size: 20px; line-height: 1.25; text-align: left; cursor: pointer;
+}
+.catalog-tabs [role="tab"][aria-selected="true"] {
+  color: var(--ink); border-bottom-color: var(--green); font-weight: 600;
+}
+.catalog-tabs [role="tab"]:hover { color: var(--green); }
+.catalog-tabs [role="tab"]:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.tab-label { text-wrap: balance; }
+.tab-count {
+  flex: none; min-width: 1.6em; color: var(--green); font-size: 18px; font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.opening-panel { padding-top: 8px; }
+.opening-intro { max-width: 720px; margin: 12px 0 18px; color: #3d3f37; font-size: 18px; line-height: 1.5; }
 .opening-empty { margin: 0; padding: 22px 14px; border-bottom: 1px solid var(--line); color: #3d3f37; font-size: 18px; line-height: 1.55; }
+.opens-date { color: var(--green); font-weight: 600; }
+.opening-panel .list-head,
+.opening-panel .program-row {
+  grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1fr) minmax(132px, auto);
+}
 .maplibregl-popup-content { background: var(--paper); border: 1px solid var(--line); box-shadow: none; }
 @media (max-width: 1000px) {
   h1 { font-size: 58px; }
   .section-intro { gap: 32px; }
   .refresh-label { display: none; }
   .search-toolbar { grid-template-columns: 1fr; }
-  .program-row, .list-head { grid-template-columns: minmax(0,2fr) minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr); }
+  .program-row, .list-head,
+  .opening-panel .program-row, .opening-panel .list-head { grid-template-columns: minmax(0,2fr) minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr); }
   .row-reviewed { grid-column: 1 / -1; text-align: left; }
   .list-head > :last-child { display: none; }
 }
@@ -134,8 +166,11 @@ summary:focus-visible { outline: 2px solid var(--green); outline-offset: -2px; }
   .globe-stage { height: 400px; }
   #world-view, #map-status, .map-legend { left: 20px; }
   .selection-strip { flex-direction: column; align-items: stretch; gap: 16px; }
+  .catalog-tabs { flex-direction: column; gap: 0; margin-top: 16px; }
+  .catalog-tabs [role="tab"] { min-height: 48px; padding: 14px 2px; font-size: 18px; border-bottom: 1px solid var(--line); }
+  .catalog-tabs [role="tab"][aria-selected="true"] { border-bottom-color: var(--line); box-shadow: inset 3px 0 var(--green); }
   .list-head { display: none; }
-  .program-row { grid-template-columns: minmax(0,1fr) auto; gap: 10px 16px; padding: 22px 12px; }
+  .program-row, .opening-panel .program-row { grid-template-columns: minmax(0,1fr) auto; gap: 10px 16px; padding: 22px 12px; }
   .program-row h3, .row-organisation { grid-column: 1 / -1; }
   .row-location { text-align: right; }
   .program-body { padding: 20px 12px; }

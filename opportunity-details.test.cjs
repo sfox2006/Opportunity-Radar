@@ -6,7 +6,21 @@ const context = vm.createContext({});
 vm.runInContext(code.slice(0, code.indexOf('const state =')), context);
 const items = vm.runInContext('opportunities', context);
 const supportedTypes = vm.runInContext('typeOrder', context);
-assert.equal(items.length, 108);
+assert.equal(items.length, 126);
+assert.equal(items.some(item => item.id === 'martin-center-internship-next-semester'), true);
+for (const [id, status, deadline] of [
+  ['libertas-institute-research-internship', 'rolling', 'Rolling (no deadline printed); apply by email with cover letter, resume and one writing sample'],
+  ['independence-institute-kip-spring-2027', 'rolling', 'Rolling through December 2026 (KIP); see posting for exact deadline'],
+  ['independent-institute-learning-to-lead-internships', 'rolling', 'Winter/Spring deadline Thu 1 Oct 2026 has passed, but the page says late applications are considered while positions remain; Summer deadline Thu 1 Apr 2027 (year inferred)']
+]) {
+  const added = items.find(item => item.id === id);
+  assert.ok(added, id);
+  assert.equal(added.status, status);
+  assert.equal(added.type, 'Internship');
+  assert.equal(added.deadline, deadline);
+  assert.equal(added.reviewedAt, '2026-10-04');
+  assert.equal(added.mapped, false);
+}
 for (const item of items) {
   assert.ok(supportedTypes.includes(item.type), `${item.id}: unsupported filter type ${item.type}`);
   for (const key of ['description', 'location', 'duration', 'paid', 'deadline', 'eligibilityDetails', 'application', 'url']) {
@@ -32,7 +46,11 @@ const hudson = items.find(item => item.id === 'hudson-policy-oct2026');
 assert.equal(/fully funded/i.test(`${hudson.paid} ${hudson.fundingDetails}`), false);
 assert.match(`${hudson.paid} ${hudson.fundingDetails}`, /free of charge/i);
 assert.match(items.find(item => item.id === 'reason-journalism').deadline, /deadline year inferred; confirm on the official page/);
+assert.match(items.find(item => item.id === 'tfas-dc-academic-internship-summer-2027').deadline, /Thursday 8 October 2026/);
 assert.match(items.find(item => item.id === 'tfas-dc-academic-internship-summer-2027').deadline, /deadline year inferred; confirm on the official page/);
+assert.equal(items.find(item => item.id === 'tfas-dc-academic-internship-summer-2027').deadlineOn, '2026-10-08');
+assert.equal(items.find(item => item.id === 'hillsdale-in-dc-internship').status, 'rolling');
+assert.equal(items.find(item => item.id === 'libertas-institute-research-internship').url, 'https://libertas.institute/about/internships/');
 assert.equal(items.find(item => item.id === 'hillsdale-online').region, 'Online');
 assert.equal(items.find(item => item.id === 'plf-research-spring-2027').region, 'Online');
 assert.equal(new Set(items.map(item => item.id)).size, items.length);
@@ -48,16 +66,22 @@ assert.match(fai.eligibilityDetails, /not a general student programme/i);
 const volcker = byId('volcker-nextgen-summer-policy-academy-2027');
 assert.match(volcker.deadline, /15 December 2026, 11:59 pm PT \(Pacific\)/);
 assert.equal(volcker.mapped, false);
-const ppia = byId('ppia-junior-summer-institute-2027');
-assert.match(ppia.deadline, /6 November 2026, 11:59 pm EST \(Eastern\)/);
-assert.equal(ppia.mapped, false);
-assert.match(byId('ij-semester-clerkship-spring-2027').eligibilityDetails, /law students/i);
-assert.match(byId('ij-fall-2026-legal-intensive').eligibilityDetails, /law students/i);
+for (const id of [
+  'ppia-junior-summer-institute-2027',
+  'ij-semester-clerkship-spring-2027',
+  'ij-fall-2026-legal-intensive',
+  'yal-law-clerk-spring-2027',
+  'aier-graduate-fellowships-spring-2027',
+  'siepr-predoctoral-fellows-2027',
+  'hudson-internship-program-fall-2026',
+  'iw-koeln-student-finanz-immobilienmaerkte',
+  'texas-scorecard-fellowship-spring-2027'
+]) {
+  assert.equal(items.some(item => item.id === id), false, id);
+}
 assert.match(byId('ij-development-internship').description, /not a policy placement/i);
 assert.match(byId('acton-spring-2027-semester-internship').deadline, /30 November 2026/);
 assert.match(byId('atlas-network-spring-2027-internships').deadline, /31 December 2026/);
-assert.equal(byId('yal-law-clerk-spring-2027').region, 'Online');
-assert.equal(byId('ij-semester-clerkship-spring-2027').mapped, false);
 for (const id of [
   'atlantic-council-ygp-spring-2027', 'bpc-summer-2027-internships', 'acton-emerging-leaders-program-2027',
   'ij-dave-kennedy-fellowship', 'ij-hellman-undergraduate-fellowship', 'roosevelt-network-forge',
@@ -70,8 +94,34 @@ for (const id of [
   assert.equal(items.some(item => item.id === id), false, id);
 }
 assert.ok(items.every((item) => item.source === "Official source reviewed 11 Sep 2026"));
-assert.match(code, /\$\{item\.source\}/);
-assert.match(code, /\$\{item\.source\.replace\(\/\^Official source reviewed \/, ""\)\}/);
+const sourceLabel = vm.runInContext('sourceLabel', context);
+const octoberReviewed = [
+  'iea-media-internship', 'vinson-hayek-internships', 'liberales-institut-liberty-summer-school-2027',
+  'heritage-young-leaders-summer-2027', 'capital-research-center-internships', 'alec-internship-program',
+  'beacon-center-tn-internships', 'moving-picture-institute-hollywood-career-launch',
+  'martin-center-internship-next-semester', 'sfl-global-performance-department-intern',
+  'frc-internship-spring-2027', 'frc-internship-summer-2027', 'american-moment-fellowship-summer-2027',
+  'cra-internship-spring-2027', 'haultain-internship-winter-2027', 'sfpa-college-fix-dc-journalism-spring-2027',
+  'jmi-internship-spring-2027', 'mises-university-2027', 'mei-liberty-leadership-seminar-2027',
+  'isi-collegiate-network-internship-2027', 'hillsdale-in-dc-internship', 'libertas-institute-research-internship',
+  'independence-institute-kip-spring-2027', 'independent-institute-learning-to-lead-internships',
+  'koch-internship-program-summer-2027', 'prometheus-praktikum', 'ccs-scnc-2026'
+];
+for (const id of octoberReviewed) {
+  assert.equal(sourceLabel(byId(id)), 'Official source reviewed 4 Oct 2026', id);
+}
+assert.equal(
+  items.filter(item => item.reviewedAt === '2026-10-04').map(item => item.id).sort().join('|'),
+  octoberReviewed.slice().sort().join('|')
+);
+assert.equal(sourceLabel(byId('hudson-policy-oct2026')), 'Official source reviewed 11 Sep 2026');
+assert.equal(sourceLabel(byId('mercatus-markets-society-conference-2026')), 'Official source reviewed 11 Sep 2026');
+const openingCards = vm.runInContext('openingSoon', context);
+for (const id of ['yaf-njc-summer-2027', 'centrum-for-rattvisa-sommarnotarie-2027', 'claremont-publius-fellowship-2027']) {
+  assert.equal(sourceLabel(openingCards.find(item => item.id === id)), 'Official source reviewed 4 Oct 2026', id);
+}
+assert.match(code, /sourceLabel\(item\)/);
+assert.match(code, /reviewed\.replace\(\/\^Official source reviewed \/, ""\)/);
 const manning = byId('manning-foundation-student-essay-contest-2026');
 assert.equal(manning.type, 'Essay competition');
 assert.equal(manning.region, 'Online');
@@ -110,17 +160,12 @@ assert.match(`${hayek.deadline} ${hayek.application}`, /[Nn]o fixed deadline/);
 assert.match(hayek.application, /KF_Israel\[at\]gmx\.de/);
 assert.equal(hayek.url, 'https://hayek.de/veranstaltungen/juniorenkreis-wissenschaft-kapital-produktion-und-kapitalismus/');
 const insm = byId('iw-koeln-insm-studentischer-mitarbeiter-volkswirtschaft');
-const koeln = byId('iw-koeln-student-finanz-immobilienmaerkte');
-for (const job of [insm, koeln]) {
-  assert.match(`${job.program} ${job.description} ${job.eligibilityDetails}`, /[Ss]tudent job \(Werkstudent/);
-  assert.match(`${job.description} ${job.eligibilityDetails}`, /not an internship/i);
-  assert.match(`${job.description} ${job.eligibilityDetails}`, /German/);
-  assert.match(job.deadline, /Rolling until filled/);
-}
-assert.match(koeln.deadline, /Starts 1 October 2026 and may already be filled/);
+assert.match(`${insm.program} ${insm.description} ${insm.eligibilityDetails}`, /[Ss]tudent job \(Werkstudent/);
+assert.match(`${insm.description} ${insm.eligibilityDetails}`, /not an internship/i);
+assert.match(`${insm.description} ${insm.eligibilityDetails}`, /German/);
+assert.match(insm.deadline, /Rolling until filled/);
 assert.equal(/already be filled/.test(insm.deadline), false);
 assert.equal(insm.url, 'https://k60828.coveto.de/job-studentischer-mitarbeiter-volkswirtschaft-wirtschaftspolitik-m-w-d-berlin-1173.html');
-assert.equal(koeln.url, 'https://k60828.coveto.de/job-studentischer-mitarbeiter-m-w-d-mit-dem-schwerpunkt-finanz-und-immobilienmaerkte-koeln-1174.html');
 const iness = byId('iness-ekonomicky-base-camp-2026');
 assert.equal(iness.type, 'Seminar');
 assert.equal(iness.region, 'Europe');
@@ -270,19 +315,6 @@ assert.match(`${partnership.deadline} ${partnership.description} ${partnership.a
 assert.match(`${partnership.description} ${partnership.application}`, /[Nn]o email is printed/);
 assert.match(`${partnership.description} ${partnership.application}`, /\(202\) 775-9111/);
 assert.equal(partnership.url, 'https://ourpublicservice.org/about/work-with-us/partnership-internship-program');
-const siepr = byId('siepr-predoctoral-fellows-2027');
-assert.equal(siepr.type, 'Fellowship');
-assert.equal(siepr.lat, 37.4275);
-assert.equal(siepr.lon, -122.1697);
-assert.match(`${siepr.paid} ${siepr.description}`, /[Pp]aid predoctoral/);
-assert.match(`${siepr.description} ${siepr.location}`, /Stanford, California/);
-assert.match(`${siepr.description} ${siepr.location}`, /not Washington, DC/);
-assert.match(siepr.description, /2-year full-time Stanford staff job/);
-assert.match(`${siepr.description} ${siepr.eligibilityDetails}`, /bachelor's degree is needed by the 6 July 2027 start/);
-assert.match(siepr.duration, /Up to 2 years/);
-assert.match(`${siepr.description} ${siepr.eligibilityDetails}`, /US work authorisation|authorisation to work in the United States/);
-assert.match(`${siepr.deadline} ${siepr.description} ${siepr.application}`, /Thursday 8 October 2026 for full consideration/);
-assert.equal(siepr.url, 'https://siepr.stanford.edu/programs/siepr-predoctoral-research-fellows-program/apply-siepr-predoctoral-research-fellows');
 const kip = byId('stand-together-koch-internship-spring-2027');
 assert.equal(kip.type, 'Internship');
 assert.equal(kip.status, 'rolling');
@@ -389,7 +421,10 @@ assert.equal(markets.lat, 38.8823);
 assert.equal(markets.lon, -77.1711);
 assert.match(markets.duration, /Friday 23 to Monday 26 October 2026/);
 assert.match(markets.location, /Falls Church, Virginia/);
-assert.match(`${markets.deadline} ${markets.paid} ${markets.fundingDetails} ${markets.description} ${markets.application}`, /registration open, no cutoff printed, fee not stated on the page/i);
+assert.match(markets.deadline, /Hotel conference-rate booking deadline Fri 9 Oct 2026/);
+assert.match(markets.deadline, /Fri 23 to Mon 26 Oct 2026, Falls Church, VA/);
+assert.equal(markets.deadlineOn, '2026-10-09');
+assert.equal(/no cutoff printed/i.test(JSON.stringify(markets)), false);
 assert.equal(/no registration fee/i.test(JSON.stringify(markets)), false);
 assert.equal(/free/i.test(markets.paid), false);
 assert.match(markets.application, /marketsandsociety@mercatus\.gmu\.edu/);
@@ -449,7 +484,7 @@ assert.equal(cei.url, 'https://cei.org/about/internships/');
 assert.equal(cei.reviewedAt, '2026-10-03');
 assert.equal(cei.source, 'Official source reviewed 11 Sep 2026');
 assert.equal(items.some(item => item.id === 'hudson-summer-fellowship-2027'), false);
-assert.equal(items.filter(item => item.type === 'Conference').length, 12);
+assert.equal(items.filter(item => item.type === 'Conference').length, 13);
 const batch11 = [
   'li-yls-reagan-library-2026-10',
   'acton-academic-conference-2026',
@@ -541,6 +576,44 @@ assert.match(`${gulch.fundingDetails} ${gulch.description} ${gulch.application}`
 assert.match(`${gulch.description} ${gulch.application}`, /galtsgulch@atlassociety\.org/);
 assert.equal(gulch.url, 'https://www.atlassociety.org/galts-gulch-2027');
 assert.equal(items.filter(item => item.url === gulch.url).length, 1);
+assert.match(byId('mises-university-2027').deadline, /Fri 28 May 2027/);
+assert.match(byId('mises-university-2027').deadline, /international deadline Fri 30 Apr 2027/);
+assert.match(byId('mises-university-2027').deadline, /Sun 18 to Sat 24 Jul 2027/);
+assert.match(byId('bpc-spring-2027-internships').deadline, /about four weeks from Mon 28 Sep 2026 \(about Mon 26 Oct 2026, estimate\)/);
+assert.equal(/no fixed closing date/i.test(byId('bpc-spring-2027-internships').deadline), false);
+const ccsLegal = byId('ccs-legal');
+assert.equal(/15 October 2025|confirm it is still open/i.test(JSON.stringify(ccsLegal)), false);
+assert.match(ccsLegal.deadline, /Rolling basis/);
+assert.match(`${ccsLegal.deadline} ${ccsLegal.duration}`, /minimum two months/i);
+assert.match(`${ccsLegal.deadline} ${ccsLegal.application}`, /30 days before the start/);
+assert.match(ccsLegal.application, /internship@ccs\.in/);
+for (const id of ['frc-internship-spring-2027', 'frc-internship-summer-2027']) {
+  const frc = byId(id);
+  assert.match(`${frc.description} ${frc.fundingDetails}`, /contradicts itself on housing/);
+  assert.match(`${frc.description} ${frc.fundingDetails}`, /Free Housing/);
+  assert.match(`${frc.description} ${frc.fundingDetails}`, /housing is not available/);
+}
+assert.equal(byId('frc-internship-spring-2027').deadline, 'Sat 31 Oct 2026');
+assert.equal(byId('frc-internship-summer-2027').deadline, 'Sun 14 Feb 2027');
+const kochSummer = byId('koch-internship-program-summer-2027');
+assert.equal(kochSummer.status, 'rolling');
+assert.equal(kochSummer.url, kip.url);
+assert.match(kochSummer.deadline, /Rolling through March 2027/);
+assert.match(kochSummer.duration, /27 May to Thu 5 Aug 2027/);
+const prometheus = byId('prometheus-praktikum');
+assert.equal(prometheus.status, 'rolling');
+assert.equal(prometheus.url, 'https://heimatderfreiheit.de/project/praktikum/');
+assert.match(prometheus.duration, /6 weeks to 3 months/);
+assert.match(`${prometheus.description} ${prometheus.eligibilityDetails} ${prometheus.application}`, /German-language/);
+assert.match(`${prometheus.description} ${prometheus.location}`, /Berlin/);
+const scnc = byId('ccs-scnc-2026');
+assert.equal(scnc.type, 'Conference');
+assert.equal(scnc.url, 'https://ccs.in/scnc2026');
+assert.equal(scnc.deadlineOn, '2026-10-15');
+assert.match(scnc.deadline, /Thu 15 Oct 2026/);
+assert.match(scnc.duration, /Sat 31 Oct 2026/);
+assert.match(`${scnc.paid} ${scnc.fundingDetails}`, /INR 3,000/);
+assert.match(scnc.location, /New Delhi/);
 const harwood = byId('aier-harwood-visiting-fellowships');
 assert.equal(harwood.organisation, 'American Institute for Economic Research');
 assert.equal(harwood.type, 'Fellowship');
@@ -558,8 +631,13 @@ assert.match(`${harwood.paid} ${harwood.fundingDetails}`, /US\$350/);
 assert.match(`${harwood.paid} ${harwood.fundingDetails}`, /accommodation/i);
 assert.match(`${harwood.paid} ${harwood.fundingDetails}`, /travel/);
 assert.match(harwood.fundingDetails, /still current/);
+assert.equal(sourceLabel(harwood), 'Official source reviewed 5 Oct 2026');
+assert.equal(
+  items.filter(item => item.reviewedAt === '2026-10-05').map(item => item.id).join('|'),
+  'aier-harwood-visiting-fellowships'
+);
 const shortTerm = byId('aier-short-term-visiting-fellowships');
 assert.match(shortTerm.program, /Short-term Visiting Research Fellowships/);
 assert.match(shortTerm.deadline, /at least six weeks/);
-assert.equal(items.filter(item => item.id.startsWith('aier-')).length, 4);
-console.log('PASS: 108 reviewed records, official HTTPS sources, status fields and independent link controls.');
+assert.equal(items.filter(item => item.id.startsWith('aier-')).length, 3);
+console.log('PASS: 126 reviewed records, official HTTPS sources, status fields and independent link controls.');
