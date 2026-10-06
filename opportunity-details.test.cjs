@@ -6,7 +6,7 @@ const context = vm.createContext({});
 vm.runInContext(code.slice(0, code.indexOf('const state =')), context);
 const items = vm.runInContext('opportunities', context);
 const supportedTypes = vm.runInContext('typeOrder', context);
-assert.equal(items.length, 126);
+assert.equal(items.length, 128);
 assert.equal(items.some(item => item.id === 'martin-center-internship-next-semester'), true);
 for (const [id, status, deadline] of [
   ['libertas-institute-research-internship', 'rolling', 'Rolling (no deadline printed); apply by email with cover letter, resume and one writing sample'],
@@ -115,6 +115,22 @@ assert.equal(
   octoberReviewed.slice().sort().join('|')
 );
 assert.equal(sourceLabel(byId('hudson-policy-oct2026')), 'Official source reviewed 11 Sep 2026');
+assert.equal(hudson.organisation, 'Hudson Institute');
+assert.equal(hudson.program, "Policy Certificate: Israel's Place in the American Order");
+assert.equal(hudson.status, 'rolling');
+assert.equal(hudson.reviewedAt, '2026-10-01');
+assert.equal(hudson.url, 'https://hudsonpoliticalstudies.org/policy/5BC60zDKIwHJwPNvxxGJpG');
+const batch17 = ['hudson-political-studies-summer-fellowship-2027', 'hertog-humanities-winter-2027'];
+const reviewed5Oct = batch17.concat(['aier-harwood-visiting-fellowships']);
+assert.equal(
+  items.filter(item => item.reviewedAt === '2026-10-05').map(item => item.id).sort().join('|'),
+  reviewed5Oct.slice().sort().join('|')
+);
+for (const id of batch17) {
+  assert.equal(sourceLabel(byId(id)), 'Official source reviewed 5 Oct 2026', id);
+  assert.equal(byId(id).status, 'open', id);
+  assert.equal(byId(id).source, 'Official source reviewed 11 Sep 2026', id);
+}
 assert.equal(sourceLabel(byId('mercatus-markets-society-conference-2026')), 'Official source reviewed 11 Sep 2026');
 const openingCards = vm.runInContext('openingSoon', context);
 for (const id of ['yaf-njc-summer-2027', 'centrum-for-rattvisa-sommarnotarie-2027', 'claremont-publius-fellowship-2027']) {
@@ -614,6 +630,45 @@ assert.match(scnc.deadline, /Thu 15 Oct 2026/);
 assert.match(scnc.duration, /Sat 31 Oct 2026/);
 assert.match(`${scnc.paid} ${scnc.fundingDetails}`, /INR 3,000/);
 assert.match(scnc.location, /New Delhi/);
+const hudsonFellowship = byId('hudson-political-studies-summer-fellowship-2027');
+assert.equal(hudsonFellowship.organisation, 'Hudson Institute Political Studies');
+assert.equal(hudsonFellowship.program, 'Summer Fellowship 2027');
+assert.equal(hudsonFellowship.type, 'Fellowship');
+assert.equal(hudsonFellowship.status, 'open');
+assert.equal(hudsonFellowship.reviewedAt, '2026-10-05');
+assert.equal(hudsonFellowship.url, 'https://hudsonpoliticalstudies.org/fellowship/apply');
+assert.equal(hudsonFellowship.location, 'Washington, DC');
+assert.equal(hudsonFellowship.lat, 38.9072);
+assert.equal(hudsonFellowship.lon, -77.0369);
+assert.equal(hudsonFellowship.deadline, 'Early Decision Sat 9 Jan 2027 11:59 p.m. EST; Regular Tue 16 Mar 2027 11:59 p.m. EST (extended)');
+assert.match(hudsonFellowship.duration, /Session I Mon 24 May - Mon 5 Jul 2027/);
+assert.match(hudsonFellowship.duration, /Session II Mon 28 Jun - Sat 7 Aug 2027/);
+assert.match(`${hudsonFellowship.paid} ${hudsonFellowship.fundingDetails} ${hudsonFellowship.description}`, /\$3,000/);
+assert.match(`${hudsonFellowship.paid} ${hudsonFellowship.fundingDetails}`, /complimentary/);
+assert.match(`${hudsonFellowship.eligibilityDetails} ${hudsonFellowship.description}`, /[Cc]ollege students and recent graduates/);
+assert.match(`${hudsonFellowship.eligibilityDetails} ${hudsonFellowship.description}`, /[Ff]ull-time/);
+assert.match(`${hudsonFellowship.description} ${hudsonFellowship.application}`, /Thu 1 Oct 2026/);
+assert.match(hudsonFellowship.application, /amcbreen@hudson\.org/);
+const hertog = byId('hertog-humanities-winter-2027');
+assert.equal(hertog.organisation, 'Hertog Foundation');
+assert.equal(hertog.program, 'Humanities at Hertog - Winter 2027 online seminars (Zoom)');
+assert.equal(hertog.type, 'Seminar');
+assert.equal(hertog.status, 'open');
+assert.equal(hertog.reviewedAt, '2026-10-05');
+assert.equal(hertog.region, 'Online');
+assert.equal(hertog.deadline, 'Mon 16 Nov 2026');
+assert.equal(hertog.url, 'https://hertogfoundation.org/programs/humanities');
+assert.match(hertog.location, /Zoom/);
+for (const id of [
+  'mannkal-scholarship-program-2027',
+  'menzies-future-leader-initiative',
+  'maxim-leadership-academy-2027-28',
+  'cis-liberty-society-student-fellowship-2027',
+  'cis-liberty-society-student-conference-2027',
+  'fire-summer-2027'
+]) {
+  assert.equal(items.some(item => item.id === id), false, id);
+}
 const harwood = byId('aier-harwood-visiting-fellowships');
 assert.equal(harwood.organisation, 'American Institute for Economic Research');
 assert.equal(harwood.type, 'Fellowship');
@@ -632,12 +687,8 @@ assert.match(`${harwood.paid} ${harwood.fundingDetails}`, /accommodation/i);
 assert.match(`${harwood.paid} ${harwood.fundingDetails}`, /travel/);
 assert.match(harwood.fundingDetails, /still current/);
 assert.equal(sourceLabel(harwood), 'Official source reviewed 5 Oct 2026');
-assert.equal(
-  items.filter(item => item.reviewedAt === '2026-10-05').map(item => item.id).join('|'),
-  'aier-harwood-visiting-fellowships'
-);
 const shortTerm = byId('aier-short-term-visiting-fellowships');
 assert.match(shortTerm.program, /Short-term Visiting Research Fellowships/);
 assert.match(shortTerm.deadline, /at least six weeks/);
 assert.equal(items.filter(item => item.id.startsWith('aier-')).length, 3);
-console.log('PASS: 126 reviewed records, official HTTPS sources, status fields and independent link controls.');
+console.log('PASS: 128 reviewed records, official HTTPS sources, status fields and independent link controls.');
