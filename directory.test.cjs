@@ -54,16 +54,40 @@ test('program counts match acronym aliases and keep similarly named organisation
   search('Tax Foundation');
   assert.match(elements['organisation-directory'].innerHTML, /1 program on this site/);
 });
-test('reference cards escape imported text and reject unsafe links', () => {
-  const {elements} = load({groups:[{id:'test',label:'<Region>'}],organisations:[{
-    id:'test',name:'<img src=x onerror=alert(1)>',group:'test',location:'',aliases:[],
-    referenceUrls:['javascript:alert(1)', 'https://user:password@example.org/', 'https://example.org/?q="<test>']
-  }]});
+test('organisation cards escape text, reject unsafe links and render About/homepage fallbacks', () => {
+  const {elements} = load({groups:[{id:'test',label:'<Region>'}],organisations:[
+    ...['javascript:alert(1)', 'https://user:password@example.org/', 'https://example.org/?q="<test>'].map((url, i) => ({
+      id:`test-${i}`,name:'<img src=x onerror=alert(1)>',group:'test',location:'',aliases:[],website:{url,type:'about'}
+    })),
+    {id:'home',name:'Home',group:'test',aliases:[],website:{url:'https://example.net/',type:'home'}},
+    {id:'missing',name:'Missing',group:'test',aliases:[],website:null}
+  ]});
   const html = elements['organisation-directory'].innerHTML;
   assert.ok(!html.includes('<img'));
   assert.match(html, /&lt;Region&gt;/);
   assert.ok(!html.includes('javascript:'));
   assert.ok(!html.includes('user:password'));
   assert.match(html, /rel="noopener noreferrer"/);
-  assert.match(html, /availability not checked here/);
+  assert.match(html, /About us ↗/);
+  assert.match(html, /Homepage ↗/);
+  assert.match(html, /Official website unavailable/);
+  assert.doesNotMatch(html, /Newsletter reference/);
+  assert.doesNotMatch(html, /href="[^"]*<test>/);
+});
+
+test('every organisation has an explicit website review and obsolete domains are excluded', () => {
+  const websites = JSON.parse(fs.readFileSync(__dirname + '/research/directory-websites.json', 'utf8'));
+  for (const org of registry.organisations) {
+    const original = org.aliases[0];
+    assert.ok(Object.hasOwn(websites.organisations, original), original);
+    if (!org.website) {
+      assert.ok(websites.unavailable.some(item => item.name === original), original);
+      continue;
+    }
+    const url = new URL(org.website.url);
+    assert.equal(url.protocol, 'https:');
+    assert.equal(url.username + url.password, '');
+    assert.ok(['about','home'].includes(org.website.type));
+    assert.ok(!/openeurope\.org|cidac\.org|jimsisrael\.org|irenkenya\.com|freeafrica\.org/.test(url.hostname));
+  }
 });

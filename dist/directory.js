@@ -32,14 +32,13 @@
         <summary><h3>${escape(group.label)}</h3><span>${orgs.length} ${orgs.length === 1 ? 'entry' : 'entries'}</span></summary>
         <div class="organisation-grid">${orgs.map(org => {
           const count = programCount(org);
-          const links = org.referenceUrls.map(safeUrl).filter(Boolean);
+          const url = safeUrl(org.website?.url);
+          const label = org.website?.type === 'about' ? 'About us' : 'Homepage';
           return `<article class="organisation-card"><h4>${escape(org.name)}</h4>
             ${org.location ? `<p>${escape(org.location)}</p>` : ''}
             <p>${count} ${count === 1 ? 'program' : 'programs'} on this site</p>
-            ${links.length ? `<div class="organisation-links">${links.map((url, index) =>
-              `<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">Reference page${links.length > 1 ? ` ${index + 1}` : ''} ↗</a>`).join('')}</div>`
-              : '<span class="missing-source">Reference URL not supplied</span>'}
-            <small>Newsletter reference · availability not checked here</small></article>`;
+            ${url ? `<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${escape(org.website.label || label)} ↗</a>`
+              : '<span class="missing-source">Official website unavailable</span>'}</article>`;
         }).join('')}</div></details>`;
     }).join('');
     document.getElementById('directory-count').textContent = `${shown} of ${radarRegistry.organisations.length} directory entries`;
