@@ -1,0 +1,29 @@
+{
+  "source": "political-newsletter.skill / references/organisations.md",
+  "notes": "Display corrections, aliases and reference links imported from the supplied skill. These are not fresh checks of websites or programs.",
+  "overrides": {
+    "Institute of Economic Affairs (IEA)": {"referenceUrls": ["https://iea.org.uk/students/iea-internship/", "https://iea.org.uk/students/media-internship/", "https://iea.org.uk/students/epicenter-internship/", "https://iea.org.uk/students/future-thought-leaders-programme-undergraduate/", "https://iea.org.uk/students/residential-camp-vinson/"]},
+    "Sydney Institute": {"referenceUrls": ["https://thesydneyinstitute.com.au"]},
+    "Institute for Humane Studies (IHS)": {"referenceUrls": ["https://theihs.org"]},
+    "Charles Koch Institute": {"referenceUrls": ["https://www.kochinternship.org/"]},
+    "Mexico Evalua": {"name": "México Evalúa"},
+    "Institut Economique Molinari": {"name": "Institut Économique Molinari"},
+    "Institut Liberalnich Studii": {"name": "Institut Liberálních Studií"},
+    "Mathias Corvinus Collegium": {"name": "MCC (Mathias Corvinus Collegium)", "aliases": ["MCC"]},
+    "Federalist Society": {"aliases": ["The Federalist Society"]},
+    "The Fund for American Studies (TFAS)": {"aliases": ["TFAS"]},
+    "AIER (American Institute for Economic Research)": {"aliases": ["American Institute for Economic Research", "AIER"]},
+    "FEE (Foundation for Economic Education)": {"aliases": ["Foundation for Economic Education", "FEE"]},
+    "Hillsdale College Online Courses": {"aliases": ["Hillsdale College"]},
+    "Ludwig von Mises Institute": {"aliases": ["Mises Institute"]},
+    "IDEAS (Institute for Democracy and Economic Affairs)": {"aliases": ["Institute for Democracy and Economic Affairs", "IDEAS"]},
+    "Young America's Foundation (YAF)": {"aliases": ["Young America's Foundation", "YAF", "National Journalism Center / YAF"]},
+    "Free Market Foundation (Hungary)": {"aliases": ["Free Market Foundation Hungary"]},
+    "Hudson Institute": {"aliases": ["Hudson Institute Political Studies"]},
+    "Manhattan Institute": {"aliases": ["Manhattan Institute for Policy Research"]},
+    "James Madison Institute": {"aliases": ["James Madison Institute (Florida)"]},
+    "Independent Institute": {"aliases": ["Independent Institute (Oakland, CA)"]},
+    "Liberales Institut": {"aliases": ["Liberales Institut (Zurich)"]},
+    "Intercollegiate Studies Institute (ISI)": {"aliases": ["Intercollegiate Studies Institute - Collegiate Network"]}
+  }
+}
