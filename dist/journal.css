@@ -202,37 +202,3 @@ summary:focus-visible { outline: 2px solid var(--green); outline-offset: -2px; }
   nav { gap: 16px; }
   .opportunity-facts { grid-template-columns: 1fr; }
 }
-
-/* Organisation directory: same structure as Economic Opportunity Radar. */
-.coverage-summary { display: flex; flex-wrap: wrap; gap: 18px 32px; padding: 18px 0 26px; color: var(--muted); font-size: 17px; }
-.coverage-summary strong { color: var(--green); }
-.coverage-summary a { margin-left: auto; text-decoration: underline; text-underline-offset: 4px; }
-.directory-section { padding-block: 60px; border-top: 1px solid var(--line); }
-.directory-intro { max-width: 80ch; margin-bottom: 24px; color: var(--muted); line-height: 1.55; }
-.directory-search { display: grid; gap: 8px; max-width: 620px; margin-bottom: 18px; }
-#directory-count { color: var(--muted); font-size: 16px; margin-bottom: 12px; }
-.sector-directory { border-top: 1px solid var(--line); }
-.sector-directory > summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer; padding: 23px 0; list-style: none; }
-.sector-directory > summary::before { content: '+'; font-size: 23px; color: var(--green); }
-.sector-directory[open] > summary::before { content: '−'; }
-.sector-directory > summary h3 { font-size: 22px; font-weight: 500; flex: 1; }
-.sector-directory > summary > span { font-size: 15px; color: var(--muted); }
-.organisation-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; padding-bottom: 28px; }
-.organisation-card { padding: 20px; border: 1px solid var(--line); background: var(--paper); overflow-wrap: anywhere; }
-.organisation-card h4 { margin: 0 0 12px; font-size: 19px; font-weight: 600; }
-.organisation-card p { font-size: 16px; color: var(--muted); margin-bottom: 12px; }
-.organisation-card a { font-size: 16px; text-decoration: underline; text-underline-offset: 3px; }
-.organisation-card small { display: block; margin-top: 10px; color: var(--muted); font-size: 13px; }
-.missing-source { font-size: 15px; font-style: italic; color: var(--muted); }
-
-.organisation-links { display: grid; gap: 8px; }
-.sector-directory > summary::-webkit-details-marker { display: none; }
-.empty-state { padding: 28px 14px; }
-@media (max-width: 760px) {
- .coverage-summary a { margin-left: 0; }
- .organisation-grid { grid-template-columns: 1fr; }
- .sector-directory > summary { align-items: flex-start; }
- .sector-directory > summary > span { max-width: 90px; text-align: right; }
- .sector-directory > summary h3 { font-size: 20px; }
- .brand { white-space: normal; }
-}
