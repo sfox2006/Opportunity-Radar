@@ -101,12 +101,28 @@ input::placeholder { color: #6d6b62; }
 .chip.active { background: var(--green); }
 .toggle span { font-size: 17px; }
 .profile-actions button { font-size: 17px; border-radius: 4px; }
-.newsletter-section { padding-block: 72px; background: var(--green); color: var(--paper); }
-.newsletter-section .eyebrow { color: #d5b486; }
-.newsletter-section h2 { font-size: 44px; }
-.newsletter-copy { font-size: 20px; color: #d8dccf; line-height: 1.55; }
-#newsletter-signup > a { color: var(--paper); font-size: 17px; text-underline-offset: 4px; }
-.newsletter-status, .newsletter-section label > span { color: #d8dccf; }
+.newsletter { background: var(--green); color: var(--paper); }
+.newsletter-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 32px; padding-block: 28px;
+}
+.newsletter-copy {
+  display: flex; flex-direction: column; gap: 8px;
+  margin: 0; max-width: none; min-width: 0; color: inherit;
+}
+.newsletter-kicker {
+  font-size: 13px; font-weight: 600; letter-spacing: 0.09em;
+  text-transform: uppercase; color: #d5b486; line-height: 1;
+}
+.newsletter h2 { font-size: 28px; font-weight: 500; line-height: 1.15; color: var(--paper); }
+.newsletter p { margin: 0; max-width: 68ch; font-size: 17px; line-height: 1.45; color: #d8dccf; }
+.newsletter-cta {
+  flex: none; display: inline-flex; align-items: center; justify-content: center;
+  padding: 13px 22px; border-radius: 4px; background: var(--paper); color: var(--green);
+  font-size: 16px; font-weight: 600; line-height: 1; text-decoration: none;
+}
+.newsletter-cta:hover { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+.newsletter-cta:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 footer { padding-block: 28px; }
 footer .brand { font-size: 18px; }
 footer > span, footer > a:last-child { font-size: 16px; }
@@ -175,7 +191,9 @@ summary:focus-visible { outline: 2px solid var(--green); outline-offset: -2px; }
   .row-location { text-align: right; }
   .program-body { padding: 20px 12px; }
   .profile-layout { grid-template-columns: 1fr; gap: 32px; }
-  .newsletter-section { padding-block: 48px; }
+  .newsletter-bar { flex-direction: column; align-items: flex-start; gap: 16px; padding-block: 22px; }
+  .newsletter h2 { font-size: 26px; }
+  .newsletter-cta { min-height: 48px; }
   .filter-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .section-link { white-space: normal; }
 }
