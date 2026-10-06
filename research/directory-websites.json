@@ -1,0 +1,1110 @@
+{
+  "checkedAt": "2026-10-06",
+  "scope": "Organisation identity and About/homepage links only; does not verify opportunity availability.",
+  "organisations": {
+    "Menzies Research Centre": {
+      "url": "https://www.menziesrc.org/about-the-mrc",
+      "type": "about",
+      "evidenceUrl": "https://www.menziesrc.org/about-the-mrc",
+      "checkMethod": "official_page"
+    },
+    "Samuel Griffith Society": {
+      "url": "https://www.samuelgriffith.org/about",
+      "type": "about",
+      "evidenceUrl": "https://www.samuelgriffith.org/about",
+      "checkMethod": "official_page"
+    },
+    "Centre for Independent Studies (CIS)": {
+      "url": "https://www.cis.org.au/about/",
+      "type": "about",
+      "evidenceUrl": "https://www.cis.org.au/about/",
+      "checkMethod": "official_navigation_or_search"
+    },
+    "Institute of Public Affairs (IPA)": {
+      "url": "https://ipa.org.au/home-page-boxes/about-us",
+      "type": "about",
+      "evidenceUrl": "https://ipa.org.au/home-page-boxes/about-us",
+      "checkMethod": "official_indexed_page"
+    },
+    "Maxim Institute": {
+      "url": "https://www.maxim.org.nz/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://www.maxim.org.nz/about-us/",
+      "checkMethod": "official_page"
+    },
+    "New Zealand Initiative": {
+      "url": "https://www.nzinitiative.org.nz/about-us",
+      "type": "about",
+      "evidenceUrl": "https://www.nzinitiative.org.nz/about-us",
+      "checkMethod": "official_page"
+    },
+    "Institute of Economic Affairs (IEA)": {
+      "url": "https://iea.org.uk/about-us",
+      "type": "about",
+      "evidenceUrl": "https://iea.org.uk/about-us",
+      "checkMethod": "official_page"
+    },
+    "Adam Smith Institute": {
+      "url": "https://www.adamsmith.org/about-the-asi",
+      "type": "about",
+      "evidenceUrl": "https://www.adamsmith.org/about-the-asi",
+      "checkMethod": "official_page"
+    },
+    "Vinson Centre, University of Buckingham": {
+      "url": "https://vinsoncentre.com/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://vinsoncentre.com/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Centre for Policy Studies": {
+      "url": "https://cps.org.uk/about/",
+      "type": "about",
+      "evidenceUrl": "https://cps.org.uk/about/",
+      "checkMethod": "official_page"
+    },
+    "American Enterprise Institute (AEI)": {
+      "url": "https://www.aei.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://www.aei.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Cato Institute": {
+      "url": "https://www.cato.org/about",
+      "type": "about",
+      "evidenceUrl": "https://www.cato.org/about",
+      "checkMethod": "official_page"
+    },
+    "AIER (American Institute for Economic Research)": {
+      "url": "https://aier.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://aier.org/about/",
+      "checkMethod": "official_page"
+    },
+    "FEE (Foundation for Economic Education)": {
+      "url": "https://fee.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://fee.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Hudson Institute": {
+      "url": "https://www.hudson.org/about",
+      "type": "about",
+      "evidenceUrl": "https://www.hudson.org/about",
+      "checkMethod": "official_page"
+    },
+    "The Fund for American Studies (TFAS)": {
+      "url": "https://tfas.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://tfas.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Heritage Foundation": {
+      "url": "https://www.heritage.org/about-heritage/cornerstones",
+      "type": "about",
+      "evidenceUrl": "https://www.heritage.org/about-heritage/cornerstones",
+      "checkMethod": "official_navigation_or_search"
+    },
+    "Young Voices": {
+      "url": "https://www.joinyv.org/about",
+      "type": "about",
+      "evidenceUrl": "https://www.joinyv.org/about",
+      "checkMethod": "official_page"
+    },
+    "Hillsdale College Online Courses": {
+      "url": "https://online.hillsdale.edu/about",
+      "type": "about",
+      "evidenceUrl": "https://online.hillsdale.edu/about",
+      "checkMethod": "official_page"
+    },
+    "FEE Online Learning": {
+      "url": "https://fee.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://fee.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Sydney Institute": {
+      "url": "https://thesydneyinstitute.com.au/about-the-sydney-institute/",
+      "type": "about",
+      "evidenceUrl": "https://thesydneyinstitute.com.au/about-the-sydney-institute/",
+      "checkMethod": "official_navigation_or_search"
+    },
+    "Robert Menzies Institute": {
+      "url": "https://www.robertmenziesinstitute.org.au/about/",
+      "type": "about",
+      "evidenceUrl": "https://www.robertmenziesinstitute.org.au/about/",
+      "checkMethod": "official_page"
+    },
+    "H.R. Nicholls Society": {
+      "url": "https://www.hrnicholls.com.au/history",
+      "type": "about",
+      "evidenceUrl": "https://www.hrnicholls.com.au/history",
+      "checkMethod": "official_page"
+    },
+    "Australian Taxpayers' Alliance": {
+      "url": "https://www.taxpayers.org.au/mission",
+      "type": "about",
+      "evidenceUrl": "https://www.taxpayers.org.au/mission",
+      "checkMethod": "official_page"
+    },
+    "Page Research Centre": {
+      "url": "https://www.page.org.au/about/",
+      "type": "about",
+      "evidenceUrl": "https://www.page.org.au/about/",
+      "checkMethod": "official_page"
+    },
+    "Australian Institute for Progress": {
+      "url": "https://aip.asn.au/about/",
+      "type": "about",
+      "evidenceUrl": "https://aip.asn.au/about/",
+      "checkMethod": "official_page"
+    },
+    "Mannkal Economic Education Foundation": {
+      "url": "https://mannkal.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://mannkal.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Policy Exchange": {
+      "url": "https://policyexchange.org.uk/about/",
+      "type": "about",
+      "evidenceUrl": "https://policyexchange.org.uk/about/",
+      "checkMethod": "official_indexed_page"
+    },
+    "The Bow Group": {
+      "url": "https://www.bowgroup.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://www.bowgroup.org/about/",
+      "checkMethod": "official_page"
+    },
+    "TaxPayers' Alliance": {
+      "url": "https://taxpayersalliance.com/about/",
+      "type": "about",
+      "evidenceUrl": "https://taxpayersalliance.com/about/",
+      "checkMethod": "official_page"
+    },
+    "Civitas": {
+      "url": "https://civitas.org.uk/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://civitas.org.uk/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Henry Jackson Society": {
+      "url": "https://henryjacksonsociety.org/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://henryjacksonsociety.org/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Onward": {
+      "url": "https://ukonward.com/about/",
+      "type": "about",
+      "evidenceUrl": "https://ukonward.com/about/",
+      "checkMethod": "official_page"
+    },
+    "Legatum Institute": {
+      "url": "https://www.prosperity.com/about-us/mission/",
+      "type": "about",
+      "label": "About Prosperity Institute",
+      "evidenceUrl": "https://www.prosperity.com/about-us/mission/",
+      "checkMethod": "official_page",
+      "notes": "Original directory name retained; link label identifies the parent or successor organisation."
+    },
+    "Bruges Group": {
+      "url": "https://www.brugesgroup.com/about/the-bruges-group",
+      "type": "about",
+      "evidenceUrl": "https://www.brugesgroup.com/about/the-bruges-group",
+      "checkMethod": "official_page"
+    },
+    "ResPublica": {
+      "url": "https://www.respublica.org.uk/our-priorities/",
+      "type": "about",
+      "evidenceUrl": "https://www.respublica.org.uk/our-priorities/",
+      "checkMethod": "official_page"
+    },
+    "Politeia": {
+      "url": "https://www.politeia.co.uk/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://www.politeia.co.uk/about-us/",
+      "checkMethod": "official_indexed_page"
+    },
+    "Free Speech Union": {
+      "url": "https://freespeechunion.org/about",
+      "type": "about",
+      "evidenceUrl": "https://freespeechunion.org/about",
+      "checkMethod": "official_page"
+    },
+    "Reform": {
+      "url": "https://reform.uk/about/",
+      "type": "about",
+      "label": "About Re:State",
+      "evidenceUrl": "https://reform.uk/about/",
+      "checkMethod": "official_navigation_or_search"
+    },
+    "Mont Pelerin Society": {
+      "url": "https://montpelerin.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://montpelerin.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Institute for Free Trade": {
+      "url": "https://www.ifreetrade.org/about",
+      "type": "about",
+      "evidenceUrl": "https://www.ifreetrade.org/about",
+      "checkMethod": "official_page"
+    },
+    "Open Europe": {
+      "url": "https://policyexchange.org.uk/about/",
+      "type": "about",
+      "label": "About Policy Exchange",
+      "evidenceUrl": "https://policyexchange.org.uk/about/",
+      "checkMethod": "official_navigation_or_search",
+      "notes": "Original directory name retained; link label identifies the parent or successor organisation."
+    },
+    "Initiative for Free Trade": {
+      "url": "https://www.ifreetrade.org/about",
+      "type": "about",
+      "evidenceUrl": "https://www.ifreetrade.org/about",
+      "checkMethod": "official_page"
+    },
+    "Ayn Rand Centre UK": null,
+    "Liberty Fund": {
+      "url": "https://about.libertyfund.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://about.libertyfund.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Leadership Institute": {
+      "url": "https://leadershipinstitute.org/about",
+      "type": "about",
+      "evidenceUrl": "https://leadershipinstitute.org/about",
+      "checkMethod": "official_page"
+    },
+    "Young America's Foundation (YAF)": {
+      "url": "https://yaf.org/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://yaf.org/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Federalist Society": {
+      "url": "https://fedsoc.org/about-us",
+      "type": "about",
+      "evidenceUrl": "https://fedsoc.org/about-us",
+      "checkMethod": "official_page"
+    },
+    "Manhattan Institute": {
+      "url": "https://manhattan.institute/about",
+      "type": "about",
+      "evidenceUrl": "https://manhattan.institute/about",
+      "checkMethod": "official_page"
+    },
+    "Goldwater Institute": {
+      "url": "https://www.goldwaterinstitute.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://www.goldwaterinstitute.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Tax Foundation": {
+      "url": "https://taxfoundation.org/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://taxfoundation.org/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Competitive Enterprise Institute (CEI)": {
+      "url": "https://cei.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://cei.org/about/",
+      "checkMethod": "official_indexed_page"
+    },
+    "Pacific Legal Foundation": {
+      "url": "https://pacificlegal.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://pacificlegal.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Property and Environment Research Center (PERC)": {
+      "url": "https://www.perc.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://www.perc.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Reason Foundation": {
+      "url": "https://reason.org/about-reason-foundation/",
+      "type": "about",
+      "evidenceUrl": "https://reason.org/about-reason-foundation/",
+      "checkMethod": "official_page"
+    },
+    "Pacific Research Institute": {
+      "url": "https://www.pacificresearch.org/mission-statement/",
+      "type": "about",
+      "evidenceUrl": "https://www.pacificresearch.org/mission-statement/",
+      "checkMethod": "official_page"
+    },
+    "Independent Institute": {
+      "url": "https://www.independent.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://www.independent.org/about/",
+      "checkMethod": "official_indexed_page"
+    },
+    "Claremont Institute": {
+      "url": "https://www.claremont.org/mission-overview/",
+      "type": "about",
+      "evidenceUrl": "https://www.claremont.org/mission-overview/",
+      "checkMethod": "official_page"
+    },
+    "National Review Institute": {
+      "url": "https://nrinstitute.org/about-nri/",
+      "type": "about",
+      "evidenceUrl": "https://nrinstitute.org/about-nri/",
+      "checkMethod": "official_page"
+    },
+    "Texas Public Policy Foundation": {
+      "url": "https://www.texaspolicy.com/about/",
+      "type": "about",
+      "evidenceUrl": "https://www.texaspolicy.com/about/",
+      "checkMethod": "official_page"
+    },
+    "James Madison Institute": {
+      "url": "https://jamesmadison.org/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://jamesmadison.org/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Mercatus Center": {
+      "url": "https://www.mercatus.org/about",
+      "type": "about",
+      "evidenceUrl": "https://www.mercatus.org/about",
+      "checkMethod": "official_indexed_page"
+    },
+    "Heartland Institute": {
+      "url": "https://heartland.org/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://heartland.org/about-us/",
+      "checkMethod": "official_page"
+    },
+    "State Policy Network (SPN)": {
+      "url": "https://spn.org/state-policy-network-about/",
+      "type": "about",
+      "evidenceUrl": "https://spn.org/state-policy-network-about/",
+      "checkMethod": "official_page"
+    },
+    "Donors Trust": {
+      "url": "https://www.donorstrust.org/why-donorstrust/",
+      "type": "about",
+      "evidenceUrl": "https://www.donorstrust.org/why-donorstrust/",
+      "checkMethod": "official_page"
+    },
+    "Charles Koch Institute": {
+      "url": "https://standtogetherfellowships.org/about-us/",
+      "type": "about",
+      "label": "About Stand Together Fellowships",
+      "evidenceUrl": "https://standtogetherfellowships.org/about-us/",
+      "checkMethod": "official_page",
+      "notes": "Original directory name retained; link label identifies the parent or successor organisation."
+    },
+    "Intercollegiate Studies Institute (ISI)": {
+      "url": "https://isi.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://isi.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Independent Women's Forum": {
+      "url": "https://www.independentwomen.com/about/",
+      "type": "about",
+      "evidenceUrl": "https://www.independentwomen.com/about/",
+      "checkMethod": "official_page"
+    },
+    "Institute for Humane Studies (IHS)": {
+      "url": "https://theihs.org/about",
+      "type": "about",
+      "evidenceUrl": "https://theihs.org/about",
+      "checkMethod": "official_page"
+    },
+    "Pioneer Institute for Public Policy Research": {
+      "url": "https://pioneerinstitute.org/about-pioneer/",
+      "type": "about",
+      "evidenceUrl": "https://pioneerinstitute.org/about-pioneer/",
+      "checkMethod": "official_page"
+    },
+    "Ludwig von Mises Institute": {
+      "url": "https://mises.org/",
+      "type": "home",
+      "evidenceUrl": "https://mises.org/",
+      "checkMethod": "official_navigation_or_search"
+    },
+    "Hoover Institution": {
+      "url": "https://www.hoover.org/about",
+      "type": "about",
+      "evidenceUrl": "https://www.hoover.org/about",
+      "checkMethod": "official_page"
+    },
+    "Ed Snider Center for Enterprise & Markets": {
+      "url": "https://www.rhsmith.umd.edu/centers-initiatives/snider-center/about-us",
+      "type": "about",
+      "evidenceUrl": "https://www.rhsmith.umd.edu/centers-initiatives/snider-center/about-us",
+      "checkMethod": "official_indexed_page"
+    },
+    "Ladies of Liberty Alliance (LOLA)": {
+      "url": "https://ladiesofliberty.org/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://ladiesofliberty.org/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Forum for Citizenship and Enterprise": {
+      "url": "https://www.northwood.edu/about/",
+      "type": "about",
+      "label": "About Northwood University",
+      "evidenceUrl": "https://www.northwood.edu/about/",
+      "checkMethod": "official_page"
+    },
+    "Foundation for Individual Rights and Expression (FIRE)": {
+      "url": "https://www.fire.org/about-us",
+      "type": "about",
+      "evidenceUrl": "https://www.fire.org/about-us",
+      "checkMethod": "official_indexed_page"
+    },
+    "National Taxpayers Union": {
+      "url": "https://www.ntu.org/about",
+      "type": "about",
+      "evidenceUrl": "https://www.ntu.org/about",
+      "checkMethod": "official_page"
+    },
+    "National Taxpayers Union Foundation": {
+      "url": "https://www.ntu.org/foundation/about",
+      "type": "about",
+      "evidenceUrl": "https://www.ntu.org/foundation/about",
+      "checkMethod": "official_page"
+    },
+    "Americans for Tax Reform": {
+      "url": "https://atr.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://atr.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Americans for Tax Reform Foundation": {
+      "url": "https://atr.org/",
+      "type": "home",
+      "evidenceUrl": "https://atr.org/",
+      "checkMethod": "official_page"
+    },
+    "Ideas Beyond Borders": {
+      "url": "https://ideasbeyondborders.org/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://ideasbeyondborders.org/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Arkansas Center for Research in Economics (ACRE)": {
+      "url": "https://uca.edu/acre/",
+      "type": "home",
+      "evidenceUrl": "https://uca.edu/acre/",
+      "checkMethod": "official_page"
+    },
+    "EdChoice": {
+      "url": "https://www.edchoice.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://www.edchoice.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Manuel H. Johnson Center for Political Economy": {
+      "url": "https://www.troy.edu/academics/colleges-schools/business/johnson-center/",
+      "type": "home",
+      "evidenceUrl": "https://www.troy.edu/academics/colleges-schools/business/johnson-center/",
+      "checkMethod": "official_page"
+    },
+    "William F. Buckley, Jr. Program at Yale": {
+      "url": "https://buckleyinstitute.com/about/",
+      "type": "about",
+      "evidenceUrl": "https://buckleyinstitute.com/about/",
+      "checkMethod": "official_page"
+    },
+    "American Federation for Children": {
+      "url": "https://www.federationforchildren.org/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://www.federationforchildren.org/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Media Research Center": {
+      "url": "https://mrc.org/about",
+      "type": "about",
+      "evidenceUrl": "https://mrc.org/about",
+      "checkMethod": "official_page"
+    },
+    "Ayn Rand Institute (ARI)": {
+      "url": "https://ari.aynrand.org/about-ari/mission-and-purpose/",
+      "type": "about",
+      "evidenceUrl": "https://ari.aynrand.org/about-ari/mission-and-purpose/",
+      "checkMethod": "official_indexed_page"
+    },
+    "The Atlas Society": {
+      "url": "https://www.atlassociety.org/about",
+      "type": "about",
+      "evidenceUrl": "https://www.atlassociety.org/about",
+      "checkMethod": "official_page"
+    },
+    "Anthem Foundation for Objectivist Scholarship": {
+      "url": "https://ari.aynrand.org/about-ari/mission-and-purpose/",
+      "type": "about",
+      "label": "About Ayn Rand Institute",
+      "evidenceUrl": "https://ari.aynrand.org/about-ari/mission-and-purpose/",
+      "checkMethod": "official_indexed_page",
+      "notes": "Original directory name retained; link label identifies the parent or successor organisation."
+    },
+    "Clemson Institute for the Study of Capitalism": {
+      "url": "https://www.clemson.edu/centers-institutes/capitalism/",
+      "type": "home",
+      "label": "Snow Institute homepage",
+      "evidenceUrl": "https://www.clemson.edu/centers-institutes/capitalism/",
+      "checkMethod": "official_navigation_or_search",
+      "notes": "Original directory name retained; link label identifies the parent or successor organisation."
+    },
+    "Ayn Rand Center Latin America": {
+      "url": "https://aynrandlatam.org/",
+      "type": "home",
+      "evidenceUrl": "https://aynrandlatam.org/",
+      "checkMethod": "official_navigation_or_search"
+    },
+    "Macdonald-Laurier Institute (MLI)": {
+      "url": "https://macdonaldlaurier.ca/about/who-we-are/",
+      "type": "about",
+      "evidenceUrl": "https://macdonaldlaurier.ca/about/who-we-are/",
+      "checkMethod": "official_page"
+    },
+    "Montreal Economic Institute (MEI)": {
+      "url": "https://www.iedm.org/1-about/",
+      "type": "about",
+      "evidenceUrl": "https://www.iedm.org/1-about/",
+      "checkMethod": "official_page"
+    },
+    "Aristotle Foundation for Public Policy": {
+      "url": "https://aristotlefoundation.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://aristotlefoundation.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Canadian Constitution Foundation": {
+      "url": "https://theccf.ca/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://theccf.ca/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Justice Centre for Constitutional Freedoms": {
+      "url": "https://www.jccf.ca/who-we-are/",
+      "type": "about",
+      "evidenceUrl": "https://www.jccf.ca/who-we-are/",
+      "checkMethod": "official_page"
+    },
+    "Cardus": {
+      "url": "https://www.cardus.ca/about/our-mission/",
+      "type": "about",
+      "evidenceUrl": "https://www.cardus.ca/about/our-mission/",
+      "checkMethod": "official_page"
+    },
+    "True North Centre": {
+      "url": "https://tnc.news/about-true-north/",
+      "type": "about",
+      "evidenceUrl": "https://tnc.news/about-true-north/",
+      "checkMethod": "official_page"
+    },
+    "Fraser Institute": {
+      "url": "https://www.fraserinstitute.org/about-us",
+      "type": "about",
+      "evidenceUrl": "https://www.fraserinstitute.org/about-us",
+      "checkMethod": "official_page"
+    },
+    "Canadian Taxpayers Federation": {
+      "url": "https://www.taxpayer.com/about/",
+      "type": "about",
+      "evidenceUrl": "https://www.taxpayer.com/about/",
+      "checkMethod": "official_page"
+    },
+    "Atlantic Institute for Market Studies (AIMS)": {
+      "url": "https://www.aims.ca/about-us-2/",
+      "type": "about",
+      "evidenceUrl": "https://www.aims.ca/about-us-2/",
+      "checkMethod": "official_page"
+    },
+    "Centre for Civil Society (CCS)": {
+      "url": "https://ccs.in/about-us",
+      "type": "about",
+      "evidenceUrl": "https://ccs.in/about-us",
+      "checkMethod": "official_page"
+    },
+    "Liberty Institute": null,
+    "Lion Rock Institute": {
+      "url": "https://www.lionrockinstitute.org/en/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://www.lionrockinstitute.org/en/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Tokyo Foundation for Policy Research": {
+      "url": "https://www.tokyofoundation.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://www.tokyofoundation.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Center for Free Enterprise": {
+      "url": "https://www.cfe.org/",
+      "type": "home",
+      "evidenceUrl": "https://www.cfe.org/",
+      "checkMethod": "official_page"
+    },
+    "PRIME Institute": {
+      "url": "https://primeinstitute.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://primeinstitute.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Alternate Solutions Institute": {
+      "url": "https://asinstitute.org/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://asinstitute.org/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Advocata Institute": {
+      "url": "https://advocata.org/about-us/#our-mission",
+      "type": "about",
+      "evidenceUrl": "https://advocata.org/about-us/#our-mission",
+      "checkMethod": "official_page"
+    },
+    "Bangladesh Center for Free Market Economy": null,
+    "Foundation for Economic Freedom": {
+      "url": "https://fef.org.ph/our-story/about-the-foundation/",
+      "type": "about",
+      "evidenceUrl": "https://fef.org.ph/our-story/about-the-foundation/",
+      "checkMethod": "official_page"
+    },
+    "IDEAS (Institute for Democracy and Economic Affairs)": {
+      "url": "https://www.ideas.org.my/about-ideas/",
+      "type": "about",
+      "evidenceUrl": "https://www.ideas.org.my/about-ideas/",
+      "checkMethod": "official_page"
+    },
+    "Suara Kebebasan / Indonesia Freedom Network": {
+      "url": "https://suarakebebasan.org/",
+      "type": "home",
+      "evidenceUrl": "https://suarakebebasan.org/",
+      "checkMethod": "official_page"
+    },
+    "Atlas Asia Liberty Forum": {
+      "url": "https://www.atlasnetwork.org/our-mission",
+      "type": "about",
+      "evidenceUrl": "https://www.atlasnetwork.org/our-mission",
+      "checkMethod": "official_page",
+      "label": "About Atlas Network"
+    },
+    "Universidad Francisco Marroquín (UFM)": {
+      "url": "https://www.ufm.edu",
+      "type": "home",
+      "evidenceUrl": "https://www.ufm.edu",
+      "checkMethod": "official_page"
+    },
+    "Fundación Libertad": {
+      "url": "https://www.libertad.org.ar/nosotros",
+      "type": "about",
+      "evidenceUrl": "https://www.libertad.org.ar/nosotros",
+      "checkMethod": "official_page"
+    },
+    "Libertad y Progreso": {
+      "url": "https://www.libertadyprogreso.org/index.php/es/quienes-somos",
+      "type": "about",
+      "evidenceUrl": "https://www.libertadyprogreso.org/index.php/es/quienes-somos",
+      "checkMethod": "official_page"
+    },
+    "ESEADE": {
+      "url": "https://www.eseade.edu.ar/sobre-nosotros/institucional/",
+      "type": "about",
+      "evidenceUrl": "https://www.eseade.edu.ar/sobre-nosotros/institucional/",
+      "checkMethod": "official_page"
+    },
+    "Estudantes pela Liberdade (EPL)": {
+      "url": "https://studentsforliberty.org/brazil/",
+      "type": "home",
+      "evidenceUrl": "https://studentsforliberty.org/brazil/",
+      "checkMethod": "official_page"
+    },
+    "Instituto Mises Brasil": {
+      "url": "https://mises.org.br/quemsomosnos/",
+      "type": "about",
+      "evidenceUrl": "https://mises.org.br/quemsomosnos/",
+      "checkMethod": "official_page"
+    },
+    "Instituto Liberal": {
+      "url": "https://www.institutoliberal.org.br/quem-somos/",
+      "type": "about",
+      "evidenceUrl": "https://www.institutoliberal.org.br/quem-somos/",
+      "checkMethod": "official_page"
+    },
+    "Instituto Millenium": {
+      "url": "https://institutomillenium.org.br/sobre/",
+      "type": "about",
+      "evidenceUrl": "https://institutomillenium.org.br/sobre/",
+      "checkMethod": "official_page"
+    },
+    "Instituto Ordem Livre": null,
+    "Instituto de Estudos Empresariais (IEE)": {
+      "url": "https://www.iee.com.br/quem-somos",
+      "type": "about",
+      "evidenceUrl": "https://www.iee.com.br/quem-somos",
+      "checkMethod": "official_page"
+    },
+    "Fundación para el Progreso (FPP)": {
+      "url": "https://fppchile.org/nosotros/",
+      "type": "about",
+      "evidenceUrl": "https://fppchile.org/nosotros/",
+      "checkMethod": "official_page"
+    },
+    "Libertad y Desarrollo": {
+      "url": "https://lyd.org/quienes-somos/",
+      "type": "about",
+      "evidenceUrl": "https://lyd.org/quienes-somos/",
+      "checkMethod": "official_page"
+    },
+    "Instituto de Ciencia Política Hernán Echavarría Olózaga": {
+      "url": "https://icpcolombia.org/quienes-somos/",
+      "type": "about",
+      "evidenceUrl": "https://icpcolombia.org/quienes-somos/",
+      "checkMethod": "official_page"
+    },
+    "Caminos de la Libertad": {
+      "url": "https://www.centroricardobsalinaspliego.org/cdl-qui%C3%A9nes-somos/",
+      "type": "about",
+      "evidenceUrl": "https://www.centroricardobsalinaspliego.org/cdl-qui%C3%A9nes-somos/",
+      "checkMethod": "official_page"
+    },
+    "Mexico Evalua": {
+      "url": "https://mexicoevalua.org/nosotros/",
+      "type": "about",
+      "evidenceUrl": "https://mexicoevalua.org/nosotros/",
+      "checkMethod": "official_page"
+    },
+    "IMCO": {
+      "url": "https://imco.org.mx/quienes-somos/",
+      "type": "about",
+      "evidenceUrl": "https://imco.org.mx/quienes-somos/",
+      "checkMethod": "official_page"
+    },
+    "CIDAC": {
+      "url": "https://imco.org.mx/quienes-somos/",
+      "type": "about",
+      "label": "About IMCO",
+      "evidenceUrl": "https://imco.org.mx/quienes-somos/",
+      "checkMethod": "official_navigation_or_search",
+      "notes": "Original directory name retained; link label identifies the parent or successor organisation."
+    },
+    "CEDICE Libertad": {
+      "url": "https://cedice.org.ve/",
+      "type": "home",
+      "evidenceUrl": "https://cedice.org.ve/",
+      "checkMethod": "official_navigation_or_search"
+    },
+    "IDEA Latinoamérica": null,
+    "Eléutera": null,
+    "RELIAL": {
+      "url": "https://relial.org/",
+      "type": "home",
+      "evidenceUrl": "https://relial.org/",
+      "checkMethod": "official_page"
+    },
+    "Tikvah Fund": {
+      "url": "https://tikvah.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://tikvah.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Shalem College": {
+      "url": "https://shalem.ac.il/en/",
+      "type": "home",
+      "evidenceUrl": "https://shalem.ac.il/en/",
+      "checkMethod": "official_page"
+    },
+    "Jerusalem Institute for Market Studies": null,
+    "Kohelet Policy Forum": {
+      "url": "https://www.kohelet.org.il/en/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://www.kohelet.org.il/en/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Lebanese Institute for Market Studies (LIMS)": {
+      "url": "https://limslb.com/who-we-are/",
+      "type": "about",
+      "evidenceUrl": "https://limslb.com/who-we-are/",
+      "checkMethod": "official_page"
+    },
+    "Egyptian Center for Economic Studies": {
+      "url": "https://eces.org.eg/en/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://eces.org.eg/en/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Middle East Forum": {
+      "url": "https://www.meforum.org/about/about-the-middle-east-forum",
+      "type": "about",
+      "evidenceUrl": "https://www.meforum.org/about/about-the-middle-east-forum",
+      "checkMethod": "official_page"
+    },
+    "Free Market Foundation": {
+      "url": "https://freemarketfoundation.com/about/",
+      "type": "about",
+      "evidenceUrl": "https://freemarketfoundation.com/about/",
+      "checkMethod": "official_page"
+    },
+    "IMANI Center for Policy and Education": {
+      "url": "https://imaniafrica.org/",
+      "type": "home",
+      "evidenceUrl": "https://imaniafrica.org/",
+      "checkMethod": "official_page"
+    },
+    "African Liberty": {
+      "url": "https://www.africanliberty.org/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://www.africanliberty.org/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Inter Region Economic Network (IREN Kenya)": null,
+    "Free Africa Foundation": null,
+    "Students for Liberty Africa": {
+      "url": "https://studentsforliberty.org/about/",
+      "type": "about",
+      "evidenceUrl": "https://studentsforliberty.org/about/",
+      "checkMethod": "official_page"
+    },
+    "Africa Liberty Forum": {
+      "url": "https://www.atlasnetwork.org/our-mission",
+      "type": "about",
+      "evidenceUrl": "https://www.atlasnetwork.org/our-mission",
+      "checkMethod": "official_page",
+      "label": "About Atlas Network"
+    },
+    "EPICENTER": {
+      "url": "https://www.epicenternetwork.eu/who-we-are/",
+      "type": "about",
+      "evidenceUrl": "https://www.epicenternetwork.eu/who-we-are/",
+      "checkMethod": "official_page"
+    },
+    "4liberty.eu": {
+      "url": "https://4liberty.eu/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://4liberty.eu/about-us/",
+      "checkMethod": "official_page"
+    },
+    "European Liberal Forum (ELF)": {
+      "url": "https://liberalforum.eu/about-elf/who-we-are/",
+      "type": "about",
+      "evidenceUrl": "https://liberalforum.eu/about-elf/who-we-are/",
+      "checkMethod": "official_page"
+    },
+    "Atlas Europe Liberty Forum": {
+      "url": "https://www.atlasnetwork.org/our-mission",
+      "type": "about",
+      "evidenceUrl": "https://www.atlasnetwork.org/our-mission",
+      "checkMethod": "official_page",
+      "label": "About Atlas Network"
+    },
+    "Edmund Burke Foundation": {
+      "url": "https://burke.foundation/",
+      "type": "home",
+      "evidenceUrl": "https://burke.foundation/",
+      "checkMethod": "official_page"
+    },
+    "New Direction": {
+      "url": "https://newdirection.online/about",
+      "type": "about",
+      "evidenceUrl": "https://newdirection.online/about",
+      "checkMethod": "official_page"
+    },
+    "Friedrich Naumann Foundation": {
+      "url": "https://www.freiheit.org/",
+      "type": "home",
+      "evidenceUrl": "https://www.freiheit.org/",
+      "checkMethod": "official_page"
+    },
+    "Konrad-Adenauer-Stiftung": {
+      "url": "https://www.kas.de/en/about-us",
+      "type": "about",
+      "evidenceUrl": "https://www.kas.de/en/about-us",
+      "checkMethod": "official_indexed_page"
+    },
+    "Prometheus Institute": {
+      "url": "https://heimatderfreiheit.de/mission-grundsaetze/",
+      "type": "about",
+      "label": "About Prometheus",
+      "evidenceUrl": "https://heimatderfreiheit.de/mission-grundsaetze/",
+      "checkMethod": "official_page"
+    },
+    "Liberales Institut": {
+      "url": "https://www.libinst.ch/ueber-das-institut/",
+      "type": "about",
+      "evidenceUrl": "https://www.libinst.ch/ueber-das-institut/",
+      "checkMethod": "official_navigation_or_search"
+    },
+    "Hayek Institute": {
+      "url": "https://hayek-institut.at/",
+      "type": "home",
+      "evidenceUrl": "https://hayek-institut.at/",
+      "checkMethod": "official_navigation_or_search"
+    },
+    "Timbro": {
+      "url": "https://timbro.se/om-oss/",
+      "type": "about",
+      "evidenceUrl": "https://timbro.se/om-oss/",
+      "checkMethod": "official_page"
+    },
+    "CEPOS": {
+      "url": "https://cepos.dk/om-cepos/",
+      "type": "about",
+      "evidenceUrl": "https://cepos.dk/om-cepos/",
+      "checkMethod": "official_page"
+    },
+    "Civita": {
+      "url": "https://civita.no/om-civita/",
+      "type": "about",
+      "evidenceUrl": "https://civita.no/om-civita/",
+      "checkMethod": "official_indexed_page"
+    },
+    "Istituto Bruno Leoni": {
+      "url": "https://www.brunoleoni.it/chi-siamo/",
+      "type": "about",
+      "evidenceUrl": "https://www.brunoleoni.it/chi-siamo/",
+      "checkMethod": "official_page"
+    },
+    "IREF Europe": {
+      "url": "https://en.irefeurope.org/about-iref/",
+      "type": "about",
+      "evidenceUrl": "https://en.irefeurope.org/about-iref/",
+      "checkMethod": "official_page"
+    },
+    "Institut Economique Molinari": {
+      "url": "https://www.institutmolinari.org/2015/10/16/presentation-de-pour-une-vraie-concurrence-des-monnaies-friedrich-a-hayek/",
+      "type": "about",
+      "evidenceUrl": "https://www.institutmolinari.org/2015/10/16/presentation-de-pour-une-vraie-concurrence-des-monnaies-friedrich-a-hayek/",
+      "checkMethod": "official_page"
+    },
+    "iFRAP": {
+      "url": "https://www.ifrap.org/",
+      "type": "home",
+      "evidenceUrl": "https://www.ifrap.org/",
+      "checkMethod": "official_page"
+    },
+    "Civismo": {
+      "url": "https://civismo.org/sobre-nosotros/",
+      "type": "about",
+      "evidenceUrl": "https://civismo.org/sobre-nosotros/",
+      "checkMethod": "official_page"
+    },
+    "Instituto Juan de Mariana": {
+      "url": "https://juandemariana.org/instituto-juan-de-mariana/",
+      "type": "about",
+      "evidenceUrl": "https://juandemariana.org/instituto-juan-de-mariana/",
+      "checkMethod": "official_page"
+    },
+    "Edmund Burke Institute": {
+      "url": "https://edmundburkeinstitute.ie/about/",
+      "type": "about",
+      "evidenceUrl": "https://edmundburkeinstitute.ie/about/",
+      "checkMethod": "official_indexed_page"
+    },
+    "Iona Institute": {
+      "url": "https://ionainstitute.ie/about-the-iona-institute/",
+      "type": "about",
+      "evidenceUrl": "https://ionainstitute.ie/about-the-iona-institute/",
+      "checkMethod": "official_page"
+    },
+    "Institut Liberalnich Studii": {
+      "url": "https://inlist.cz/o-nas/",
+      "type": "about",
+      "evidenceUrl": "https://inlist.cz/o-nas/",
+      "checkMethod": "official_page"
+    },
+    "CETA": {
+      "url": "https://eceta.cz/",
+      "type": "home",
+      "evidenceUrl": "https://eceta.cz/",
+      "checkMethod": "official_navigation_or_search"
+    },
+    "Lithuanian Free Market Institute": {
+      "url": "https://en.llri.lt/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://en.llri.lt/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Economic Freedom Foundation": {
+      "url": "https://wolnagospodarka.info/en/about-us/",
+      "type": "about",
+      "evidenceUrl": "https://wolnagospodarka.info/en/about-us/",
+      "checkMethod": "official_page"
+    },
+    "Mises Institute Poland": {
+      "url": "https://mises.pl/o-nas",
+      "type": "about",
+      "evidenceUrl": "https://mises.pl/o-nas",
+      "checkMethod": "official_page"
+    },
+    "Free Market Foundation (Hungary)": {
+      "url": "https://szabadpiac.org/rolunk/",
+      "type": "about",
+      "evidenceUrl": "https://szabadpiac.org/rolunk/",
+      "checkMethod": "official_page"
+    },
+    "Danube Institute": {
+      "url": "https://danubeinstitute.hu/en",
+      "type": "home",
+      "evidenceUrl": "https://danubeinstitute.hu/en",
+      "checkMethod": "official_navigation_or_search"
+    },
+    "Mathias Corvinus Collegium": {
+      "url": "https://mcc.hu/en/vision",
+      "type": "about",
+      "evidenceUrl": "https://mcc.hu/en/vision",
+      "checkMethod": "official_page"
+    },
+    "Bendukidze Free Market Center": {
+      "url": "https://bendukidze.org/",
+      "type": "home",
+      "evidenceUrl": "https://bendukidze.org/",
+      "checkMethod": "official_page"
+    },
+    "Atlas Network partner directory": {
+      "url": "https://www.atlasnetwork.org/our-mission",
+      "type": "about",
+      "evidenceUrl": "https://www.atlasnetwork.org/our-mission",
+      "checkMethod": "official_page",
+      "label": "About Atlas Network"
+    }
+  },
+  "unavailable": [
+    {
+      "name": "Ayn Rand Centre UK",
+      "reason": "No identifiable, working official website found; old domain unavailable or unrelated."
+    },
+    {
+      "name": "Liberty Institute",
+      "reason": "No reachable official website identified during the link review."
+    },
+    {
+      "name": "Bangladesh Center for Free Market Economy",
+      "reason": "No identifiable, working official website found; old domain unavailable or unrelated."
+    },
+    {
+      "name": "Instituto Ordem Livre",
+      "reason": "No reachable official website identified during the link review."
+    },
+    {
+      "name": "IDEA Latinoamérica",
+      "reason": "No identifiable, working official website found; old domain unavailable or unrelated."
+    },
+    {
+      "name": "Jerusalem Institute for Market Studies",
+      "reason": "No identifiable, working official website found; old domain unavailable or unrelated."
+    },
+    {
+      "name": "Inter Region Economic Network (IREN Kenya)",
+      "reason": "No identifiable, working official website found; old domain unavailable or unrelated."
+    },
+    {
+      "name": "Free Africa Foundation",
+      "reason": "No identifiable, working official website found; old domain unavailable or unrelated."
+    },
+    {
+      "name": "Eléutera",
+      "reason": "Official domain identified from the organisation’s link page, but neither the site nor an About page could be reached."
+    }
+  ]
+}

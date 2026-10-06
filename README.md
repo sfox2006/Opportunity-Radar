@@ -31,10 +31,15 @@ grouped into 11 regions, including individual European countries within Europe.
 Repeated Federalist Society mentions are consolidated; combined source entries
 are split into named organisations. The Atlas partner directory and named regional
 forums remain reference resources. Inclusion and program counts do not certify
-current availability; directory reference links have not been freshly checked.
+current availability. Each card links to an official About page or homepage;
+entries without an identifiable official website remain marked unavailable.
 
 Edit `research/organisations.json` for directory membership and
 `research/directory-reference.json` for source links, display names and aliases.
+Edit `research/directory-websites.json` for the reviewed About/homepage URL and
+link type. It records organisation link evidence separately from program research.
+Use a clearly named parent/successor link when an organisation has merged, and
+never retain a former domain that now belongs to an unrelated website.
 Run `node research/build_directory.cjs` to regenerate `dist/organisations.js`;
 CI checks that the generated file matches its inputs. These changes do not alter
 the program catalog or research status in the organisation registry.
