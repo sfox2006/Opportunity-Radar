@@ -1,0 +1,1091 @@
+{
+  "reviewedAt": "2026-10-06",
+  "scope": "Concise editorial paraphrases of organisation identity pages. These profiles do not establish whether opportunities are open. Source URLs are retained for future agents. Partner sources are explicitly identified; unavailable profiles remain null.",
+  "organisations": {
+    "Menzies Research Centre": {
+      "description": "The Menzies Research Centre conducts Australian public policy research, publishes books and hosts events exploring Liberal principles and ideas.",
+      "sourceUrl": "https://www.menziesrc.org/about-the-mrc",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Samuel Griffith Society": {
+      "description": "The society promotes understanding of Australia's Constitution through research, conferences and discussion of constitutional reform and government powers.",
+      "sourceUrl": "https://www.samuelgriffith.org/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Centre for Independent Studies (CIS)": {
+      "description": "CIS conducts public policy research, publishes analysis and hosts debate on economic and social issues and individual freedom.",
+      "sourceUrl": "https://www.cis.org.au/about/mission/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Institute of Public Affairs (IPA)": {
+      "description": "IPA researches Australian public policy, publishes analysis and contributes to public debate on economic and social issues.",
+      "sourceUrl": "https://ipa.org.au/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Maxim Institute": {
+      "description": "Maxim Institute is a New Zealand public policy think tank conducting independent research and discussion on issues affecting the country's future.",
+      "sourceUrl": "https://www.maxim.org.nz/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "New Zealand Initiative": {
+      "description": "The New Zealand Initiative researches economic and social policy, including education, housing, local government and immigration.",
+      "sourceUrl": "https://www.nzinitiative.org.nz/about-us",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Institute of Economic Affairs (IEA)": {
+      "description": "The IEA conducts economic and public policy research and education examining the role of markets and individual freedom.",
+      "sourceUrl": "https://iea.org.uk/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Adam Smith Institute": {
+      "description": "The Adam Smith Institute develops and communicates public policy ideas through research, publications, education and media engagement.",
+      "sourceUrl": "https://www.adamsmith.org/about-the-asi",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Vinson Centre, University of Buckingham": {
+      "description": "The Vinson Centre at the University of Buckingham supports research and public understanding of economics and entrepreneurship.",
+      "sourceUrl": "https://vinsoncentre.com/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Centre for Policy Studies": {
+      "description": "The Centre for Policy Studies develops UK public policy proposals, including work on enterprise, ownership and economic prosperity.",
+      "sourceUrl": "https://cps.org.uk/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "American Enterprise Institute (AEI)": {
+      "description": "AEI conducts public policy research on economic, social and international issues and publishes proposals informed by its scholars' analysis.",
+      "sourceUrl": "https://www.aei.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Cato Institute": {
+      "description": "Cato conducts public policy research and education on individual liberty, government powers, markets and international affairs.",
+      "sourceUrl": "https://www.cato.org/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "AIER (American Institute for Economic Research)": {
+      "description": "AIER is a nonprofit research and education organisation studying economics, markets and related social science questions.",
+      "sourceUrl": "https://aier.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "FEE (Foundation for Economic Education)": {
+      "description": "FEE provides education and connections for future leaders, focusing on economics, entrepreneurship and the principles of a free society.",
+      "sourceUrl": "https://fee.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Hudson Institute": {
+      "description": "Hudson researches international affairs and public policy, with a focus on American leadership, security and prosperity.",
+      "sourceUrl": "https://www.hudson.org/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "The Fund for American Studies (TFAS)": {
+      "description": "TFAS is a nonprofit educational organisation offering programs that explore individual liberty, responsibility and economic freedom.",
+      "sourceUrl": "https://tfas.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Heritage Foundation": {
+      "description": "Heritage conducts policy research and education and develops proposals on economic, social and national security issues.",
+      "sourceUrl": "https://www.heritage.org/2017-index-culture-and-opportunity/about-the-heritage-foundation",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Young Voices": {
+      "description": "Young Voices helps emerging writers and commentators develop their skills and communicate ideas through media and public debate.",
+      "sourceUrl": "https://www.joinyv.org/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Hillsdale College Online Courses": {
+      "description": "Hillsdale College offers online learning resources drawing on its teaching in the liberal arts, history and civic education.",
+      "sourceUrl": "https://online.hillsdale.edu/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "FEE Online Learning": {
+      "description": "Cato's educational resources explain economics and public policy questions through material informed by the institute's research.",
+      "sourceUrl": "https://fee.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Sydney Institute": {
+      "description": "The Sydney Institute is a nonprofit current affairs forum hosting debate and discussion across a range of viewpoints.",
+      "sourceUrl": "https://thesydneyinstitute.com.au/about-the-sydney-institute/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Robert Menzies Institute": {
+      "description": "The Robert Menzies Institute preserves and studies Menzies's legacy and encourages public engagement with Australian political history and leadership.",
+      "sourceUrl": "https://www.robertmenziesinstitute.org.au/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "H.R. Nicholls Society": {
+      "description": "The H.R. Nicholls Society researches and debates Australian industrial relations and proposals for labour market reform.",
+      "sourceUrl": "https://www.hrnicholls.com.au/aboutus",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Australian Taxpayers' Alliance": {
+      "description": "The Australian Taxpayers' Alliance advocates on taxation, government spending and regulation and represents concerns raised by taxpayers.",
+      "sourceUrl": "https://www.taxpayers.org.au/mission",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Page Research Centre": {
+      "description": "The Page Research Centre develops public policy ideas with a focus on rural communities and regional Australia.",
+      "sourceUrl": "https://www.page.org.au/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Australian Institute for Progress": {
+      "description": "The Australian Institute for Progress develops and discusses Australian public policy from its base in Brisbane.",
+      "sourceUrl": "https://aip.asn.au/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Mannkal Economic Education Foundation": {
+      "description": "Mannkal supports education and leadership development in Western Australia, including study of economics, individual responsibility and markets.",
+      "sourceUrl": "https://mannkal.org/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Policy Exchange": {
+      "description": "Policy Exchange develops and promotes UK public policy proposals on public services, society and the economy.",
+      "sourceUrl": "https://policyexchange.org.uk/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "The Bow Group": {
+      "description": "The Bow Group publishes its members' research and hosts events to encourage policy debate and intellectual discussion.",
+      "sourceUrl": "https://www.bowgroup.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "TaxPayers' Alliance": {
+      "description": "The TaxPayers' Alliance campaigns on UK taxation, public spending and government transparency.",
+      "sourceUrl": "https://taxpayersalliance.com/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Civitas": {
+      "description": "Civitas conducts independent research and hosts discussion on economic and social policy, producing accessible publications for the public and educators.",
+      "sourceUrl": "https://civitas.org.uk/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Henry Jackson Society": {
+      "description": "The Henry Jackson Society researches security and international affairs and develops policy proposals on democracy, rights and extremism.",
+      "sourceUrl": "https://henryjacksonsociety.org/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Onward": {
+      "description": "Onward develops public policy proposals on the economy, public services and communities and contributes to debate about government reform.",
+      "sourceUrl": "https://ukonward.com/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Legatum Institute": {
+      "description": "Now called the Prosperity Institute, the former Legatum Institute researches the policies and institutions that shape national prosperity.",
+      "sourceUrl": "https://www.prosperity.com/about-us/mission/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Bruges Group": {
+      "description": "The Bruges Group conducts research and debate on European integration, national sovereignty and the organisation of European institutions.",
+      "sourceUrl": "https://www.brugesgroup.com/about/the-bruges-group",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "ResPublica": {
+      "description": "ResPublica researches policy on society and the economy, including productivity, investment, infrastructure and opportunities for communities.",
+      "sourceUrl": "https://www.respublica.org.uk/our-priorities/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Politeia": {
+      "description": "Politeia is a forum for economic, constitutional and social policy discussion, examining government, public services and democratic accountability.",
+      "sourceUrl": "https://www.politeia.co.uk/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Free Speech Union": {
+      "description": "The Free Speech Union supports people facing restrictions on expression and undertakes campaigns, research and legal action on free speech.",
+      "sourceUrl": "https://freespeechunion.org/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Reform": {
+      "description": "Now Re:State, the former Reform think tank researches how government and public services can operate more effectively.",
+      "sourceUrl": "https://reform.uk/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Mont Pelerin Society": {
+      "description": "The Mont Pelerin Society brings scholars and other members together to discuss economic and political liberalism and the institutions of a free society.",
+      "sourceUrl": "https://montpelerin.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Institute for Free Trade": {
+      "description": "The Institute for Free Trade researches trade liberalisation and communicates its economic implications to civil society and policymakers.",
+      "sourceUrl": "https://www.ifreetrade.org/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Open Europe": {
+      "description": "Open Europe merged into Policy Exchange, which develops UK policy proposals through research, publications and public discussion.",
+      "sourceUrl": "https://policyexchange.org.uk/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Initiative for Free Trade": {
+      "description": "The Initiative for Free Trade, now the Institute for Free Trade, researches international trade policy and trade liberalisation.",
+      "sourceUrl": "https://www.ifreetrade.org/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Liberty Fund": {
+      "description": "Liberty Fund is an educational foundation publishing books, convening conferences and providing resources on the intellectual history of individual freedom.",
+      "sourceUrl": "https://about.libertyfund.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Leadership Institute": {
+      "description": "The Leadership Institute trains people for public policy, political and media roles through courses, practical skills development and career support.",
+      "sourceUrl": "https://leadershipinstitute.org/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Young America's Foundation (YAF)": {
+      "description": "YAF provides educational resources, events and campus support for students interested in conservative ideas and public debate.",
+      "sourceUrl": "https://yaf.org/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Federalist Society": {
+      "description": "The Federalist Society brings lawyers, students and scholars together for debate and discussion of legal and constitutional questions.",
+      "sourceUrl": "https://fedsoc.org/about-us",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Manhattan Institute": {
+      "description": "The Manhattan Institute conducts public policy research, publishes City Journal and convenes discussions on cities, opportunity and the rule of law.",
+      "sourceUrl": "https://manhattan.institute/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Goldwater Institute": {
+      "description": "The Goldwater Institute combines public policy research and litigation, focusing on constitutional rights, government powers and economic freedom.",
+      "sourceUrl": "https://www.goldwaterinstitute.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Tax Foundation": {
+      "description": "The Tax Foundation researches tax policy and analyses how tax systems affect economic growth and opportunity.",
+      "sourceUrl": "https://taxfoundation.org/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Competitive Enterprise Institute (CEI)": {
+      "description": "CEI develops research and policy proposals on regulation and government intervention and advocates for regulatory reform.",
+      "sourceUrl": "https://cei.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Pacific Legal Foundation": {
+      "description": "Pacific Legal Foundation is a public interest law firm representing people in cases involving constitutional rights and government powers.",
+      "sourceUrl": "https://pacificlegal.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Property and Environment Research Center (PERC)": {
+      "description": "PERC researches and applies market-based approaches to conservation, including incentives for managing land, water and wildlife.",
+      "sourceUrl": "https://www.perc.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Reason Foundation": {
+      "description": "Reason Foundation combines journalism and policy research on individual freedom, markets, government and the rule of law.",
+      "sourceUrl": "https://reason.org/about-reason-foundation/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Pacific Research Institute": {
+      "description": "Pacific Research Institute researches public policy and communicates analysis on issues including education, healthcare and the environment.",
+      "sourceUrl": "https://www.pacificresearch.org/mission-statement/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Independent Institute": {
+      "description": "Independent Institute conducts public policy research and education through publications, conferences and multimedia resources.",
+      "sourceUrl": "https://www.independent.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Claremont Institute": {
+      "description": "Claremont teaches and researches the principles of the American founding and applies them through publications, education and litigation.",
+      "sourceUrl": "https://www.claremont.org/mission-overview/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "National Review Institute": {
+      "description": "National Review Institute supports educational programs and publications exploring public policy and the principles associated with William F. Buckley Jr.'s work.",
+      "sourceUrl": "https://nrinstitute.org/about-nri/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Texas Public Policy Foundation": {
+      "description": "TPPF conducts research and public outreach on Texas and national policy, including economic freedom and government responsibilities.",
+      "sourceUrl": "https://www.texaspolicy.com/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "James Madison Institute": {
+      "description": "The James Madison Institute researches Florida public policy, including the economy, education, technology and healthcare.",
+      "sourceUrl": "https://jamesmadison.org/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Mercatus Center": {
+      "description": "Mercatus supports economics research and education at George Mason University and communicates findings to inform policy and public debate.",
+      "sourceUrl": "https://www.mercatus.org/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Heartland Institute": {
+      "description": "Heartland researches and promotes policy proposals applying market-based approaches to economic and social problems.",
+      "sourceUrl": "https://heartland.org/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "State Policy Network (SPN)": {
+      "description": "SPN supports independent state-focused policy organisations through services, collaboration and educational activities.",
+      "sourceUrl": "https://spn.org/state-policy-network-about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Donors Trust": {
+      "description": "DonorsTrust provides philanthropic services intended to help donors preserve their charitable intentions and support causes they value.",
+      "sourceUrl": "https://www.donorstrust.org/why-donorstrust/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Charles Koch Institute": {
+      "description": "Now Stand Together Fellowships, this organisation provides educational experiences and connections for people working on social and public policy challenges.",
+      "sourceUrl": "https://standtogetherfellowships.org/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Intercollegiate Studies Institute (ISI)": {
+      "description": "ISI offers educational programs, events and media exploring political thought and the Western intellectual tradition for college students.",
+      "sourceUrl": "https://isi.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Independent Women's Forum": {
+      "description": "Independent Women's Forum develops research, commentary and policy proposals on issues affecting women and their families.",
+      "sourceUrl": "https://www.independentwomen.com/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Institute for Humane Studies (IHS)": {
+      "description": "IHS supports scholars and connects research with policy practice through academic programs, convenings and collaborative projects.",
+      "sourceUrl": "https://theihs.org/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Pioneer Institute for Public Policy Research": {
+      "description": "Pioneer researches Massachusetts public policy and communicates findings to legislators, officials and the wider public.",
+      "sourceUrl": "https://pioneerinstitute.org/about-pioneer/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Ludwig von Mises Institute": {
+      "description": "The Mises Institute publishes economics research and educational resources, with a focus on the Austrian school of economics.",
+      "sourceUrl": "https://mises.org/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Hoover Institution": {
+      "description": "The Hoover Institution conducts policy research and maintains archives on war, revolution and peace, connecting scholarship with public debate.",
+      "sourceUrl": "https://www.hoover.org/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Ed Snider Center for Enterprise & Markets": {
+      "description": "The Ed Snider Center at the University of Maryland researches and teaches enterprise, markets, entrepreneurship and their economic and social effects.",
+      "sourceUrl": "https://www.rhsmith.umd.edu/centers-initiatives/snider-center/about-us",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Ladies of Liberty Alliance (LOLA)": {
+      "description": "LOLA is a network supporting women interested in individual liberty through leadership, education and connections with other members.",
+      "sourceUrl": "https://ladiesofliberty.org/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Forum for Citizenship and Enterprise": {
+      "description": "Northwood University's Forum for Citizenship and Enterprise supports discussion and education about citizenship, enterprise and responsible leadership.",
+      "sourceUrl": "https://www.northwood.edu/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Foundation for Individual Rights and Expression (FIRE)": {
+      "description": "FIRE defends freedom of speech and thought through education, advocacy and legal work in the United States.",
+      "sourceUrl": "https://www.fire.org/about-us/about-us-faqs",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "National Taxpayers Union": {
+      "description": "NTU advocates on taxation, government spending, regulation and fiscal policy on behalf of American taxpayers.",
+      "sourceUrl": "https://www.ntu.org/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "National Taxpayers Union Foundation": {
+      "description": "NTUF conducts research and education on the effects of taxation, government spending and regulation.",
+      "sourceUrl": "https://www.ntu.org/foundation/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Americans for Tax Reform": {
+      "description": "Americans for Tax Reform advocates for lower taxes and simpler tax systems and monitors tax policy proposals.",
+      "sourceUrl": "https://atr.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Americans for Tax Reform Foundation": {
+      "description": "The ATR Foundation provides educational resources and research on taxation and government policy.",
+      "sourceUrl": "https://atr.org/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Ideas Beyond Borders": {
+      "description": "Ideas Beyond Borders expands access to knowledge through translation, education and initiatives supporting critical thinking in the Middle East and North Africa.",
+      "sourceUrl": "https://ideasbeyondborders.org/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Arkansas Center for Research in Economics (ACRE)": {
+      "description": "ACRE at the University of Central Arkansas researches state economic policy and offers students research and educational opportunities.",
+      "sourceUrl": "https://uca.edu/acre/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "EdChoice": {
+      "description": "EdChoice researches K–12 education and school choice and provides data and resources for families, educators and policymakers.",
+      "sourceUrl": "https://www.edchoice.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Manuel H. Johnson Center for Political Economy": {
+      "description": "Troy University's Johnson Center researches and teaches political economy, including markets, enterprise and the institutions supporting economic activity.",
+      "sourceUrl": "https://www.troy.edu/academics/colleges-schools/business/johnson-center/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "William F. Buckley, Jr. Program at Yale": {
+      "description": "The Buckley Institute promotes open debate, intellectual diversity and freedom of speech through programs associated with Yale University.",
+      "sourceUrl": "https://buckleyinstitute.com/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "American Federation for Children": {
+      "description": "AFC advocates for families' ability to choose K–12 schooling and develops policy proposals intended to expand educational options.",
+      "sourceUrl": "https://www.federationforchildren.org/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Media Research Center": {
+      "description": "The Media Research Center monitors and analyses news coverage and publishes commentary on media bias and accountability.",
+      "sourceUrl": "https://mrc.org/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Ayn Rand Institute (ARI)": {
+      "description": "ARI provides educational resources and programs studying Ayn Rand's work and the philosophy of Objectivism.",
+      "sourceUrl": "https://ari.aynrand.org/about-ari/mission-and-purpose/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "The Atlas Society": {
+      "description": "The Atlas Society produces educational and media resources introducing Ayn Rand's ideas and the philosophy of Objectivism.",
+      "sourceUrl": "https://www.atlassociety.org/about",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Anthem Foundation for Objectivist Scholarship": {
+      "description": "The Anthem Foundation's scholarship work is associated with the Ayn Rand Institute, which provides education on Rand's work and Objectivism.",
+      "sourceUrl": "https://ari.aynrand.org/about-ari/mission-and-purpose/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Clemson Institute for the Study of Capitalism": {
+      "description": "Clemson's capitalism research institute supports research and education examining capitalism, enterprise and their philosophical and economic foundations.",
+      "sourceUrl": "https://www.clemson.edu/business/centers-institutes/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Ayn Rand Center Latin America": {
+      "description": "Ayn Rand Center Latin America provides educational resources and events introducing Ayn Rand's ideas and Objectivism to Spanish-speaking audiences.",
+      "sourceUrl": "https://aynrandlatam.org/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Macdonald-Laurier Institute (MLI)": {
+      "description": "MLI conducts Canadian public policy research and communicates analysis and proposals to policymakers and the public.",
+      "sourceUrl": "https://macdonaldlaurier.ca/about/who-we-are/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Montreal Economic Institute (MEI)": {
+      "description": "MEI conducts economic and policy research and education on issues affecting Quebec and Canada.",
+      "sourceUrl": "https://www.iedm.org/wp-content/uploads/2022/04/rapport-annuel2021_en.pdf",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Aristotle Foundation for Public Policy": {
+      "description": "The Aristotle Foundation conducts research and public education on policy issues affecting Canada.",
+      "sourceUrl": "https://aristotlefoundation.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Canadian Constitution Foundation": {
+      "description": "The Canadian Constitution Foundation combines public education and litigation to defend constitutional rights and Canada's federal structure.",
+      "sourceUrl": "https://theccf.ca/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Justice Centre for Constitutional Freedoms": {
+      "description": "The Justice Centre defends Canadians' constitutional rights and freedoms through litigation and public education.",
+      "sourceUrl": "https://www.jccf.ca/who-we-are/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Cardus": {
+      "description": "Cardus researches how social institutions can contribute to the common good and convenes dialogue informed by Christian social thought.",
+      "sourceUrl": "https://www.cardus.ca/about/our-mission/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "True North Centre": {
+      "description": "True North produces news, analysis and documentaries. Its parent public policy organisation conducts research and education on Canadian public issues.",
+      "sourceUrl": "https://tnc.news/about-true-north/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Fraser Institute": {
+      "description": "The Fraser Institute researches and communicates the effects of government policy, entrepreneurship and choice on Canadians' wellbeing.",
+      "sourceUrl": "https://www.fraserinstitute.org/about-us",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Canadian Taxpayers Federation": {
+      "description": "The Canadian Taxpayers Federation conducts research and advocacy on taxation, public spending and government accountability.",
+      "sourceUrl": "https://www.taxpayer.com/about/who-we-are",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Atlantic Institute for Market Studies (AIMS)": {
+      "description": "AIMS merged with the Fraser Institute, continuing its focus on Atlantic Canadian economic and public policy within the larger organisation.",
+      "sourceUrl": "https://www.aims.ca/about-us-2/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Centre for Civil Society (CCS)": {
+      "description": "CCS researches Indian public policy and governance, including education regulation, school choice and institutions that support individual agency.",
+      "sourceUrl": "https://ccs.in/about-us",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Lion Rock Institute": {
+      "description": "The Lion Rock Institute researches and discusses economic policy in Hong Kong through publications, advocacy and education.",
+      "sourceUrl": "https://www.lionrockinstitute.org/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Tokyo Foundation for Policy Research": {
+      "description": "The Tokyo Foundation conducts independent policy research and develops proposals addressing Japan's social, economic and demographic challenges.",
+      "sourceUrl": "https://www.tokyofoundation.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Center for Free Enterprise": {
+      "description": "The Center for Free Enterprise provides research, publications and educational activities on economics and markets in South Korea.",
+      "sourceUrl": "https://www.cfe.org/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "PRIME Institute": {
+      "description": "PRIME researches Pakistani economic policy and engages stakeholders on proposals for institutional and market reform.",
+      "sourceUrl": "https://primeinstitute.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Alternate Solutions Institute": {
+      "description": "Alternate Solutions Institute researches and promotes policy proposals concerning government responsibilities, the rule of law and individual rights in Pakistan.",
+      "sourceUrl": "https://asinstitute.org/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Advocata Institute": {
+      "description": "Advocata researches Sri Lankan economic policy and communicates evidence on markets, economic freedom and reform.",
+      "sourceUrl": "https://advocata.org/about-us/#our-mission",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Foundation for Economic Freedom": {
+      "description": "FEF is a Philippine public advocacy organisation working on economic policy, governance, property rights and consumer welfare.",
+      "sourceUrl": "https://fef.org.ph/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "IDEAS (Institute for Democracy and Economic Affairs)": {
+      "description": "IDEAS conducts evidence-based public policy research and encourages discussion of policy reform in Malaysia.",
+      "sourceUrl": "https://www.ideas.org.my/about-ideas/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Suara Kebebasan / Indonesia Freedom Network": {
+      "description": "Suara Kebebasan is an Indonesian organisation publishing research and commentary on economic and political ideas. A current official website has not been confirmed.",
+      "sourceUrl": "https://consumerchoicecenter.org/team/haikal-kurniawan/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "partner-profile"
+    },
+    "Atlas Asia Liberty Forum": {
+      "description": "Atlas Network's Asia Liberty Forum brings its regional partners together to exchange ideas and discuss work on economic and individual freedom.",
+      "sourceUrl": "https://www.atlasnetwork.org/our-mission",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Universidad Francisco Marroquín (UFM)": {
+      "description": "UFM is a university in Guatemala teaching the ethical, legal and economic principles of a society of free and responsible individuals.",
+      "sourceUrl": "https://www.ufm.edu/?site=portal",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Fundación Libertad": {
+      "description": "Fundación Libertad researches and communicates public policy in Argentina, with a focus on economic and business issues.",
+      "sourceUrl": "https://www.libertad.org.ar/nosotros",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Libertad y Progreso": {
+      "description": "Libertad y Progreso is an Argentine policy research organisation bringing professionals and academics together to develop proposals for reform.",
+      "sourceUrl": "https://www.libertadyprogreso.org/index.php/es/quienes-somos",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "ESEADE": {
+      "description": "ESEADE provides university education with an emphasis on entrepreneurship, leadership and the practical application of knowledge.",
+      "sourceUrl": "https://www.eseade.edu.ar/sobre-nosotros/institucional/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Estudantes pela Liberdade (EPL)": {
+      "description": "EPL connects and develops student leaders through education, mentoring, networks and campaigns in Brazil.",
+      "sourceUrl": "https://studentsforliberty.org/brazil/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Instituto Mises Brasil": {
+      "description": "Instituto Mises Brasil produces and shares economic and social science research informed by the Austrian school of economics.",
+      "sourceUrl": "https://mises.org.br/quemsomosnos/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Instituto Liberal": {
+      "description": "Instituto Liberal publishes and promotes research and debate on economics, political ideas and individual freedom in Brazil.",
+      "sourceUrl": "https://www.institutoliberal.org.br/quem-somos/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Instituto Millenium": {
+      "description": "Instituto Millenium produces research, knowledge and advocacy on public policy and institutions in Brazil.",
+      "sourceUrl": "https://institutomillenium.org.br/sobre/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Instituto de Estudos Empresariais (IEE)": {
+      "description": "IEE develops business leaders through education centred on individual responsibility, property rights and the rule of law.",
+      "sourceUrl": "https://www.iee.com.br/por-que-o-iee",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Fundación para el Progreso (FPP)": {
+      "description": "FPP provides education and develops young leaders, communicating political and economic ideas through research and public engagement in Chile.",
+      "sourceUrl": "https://fppchile.org/mision-vision-y-valores/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Libertad y Desarrollo": {
+      "description": "Libertad y Desarrollo conducts policy research and publishes analysis on economic and social issues in Chile.",
+      "sourceUrl": "https://lyd.org/quienes-somos/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Instituto de Ciencia Política Hernán Echavarría Olózaga": {
+      "description": "ICP is an independent Colombian policy research organisation developing analysis and encouraging informed public debate.",
+      "sourceUrl": "https://icpcolombia.org/quienes-somos/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Caminos de la Libertad": {
+      "description": "Caminos de la Libertad encourages discussion of individual freedom through educational activities, publications and cultural initiatives.",
+      "sourceUrl": "https://www.centroricardobsalinaspliego.org/cdl-qui%C3%A9nes-somos/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Mexico Evalua": {
+      "description": "México Evalúa researches and monitors government performance and uses evidence to recommend improvements to public policy.",
+      "sourceUrl": "https://mexicoevalua.org/nosotros/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "IMCO": {
+      "description": "IMCO researches Mexican public policy and develops proposals addressing major economic and institutional challenges.",
+      "sourceUrl": "https://imco.org.mx/quienes-somos/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "CIDAC": {
+      "description": "CIDAC integrated into IMCO, which researches Mexican public policy and proposes solutions to economic and institutional challenges.",
+      "sourceUrl": "https://imco.org.mx/quienes-somos/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "CEDICE Libertad": {
+      "description": "CEDICE researches, teaches and communicates economics and public policy in Venezuela, focusing on markets and individual responsibility.",
+      "sourceUrl": "https://cedice.org.ve/nosotros/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "RELIAL": {
+      "description": "RELIAL connects political parties and policy research organisations across Latin America to share ideas and collaborate on development and public policy.",
+      "sourceUrl": "https://relial.org/relial/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Tikvah Fund": {
+      "description": "Tikvah provides schools, fellowships, publications and online education on Jewish ideas, history and public life.",
+      "sourceUrl": "https://tikvah.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Shalem College": {
+      "description": "Shalem College provides a broad liberal arts education intended to prepare students for civic influence and service.",
+      "sourceUrl": "https://shalem.ac.il/en/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Kohelet Policy Forum": {
+      "description": "Kohelet researches Israeli public policy, including constitutional questions, individual freedom and economic policy.",
+      "sourceUrl": "https://www.kohelet.org.il/en/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Lebanese Institute for Market Studies (LIMS)": {
+      "description": "LIMS researches Lebanese economic policy and provides reform proposals, training and resources for students and policymakers.",
+      "sourceUrl": "https://limslb.com/who-we-are/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Egyptian Center for Economic Studies": {
+      "description": "ECES conducts independent economic research and brings stakeholders together to discuss policy challenges in Egypt.",
+      "sourceUrl": "https://eces.org.eg/en/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Middle East Forum": {
+      "description": "The Middle East Forum researches regional affairs and develops policy proposals through analysis and engagement with policymakers.",
+      "sourceUrl": "https://www.meforum.org/about/about-the-middle-east-forum",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Free Market Foundation": {
+      "description": "The Free Market Foundation researches and discusses public policy in southern Africa, including enterprise, property rights and government responsibilities.",
+      "sourceUrl": "https://freemarketfoundation.com/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "IMANI Center for Policy and Education": {
+      "description": "IMANI researches policy in Ghana and communicates analysis and proposals to inform public debate and government decisions.",
+      "sourceUrl": "https://imaniafrica.org/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "African Liberty": {
+      "description": "African Liberty provides research, media and discussion on economic development, individual rights and public policy in Africa.",
+      "sourceUrl": "https://www.africanliberty.org/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Students for Liberty Africa": {
+      "description": "Students for Liberty Africa educates and connects young people interested in economics, political ideas and individual freedom.",
+      "sourceUrl": "https://studentsforliberty.org/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Africa Liberty Forum": {
+      "description": "Atlas Network's Africa Liberty Forum convenes regional partners to exchange ideas and discuss their work on economic and individual freedom.",
+      "sourceUrl": "https://www.atlasnetwork.org/our-mission",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "EPICENTER": {
+      "description": "EPICENTER connects European policy think tanks and develops joint research and discussion on economic policy.",
+      "sourceUrl": "https://www.epicenternetwork.eu/who-we-are/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "4liberty.eu": {
+      "description": "4liberty.eu provides a platform for Central and Eastern European experts to publish analysis and share political and economic ideas.",
+      "sourceUrl": "https://4liberty.eu/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "European Liberal Forum (ELF)": {
+      "description": "ELF connects European organisations and provides research, education and dialogue on European policy challenges.",
+      "sourceUrl": "https://liberalforum.eu/about-elf/who-we-are/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Atlas Europe Liberty Forum": {
+      "description": "Atlas Network's Europe Liberty Forum brings regional partners together to share ideas and discuss policy and civil society initiatives.",
+      "sourceUrl": "https://www.atlasnetwork.org/our-mission",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Edmund Burke Foundation": {
+      "description": "The Edmund Burke Foundation is a public affairs institute organising conferences and discussion on national conservatism and democratic societies.",
+      "sourceUrl": "https://burke.foundation/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "New Direction": {
+      "description": "New Direction is a European policy think tank conducting research and organising discussion on political and economic ideas.",
+      "sourceUrl": "https://newdirection.online/2018-publications-pdf/ND-AnnualReport2017.pdf",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Friedrich Naumann Foundation": {
+      "description": "The Friedrich Naumann Foundation provides political education and supports civic engagement, democracy and individual freedom internationally.",
+      "sourceUrl": "https://www.freiheit.org/germany/foundations-mission",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Konrad-Adenauer-Stiftung": {
+      "description": "The Konrad Adenauer Foundation provides political education and international cooperation on democracy, peace and social market institutions.",
+      "sourceUrl": "https://www.kas.de/en/about-us",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Prometheus Institute": {
+      "description": "Now Prometheus – Das Freiheitsinstitut, this organisation provides research, educational activities and public discussion on economic and individual freedom.",
+      "sourceUrl": "https://heimatderfreiheit.de/mission-grundsaetze/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Liberales Institut": {
+      "description": "Liberales Institut researches liberal ideas and Switzerland's traditions of individual freedom, openness and peaceful cooperation.",
+      "sourceUrl": "https://www.libinst.ch/ueber-das-institut/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Hayek Institute": {
+      "description": "The Hayek Institute provides research, education and discussion on economics and public policy in Austria.",
+      "sourceUrl": "https://www.hayek-institut.at/wp-content/uploads/2019/09/Hayek-Institut-Selbstdarstellung-2018.pdf",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Timbro": {
+      "description": "Timbro develops research and public debate in Sweden on markets, enterprise, individual freedom and an open society.",
+      "sourceUrl": "https://timbro.se/om-oss/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "CEPOS": {
+      "description": "CEPOS conducts Danish public policy research and analysis concerning economic freedom and the role of government.",
+      "sourceUrl": "https://cepos.dk/om-cepos/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Civita": {
+      "description": "Civita is a Norwegian policy think tank producing research, educational programs, events and publications for public debate.",
+      "sourceUrl": "https://civita.no/information-in-english/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Istituto Bruno Leoni": {
+      "description": "Istituto Bruno Leoni researches and communicates policy ideas concerning markets, competition and individual freedom in Italy.",
+      "sourceUrl": "https://www.brunoleoni.it/chi-siamo/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "IREF Europe": {
+      "description": "IREF conducts European economic and fiscal policy research, including taxation, monetary policy and government responsibilities.",
+      "sourceUrl": "https://en.irefeurope.org/about-iref/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Institut Economique Molinari": {
+      "description": "Institut économique Molinari researches economic issues and provides public education on economic freedom and responsibility.",
+      "sourceUrl": "https://www.institutmolinari.org/2019/03/10/qui-sommes-nous/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "iFRAP": {
+      "description": "iFRAP researches public administration and public policy in France and publishes analysis and reform proposals.",
+      "sourceUrl": "https://www.ifrap.org/qui-sommes-nous",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Civismo": {
+      "description": "Civismo researches Spanish public policy and evaluates its effects on personal freedom and economic activity.",
+      "sourceUrl": "https://civismo.org/sobre-nosotros/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Instituto Juan de Mariana": {
+      "description": "Instituto Juan de Mariana provides research, publications and public education on economics and individual freedom in Spain.",
+      "sourceUrl": "https://juandemariana.org/instituto-juan-de-mariana/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Edmund Burke Institute": {
+      "description": "The Edmund Burke Institute is an educational charity discussing market-led policy and the civic and cultural institutions that support it.",
+      "sourceUrl": "https://edmundburkeinstitute.ie/about/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Iona Institute": {
+      "description": "The Iona Institute researches and discusses social and moral issues informed by Christian thought in Ireland.",
+      "sourceUrl": "https://ionainstitute.ie/about-the-iona-institute/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Institut Liberalnich Studii": {
+      "description": "The Institute of Liberal Studies conducts research and education in the Czech Republic on economics, political ideas and individual freedom.",
+      "sourceUrl": "https://inlist.cz/o-nas/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "CETA": {
+      "description": "CETA researches economic and institutional issues and communicates findings through studies, lectures, articles and educational projects.",
+      "sourceUrl": "https://eceta.cz/en/about-ceta/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Lithuanian Free Market Institute": {
+      "description": "LFMI conducts research and education in Lithuania on economic policy, markets, individual responsibility and government institutions.",
+      "sourceUrl": "https://en.llri.lt/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Economic Freedom Foundation": {
+      "description": "The Economic Freedom Foundation supports initiatives and collaboration among organisations researching and promoting economic freedom in Poland.",
+      "sourceUrl": "https://wolnagospodarka.info/en/about-us/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Mises Institute Poland": {
+      "description": "The Mises Institute Poland conducts research and education informed by Austrian economics and the classical liberal intellectual tradition.",
+      "sourceUrl": "https://mises.pl/o-nas",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Free Market Foundation (Hungary)": {
+      "description": "Hungary's Free Market Foundation produces research, events and publications concerning individual freedom and civil society.",
+      "sourceUrl": "https://szabadpiac.org/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Danube Institute": {
+      "description": "The Danube Institute convenes research and public debate connecting Central Europe with other European countries and the English-speaking world.",
+      "sourceUrl": "https://danubeinstitute.hu/menu/about-us",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Mathias Corvinus Collegium": {
+      "description": "MCC provides education and talent development and encourages discussion of public affairs, culture and the future of Hungary and Europe.",
+      "sourceUrl": "https://mcc.hu/en/vision",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Bendukidze Free Market Center": {
+      "description": "The Bendukidze Free Market Center is a Ukrainian educational and policy research centre studying economics and institutional reform.",
+      "sourceUrl": "https://bendukidze.org/",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Atlas Network partner directory": {
+      "description": "Atlas Network supports independent partner organisations through education, resources and connections and maintains a directory of its global network.",
+      "sourceUrl": "https://www.atlasnetwork.org/our-mission",
+      "reviewedAt": "2026-10-06",
+      "sourceKind": "official-identity-page"
+    },
+    "Ayn Rand Centre UK": null,
+    "Liberty Institute": null,
+    "Bangladesh Center for Free Market Economy": null,
+    "Instituto Ordem Livre": null,
+    "IDEA Latinoamérica": null,
+    "Eléutera": null,
+    "Jerusalem Institute for Market Studies": null,
+    "Inter Region Economic Network (IREN Kenya)": null,
+    "Free Africa Foundation": null
+  },
+  "unavailable": [
+    {
+      "name": "Ayn Rand Centre UK",
+      "reason": "No readable, identifiable official identity page was found. Keep the profile pending until a reliable source is available."
+    },
+    {
+      "name": "Liberty Institute",
+      "reason": "No readable, identifiable official identity page was found. Keep the profile pending until a reliable source is available."
+    },
+    {
+      "name": "Bangladesh Center for Free Market Economy",
+      "reason": "No readable, identifiable official identity page was found. Keep the profile pending until a reliable source is available."
+    },
+    {
+      "name": "Instituto Ordem Livre",
+      "reason": "No readable, identifiable official identity page was found. Keep the profile pending until a reliable source is available."
+    },
+    {
+      "name": "IDEA Latinoamérica",
+      "reason": "No readable, identifiable official identity page was found. Keep the profile pending until a reliable source is available."
+    },
+    {
+      "name": "Eléutera",
+      "reason": "No readable, identifiable official identity page was found. Keep the profile pending until a reliable source is available."
+    },
+    {
+      "name": "Jerusalem Institute for Market Studies",
+      "reason": "No readable, identifiable official identity page was found. Keep the profile pending until a reliable source is available."
+    },
+    {
+      "name": "Inter Region Economic Network (IREN Kenya)",
+      "reason": "No readable, identifiable official identity page was found. Keep the profile pending until a reliable source is available."
+    },
+    {
+      "name": "Free Africa Foundation",
+      "reason": "No readable, identifiable official identity page was found. Keep the profile pending until a reliable source is available."
+    }
+  ]
+}

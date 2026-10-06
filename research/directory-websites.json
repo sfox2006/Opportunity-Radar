@@ -677,12 +677,7 @@
       "evidenceUrl": "https://www.ideas.org.my/about-ideas/",
       "checkMethod": "official_page"
     },
-    "Suara Kebebasan / Indonesia Freedom Network": {
-      "url": "https://suarakebebasan.org/",
-      "type": "home",
-      "evidenceUrl": "https://suarakebebasan.org/",
-      "checkMethod": "official_page"
-    },
+    "Suara Kebebasan / Indonesia Freedom Network": null,
     "Atlas Asia Liberty Forum": {
       "url": "https://www.atlasnetwork.org/our-mission",
       "type": "about",
@@ -972,9 +967,9 @@
       "checkMethod": "official_page"
     },
     "Institut Economique Molinari": {
-      "url": "https://www.institutmolinari.org/2015/10/16/presentation-de-pour-une-vraie-concurrence-des-monnaies-friedrich-a-hayek/",
+      "url": "https://www.institutmolinari.org/2019/03/10/qui-sommes-nous/",
       "type": "about",
-      "evidenceUrl": "https://www.institutmolinari.org/2015/10/16/presentation-de-pour-une-vraie-concurrence-des-monnaies-friedrich-a-hayek/",
+      "evidenceUrl": "https://www.institutmolinari.org/2019/03/10/qui-sommes-nous/",
       "checkMethod": "official_page"
     },
     "iFRAP": {
@@ -1105,6 +1100,10 @@
     {
       "name": "Eléutera",
       "reason": "Official domain identified from the organisation’s link page, but neither the site nor an About page could be reached."
+    },
+    {
+      "name": "Suara Kebebasan / Indonesia Freedom Network",
+      "reason": "The former domain now describes an unrelated personal blog. Organisation identity is documented by a partner profile; no current official site confirmed."
     }
   ]
 }

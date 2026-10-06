@@ -6,12 +6,12 @@ const code = fs.readFileSync(__dirname + '/dist/directory.js', 'utf8');
 const registryContext = vm.createContext({});
 vm.runInContext(fs.readFileSync(__dirname + '/dist/organisations.js', 'utf8') + '\nthis.registry = radarRegistry;', registryContext);
 const registry = registryContext.registry;
-function load(radarRegistry = registry, opportunities = []) {
+function load(radarRegistry = registry, opportunities = [], openingSoon = [], navigate = () => {}) {
   const elements = {};
   for (const id of ['organisation-directory', 'organisation-query', 'directory-count', 'organisation-count', 'organisation-region-count']) {
     elements[id] = {value: '', textContent: '', innerHTML: '', addEventListener(event, handler) {this[event] = handler;}};
   }
-  vm.runInNewContext(code, {radarRegistry, opportunities, URL, document: {getElementById: id => elements[id]}});
+  vm.runInNewContext(code, {radarRegistry, opportunities, openingSoon, showOrganisationPrograms:navigate, URL, document: {getElementById: id => elements[id]}});
   return {elements, search(query) {elements['organisation-query'].value = query; elements['organisation-query'].input();}};
 }
 test('directory covers the complete research reference without mutating programs', () => {
@@ -48,11 +48,11 @@ test('program counts match acronym aliases and keep similarly named organisation
     {organisation:'Tax Foundation / Stand Together Fellowships'}
   ]);
   search('AIER');
-  assert.match(elements['organisation-directory'].innerHTML, /1 program on this site/);
+  assert.match(elements['organisation-directory'].innerHTML, /1 open opportunity/);
   search('Free Market Foundation Hungary');
-  assert.match(elements['organisation-directory'].innerHTML, /0 programs on this site/);
+  assert.match(elements['organisation-directory'].innerHTML, /0 open opportunities/);
   search('Tax Foundation');
-  assert.match(elements['organisation-directory'].innerHTML, /1 program on this site/);
+  assert.match(elements['organisation-directory'].innerHTML, /1 open opportunity/);
 });
 test('organisation cards escape text, reject unsafe links and render About/homepage fallbacks', () => {
   const {elements} = load({groups:[{id:'test',label:'<Region>'}],organisations:[
@@ -89,5 +89,43 @@ test('every organisation has an explicit website review and obsolete domains are
     assert.equal(url.username + url.password, '');
     assert.ok(['about','home'].includes(org.website.type));
     assert.ok(!/openeurope\.org|cidac\.org|jimsisrael\.org|irenkenya\.com|freeafrica\.org/.test(url.hostname));
+  }
+});
+
+test('card links route only matching open and future programs using exact organisation aliases', () => {
+  let selected;
+  const org = registry.organisations.find(org => org.name.includes('Tax Foundation'));
+  const records = [{id:'shared',organisation:'Tax Foundation / Stand Together Fellowships'}, {id:'unrelated',organisation:'Tax Foundation Extra'}];
+  const future = [{id:'future',organisation:'Tax Foundation'}];
+  const {elements, search} = load(registry, records, future, (name, ids) => {selected = {name,ids};});
+  search('Tax Foundation');
+  assert.match(elements['organisation-directory'].innerHTML, /View open opportunities ↑/);
+  elements['organisation-directory'].click({target:{closest:() => ({dataset:{organisationPrograms:org.id}})},preventDefault(){}});
+  assert.equal(selected.name, org.name);
+  assert.deepEqual(Array.from(selected.ids), ['shared','future']);
+  records.length = 0;
+  let prevented = false;
+  elements['organisation-directory'].click({target:{closest:() => ({dataset:{organisationPrograms:org.id}})},preventDefault(){prevented=true;}});
+  assert.ok(prevented);
+  assert.doesNotMatch(elements['organisation-directory'].innerHTML, /View open opportunities ↑/);
+});
+
+test('all directory entries have sourced profiles or an explicit verification gap', () => {
+  const profiles = JSON.parse(fs.readFileSync(__dirname + '/research/directory-profiles.json', 'utf8'));
+  const source = JSON.parse(fs.readFileSync(__dirname + '/research/organisations.json', 'utf8'));
+  const context = vm.createContext({});
+  vm.runInContext(fs.readFileSync(__dirname + '/dist/organisations.js', 'utf8')+'\nthis.registry=radarRegistry;',context);
+  assert.equal(Object.keys(profiles.organisations).length,source.organisations.length);
+  for (const org of source.organisations) {
+    assert.ok(Object.hasOwn(profiles.organisations,org.name),org.name);
+    const profile=profiles.organisations[org.name];
+    const generated=context.registry.organisations.find(item=> item.aliases.includes(org.name));
+    assert.equal(JSON.stringify(generated.profile),JSON.stringify(profile));
+    if (!profile) {assert.ok(profiles.unavailable.some(item=>item.name===org.name));continue;}
+    assert.ok(profile.description.length > 40 && profile.description.length <= 450);
+    const url=new URL(profile.sourceUrl);
+    assert.equal(url.protocol,'https:');
+    assert.equal(url.username+url.password,'');
+    assert.match(profile.reviewedAt,/^\d{4}-\d{2}-\d{2}$/);
   }
 });

@@ -1,4 +1,4 @@
-// The directory is independent of program filters and does not claim current availability.
+// Organisation profiles and links are distinct from live program verification.
 (() => {
   const directory = document.getElementById('organisation-directory');
   const queryInput = document.getElementById('organisation-query');
@@ -13,12 +13,12 @@
       return url.protocol === 'https:' && !url.username && !url.password ? url.href : '';
     } catch { return ''; }
   };
-  function programCount(org) {
+  function matchingPrograms(org, records = opportunities) {
     const names = new Set([org.name, ...org.aliases].map(nameKey));
-    return opportunities.filter(item => {
+    return records.filter(item => {
       const name = item.organisation || '';
       return [name, ...name.split(' / ')].some(part => names.has(nameKey(part)));
-    }).length;
+    });
   }
   function renderDirectory() {
     const query = searchKey(queryInput.value.trim());
@@ -31,19 +31,33 @@
       return `<details class="sector-directory"${query ? ' open' : ''}>
         <summary><h3>${escape(group.label)}</h3><span>${orgs.length} ${orgs.length === 1 ? 'entry' : 'entries'}</span></summary>
         <div class="organisation-grid">${orgs.map(org => {
-          const count = programCount(org);
+          const count = matchingPrograms(org).length;
           const url = safeUrl(org.website?.url);
           const label = org.website?.type === 'about' ? 'About us' : 'Homepage';
           return `<article class="organisation-card"><h4>${escape(org.name)}</h4>
             ${org.location ? `<p>${escape(org.location)}</p>` : ''}
-            <p>${count} ${count === 1 ? 'program' : 'programs'} on this site</p>
+            ${org.profile?.description ? `<p class="organisation-description">${escape(org.profile.description)}</p>` : '<p class="missing-source">Organisation profile awaiting verification.</p>'}
+            <p>${count} ${count === 1 ? 'open opportunity' : 'open opportunities'}</p>
+            <div class="organisation-actions">
+            ${count ? `<a class="organisation-program-link" href="#programs" data-organisation-programs="${escape(org.id)}" aria-label="View ${count} open ${count === 1 ? 'opportunity' : 'opportunities'} at ${escape(org.name)}">View open opportunities ↑</a>` : ''}
             ${url ? `<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${escape(org.website.label || label)} ↗</a>`
-              : '<span class="missing-source">Official website unavailable</span>'}</article>`;
+              : '<span class="missing-source">Official website unavailable</span>'}</div></article>`;
         }).join('')}</div></details>`;
     }).join('');
     document.getElementById('directory-count').textContent = `${shown} of ${radarRegistry.organisations.length} directory entries`;
     if (!shown) directory.innerHTML = '<p class="empty-state">No organisations match that search.</p>';
   }
+  directory.addEventListener('click', event => {
+    const link = event.target.closest('[data-organisation-programs]');
+    if (!link) return;
+    const org = radarRegistry.organisations.find(entry => entry.id === link.dataset.organisationPrograms);
+    if (!org) return;
+    const future = typeof openingSoon === 'undefined' ? [] : openingSoon;
+    const records = matchingPrograms(org, [...opportunities, ...future]);
+    if (!matchingPrograms(org).length) { event.preventDefault(); renderDirectory(); return; }
+    event.preventDefault();
+    showOrganisationPrograms(org.name, records.map(item => item.id));
+  });
   queryInput.addEventListener('input', renderDirectory);
   document.getElementById('organisation-count').textContent = radarRegistry.organisations.length;
   document.getElementById('organisation-region-count').textContent = radarRegistry.groups.length;

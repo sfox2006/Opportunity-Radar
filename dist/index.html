@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./journal.css" />
-  <link rel="stylesheet" href="./directory.css" />
+  <link rel="stylesheet" href="./journal.css?v=organisation-profiles-20261006" />
+  <link rel="stylesheet" href="./directory.css?v=organisation-profiles-20261006" />
 </head>
 <body>
   <header class="site-header">
@@ -107,6 +107,10 @@
 
 
         </div>
+        <div id="organisation-program-filter" class="organisation-program-filter" role="status" hidden>
+          <p id="organisation-filter-label"></p>
+          <button type="button" id="clear-organisation-filter">Show all organisations</button>
+        </div>
         <div class="catalog-tabs" role="tablist" aria-label="When programmes are open">
           <button type="button" role="tab" id="tab-open" aria-controls="panel-open" aria-selected="true" tabindex="0">
             <span class="tab-label">Programs (open now)</span>
@@ -174,9 +178,9 @@
   </main>
   <footer class="content-width"><a class="brand" href="#explore">Opportunity Radar.</a><span>Political ideas. Global opportunities.</span><a href="#explore">Back to top ↑</a></footer>
   <script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.14.0/dist/maplibre-gl.js"></script>
-  <script src="./app.js"></script>
-  <script src="./organisations.js?v=about-links-20261006"></script>
-  <script src="./directory.js?v=about-links-20261006"></script>
+  <script src="./app.js?v=organisation-profiles-20261006"></script>
+  <script src="./organisations.js?v=organisation-profiles-20261006"></script>
+  <script src="./directory.js?v=organisation-profiles-20261006"></script>
   <script src="./newsletter.js"></script>
 </body>
 </html>
