@@ -27,6 +27,8 @@ jobs:
         run: |
           node --check dist/app.js
           node --check dist/newsletter.js
+          node --check dist/directory.js
+          node research/build_directory.cjs --check
           node --test *.test.cjs newsletter-google/*.test.cjs
       - name: Check research controls
         run: python -m unittest discover -s agents -p test_control.py -v

@@ -24,6 +24,21 @@ python -m unittest discover -s agents -p test_control.py -v
 ```
 
 In GitHub Settings > Pages, select GitHub Actions as the publishing source.
+The searchable organisation directory follows the economics site's grouped card
+layout, using the political site's existing colours. Its 182 organisation and
+resource entries come from the supplied political newsletter reference and are
+grouped into 11 regions, including individual European countries within Europe.
+Repeated Federalist Society mentions are consolidated; combined source entries
+are split into named organisations. The Atlas partner directory and named regional
+forums remain reference resources. Inclusion and program counts do not certify
+current availability; directory reference links have not been freshly checked.
+
+Edit `research/organisations.json` for directory membership and
+`research/directory-reference.json` for source links, display names and aliases.
+Run `node research/build_directory.cjs` to regenerate `dist/organisations.js`;
+CI checks that the generated file matches its inputs. These changes do not alter
+the program catalog or research status in the organisation registry.
+
 Only `dist/` is uploaded as the Pages website, never private agent databases or
 Google response data. The repository itself is public; keep credentials and
 subscriber records out of all commits.
