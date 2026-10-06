@@ -74,3 +74,15 @@ Two on-brief cards were appended to `dist/app.js`. `research/sync_verified.cjs` 
 
 - `hudson-political-studies-summer-fellowship-2027` — open. Early Decision Sat 9 Jan 2027 11:59 p.m. EST; Regular Tue 16 Mar 2027 11:59 p.m. EST (extended). Applications opened Thu 1 Oct 2026.
 - `hertog-humanities-winter-2027` — open. Deadline Mon 16 Nov 2026. No further description or contact for this id was in the research records.
+
+## Batch 18, 5 October 2026
+
+Public open programmes: 131. Opening-soon programmes: 3. The Harwood card is the one already on main.
+
+`research/sync_verified.cjs` was not used. Reviewed 5 Oct 2026. Not added: NRI Buckley, Bow Group, Heritage Fall 2027, Steamboat, NRI Rhodes, Heartland, NTU, Pioneer, Henry Jackson Society.
+
+- `young-voices-contributor-spring-2027` — replaces `young-voices`. Open. Deadline Mon 30 Nov 2026, 11:59 pm ET. Ages 18-35. Remote, three months. Pay not stated.
+- `heritage-young-leaders-spring-2027` — re-added. Rolling hiring, no fixed deadline. The 4 Oct 2026 deadline is gone. Mon 11 Jan to Fri 9 Apr 2027. $18.50/hr.
+- `heritage-young-leaders-summer-2027` — updated. Open. Deadline Sun 31 Jan 2027. Mon 10 May to Fri 6 Aug 2027. $18.50/hr.
+- `goldwater-ronald-reagan-fellowship` — added. Rolling. Encouraged by Mon 30 Nov 2026 (Spring), Wed 31 Mar 2027 (Summer), Tue 30 Jun 2027 (Fall). Phoenix, Arizona. Not pinned.
+- `mrc-internships-spring-2027` — added. Open. Deadline Mon 21 Dec 2026. $14/hr. In office in Washington, DC or Northern Virginia. Not pinned.
