@@ -95,3 +95,11 @@ The initial GitHub import is a clean source snapshot, not the old site's Git his
 Private Google setup notes, real response-sheet identifiers, local runtime state,
 credentials, raw crawl caches and the original hosting metadata are omitted or
 replaced with configuration placeholders. The original site remains unchanged.
+
+## Sharing and community actions
+
+Each open or opening-soon programme has a Share control. It shares this website's stable `?opportunity=<id>#programs` URL with native sharing when supported and copy fallback with accessible feedback. Fresh and reloaded URLs resolve either catalogue, clear search/category/organisation/profile filters that could hide the record, expand its details and focus its card. Missing or expired records show an explanation. Official application URLs remain separate.
+
+The footer reuses this site's existing political newsletter signup. `dist/footer.js` has separate `listing`, `organisation` and `promotion` destinations. Sam authorised the public enquiry address `samfoxanu@gmail.com` for all three on 6 October 2026; each mailto link has a distinct political-site subject and the correct website URL. The same routes appear in HTML for visitors without JavaScript. Opening a link prepares an email in the visitor's mail app; it does not send it. Do not use London's suggestion or newsletter forms or the Economic Radar signup.
+
+`research/refresh-workflow.md` includes the separately authorised future-review instruction to prepare deduplicated, unsent clarification drafts for material unknowns using official published contacts. It does not send emails or start a new review. Keep correspondence outside this public repository.

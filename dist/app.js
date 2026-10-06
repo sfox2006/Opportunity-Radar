@@ -3294,6 +3294,81 @@ function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
 }
 
+function opportunityShareLink(item) {
+  return `./?opportunity=${encodeURIComponent(item.id)}#programs`;
+}
+
+function shareOpportunityMarkup(item) {
+  return `<a class="share-opportunity" data-share-opportunity="${escapeHtml(item.id)}" href="${escapeHtml(opportunityShareLink(item))}" aria-label="Share ${escapeHtml(item.program)} on this website">Share</a>`;
+}
+
+function announceShare(message) {
+  const status = document.getElementById("share-status");
+  if (status) status.textContent = message;
+}
+
+async function shareOpportunity(item, button) {
+  const url = new URL(opportunityShareLink(item), window.location.href).href;
+  const payload = { title: item.program, text: `${item.program} — ${item.organisation}`, url };
+  if (typeof navigator.share === "function") {
+    try {
+      if (typeof navigator.canShare !== "function" || navigator.canShare(payload)) {
+        await navigator.share(payload);
+        announceShare("Opportunity link shared.");
+        return;
+      }
+    } catch (error) {
+      if (error.name === "AbortError") return;
+    }
+  }
+  let copied = false;
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(url);
+      copied = true;
+    }
+  } catch { /* Try the selection fallback below. */ }
+  if (!copied) {
+    const area = document.createElement("textarea");
+    area.value = url;
+    area.setAttribute("readonly", "");
+    area.style.cssText = "position:fixed;left:-9999px;top:0";
+    document.body.appendChild(area);
+    try { area.select(); copied = document.execCommand("copy"); }
+    catch { /* The share link remains available for manual copying. */ }
+    finally { area.remove(); button.focus({ preventScroll: true }); }
+  }
+  button.textContent = copied ? "Copied" : "Copy failed";
+  announceShare(copied ? "Opportunity link copied to clipboard." : "Could not copy. Use this Share link’s context menu to copy its address.");
+  window.setTimeout(() => { if (button.isConnected) button.textContent = "Share"; }, 2000);
+}
+
+function openSharedOpportunity() {
+  if (typeof window === "undefined" || !window.location?.href) return;
+  const id = new URL(window.location.href).searchParams.get("opportunity");
+  const notice = document.getElementById("shared-opportunity-notice");
+  if (notice) { notice.hidden = true; notice.textContent = ""; }
+  if (!id) return;
+  const item = programmeById(id);
+  if (!item) {
+    state.selectedId = null;
+    render();
+    if (notice) {
+      notice.textContent = "This shared opportunity is no longer listed. It may have expired or been removed. Browse current opportunities below.";
+      notice.hidden = false;
+      notice.tabIndex = -1;
+      notice.focus({ preventScroll: true });
+      notice.scrollIntoView({ block: "center" });
+    }
+    return;
+  }
+  // Resolve either catalogue and discard filters that could hide the shared record.
+  state.profile = null;
+  resetFilters();
+  state.catalog = opportunities.some(candidate => candidate.id === id) ? "open" : "opening";
+  showOpportunityCard(item);
+}
+
 function openingSoonRow(item) {
   const opens = formatOpeningDate(item.opensOn);
   const url = typeof item.url === "string" && item.url.startsWith("https://") ? item.url : "";
@@ -3315,7 +3390,7 @@ function openingSoonRow(item) {
         ${item.location ? `<div><dt>Location</dt><dd>${escapeHtml(item.location)}</dd></div>` : ""}
         ${item.deadline ? `<div><dt>Deadline / status</dt><dd>${escapeHtml(item.deadline)}</dd></div>` : ""}
       </dl>
-      ${url || pinned ? `<div class="opportunity-actions">${url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Official programme details</a>` : ""}${pinned ? `<button class="locate-program" type="button">View on globe</button>` : ""}</div>` : ""}
+      ${url || pinned ? `<div class="opportunity-actions">${url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Official programme details</a>` : ""}${pinned ? `<button class="locate-program" type="button">View on globe</button>` : ""}${shareOpportunityMarkup(item)}</div>` : ""}
     </div>
     </details>
   </article>`;
@@ -3702,7 +3777,7 @@ function renderResults() {
       </dl>
       <div class="application-detail"><h4>Who can apply</h4><p>${item.eligibilityDetails}</p></div>
       <div class="application-detail"><h4>Application details</h4><p>${item.application}</p></div>
-      <div class="opportunity-actions"><a href="${item.url}" target="_blank" rel="noopener noreferrer">Official programme details</a><button class="locate-program" type="button">View on globe</button><small>${reviewed}</small></div>
+      <div class="opportunity-actions"><a href="${item.url}" target="_blank" rel="noopener noreferrer">Official programme details</a><button class="locate-program" type="button">View on globe</button>${shareOpportunityMarkup(item)}<small>${reviewed}</small></div>
       </div>
       </details>
       ${state.profile ? `<div class="score">
@@ -3716,6 +3791,10 @@ function renderResults() {
 }
 
 function bindProgramCard(card, item) {
+  card.querySelector?.("[data-share-opportunity]")?.addEventListener("click", (event) => {
+    event.preventDefault();
+    shareOpportunity(item, event.currentTarget);
+  });
   const select = () => {
     focusProgram(item);
   };
@@ -3989,5 +4068,10 @@ if (typeof IntersectionObserver !== "undefined") {
 }
 
 render();
+if (typeof window !== "undefined" && window.location?.href) {
+  // Run after the browser's initial fragment navigation, which can reset focus.
+  window.addEventListener("load", () => window.requestAnimationFrame(openSharedOpportunity), { once: true });
+  window.addEventListener("popstate", openSharedOpportunity);
+}
 initMap();
 registerWebMcpTools();
