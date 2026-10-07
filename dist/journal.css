@@ -16,6 +16,13 @@ button, input, select { font-family: inherit; }
   box-shadow: none; backdrop-filter: none; flex-wrap: wrap;
 }
 .brand { font-size: 24px; font-weight: 600; }
+.site-brand { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; min-width: 0; }
+.site-brand .brand { white-space: normal; }
+.beta-label {
+  display: inline-block; padding: 4px 7px; border: 1px solid var(--line); border-radius: 4px;
+  background: var(--green-soft); color: var(--green); font: 600 11px/1.2 system-ui, sans-serif;
+  white-space: nowrap;
+}
 nav { gap: 28px; height: auto; flex-wrap: wrap; }
 nav a { font-size: 16px; font-weight: 400; border: 0; color: var(--ink); }
 nav a:hover, nav a[aria-current] { color: var(--green); text-decoration: underline; text-underline-offset: 6px; }
