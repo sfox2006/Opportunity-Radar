@@ -448,7 +448,6 @@ function initMap() {
       canvasContextAttributes: { preserveDrawingBuffer: true }
     });
     map.addControl(new maplibregl.NavigationControl({ showCompass: true }), "top-right");
-    map.addControl(new maplibregl.ScaleControl({ maxWidth: 100 }), "bottom-left");
     map.on("style.load", () => {
       map.setProjection({ type: "globe" });
       for (const layer of map.getStyle().layers) {
@@ -504,10 +503,6 @@ function initMap() {
     map.on("error", () => {
       status.textContent = "Map connection interrupted. Reload to try again.";
       status.hidden = false;
-    });
-    document.getElementById("world-view").addEventListener("click", () => {
-      popup?.remove();
-      map.flyTo({ center: [25, 20], zoom: window.innerWidth < 720 ? 0.7 : 1.5, bearing: 0, pitch: 0, duration: 1000 });
     });
     new ResizeObserver(() => map.resize()).observe(els.canvas);
   } catch (error) {
