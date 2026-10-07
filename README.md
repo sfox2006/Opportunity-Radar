@@ -102,6 +102,12 @@ Private Google setup notes, real response-sheet identifiers, local runtime state
 credentials, raw crawl caches and the original hosting metadata are omitted or
 replaced with configuration placeholders. The original site remains unchanged.
 
+## Branding and newsletter template
+
+`dist/assets/fsn-logo.png` is Sam's supplied Free Society Noticeboard artwork, copied unchanged on 7 October 2026. The website displays its monogram in the header, Freedom Brief banner and footer; the original image is also available for link previews, icons and newsletters. Keep the source artwork intact. The website's monogram framing is CSS only.
+
+`dist/newsletter-template.html` is the reusable Freedom Brief email wrapper, with inline styles, the public logo URL and placeholders instead of opportunity listings. Replace the placeholders with verified edition content before use; preserve the regular country/programme order and attach the matching spreadsheet. This template is not a current edition and contains no recipient data. It does not send emails. The installed political-newsletter skill's email template also points to these assets.
+
 ## Sharing and community actions
 
 Each open or opening-soon programme has a Share control. It shares this website's stable `?opportunity=<id>#programs` URL with native sharing when supported and copy fallback with accessible feedback. Fresh and reloaded URLs resolve either catalogue, clear search/category/organisation filters that could hide the record, expand its details and focus its card. Missing or expired records show an explanation. Official application URLs remain separate.
