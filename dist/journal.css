@@ -237,6 +237,13 @@ summary:focus-visible { outline: 2px solid var(--green); outline-offset: -2px; }
 }
 .footer-action-card a:hover, .hero-linkedin:hover { background: var(--ink); border-color: var(--ink); color: var(--paper); }
 .footer-action-card a:focus-visible, .hero-linkedin:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
+.hero-linkedin {
+  min-height: 44px; padding: 8px 12px;
+  background: transparent; color: var(--green);
+  font-size: 15px; font-weight: 400;
+}
+.hero-linkedin:hover { background: var(--green-soft); border-color: var(--green); color: var(--green); }
+@media (max-width: 760px) { .hero-linkedin { min-height: 48px; } }
 .footer-action-card p { margin: 0; }
 .shared-notice { padding: 16px; border: 1px solid currentColor; border-radius: 4px; }
 [hidden] { display: none !important; }
