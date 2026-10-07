@@ -23,13 +23,12 @@ function setup() {
 
 test('shared opportunity clears all hiding filters and opens the correct catalogue and disclosure', () => {
   const {context, evaluate, elements} = setup();
-  evaluate(`state.profile={homeRegion:'Australia'}; state.query='old'; state.directoryOrganisation={programIds:['other']};
+  evaluate(`state.query='old'; state.directoryOrganisation={programIds:['other']};
     els.query.value='old'; els.regionFilter.value='Australia'; els.typeFilter.value='Seminar'; els.paidFilter.value='No';`);
   context.window.location.href += '&unused=1';
   context.window.location.href = 'https://example.test/Opportunity-Radar/?opportunity=yaf-njc-summer-2027#programs';
   evaluate('openSharedOpportunity()');
   assert.equal(evaluate('state.catalog'), 'opening');
-  assert.equal(evaluate('state.profile'), null);
   assert.equal(evaluate('state.directoryOrganisation'), null);
   assert.equal(evaluate('state.query'), '');
   assert.equal(evaluate('state.region'), 'All');

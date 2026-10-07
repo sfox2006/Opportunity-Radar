@@ -74,7 +74,7 @@ out, checkpoint and report incomplete coverage rather than omit organisations.
    Honour declines and avoid duplicate outreach; do not send newsletter contacts
    to research providers or email organisations without approval.
 7. Add a private coverage/cost/approval dashboard. Stage website data changes and
-   validate filtering, globe, profile opt-in and newsletter preservation. Regenerate the catalogue from its authoritative source and confirm
+   validate filtering, globe, sharing and newsletter preservation. Regenerate the catalogue from its authoritative source and confirm
    supported unattended publishing for this repository's GitHub Pages workflow;
    do not reuse short-lived desktop credentials.
 8. Run one complete pilot, show measured cost and verified/pending/blocked counts,

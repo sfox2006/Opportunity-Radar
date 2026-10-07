@@ -1,7 +1,7 @@
 # Free Society Noticeboard
 
 A static opportunity explorer with a labelled interactive globe, zoom-dependent
-clusters, searchable programme cards, optional profile matching and Freedom Brief newsletter signup.
+clusters, searchable programme cards and Freedom Brief newsletter signup.
 
 Website: https://sfox2006.github.io/Opportunity-Radar/
 
@@ -76,7 +76,7 @@ Neutral-tagged cards that stay on the live list: `hudson-policy-oct2026`, `bpc-s
 
 ## Catalogue sources and audience
 
-The catalogue serves students through early-career professionals, roughly up to ages 26–28. This is audience guidance, not an employer age limit. Include paid general vacancies as `Job`, as well as internships and other opportunity types. Evaluate actual responsibilities, required experience and qualifications; do not exclude solely because a title says senior or manager. Hold roles requiring experience implausible for this audience. Preserve published geographic, citizenship and work-authorisation restrictions and distinguish possible visa sponsorship from a guarantee. Profile scores rank interests; they do not establish eligibility.
+The catalogue serves students through early-career professionals, roughly up to ages 26–28. This is audience guidance, not an employer age limit. Include paid general vacancies as `Job`, as well as internships and other opportunity types. Evaluate actual responsibilities, required experience and qualifications; do not exclude solely because a title says senior or manager. Hold roles requiring experience implausible for this audience. Preserve published geographic, citizenship and work-authorisation restrictions and distinguish possible visa sponsorship from a guarantee.
 
 Edit the authoritative `research/catalogue.json` after reviewing official programme and linked application evidence. Edit behaviour in `src/app.js`, then run `node research/build_catalogue.cjs`. CI checks exact regeneration. Preserve existing ids, source fields and individual review dates; never refresh a global date merely because one record changed. `research/sync_verified.cjs` is retired: old dated snapshots omit later additions and contain held records, so never restore a snapshot wholesale.
 
@@ -104,7 +104,7 @@ replaced with configuration placeholders. The original site remains unchanged.
 
 ## Sharing and community actions
 
-Each open or opening-soon programme has a Share control. It shares this website's stable `?opportunity=<id>#programs` URL with native sharing when supported and copy fallback with accessible feedback. Fresh and reloaded URLs resolve either catalogue, clear search/category/organisation/profile filters that could hide the record, expand its details and focus its card. Missing or expired records show an explanation. Official application URLs remain separate.
+Each open or opening-soon programme has a Share control. It shares this website's stable `?opportunity=<id>#programs` URL with native sharing when supported and copy fallback with accessible feedback. Fresh and reloaded URLs resolve either catalogue, clear search/category/organisation filters that could hide the record, expand its details and focus its card. Missing or expired records show an explanation. Official application URLs remain separate.
 
 The footer reuses this site's existing political newsletter signup. `dist/footer.js` has separate `listing`, `organisation` and `promotion` destinations. Sam authorised the public enquiry address `samfoxanu@gmail.com` for all three on 6 October 2026; each mailto link has a distinct political-site subject and the correct website URL. The same routes appear in HTML for visitors without JavaScript. Opening a link prepares an email in the visitor's mail app; it does not send it. Do not use London's suggestion or newsletter forms or the Economic Radar signup.
 
