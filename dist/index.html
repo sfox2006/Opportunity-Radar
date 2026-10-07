@@ -6,11 +6,11 @@
   <title>Free Society Noticeboard</title>
   <meta name="description" content="Free Society Noticeboard: explore political opportunities around the world." />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.14.0/dist/maplibre-gl.css" />
-  <link rel="stylesheet" href="./styles.css?v=map-controls-20261007" />
+  <link rel="stylesheet" href="./styles.css?v=remove-profile-20261007" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./journal.css?v=map-controls-20261007" />
+  <link rel="stylesheet" href="./journal.css?v=remove-profile-20261007" />
   <link rel="stylesheet" href="./directory.css?v=share-footer-20261006" />
 </head>
 <body>
@@ -20,7 +20,6 @@
       <a href="#explore" aria-current="location">Explore</a>
       <a href="#programs">Programs</a>
       <a href="#organisations">Organisations</a>
-      <a href="#profile">My profile</a>
       <a href="#newsletter">Freedom Brief</a>
     </nav>
   </header>
@@ -139,42 +138,6 @@
       <p id="directory-count" role="status"></p>
       <div id="organisation-directory"></div>
     </section>
-    <section id="profile" class="profile-section" aria-label="Profile builder">
-      <div class="content-width profile-layout">
-        <div class="profile-heading"><p class="eyebrow">03 / Make it personal</p><h2>Your profile</h2><span class="optional-label">Optional</span>
-          <div id="profile-summary" hidden><strong>Profile matching active</strong><p>Estimated fit with your preferences, not acceptance odds.</p></div>
-        </div>
-        <div class="profile-form">            <div class="chips" id="interest-chips" aria-label="Preferred opportunity types"></div>
-            <label>
-              <span>Home region</span>
-              <select id="home-region">
-                <option value="">Choose a region</option>
-                <option value="Australia">Australia</option>
-                <option value="New Zealand">New Zealand</option>
-                <option value="United Kingdom">United Kingdom</option>
-                <option value="United States">United States</option>
-                <option value="Canada">Canada</option>
-                <option value="Europe">Europe</option>
-                <option value="Asia">Asia</option>
-                <option value="Latin America">Latin America</option>
-                <option value="Middle East & Africa">Middle East & Africa</option>
-              </select>
-            </label>
-            <label class="toggle">
-              <input id="needs-international" type="checkbox" />
-              <span>I need international eligibility</span>
-            </label>
-            <label class="toggle">
-              <input id="needs-funded" type="checkbox" />
-              <span>Prioritise paid, stipend, or free opportunities</span>
-            </label>
-            <div class="profile-actions">
-              <button id="apply-profile" type="button" disabled>Apply profile</button>
-              <button id="clear-profile" type="button" hidden>Clear profile</button>
-            </div>
-</div>
-      </div>
-    </section>
   </main>
   <footer class="content-width community-footer"><section class="footer-community" aria-labelledby="footer-community-heading">
       <h2 id="footer-community-heading">Help grow Free Society Noticeboard</h2>
@@ -183,7 +146,7 @@
       <p><a href="#organisations">Browse organisations →</a></p>
     </section><div class="footer-bottom"><a class="brand" href="#explore">Free Society Noticeboard</a><span>Political ideas. Global opportunities.</span><a href="#explore">Back to top ↑</a></div></footer>
   <script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.14.0/dist/maplibre-gl.js"></script>
-  <script src="./app.js?v=map-controls-20261007"></script>
+  <script src="./app.js?v=remove-profile-20261007"></script>
   <script src="./organisations.js?v=share-footer-20261006"></script>
   <script src="./directory.js?v=share-footer-20261006"></script>
   <script src="./newsletter.js"></script>

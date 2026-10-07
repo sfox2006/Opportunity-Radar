@@ -3387,7 +3387,6 @@ function openSharedOpportunity() {
     return;
   }
   // Resolve either catalogue and discard filters that could hide the shared record.
-  state.profile = null;
   resetFilters();
   state.catalog = opportunities.some(candidate => candidate.id === id) ? "open" : "opening";
   showOpportunityCard(item);
@@ -3434,11 +3433,6 @@ const state = {
   type: "All",
   eligibility: "All",
   paid: "All",
-  profile: null,
-  homeRegion: "",
-  needsInternational: false,
-  needsFunded: false,
-  interests: new Set(),
   selectedId: null,
   mapReady: false,
   catalog: "open"
@@ -3451,10 +3445,6 @@ const els = {
   typeFilter: document.getElementById("type-filter"),
   eligibilityFilter: document.getElementById("eligibility-filter"),
   paidFilter: document.getElementById("paid-filter"),
-  homeRegion: document.getElementById("home-region"),
-  needsInternational: document.getElementById("needs-international"),
-  needsFunded: document.getElementById("needs-funded"),
-  interestChips: document.getElementById("interest-chips"),
   detail: document.getElementById("detail-card"),
   selectionStrip: document.getElementById("selection-strip"),
   legendSelected: document.getElementById("legend-selected"),
@@ -3518,19 +3508,6 @@ function fillSelect(select, values) {
   });
 }
 
-function matchScore(item) {
-  if (!state.profile) return null;
-  const profile = state.profile;
-  let score = 30;
-  if (profile.interests.has(item.type)) score += 22;
-  if (item.region === profile.homeRegion || item.country === profile.homeRegion) score += 18;
-  if (profile.needsInternational && item.eligibility !== "No") score += 14;
-  if (!profile.needsInternational) score += 6;
-  if (profile.needsFunded && /Paid|stipend|Free|Scholarship|Prize/i.test(item.paid)) score += 14;
-  if (/Rolling|Applications open|Apply early/i.test(item.deadline)) score += 6;
-  return Math.min(score, 99);
-}
-
 function passesFilters(item) {
   const haystack = `${item.country} ${item.region} ${item.organisation} ${item.program} ${item.type} ${item.deadline} ${item.paid} ${item.description} ${item.location} ${item.eligibilityDetails} ${item.application}`.toLowerCase();
   const paidPass =
@@ -3549,11 +3526,7 @@ function passesFilters(item) {
 }
 
 function filteredCatalog(records) {
-  const items = records.filter(passesFilters);
-  if (!state.profile) return items;
-  return items
-    .map((item) => ({ ...item, score: matchScore(item) }))
-    .sort((a, b) => b.score - a.score || typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type));
+  return records.filter(passesFilters);
 }
 
 function filteredItems() {
@@ -3710,22 +3683,6 @@ function initMap() {
   }
 }
 
-function renderChips() {
-  els.interestChips.innerHTML = "";
-  typeOrder.forEach((type) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = `chip ${state.interests.has(type) ? "active" : ""}`;
-    button.textContent = type;
-    button.addEventListener("click", () => {
-      if (state.interests.has(type)) state.interests.delete(type);
-      else state.interests.add(type);
-      render();
-    });
-    els.interestChips.appendChild(button);
-  });
-}
-
 function programmeById(id) {
   if (!id) return null;
   return opportunities.find((candidate) => candidate.id === id)
@@ -3745,7 +3702,6 @@ function renderDetail() {
     item = { ...item, source: item.source || "", deadline: item.deadline || "" };
   }
   if (els.selectionStrip) els.selectionStrip.hidden = false;
-  const score = matchScore(item);
   const reviewed = sourceLabel(item);
   els.detail.innerHTML = `
     <p class="eyebrow">${reviewed}</p>
@@ -3757,7 +3713,6 @@ function renderDetail() {
       <span class="pill">${item.deadline}</span>
       ${closingSoonBadge(item)}
       ${item.opensOn ? `<span class="pill">Opens ${formatOpeningDate(item.opensOn)}</span>` : ""}
-      ${score === null ? "" : `<span class="pill">${score}% profile fit</span>`}
     </div>
     <p>${item.description}</p>
   `;
@@ -3799,10 +3754,6 @@ function renderResults() {
       <div class="opportunity-actions"><a href="${item.url}" target="_blank" rel="noopener noreferrer">Official programme details</a>${isPinned(item) ? `<button class="locate-program" type="button">View on globe</button>` : ""}${shareOpportunityMarkup(item)}<small>${reviewed}</small></div>
       </div>
       </details>
-      ${state.profile ? `<div class="score">
-        <span>${item.score}% profile fit</span>
-        <div class="score-bar" aria-hidden="true"><span style="width:${item.score}%"></span></div>
-      </div>` : ""}
     `;
     bindProgramCard(card, item);
     els.results.appendChild(card);
@@ -3920,36 +3871,11 @@ function onCatalogTabKeydown(event) {
 
 function render() {
   renderOrganisationFilter();
-  document.getElementById("profile-summary").hidden = !state.profile;
-  document.getElementById("clear-profile").hidden = !state.profile;
-  document.getElementById("apply-profile").disabled = !(els.homeRegion.value || state.interests.size || els.needsInternational.checked || els.needsFunded.checked);
-  document.getElementById("apply-profile").textContent = state.profile ? "Update profile" : "Apply profile";
-  renderChips();
   renderDetail();
   renderTabs();
   renderResults();
   renderOpeningSoon();
   syncMap();
-}
-
-function applyProfile() {
-  if (!(els.homeRegion.value || state.interests.size || els.needsInternational.checked || els.needsFunded.checked)) return;
-  state.profile = {
-    homeRegion: els.homeRegion.value,
-    interests: new Set(state.interests),
-    needsInternational: els.needsInternational.checked,
-    needsFunded: els.needsFunded.checked
-  };
-  render();
-}
-
-function clearProfile() {
-  state.profile = null;
-  state.interests.clear();
-  els.homeRegion.value = "";
-  els.needsInternational.checked = false;
-  els.needsFunded.checked = false;
-  updateState();
 }
 
 function updateState() {
@@ -3958,9 +3884,6 @@ function updateState() {
   state.type = els.typeFilter.value;
   state.eligibility = els.eligibilityFilter.value;
   state.paid = els.paidFilter.value;
-  state.homeRegion = els.homeRegion.value;
-  state.needsInternational = els.needsInternational.checked;
-  state.needsFunded = els.needsFunded.checked;
   render();
 }
 
@@ -3990,16 +3913,6 @@ function registerWebMcpTools() {
     },
     additionalProperties: false
   };
-  const profileSchema = {
-    type: "object",
-    properties: {
-      homeRegion: { type: "string" },
-      interests: { type: "array", items: { type: "string" } },
-      needsInternational: { type: "boolean" },
-      needsFunded: { type: "boolean" }
-    },
-    additionalProperties: false
-  };
   const safeSet = (select, value) => {
     if (!value) return;
     const option = [...select.options].find((candidate) => candidate.value === value);
@@ -4012,7 +3925,7 @@ function registerWebMcpTools() {
         {
           name: "filter_opportunities",
           title: "Filter opportunities",
-          description: "Apply opportunity filters and return the current ranked result list.",
+          description: "Apply opportunity filters and return the current result list.",
           inputSchema: filterSchema,
           annotations: { readOnlyHint: false, untrustedContentHint: false },
           execute(input = {}) {
@@ -4022,31 +3935,7 @@ function registerWebMcpTools() {
             safeSet(els.eligibilityFilter, input.eligibility);
             safeSet(els.paidFilter, input.paid);
             updateState();
-            return { count: filteredItems().length, results: filteredItems().slice(0, 8).map(({ organisation, program, country, type, score }) => ({ organisation, program, country, type, ...(score == null ? {} : { score }) })) };
-          }
-        },
-        { signal: lifecycle.signal }
-      )
-    ).catch(reportError);
-    void Promise.resolve(
-      context.registerTool(
-        {
-          name: "set_profile_match",
-          title: "Set profile match",
-          description: "Apply profile preferences explicitly supplied by the user and return matching opportunities. Do not infer or invent a profile.",
-          inputSchema: profileSchema,
-          annotations: { readOnlyHint: false, untrustedContentHint: false },
-          execute(input = {}) {
-            if (!Object.keys(input).some(key => ["homeRegion", "interests", "needsInternational", "needsFunded"].includes(key))) return { error: "Provide profile preferences first." };
-            safeSet(els.homeRegion, input.homeRegion);
-            if (Array.isArray(input.interests)) {
-              state.interests = new Set(input.interests.filter((item) => typeOrder.includes(item)));
-            }
-            if (typeof input.needsInternational === "boolean") els.needsInternational.checked = input.needsInternational;
-            if (typeof input.needsFunded === "boolean") els.needsFunded.checked = input.needsFunded;
-            updateState();
-            applyProfile();
-            return { topMatches: filteredItems().slice(0, 5).map(({ organisation, program, country, score }) => ({ organisation, program, country, score })) };
+            return { count: filteredItems().length, results: filteredItems().slice(0, 8).map(({ organisation, program, country, type }) => ({ organisation, program, country, type })) };
           }
         },
         { signal: lifecycle.signal }
@@ -4060,7 +3949,7 @@ function registerWebMcpTools() {
 fillSelect(els.regionFilter, unique("region"));
 fillSelect(els.typeFilter, typeOrder);
 
-[els.query, els.regionFilter, els.typeFilter, els.eligibilityFilter, els.paidFilter, els.homeRegion, els.needsInternational, els.needsFunded].forEach((el) => {
+[els.query, els.regionFilter, els.typeFilter, els.eligibilityFilter, els.paidFilter].forEach((el) => {
   el.addEventListener("input", updateState);
   el.addEventListener("change", updateState);
 });
@@ -4070,8 +3959,6 @@ els.reset.addEventListener("click", resetFilters);
   tab.addEventListener("click", () => selectCatalog(tab === els.tabOpening ? "opening" : "open"));
   tab.addEventListener("keydown", onCatalogTabKeydown);
 });
-document.getElementById("apply-profile").addEventListener("click", applyProfile);
-document.getElementById("clear-profile").addEventListener("click", clearProfile);
 
 if (typeof IntersectionObserver !== "undefined") {
   const sections = new IntersectionObserver(entries => {
