@@ -15,7 +15,7 @@ test('footer enquiries use the authorised contact, distinct site subjects, and s
     assert.equal(url.protocol,'mailto:');
     assert.equal(url.pathname,'samfoxanu@gmail.com');
     const subject=url.searchParams.get('subject');
-    assert.ok(subject.startsWith('Political Opportunity Radar - '));
+    assert.ok(subject.startsWith('Free Society Noticeboard - '));
     subjects.add(subject);
     assert.equal(link.hidden,false);
     assert.ok(html.includes('data-footer-route="'+key+'" href="mailto:samfoxanu@gmail.com?'));

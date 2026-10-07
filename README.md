@@ -1,7 +1,7 @@
-# Political Opportunity Radar
+# Free Society Noticeboard
 
 A static opportunity explorer with a labelled interactive globe, zoom-dependent
-clusters, searchable programme cards, optional profile matching and newsletter signup.
+clusters, searchable programme cards, optional profile matching and Freedom Brief newsletter signup.
 
 Website: https://sfox2006.github.io/Opportunity-Radar/
 
