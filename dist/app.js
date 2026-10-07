@@ -3093,12 +3093,35 @@ const opportunities = [
     "status": "open",
     "reviewedAt": "2026-10-05",
     "source": "Official source reviewed 11 Sep 2026"
+  },
+  {
+    "id": "cato-innovation-project",
+    "organisation": "Cato Institute",
+    "program": "Cato Innovation Project",
+    "country": "United States",
+    "region": "United States",
+    "type": "Job",
+    "deadline": "Rolling; no fixed closing date published",
+    "paid": "Paid: salary starts at US$100,000/year; employee benefits",
+    "fundingDetails": "Full-time salary starts at US$100,000/year, plus standard Cato employee benefits. Project budget depends on the proposal.",
+    "eligibility": "Some restrictions",
+    "duration": "Two years; renewal or a permanent role is possible but not guaranteed",
+    "location": "Washington, DC; Cato headquarters, 1000 Massachusetts Avenue NW",
+    "description": "Propose and deliver a self-designed project advancing individual liberty, limited government, free markets and peace. Cato selects up to three applicants at a time.",
+    "eligibilityDetails": "Applicants from any professional background are welcome. A clear project plan, commitment to Cato's values and evidence of execution are expected; no minimum years of experience or employer age limit is published. International applicants may apply; visa sponsorship may be possible, not guaranteed. On-site work is expected, with exceptions considered. Confirm any work-authorisation and visa arrangements directly with Cato.",
+    "application": "Use the application linked from the official programme page. Submit a project proposal (3,500 words as a guideline), proposed budget and supporting application materials. Applications are reviewed on a rolling basis.",
+    "url": "https://www.cato.org/innovation",
+    "status": "rolling",
+    "reviewedAt": "2026-10-07",
+    "source": "Official programme page and linked application reviewed 7 October 2026",
+    "orgIndex": 11,
+    "mapped": false
   }
 ];
 
-const typeOrder = ["Internship", "Conference", "Fellowship", "Essay competition", "Online course", "Seminar", "Scholarship"];
+const typeOrder = ["Internship","Conference","Fellowship","Essay competition","Online course","Seminar","Scholarship","Job"];
 
-// Not-yet-open programmes. Add a record only with opensOn: "YYYY-MM-DD" taken from an official source.
+// Not-yet-open programmes with confirmed dates; never promote automatically.
 const openingSoon = [
   {
     "id": "yaf-njc-summer-2027",
@@ -3174,6 +3197,7 @@ const openingSoon = [
     "source": "Official source reviewed 11 Sep 2026"
   }
 ];
+
 const openStatuses = new Set(["open", "rolling", "on-demand"]);
 
 function parseIsoDate(value) {
@@ -3195,12 +3219,12 @@ function addCalendarMonths(date, months) {
 }
 
 function isOpeningSoon(item, today = new Date()) {
-  if (!item || openStatuses.has(item.status)) return false;
+  if (!item || item.status !== "upcoming") return false;
   const opens = parseIsoDate(item.opensOn);
   if (!opens || !(today instanceof Date) || Number.isNaN(today.getTime())) return false;
   const start = new Date(today.getFullYear(), today.getMonth(), today.getDate());
   const end = addCalendarMonths(start, 3);
-  return opens.getTime() >= start.getTime() && opens.getTime() <= end.getTime();
+  return opens.getTime() > start.getTime() && opens.getTime() <= end.getTime();
 }
 
 // 4 and 5 Oct 2026 cards carry reviewedAt. Older cards keep the 11 Sep 2026 source line.
@@ -3777,7 +3801,7 @@ function renderResults() {
       </dl>
       <div class="application-detail"><h4>Who can apply</h4><p>${item.eligibilityDetails}</p></div>
       <div class="application-detail"><h4>Application details</h4><p>${item.application}</p></div>
-      <div class="opportunity-actions"><a href="${item.url}" target="_blank" rel="noopener noreferrer">Official programme details</a><button class="locate-program" type="button">View on globe</button>${shareOpportunityMarkup(item)}<small>${reviewed}</small></div>
+      <div class="opportunity-actions"><a href="${item.url}" target="_blank" rel="noopener noreferrer">Official programme details</a>${isPinned(item) ? `<button class="locate-program" type="button">View on globe</button>` : ""}${shareOpportunityMarkup(item)}<small>${reviewed}</small></div>
       </div>
       </details>
       ${state.profile ? `<div class="score">
