@@ -1,11 +1,11 @@
-// Public enquiry address authorised by Sam on 6 October 2026. No email is sent by this site.
+// Public submission forms. Response spreadsheets stay private in Google Drive.
 const footerRoutes = {
-  "listing": "mailto:samfoxanu@gmail.com?subject=Free+Society+Noticeboard+-+Opportunity+suggestion&body=Website%3A+https%3A%2F%2Fsfox2006.github.io%2FOpportunity-Radar%2F%0A%0AName+of+listing+or+organisation%3A%0AOfficial+source+link%3A%0ADetails+of+suggestion+or+promotion+enquiry%3A%0A",
-  "organisation": "mailto:samfoxanu@gmail.com?subject=Free+Society+Noticeboard+-+Organisation+suggestion&body=Website%3A+https%3A%2F%2Fsfox2006.github.io%2FOpportunity-Radar%2F%0A%0AName+of+listing+or+organisation%3A%0AOfficial+source+link%3A%0ADetails+of+suggestion+or+promotion+enquiry%3A%0A",
-  "promotion": "mailto:samfoxanu@gmail.com?subject=Free+Society+Noticeboard+-+Job+or+company+promotion+enquiry&body=Website%3A+https%3A%2F%2Fsfox2006.github.io%2FOpportunity-Radar%2F%0A%0AName+of+listing+or+organisation%3A%0AOfficial+source+link%3A%0ADetails+of+suggestion+or+promotion+enquiry%3A%0A"
+  "listing": "https://docs.google.com/forms/d/e/1FAIpQLSe8qHuPxSnBhHBDQ8RutvVsBWJ06LHEpkLAw41eo-r9MKjbZQ/viewform",
+  "organisation": "https://docs.google.com/forms/d/e/1FAIpQLScQAmk6DazqUNP417iAsgcOFP62FxE3LLDY6nuOu4I-avRQyw/viewform",
+  "promotion": "https://docs.google.com/forms/d/e/1FAIpQLSfZI9ClBDkwlXP0_oan20etCCAAfl0Ev3CxohymaNzhiGUgDA/viewform"
 };
 for (const [kind, destination] of Object.entries(footerRoutes)) {
-  if (!destination || !/^(https:\/\/|mailto:)/.test(destination)) continue;
+  if (!destination || !/^https:\/\/docs\.google\.com\/forms\/d\/e\/[^/]+\/viewform$/.test(destination)) continue;
   const link = document.querySelector(`[data-footer-route="${kind}"]`);
   if (!link) continue;
   link.href = destination;
