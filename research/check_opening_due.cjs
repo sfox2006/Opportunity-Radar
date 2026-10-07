@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Prints Opening-tab cards whose opensOn date is today or earlier.
-// Exit 1 so the move into Open is not forgotten. Exit 0 when every opensOn is still ahead.
+// Exit 1 when fresh verification is due; this never promotes a record automatically.
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -35,10 +35,8 @@ function openingDue(records, today = new Date()) {
 
 function report(due) {
   if (!due.length) return 'Opening tab: no opensOn date is today or in the past.';
-  const lines = ['Move these openingSoon cards into Open. Their opensOn date is today or in the past:'];
+  const lines = ['Reverify these openingSoon cards before publishing as Open. Their opensOn date is today or in the past:'];
   for (const item of due) lines.push(`- ${item.id} opensOn ${item.opensOn}`);
-  lines.push('On Sun 1 Nov 2026 move yaf-njc-summer-2027 and centrum-for-rattvisa-sommarnotarie-2027 into Open.');
-  lines.push('On Tue 1 Dec 2026 move claremont-publius-fellowship-2027 into Open.');
   return lines.join('\n');
 }
 

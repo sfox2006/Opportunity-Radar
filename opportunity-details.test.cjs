@@ -6,7 +6,7 @@ const context = vm.createContext({});
 vm.runInContext(code.slice(0, code.indexOf('const state =')), context);
 const items = vm.runInContext('opportunities', context);
 const supportedTypes = vm.runInContext('typeOrder', context);
-assert.equal(items.length, 131);
+assert.equal(items.length, 132);
 assert.equal(items.some(item => item.id === 'martin-center-internship-next-semester'), true);
 for (const [id, status, deadline] of [
   ['libertas-institute-research-internship', 'rolling', 'Rolling (no deadline printed); apply by email with cover letter, resume and one writing sample'],
@@ -93,7 +93,14 @@ for (const id of [
 ]) {
   assert.equal(items.some(item => item.id === id), false, id);
 }
-assert.ok(items.every((item) => item.source === "Official source reviewed 11 Sep 2026"));
+assert.ok(items.filter(item => item.id !== 'cato-innovation-project').every((item) => item.source === "Official source reviewed 11 Sep 2026"));
+const catoInnovation = byId('cato-innovation-project');
+assert.equal(catoInnovation.type, 'Job');
+assert.equal(catoInnovation.reviewedAt, '2026-10-07');
+assert.equal(catoInnovation.url, 'https://www.cato.org/innovation');
+assert.match(catoInnovation.source, /linked application reviewed 7 October 2026/);
+assert.match(catoInnovation.eligibilityDetails, /possible, not guaranteed/);
+assert.equal(catoInnovation.mapped, false);
 const sourceLabel = vm.runInContext('sourceLabel', context);
 const octoberReviewed = [
   'iea-media-internship', 'vinson-hayek-internships', 'liberales-institut-liberty-summer-school-2027',
@@ -761,4 +768,4 @@ const shortTerm = byId('aier-short-term-visiting-fellowships');
 assert.match(shortTerm.program, /Short-term Visiting Research Fellowships/);
 assert.match(shortTerm.deadline, /at least six weeks/);
 assert.equal(items.filter(item => item.id.startsWith('aier-')).length, 3);
-console.log('PASS: 131 reviewed records, official HTTPS sources, status fields and independent link controls.');
+console.log('PASS: 132 reviewed records, official HTTPS sources, status fields and independent link controls.');

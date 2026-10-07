@@ -22,7 +22,7 @@ const dueNow = openingDue(records, new Date());
 assert.deepEqual(
   dueNow.map((item) => `${item.id} ${item.opensOn}`),
   [],
-  'An Opening card has an opensOn of today or earlier. Move it into Open: Sun 1 Nov 2026 for yaf-njc-summer-2027 and centrum-for-rattvisa-sommarnotarie-2027; Tue 1 Dec 2026 for claremont-publius-fellowship-2027.'
+  'An Opening card has an opensOn of today or earlier. Reverify official programme/application sources before promoting it; otherwise hold it privately.'
 );
 
 console.log('PASS: opening-soon dates are still ahead, and past opensOn dates are detected.');

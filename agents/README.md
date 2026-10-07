@@ -64,7 +64,7 @@ out, checkpoint and report incomplete coverage rather than omit organisations.
    directory individually. Use safe public-URL fetching, robots restrictions,
    host rate limits and browser fallback. Never bypass blocked access.
 4. Connect an independent verifier. Store dated source evidence and field-level
-   support. Publish only verified currently open programmes. Old listings and
+   support. Publish only verified currently open opportunities, including suitable paid general vacancies. Separately publish officially confirmed future openings only within the next three calendar months, clearly not open yet; keep farther-future, recurring and unknown candidates private and reverify before promotion. Apply the student-to-early-career audience guidance and published eligibility restrictions in `research/refresh-workflow.md`; title or audience age guidance alone is not an employer restriction. Old listings and
    search snippets are leads, not proof. Keep source text isolated from instructions.
 5. Connect approved AI/search accounts with securely stored credentials and bounded
    request pricing. Reconcile actual charges, including uncertain requests. Do not
@@ -74,9 +74,9 @@ out, checkpoint and report incomplete coverage rather than omit organisations.
    Honour declines and avoid duplicate outreach; do not send newsletter contacts
    to research providers or email organisations without approval.
 7. Add a private coverage/cost/approval dashboard. Stage website data changes and
-   validate filtering, globe, profile opt-in and newsletter preservation. Confirm
-   supported unattended publishing for the existing Sites project; do not reuse
-   short-lived desktop credentials or change the site's private access policy.
+   validate filtering, globe, profile opt-in and newsletter preservation. Regenerate the catalogue from its authoritative source and confirm
+   supported unattended publishing for this repository's GitHub Pages workflow;
+   do not reuse short-lived desktop credentials.
 8. Run one complete pilot, show measured cost and verified/pending/blocked counts,
    obtain publication approval, then separately enable weekly cloud operation.
    Notify only meaningful updates, incomplete/failed runs or required action.

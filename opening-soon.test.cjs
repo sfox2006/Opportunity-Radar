@@ -49,7 +49,7 @@ assert.equal(evaluate("els.selectionStrip.hidden"), true);
 assert.equal(evaluate("els.detail.innerHTML"), "");
 assert.equal(evaluate("els.legendSelected.hidden"), true);
 
-const OPEN_COUNT = 131;
+const OPEN_COUNT = 132;
 const openingIds = [
   "centrum-for-rattvisa-sommarnotarie-2027",
   "yaf-njc-summer-2027",
@@ -142,19 +142,19 @@ assert.equal(evaluate("state.catalog"), "open");
 assert.equal(evaluate("openingSoon.length"), 0);
 assert.match(evaluate("els.openingSoonList.innerHTML"), /No reviewed programmes have a confirmed opening date in the next three months right now\./);
 
-assert.equal(evaluate("isOpeningSoon({ id: 'today', opensOn: '2026-10-04' }, new Date(2026, 9, 4))"), true);
-assert.equal(evaluate("isOpeningSoon({ id: 'end', opensOn: '2027-01-04' }, new Date(2026, 9, 4))"), true);
-assert.equal(evaluate("isOpeningSoon({ id: 'before', opensOn: '2026-10-03' }, new Date(2026, 9, 4))"), false);
-assert.equal(evaluate("isOpeningSoon({ id: 'after', opensOn: '2027-01-05' }, new Date(2026, 9, 4))"), false);
-assert.equal(evaluate("isOpeningSoon({ id: 'past-open', opensOn: '2026-10-01' }, new Date(2026, 9, 4))"), false);
-assert.equal(evaluate("isOpeningSoon({ id: 'month', opensOn: 'October 2026' }, new Date(2026, 9, 4))"), false);
-assert.equal(evaluate("isOpeningSoon({ id: 'partial', opensOn: '2026-10' }, new Date(2026, 9, 4))"), false);
-assert.equal(evaluate("isOpeningSoon({ id: 'invalid', opensOn: '2026-02-31' }, new Date(2026, 9, 4))"), false);
-assert.equal(evaluate("isOpeningSoon({ id: 'missing' }, new Date(2026, 9, 4))"), false);
+assert.equal(evaluate("isOpeningSoon({ id: 'today', status: 'upcoming', opensOn: '2026-10-04' }, new Date(2026, 9, 4))"), false);
+assert.equal(evaluate("isOpeningSoon({ id: 'end', status: 'upcoming', opensOn: '2027-01-04' }, new Date(2026, 9, 4))"), true);
+assert.equal(evaluate("isOpeningSoon({ id: 'before', status: 'upcoming', opensOn: '2026-10-03' }, new Date(2026, 9, 4))"), false);
+assert.equal(evaluate("isOpeningSoon({ id: 'after', status: 'upcoming', opensOn: '2027-01-05' }, new Date(2026, 9, 4))"), false);
+assert.equal(evaluate("isOpeningSoon({ id: 'past-open', status: 'upcoming', opensOn: '2026-10-01' }, new Date(2026, 9, 4))"), false);
+assert.equal(evaluate("isOpeningSoon({ id: 'month', status: 'upcoming', opensOn: 'October 2026' }, new Date(2026, 9, 4))"), false);
+assert.equal(evaluate("isOpeningSoon({ id: 'partial', status: 'upcoming', opensOn: '2026-10' }, new Date(2026, 9, 4))"), false);
+assert.equal(evaluate("isOpeningSoon({ id: 'invalid', status: 'upcoming', opensOn: '2026-02-31' }, new Date(2026, 9, 4))"), false);
+assert.equal(evaluate("isOpeningSoon({ id: 'missing', status: 'upcoming' }, new Date(2026, 9, 4))"), false);
 assert.equal(evaluate("isOpeningSoon({ id: 'open-status', status: 'open', opensOn: '2026-11-01' }, new Date(2026, 9, 4))"), false);
 assert.equal(evaluate("isOpeningSoon({ id: 'rolling-status', status: 'rolling', opensOn: '2026-11-01' }, new Date(2026, 9, 4))"), false);
-assert.equal(evaluate("isOpeningSoon({ id: 'clamped', opensOn: '2026-04-30' }, new Date(2026, 0, 31))"), true);
-assert.equal(evaluate("isOpeningSoon({ id: 'past-clamp', opensOn: '2026-05-01' }, new Date(2026, 0, 31))"), false);
+assert.equal(evaluate("isOpeningSoon({ id: 'clamped', status: 'upcoming', opensOn: '2026-04-30' }, new Date(2026, 0, 31))"), true);
+assert.equal(evaluate("isOpeningSoon({ id: 'past-clamp', status: 'upcoming', opensOn: '2026-05-01' }, new Date(2026, 0, 31))"), false);
 
 const fixture = [{
   id: "example-opening",
@@ -162,6 +162,7 @@ const fixture = [{
   program: "Example Fellowship",
   country: "United States",
   type: "Fellowship",
+  status: "upcoming",
   opensOn: "2026-11-15",
   url: "https://example.org/fellowship",
   description: "A dated opening."
@@ -203,6 +204,7 @@ const opensIn30 = isoOffset(30);
 const opensIn200 = isoOffset(200);
 const soon = {
   id: "test-opening-30",
+  status: "upcoming",
   organisation: "Example Institute",
   program: "Example Opening Fellowship",
   country: "United Kingdom",
@@ -217,6 +219,7 @@ const soon = {
 };
 const unpinned = {
   id: "test-opening-30-unpinned",
+  status: "upcoming",
   organisation: "Example Institute",
   program: "Example Unpinned Seminar",
   country: "Global",
@@ -228,6 +231,7 @@ const unpinned = {
 };
 const later = {
   id: "test-opening-200",
+  status: "upcoming",
   organisation: "Example Institute",
   program: "Example Far Fellowship",
   country: "United Kingdom",

@@ -7,7 +7,7 @@ Website: https://sfox2006.github.io/Opportunity-Radar/
 
 ## Project layout
 
-- `dist/`: authored website HTML, CSS and JavaScript; no build step required.
+- `dist/`: published website assets; `app.js` is generated from `research/catalogue.json` and `src/app.js`.
 - `research/`: organisation registry, research workflow and dated evidence records.
 - `agents/`: offline research tracking and spending-control foundation, not a running service.
 - `newsletter-google/`: Google Apps Script integration and mocked tests.
@@ -19,6 +19,9 @@ Open `dist/index.html` in a browser. External map assets and the Google Form req
 internet access. Website paths are relative so the GitHub Pages project URL works.
 
 ```sh
+node research/build_catalogue.cjs --check
+node research/build_directory.cjs --check
+node research/check_opening_due.cjs
 node --test *.test.cjs newsletter-google/*.test.cjs
 python -m unittest discover -s agents -p test_control.py -v
 ```
@@ -48,7 +51,7 @@ Only `dist/` is uploaded as the Pages website, never private agent databases or
 Google response data. The repository itself is public; keep credentials and
 subscriber records out of all commits.
 
-Public open programmes: 131. Opening in the next 3 months: 3.
+Public open opportunities: 132 (including one paid Job). Opening in the next 3 months: 3.
 
 Added 5 October 2026: `hudson-political-studies-summer-fellowship-2027`, `hertog-humanities-winter-2027`. `aier-harwood-visiting-fellowships` is the Harwood card already on main from PR #9.
 
@@ -71,14 +74,17 @@ These ids were taken off the site. The records are still in
 
 Neutral-tagged cards that stay on the live list: `hudson-policy-oct2026`, `bpc-spring-2027-internships`, `tax-foundation-spring-2027`, `volcker-nextgen-summer-policy-academy-2027`, `ifese-studentenpresentaties-2027`, `aeasp-summer-2027`, `partnership-public-service-internship-spring-2027`.
 
-## Opening tab: move these into Open by hand
+## Catalogue sources and audience
 
-A card whose `opensOn` date has passed leaves the Opening tab. It does not appear under Open now until its status is flipped. Do not forget these moves:
+The catalogue serves students through early-career professionals, roughly up to ages 26–28. This is audience guidance, not an employer age limit. Include paid general vacancies as `Job`, as well as internships and other opportunity types. Evaluate actual responsibilities, required experience and qualifications; do not exclude solely because a title says senior or manager. Hold roles requiring experience implausible for this audience. Preserve published geographic, citizenship and work-authorisation restrictions and distinguish possible visa sponsorship from a guarantee. Profile scores rank interests; they do not establish eligibility.
 
-- On Sun 1 Nov 2026 move `yaf-njc-summer-2027` and `centrum-for-rattvisa-sommarnotarie-2027` into Open.
-- On Tue 1 Dec 2026 move `claremont-publius-fellowship-2027` into Open.
+Edit the authoritative `research/catalogue.json` after reviewing official programme and linked application evidence. Edit behaviour in `src/app.js`, then run `node research/build_catalogue.cjs`. CI checks exact regeneration. Preserve existing ids, source fields and individual review dates; never refresh a global date merely because one record changed. `research/sync_verified.cjs` is retired: old dated snapshots omit later additions and contain held records, so never restore a snapshot wholesale.
 
-`node research/check_opening_due.cjs` prints those ids and exits with an error when any Opening card has an `opensOn` of today or earlier.
+Publish upcoming records only with an officially confirmed, exact opening date strictly after today and within the next three calendar months (inclusive end date, with month-end clamping). Mark them `upcoming` and show them separately as not open yet. Farther-future, recurring and unknown candidates belong in private tracking outside this public repository. Reverify official programme and application pages before publication and again before promotion into Open now. An elapsed date never promotes a record automatically.
+
+`node research/check_opening_due.cjs` flags records whose opening date has arrived. Recheck `yaf-njc-summer-2027` and `centrum-for-rattvisa-sommarnotarie-2027` on 1 November 2026, and `claremont-publius-fellowship-2027` on 1 December 2026. Confirm that applications actually opened, then update the authoritative catalogue; otherwise hold the record privately.
+
+Added 7 October 2026: `cato-innovation-project`, independently corroborated against the official programme page and its linked application. No broader organisation sweep was performed for this change.
 
 ## Important status
 
