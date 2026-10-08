@@ -275,8 +275,8 @@ assert.match(openingList, new RegExp(`Opens ${prettyDate(opensIn30).replace(/[.*
 assert.match(openingList, /Example Unpinned Seminar/);
 assert.equal(openingList.includes("Example Far Fellowship"), false);
 assert.equal(openingList.includes("test-opening-200"), false);
-assert.match(openingList, /View on globe/);
-assert.equal((openingList.match(/View on globe/g) || []).length, 1);
+assert.equal(openingList.includes("View on globe"), false);
+assert.equal(openingList.includes("locate-program"), false);
 assert.equal(evaluate("mapMarkers.join(',')"), "test-opening-30");
 assert.equal(evaluate("mapFeaturesFor(activeProgrammes()).features[0].geometry.coordinates.join(',')"), "-0.1278,51.5074");
 assert.equal(Number(evaluate("els.openCount.textContent")), OPEN_COUNT);

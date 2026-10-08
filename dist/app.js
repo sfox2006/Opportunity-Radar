@@ -3395,7 +3395,6 @@ function openSharedOpportunity() {
 function openingSoonRow(item) {
   const opens = formatOpeningDate(item.opensOn);
   const url = typeof item.url === "string" && item.url.startsWith("https://") ? item.url : "";
-  const pinned = isPinned(item);
   const active = item.id === state.selectedId ? " active" : "";
   return `<article class="result${active}" id="opportunity-${escapeHtml(item.id)}" tabindex="0">
     <details class="program-disclosure">
@@ -3413,7 +3412,7 @@ function openingSoonRow(item) {
         ${item.location ? `<div><dt>Location</dt><dd>${escapeHtml(item.location)}</dd></div>` : ""}
         ${item.deadline ? `<div><dt>Deadline / status</dt><dd>${escapeHtml(item.deadline)}</dd></div>` : ""}
       </dl>
-      ${url || pinned ? `<div class="opportunity-actions">${url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Official programme details</a>` : ""}${pinned ? `<button class="locate-program" type="button">View on globe</button>` : ""}${shareOpportunityMarkup(item)}</div>` : ""}
+      <div class="opportunity-actions">${url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Official programme details</a>` : ""}${shareOpportunityMarkup(item)}</div>
     </div>
     </details>
   </article>`;
@@ -3751,7 +3750,7 @@ function renderResults() {
       </dl>
       <div class="application-detail"><h4>Who can apply</h4><p>${item.eligibilityDetails}</p></div>
       <div class="application-detail"><h4>Application details</h4><p>${item.application}</p></div>
-      <div class="opportunity-actions"><a href="${item.url}" target="_blank" rel="noopener noreferrer">Official programme details</a>${isPinned(item) ? `<button class="locate-program" type="button">View on globe</button>` : ""}${shareOpportunityMarkup(item)}<small>${reviewed}</small></div>
+      <div class="opportunity-actions"><a href="${item.url}" target="_blank" rel="noopener noreferrer">Official programme details</a>${shareOpportunityMarkup(item)}<small>${reviewed}</small></div>
       </div>
       </details>
     `;
@@ -3769,7 +3768,6 @@ function bindProgramCard(card, item) {
     focusProgram(item);
   };
   card.addEventListener("click", (event) => {
-    if (event.target.closest(".locate-program")) select();
     if (!event.target.closest("a, button, summary, input")) select();
   });
   card.addEventListener("keydown", (event) => {
