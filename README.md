@@ -51,7 +51,7 @@ Only `dist/` is uploaded as the Pages website, never private agent databases or
 Google response data. The repository itself is public; keep credentials and
 subscriber records out of all commits.
 
-Public open opportunities: 132 (including one paid Job). Opening in the next 3 months: 3.
+Public open opportunities: 133 (including one paid Job). Opening in the next 3 months: 3.
 
 Added 5 October 2026: `hudson-political-studies-summer-fellowship-2027`, `hertog-humanities-winter-2027`. `aier-harwood-visiting-fellowships` is the Harwood card already on main from PR #9.
 
@@ -83,6 +83,8 @@ Edit the authoritative `research/catalogue.json` after reviewing official progra
 Publish upcoming records only with an officially confirmed, exact opening date strictly after today and within the next three calendar months (inclusive end date, with month-end clamping). Mark them `upcoming` and show them separately as not open yet. Farther-future, recurring and unknown candidates belong in private tracking outside this public repository. Reverify official programme and application pages before publication and again before promotion into Open now. An elapsed date never promotes a record automatically.
 
 `node research/check_opening_due.cjs` flags records whose opening date has arrived. Recheck `yaf-njc-summer-2027` and `centrum-for-rattvisa-sommarnotarie-2027` on 1 November 2026, and `claremont-publius-fellowship-2027` on 1 December 2026. Confirm that applications actually opened, then update the authoritative catalogue; otherwise hold the record privately.
+
+Added 8 October 2026: `fai-artificial-intelligence-policy-team-intern-fall-2026`, a rolling paid AI policy internship with US work-authorisation restrictions. Corrected the Winter 2027 Conservative AI Policy Fellowship stipend to reflect government ethics rules and any required employer/agency approval. Official FAI pages and the linked internship form were reviewed; unrelated listing review dates are preserved.
 
 Added 7 October 2026: `cato-innovation-project`, independently corroborated against the official programme page and its linked application. No broader organisation sweep was performed for this change.
 

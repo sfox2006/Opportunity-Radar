@@ -11,7 +11,7 @@ test('canonical catalogue regenerates exactly without mutating source fields or 
   validateCatalogue(data, today);
   assert.equal(generate(data, fs.readFileSync('src/app.js', 'utf8')), fs.readFileSync('dist/app.js', 'utf8'));
   assert.equal(JSON.stringify(data), snapshot);
-  assert.equal(data.opportunities.length, 132);
+  assert.equal(data.opportunities.length, 133);
   assert.equal(data.openingSoon.length, 3);
   assert.equal(data.opportunities.filter(item => item.type === 'Job').length, 1);
   assert.equal(data.opportunities.find(item => item.id === 'cato-innovation-project').status, 'rolling');

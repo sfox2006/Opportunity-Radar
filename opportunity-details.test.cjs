@@ -6,7 +6,7 @@ const context = vm.createContext({});
 vm.runInContext(code.slice(0, code.indexOf('const state =')), context);
 const items = vm.runInContext('opportunities', context);
 const supportedTypes = vm.runInContext('typeOrder', context);
-assert.equal(items.length, 132);
+assert.equal(items.length, 133);
 assert.equal(items.some(item => item.id === 'martin-center-internship-next-semester'), true);
 for (const [id, status, deadline] of [
   ['libertas-institute-research-internship', 'rolling', 'Rolling (no deadline printed); apply by email with cover letter, resume and one writing sample'],
@@ -63,6 +63,27 @@ const fai = byId('fai-conservative-ai-policy-fellowship');
 assert.match(fai.deadline, /30 October 2026/);
 assert.match(`${fai.description} ${fai.eligibilityDetails}`, /conservative policy professionals/i);
 assert.match(fai.eligibilityDetails, /not a general student programme/i);
+assert.equal(fai.paid, 'Fully funded; eligible for a US$1,500 stipend, subject to applicable ethics rules');
+assert.match(fai.fundingDetails, /Meals and retreat expenses.*government ethics rules/);
+assert.match(fai.fundingDetails, /Government employees.*required employer or agency approval/);
+assert.match(fai.duration, /8 weeks, part-time, 19 January-12 March 2027.*February weekend retreat/);
+assert.equal(fai.reviewedAt, '2026-10-08');
+const faiIntern = byId('fai-artificial-intelligence-policy-team-intern-fall-2026');
+assert.equal(items.filter(item => item.url === faiIntern.url).length, 1);
+assert.equal(faiIntern.status, 'rolling');
+assert.equal(faiIntern.type, 'Internship');
+assert.equal(faiIntern.eligibility, 'Some restrictions');
+assert.match(faiIntern.eligibilityDetails, /US work authorisation is required; FAI cannot sponsor visas/);
+assert.match(faiIntern.eligibilityDetails, /No age cap is stated/);
+assert.equal(faiIntern.paid, 'Paid US$20/hour');
+assert.match(faiIntern.fundingDetails, /No housing.*own travel and living costs.*own laptop/);
+assert.match(faiIntern.duration, /September-December 2026.*flexible start and end dates.*full- or part-time/);
+assert.match(faiIntern.location, /Washington, DC.*in person preferred.*temporary remote.*exceptional candidates/);
+assert.match(faiIntern.deadline, /Rolling.*no closing date stated/);
+assert.equal(faiIntern.deadlineOn, undefined);
+assert.match(faiIntern.application, /https:\/\/airtable\.com\/appJbp3WUg4zsv7ec\/pagIR4ESchcOgSU87\/form/);
+assert.equal(faiIntern.url, 'https://www.thefai.org/posts/artificial-intelligence-policy-team-intern');
+assert.equal(faiIntern.reviewedAt, '2026-10-08');
 const volcker = byId('volcker-nextgen-summer-policy-academy-2027');
 assert.match(volcker.deadline, /15 December 2026, 11:59 pm PT \(Pacific\)/);
 assert.equal(volcker.mapped, false);
@@ -93,7 +114,7 @@ for (const id of [
 ]) {
   assert.equal(items.some(item => item.id === id), false, id);
 }
-assert.ok(items.filter(item => item.id !== 'cato-innovation-project').every((item) => item.source === "Official source reviewed 11 Sep 2026"));
+assert.ok(items.filter(item => !['cato-innovation-project', 'fai-conservative-ai-policy-fellowship', 'fai-artificial-intelligence-policy-team-intern-fall-2026'].includes(item.id)).every((item) => item.source === "Official source reviewed 11 Sep 2026"));
 const catoInnovation = byId('cato-innovation-project');
 assert.equal(catoInnovation.type, 'Job');
 assert.equal(catoInnovation.reviewedAt, '2026-10-07');
@@ -768,4 +789,4 @@ const shortTerm = byId('aier-short-term-visiting-fellowships');
 assert.match(shortTerm.program, /Short-term Visiting Research Fellowships/);
 assert.match(shortTerm.deadline, /at least six weeks/);
 assert.equal(items.filter(item => item.id.startsWith('aier-')).length, 3);
-console.log('PASS: 132 reviewed records, official HTTPS sources, status fields and independent link controls.');
+console.log('PASS: 133 reviewed records, official HTTPS sources, status fields and independent link controls.');
