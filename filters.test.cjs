@@ -61,3 +61,13 @@ test('WebMCP exposes working catalogue filters and ignores unavailable select op
   assert.equal(evaluate('state.paid'), 'Paid');
   assert.equal(tools[0].execute({type: 'All', paid: 'All'}).count, evaluate('opportunities.length'));
 });
+
+test('FAI internship is searchable and paid, with work rights retained by eligibility filters', () => {
+  const {evaluate} = setup();
+  evaluate('els.query.value="Artificial Intelligence Policy Team"; els.typeFilter.value="Internship"; els.paidFilter.value="Paid"; els.eligibilityFilter.value="Some restrictions"; updateState()');
+  assert.equal(evaluate('filteredItems().map(item => item.id).join(",")'), 'fai-artificial-intelligence-policy-team-intern-fall-2026');
+  evaluate('els.eligibilityFilter.value="Yes"; updateState()');
+  assert.equal(evaluate('filteredItems().length'), 0);
+  evaluate('resetFilters()');
+  assert.equal(evaluate('filteredItems().length'), evaluate('opportunities.length'));
+});
